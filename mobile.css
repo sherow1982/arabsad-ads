@@ -1,0 +1,37 @@
+/* Mobile-first & Arabic RTL improvements */
+html[dir="rtl"]{direction:rtl;text-align:right}
+body{font-family:'IBM Plex Sans Arabic','Cairo','Noto Sans Arabic',Arial,sans-serif;line-height:1.8;color:#0a2540;background:#fff}
+img{max-width:100%;height:auto;background:#eef5fb}
+a,button{min-height:44px}
+.container{max-width:1200px;margin:0 auto;padding:0 16px}
+.grid{display:grid;gap:16px}
+@media(min-width:768px){.grid-2{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(3,1fr)}}
+
+/* Back to top */
+.back-to-top{position:fixed;bottom:16px;left:16px;z-index:999;display:none;background:#0a2540;color:#fff;border:0;border-radius:999px;padding:10px 14px;box-shadow:0 8px 24px rgba(10,37,64,.12);cursor:pointer}
+.back-to-top svg{display:block}
+
+/* Contact block refined */
+.contact-content{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:768px){.contact-content{grid-template-columns:1.3fr .7fr}}
+.contact-info{background:#fff;padding:20px;border:1px solid #e6eef5;border-radius:12px;box-shadow:0 8px 24px rgba(10,37,64,.06)}
+.contact-item{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid #eef2f7}
+.contact-item:last-child{border-bottom:0}
+.contact-icon{font-size:20px;line-height:1.2}
+.contact-details strong{display:block;margin-bottom:6px}
+.contact-links{display:flex;flex-direction:column;gap:6px}
+.contact-link{color:#0a2540}
+.whatsapp-link{color:#25D366}
+
+/* Sections */
+.section-title{text-align:center;color:#1e40af;margin:0 0 18px;font-size:clamp(20px,3.2vw,28px);font-weight:800}
+.section-desc{text-align:center;color:#64748b;max-width:680px;margin:0 auto 24px}
+
+/* Cards & buttons */
+.card{background:#fff;border:1px solid #e6eef5;border-radius:14px;padding:16px;box-shadow:0 8px 24px rgba(10,37,64,.06)}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:12px 16px;font-weight:700;border:0;cursor:pointer}
+.btn-primary{background:#16a34a;color:#fff}
+.btn-secondary{background:#fff;border:1px solid #e6eef5;color:#0a2540}
+
+/* Floating WhatsApp */
+.wa-fab{position:fixed;bottom:16px;right:16px;z-index:999;background:#25D366;color:#fff;border-radius:999px;padding:12px 16px;font-weight:800;box-shadow:0 8px 24px rgba(10,37,64,.12);display:flex;align-items:center;gap:10px}
