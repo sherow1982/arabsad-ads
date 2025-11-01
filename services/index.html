@@ -10,40 +10,51 @@
   <link rel="stylesheet" href="../styles.css">
   <style>
     .svc-list{padding:60px 0;background:#f8fafc}
-    .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
-    .svc-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,.08);border:1px solid #eef2f7;transition:.3s}
-    .svc-card:hover{transform:translateY(-8px);box-shadow:0 18px 45px rgba(0,0,0,.14)}
-    .svc-img{height:200px;position:relative}
-    .svc-img a{position:absolute;inset:0;display:block}
-    .svc-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-    .svc-body{padding:18px}
-    .svc-title{margin:0 0 8px;color:#0b1020;font-weight:700}
-    .svc-desc{color:#4b5563;margin:0 0 16px;min-height:48px}
-    .svc-actions{display:flex;gap:10px}
-    .svc-actions .btn{flex:1;padding:12px 14px;border-radius:10px;font-weight:700}
-    .btn-wz{background:#25d366;color:#fff;border:none}
-    .btn-wz:hover{background:#128c7e}
+    .svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px}
+    .svc-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.1);border:1px solid #e5e7eb;transition:all .35s ease;cursor:pointer}
+    .svc-card:hover{transform:translateY(-10px) scale(1.02);box-shadow:0 20px 50px rgba(0,0,0,.18)}
+    .svc-img{height:220px;position:relative;overflow:hidden}
+    .svc-img a{position:absolute;inset:0;display:block;z-index:2}
+    .svc-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+    .svc-card:hover .svc-img img{transform:scale(1.08)}
+    .svc-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.25));opacity:0;transition:.35s ease}
+    .svc-card:hover .svc-overlay{opacity:1}
+    .svc-body{padding:22px}
+    .svc-title{margin:0 0 10px;color:#0f172a;font-weight:700;font-size:1.3rem}
+    .svc-desc{color:#64748b;margin:0 0 18px;line-height:1.6}
+    .svc-actions{display:flex;gap:12px}
+    .svc-actions .btn{flex:1;padding:14px 16px;border-radius:12px;font-weight:700;transition:all .3s ease}
+    .btn-wz{background:linear-gradient(135deg,#25d366,#20bf55);color:#fff;border:none;box-shadow:0 4px 16px rgba(37,211,102,.3)}
+    .btn-wz:hover{background:linear-gradient(135deg,#20bf55,#128c7e);transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.4)}
     .btn-det{background:#fff;color:#1e40af;border:2px solid #1e40af}
-    .btn-det:hover{background:#1e40af;color:#fff}
+    .btn-det:hover{background:#1e40af;color:#fff;transform:translateY(-2px);box-shadow:0 8px 20px rgba(30,64,175,.3)}
+    .whatsapp-cta{background:linear-gradient(135deg,#25d366,#20bf55);color:#fff;padding:50px;border-radius:20px;text-align:center;margin:50px 0;box-shadow:0 15px 40px rgba(37,211,102,.2)}
+    .whatsapp-cta h2{margin-bottom:20px;font-size:2rem}
+    .whatsapp-cta p{margin-bottom:30px;font-size:1.1rem;opacity:.95}
+    .whatsapp-cta .btn{background:#fff;color:#25d366;font-weight:700;padding:18px 36px;font-size:1.1rem}
   </style>
 </head>
 <body>
   <header class="header"><nav class="nav"><div class="container"><div class="nav-brand"><img src="../assets/images/logo-arabsad.png" alt="ARABS AD" style="height:35px;margin-left:10px;"><div><h1><a href="../index.html" style="text-decoration:none;color:inherit">مؤسسة إعلانات العرب</a></h1><span class="domain">arabsad.com</span></div></div></div></nav></header>
 
+  <div class="whatsapp-float"><a href="https://wa.me/201110760081?text=أريد استشارة عن الخدمات المتاحة" target="_blank" class="whatsapp-btn"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg><span>خدماتنا</span></a></div>
+
   <section class="svc-list">
     <div class="container">
-      <h2 style="text-align:center;color:#1e40af;margin-bottom:24px">خدماتنا</h2>
+      <h2 style="text-align:center;color:#1e40af;margin-bottom:30px;font-size:2.5rem">خدماتنا الاحترافية</h2>
+      
       <div class="svc-grid">
         <article class="svc-card">
           <div class="svc-img">
             <a href="google-ads-complete.html" target="_blank" aria-label="إعلانات جوجل"></a>
-            <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop" alt="إعلانات جوجل">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" alt="إعلانات جوجل Dashboard">
+            <div class="svc-overlay"></div>
           </div>
           <div class="svc-body">
             <h3 class="svc-title">إعلانات جوجل</h3>
-            <p class="svc-desc">Search • Display • YouTube • Shopping • PMax • Discovery</p>
+            <p class="svc-desc">حملات البحث، الشبكة الإعلانية، يوتيوب، شوبنج، Performance Max، Discovery</p>
             <div class="svc-actions">
-              <a class="btn btn-wz" target="_blank" href="https://wa.me/201110760081?text=أريد حملة إعلانات جوجل">واتساب</a>
+              <a class="btn btn-wz" target="_blank" href="https://wa.me/201110760081?text=أريد بدء حملة إعلانات جوجل احترافية">📞 واتساب</a>
               <a class="btn btn-det" target="_blank" href="google-ads-complete.html">شاهد التفاصيل</a>
             </div>
           </div>
@@ -52,13 +63,14 @@
         <article class="svc-card">
           <div class="svc-img">
             <a href="social-media-ads.html" target="_blank" aria-label="إعلانات السوشيال"></a>
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="إعلانات السوشيال">
+            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=1200&auto=format&fit=crop" alt="Social Media Advertising">
+            <div class="svc-overlay"></div>
           </div>
           <div class="svc-body">
-            <h3 class="svc-title">إعلانات السوشيال</h3>
-            <p class="svc-desc">فيسبوك • إنستجرام • تيك توك • سناب شات • لينكدإن</p>
+            <h3 class="svc-title">إعلانات السوشيال ميديا</h3>
+            <p class="svc-desc">فيسبوك، إنستجرام، تيك توك، سناب شات، لينكدإن، تويتر</p>
             <div class="svc-actions">
-              <a class="btn btn-wz" target="_blank" href="https://wa.me/201110760081?text=أريد حملة سوشيال ميديا">واتساب</a>
+              <a class="btn btn-wz" target="_blank" href="https://wa.me/201110760081?text=أريد حملة سوشيال ميديا احترافية">📞 واتساب</a>
               <a class="btn btn-det" target="_blank" href="social-media-ads.html">شاهد التفاصيل</a>
             </div>
           </div>
@@ -67,14 +79,15 @@
         <article class="svc-card">
           <div class="svc-img">
             <a href="ecommerce.html" target="_blank" aria-label="تصميم المواقع"></a>
-            <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?q=80&w=1200&auto=format&fit=crop" alt="تصميم المواقع">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1200&auto=format&fit=crop" alt="Website Development">
+            <div class="svc-overlay"></div>
           </div>
           <div class="svc-body">
             <h3 class="svc-title">تصميم المواقع والمتاجر</h3>
-            <p class="svc-desc">WordPress • متاجر • سرعة • أمان • RTL • متعدد اللغات</p>
+            <p class="svc-desc">WordPress، متاجر إلكترونية، سرعة، أمان، RTL، متعدد اللغات</p>
             <div class="svc-actions">
-              <a class="btn btn-wz" target="_blank" href="https://wa.me/201110760081?text=أريد تصميم موقع/متجر">واتساب</a>
-              <a class="btn btn-det" target="_blank" href="ecommerce.html">شاهد التفاصيل</a>
+              <a class="btn btn-wz" target="_blank" href="https://wa.me/201110760081?text=أريد تصميم موقع أو متجر احترافي">📞 واتساب</a>
+              <a class="btn btn-det" target="_blank" href="ecommerce.html">شاهد 8 متاجر</a>
             </div>
           </div>
         </article>
@@ -82,13 +95,14 @@
         <article class="svc-card">
           <div class="svc-img">
             <a href="seo.html" target="_blank" aria-label="SEO"></a>
-            <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?q=80&w=1200&auto=format&fit=crop" alt="SEO">
+            <img src="https://images.unsplash.com/photo-1571677208775-05da0c4b3e6a?q=80&w=1200&auto=format&fit=crop" alt="SEO Analytics">
+            <div class="svc-overlay"></div>
           </div>
           <div class="svc-body">
             <h3 class="svc-title">SEO وتحسين محركات البحث</h3>
-            <p class="svc-desc">Technical • On-page • Off-page • Local • Content</p>
+            <p class="svc-desc">Technical، On-page، Off-page، Local، Content Marketing</p>
             <div class="svc-actions">
-              <a class="btn btn-wz" target="_blank" href="https://wa.me/201110760081?text=أريد خدمة SEO">واتساب</a>
+              <a class="btn btn-wz" target="_blank" href="https://wa.me/201110760081?text=أريد خدمة SEO لموقعي">📞 واتساب</a>
               <a class="btn btn-det" target="_blank" href="seo.html">شاهد التفاصيل</a>
             </div>
           </div>
@@ -96,14 +110,15 @@
 
         <article class="svc-card">
           <div class="svc-img">
-            <a href="plumbing-services.html" target="_blank" aria-label="صرف صحي"></a>
-            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1200&auto=format&fit=crop" alt="صرف صحي">
+            <a href="plumbing-services.html" target="_blank" aria-label="الصرف الصحي"></a>
+            <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?q=80&w=1200&auto=format&fit=crop" alt="Plumbing Services">
+            <div class="svc-overlay"></div>
           </div>
           <div class="svc-body">
             <h3 class="svc-title">إعلانات الصرف الصحي</h3>
-            <p class="svc-desc">تسليك مجاري • شفط بيارات • سباكة طوارئ</p>
+            <p class="svc-desc">تسليك مجاري، شفط بيارات، سباكة طوارئ 24/7</p>
             <div class="svc-actions">
-              <a class="btn btn-wz" target="_blank" href="https://wa.me/201110760081?text=أريد تسويق شركة صرف صحي">واتساب</a>
+              <a class="btn btn-wz" target="_blank" href="https://wa.me/201110760081?text=أريد تسويق شركة صرف صحي">📞 واتساب</a>
               <a class="btn btn-det" target="_blank" href="plumbing-services.html">شاهد التفاصيل</a>
             </div>
           </div>
@@ -112,13 +127,14 @@
         <article class="svc-card">
           <div class="svc-img">
             <a href="moving-services.html" target="_blank" aria-label="نقل الأثاث"></a>
-            <img src="https://images.unsplash.com/photo-1581852017103-68ac65514cf7?q=80&w=1200&auto=format&fit=crop" alt="نقل الأثاث">
+            <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?q=80&w=1200&auto=format&fit=crop" alt="Moving Services">
+            <div class="svc-overlay"></div>
           </div>
           <div class="svc-body">
             <h3 class="svc-title">إعلانات نقل الأثاث</h3>
-            <p class="svc-desc">نقل داخلي • بين دول الخليج • تغليف وتخزين</p>
+            <p class="svc-desc">نقل داخلي، بين دول الخليج، تغليف وتخزين احترافي</p>
             <div class="svc-actions">
-              <a class="btn btn-wz" target="_blank" href="https://wa.me/201110760081?text=أريد تسويق شركة نقل عفش">واتساب</a>
+              <a class="btn btn-wz" target="_blank" href="https://wa.me/201110760081?text=أريد تسويق شركة نقل عفش">📞 واتساب</a>
               <a class="btn btn-det" target="_blank" href="moving-services.html">شاهد التفاصيل</a>
             </div>
           </div>
@@ -127,13 +143,14 @@
         <article class="svc-card">
           <div class="svc-img">
             <a href="cleaning-services.html" target="_blank" aria-label="شركات النظافة"></a>
-            <img src="https://images.unsplash.com/photo-1581579188871-45ea61f2a0c8?q=80&w=1200&auto=format&fit=crop" alt="شركات النظافة">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1200&auto=format&fit=crop" alt="Cleaning Services">
+            <div class="svc-overlay"></div>
           </div>
           <div class="svc-body">
             <h3 class="svc-title">إعلانات شركات النظافة</h3>
-            <p class="svc-desc">منازل • فلل • مكاتب • مكافحة حشرات</p>
+            <p class="svc-desc">منازل، فلل، مكاتب، مكافحة حشرات، تعقيم</p>
             <div class="svc-actions">
-              <a class="btn btn-wz" target="_blank" href="https://wa.me/201110760081?text=أريد تسويق شركة نظافة">واتساب</a>
+              <a class="btn btn-wz" target="_blank" href="https://wa.me/201110760081?text=أريد تسويق شركة نظافة">📞 واتساب</a>
               <a class="btn btn-det" target="_blank" href="cleaning-services.html">شاهد التفاصيل</a>
             </div>
           </div>
@@ -142,13 +159,14 @@
         <article class="svc-card">
           <div class="svc-img">
             <a href="contracting-services.html" target="_blank" aria-label="المقاولات"></a>
-            <img src="https://images.unsplash.com/photo-1526726538690-5cbf956ae2fd?q=80&w=1200&auto=format&fit=crop" alt="المقاولات">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop" alt="Construction Services">
+            <div class="svc-overlay"></div>
           </div>
           <div class="svc-body">
             <h3 class="svc-title">إعلانات شركات المقاولات</h3>
-            <p class="svc-desc">إنشاءات • تشطيبات • ترميم • عزل</p>
+            <p class="svc-desc">إنشاءات، تشطيبات، ترميم، عزل، أعمال مدنية</p>
             <div class="svc-actions">
-              <a class="btn btn-wz" target="_blank" href="https://wa.me/201110760081?text=أريد تسويق شركة مقاولات">واتساب</a>
+              <a class="btn btn-wz" target="_blank" href="https://wa.me/201110760081?text=أريد تسويق شركة مقاولات">📞 واتساب</a>
               <a class="btn btn-det" target="_blank" href="contracting-services.html">شاهد التفاصيل</a>
             </div>
           </div>
@@ -157,13 +175,14 @@
         <article class="svc-card">
           <div class="svc-img">
             <a href="maintenance-services.html" target="_blank" aria-label="الصيانة"></a>
-            <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop" alt="الصيانة">
+            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1200&auto=format&fit=crop" alt="Maintenance Services">
+            <div class="svc-overlay"></div>
           </div>
           <div class="svc-body">
             <h3 class="svc-title">إعلانات شركات الصيانة</h3>
-            <p class="svc-desc">كهرباء • تكييف • سباكة • صيانة عامة</p>
+            <p class="svc-desc">كهرباء، تكييف، سباكة، صيانة عامة، طوارئ</p>
             <div class="svc-actions">
-              <a class="btn btn-wz" target="_blank" href="https://wa.me/201110760081?text=أريد تسويق شركة صيانة">واتساب</a>
+              <a class="btn btn-wz" target="_blank" href="https://wa.me/201110760081?text=أريد تسويق شركة صيانة">📞 واتساب</a>
               <a class="btn btn-det" target="_blank" href="maintenance-services.html">شاهد التفاصيل</a>
             </div>
           </div>
@@ -172,7 +191,15 @@
     </div>
   </section>
 
-  <footer class="footer"><div class="container"><div class="footer-content"><div class="footer-brand"><img src="../assets/images/logo-arabsad.png" alt="ARABS AD" style="height:35px;margin-bottom:10px;"><h3>مؤسسة إعلانات العرب</h3><p>للتسويق الإلكتروني والإعلانات الممولة</p></div><div class="footer-contact"><h4>تواصل معنا</h4><p>📞 00201110760081</p><p>📞 00201093304677</p><p>✉️ sherow1982@gmail.com</p><p>🌐 arabsad.com</p></div></div><div class="footer-bottom"><p>© 2025 مؤسسة إعلانات العرب - جميع الحقوق محفوظة</p></div></div></footer>
+  <div class="whatsapp-cta">
+    <div class="container">
+      <h2>🚀 جاهز لبدء مشروعك؟</h2>
+      <p>تواصل معنا الآن واحصل على استشارة مجانية وعرض سعر مخصص لاحتياجاتك</p>
+      <a href="https://wa.me/201110760081?text=شاهدت الخدمات وأريد بدء مشروع" class="btn btn-large" target="_blank">📞 تواصل معنا واتساب</a>
+    </div>
+  </div>
+
+  <footer class="footer"><div class="container"><div class="footer-content"><div class="footer-brand"><img src="../assets/images/logo-arabsad.png" alt="ARABS AD" style="height:35px;margin-bottom:10px;"><h3>مؤسسة إعلانات العرب</h3><p>للتسويق الإلكتروني والإعلانات الممولة</p></div><div class="footer-contact"><h4>تواصل معنا</h4><p>📞 <a href="https://wa.me/201110760081" target="_blank" style="color:#25d366">00201110760081</a></p><p>📞 <a href="https://wa.me/201093304677" target="_blank" style="color:#25d366">00201093304677</a></p><p>✉️ sherow1982@gmail.com</p><p>🌐 arabsad.com</p></div></div><div class="footer-bottom"><p>© 2025 مؤسسة إعلانات العرب - جميع الحقوق محفوظة</p><p><a href="https://wa.me/201110760081?text=أريد استشارة مجانية" target="_blank" style="color:#25d366;font-weight:600">📞 تواصل عبر الواتساب</a></p></div></div></footer>
   <script src="../script.js"></script>
 </body>
 </html>
