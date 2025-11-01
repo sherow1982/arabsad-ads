@@ -4,26 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تصميم المتاجر الإلكترونية - عروض حية ومشاريع ناجحة | مؤسسة إعلانات العرب</title>
-    <meta name="description" content="شاهد متاجر إلكترونية احترافية صممناها للعملاء في الخليج العربي. عروض حية لمتاجر السعودية والكويت وعمان والإمارات مع أنظمة دفع متكاملة.">
-    <meta name="keywords" content="متاجر إلكترونية جاهزة, تصميم متجر إلكتروني السعودية, متجر إلكتروني الكويت, متجر عمان, هدايا الإمارات">
+    <meta name="description" content="شاهد متاجر إلكترونية احترافية صممناها للعملاء في الخليج العربي والأردن. عروض حية لجميع المنصات: MyEasyOrders، SellSite مع أنظمة دفع محلية متكاملة.">
     <link rel="canonical" href="https://arabsad.com/services/ecommerce.html">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../assets/css/live-demos.css">
+    <style>
+    .flag-wave{width:70px;height:50px;border:2px solid #fff;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15);overflow:hidden;animation:flagWave 2.5s ease-in-out infinite}
+    @keyframes flagWave{0%,100%{transform:skewX(0deg) translateX(0px)}25%{transform:skewX(2deg) translateX(2px)}75%{transform:skewX(-2deg) translateX(-2px)}}
+    .flag-wave img{width:100%;height:100%;object-fit:cover}
+    .demo-card{background:#fff;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.06);transition:all 0.3s ease;border:1px solid #f1f5f9}
+    .demo-card:hover{transform:translateY(-8px);box-shadow:0 16px 40px rgba(0,0,0,0.12)}
+    .demo-image{height:160px;background:linear-gradient(135deg,#1e40af 0%,#3b82f6 100%);display:flex;align-items:center;justify-content:center;position:relative}
+    .demo-content{padding:20px}
+    .demo-content h3{color:#1e40af;margin:0 0 10px;font-size:1.3rem;font-weight:600}
+    .demo-content p{color:#4b5563;margin:0 0 16px;line-height:1.6}
+    .price-ask{background:#fef3c7;color:#7c2d12;padding:8px 16px;border-radius:20px;display:inline-block;font-weight:600;margin-bottom:16px}
+    .demo-buttons{display:flex;gap:10px}
+    .demo-buttons .btn{flex:1;text-align:center;padding:12px 16px;font-weight:600;border-radius:10px}
+    .demos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:24px;margin:40px 0}
+    .live-demos{padding:80px 0;background:#f8fafc}
+    .live-demos h2{text-align:center;color:#1e40af;font-size:2.5rem;margin-bottom:16px}
+    .section-desc{text-align:center;color:#6b7280;max-width:600px;margin:0 auto 40px}
+    </style>
 </head>
 <body>
     <header class="header">
         <nav class="nav">
             <div class="container">
                 <div class="nav-brand">
-                    <h1><a href="../index.html" style="text-decoration: none; color: inherit;">مؤسسة إعلانات العرب</a></h1>
-                    <span class="domain">arabsad.com</span>
+                    <img src="../assets/images/logo-arabsad.png" alt="لوجو مؤسسة إعلانات العرب" style="height:35px;margin-left:10px;">
+                    <div>
+                        <h1><a href="../index.html" style="text-decoration:none;color:inherit">مؤسسة إعلانات العرب</a></h1>
+                        <span class="domain">arabsad.com</span>
+                    </div>
                 </div>
-                <ul class="nav-menu">
-                    <li><a href="../index.html">الرئيسية</a></li>
-                    <li><a href="../index.html#services">خدماتنا</a></li>
-                    <li><a href="../index.html#contact">اتصل بنا</a></li>
-                </ul>
             </div>
         </nav>
     </header>
@@ -35,154 +49,218 @@
         </a>
     </div>
 
-    <section class="service-hero">
+    <section class="live-demos">
         <div class="container">
-            <div class="service-hero-content">
-                <div class="service-icon-large">🛒</div>
-                <h1>تصميم المتاجر الإلكترونية الاحترافية</h1>
-                <p class="service-description">متاجر إلكترونية متكاملة مع أنظمة دفع وإدارة شاملة. شاهد مشاريعنا المكتملة والجاهزة للتشغيل.</p>
-                <div class="service-cta">
-                    <a href="https://wa.me/201110760081?text=أريد متجر إلكتروني مثل المشاريع المعروضة" class="btn btn-primary" target="_blank">احصل على متجرك الآن</a>
-                    <a href="#live-demos" class="btn btn-secondary">شاهد المشاريع الجاهزة</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Live Demos as Product Cards -->
-    <section id="live-demos" class="live-demos">
-        <div class="container">
-            <h2>🎯 مشاريع متاجر جاهزة - بطاقات منتج</h2>
-            <p class="section-desc">بطاقات احترافية لكل متجر مع سعر بالريال السعودي وعرض مباشر</p>
-
+            <h2>🛒 متاجرنا الجاهزة - عروض مباشرة</h2>
+            <p class="section-desc">شاهد متاجر إلكترونية حقيقية نعمل عليها ضمن منصات مختلفة</p>
+            
             <div class="demos-grid">
-                <!-- Saudi Store Card -->
-                <article class="demo-card product-card" itemscope itemtype="https://schema.org/Product">
-                    <div class="demo-image product-image">
-                        <div class="demo-preview">🇸🇦</div>
+                <!-- Saudi Arabia - GitHub -->
+                <div class="demo-card">
+                    <div class="demo-image">
+                        <div class="flag-wave">
+                            <img src="https://flagcdn.com/w80/sa.png" alt="علم السعودية" width="80" height="60" loading="lazy">
+                        </div>
                     </div>
                     <div class="demo-content">
-                        <h3 class="product-title" itemprop="name">متجر السعودية - Saudi Store</h3>
-                        <p class="product-desc" itemprop="description">متجر سعودي متكامل مع مدفوعات محلية (مدى) وربط شركات الشحن.</p>
-                        <ul class="product-specs">
-                            <li>قالب احترافي متعدد الأقسام</li>
-                            <li>RTL عربي كامل + لوحة تحكم</li>
-                            <li>سلة، خصومات، تقارير، سيو للمنتجات</li>
-                        </ul>
-                        <div class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                            <meta itemprop="priceCurrency" content="SAR" />
-                            <span class="currency">ريال سعودي</span>
-                            <span class="amount" itemprop="price">5,900</span>
-                            <link itemprop="availability" href="https://schema.org/InStock" />
-                        </div>
+                        <h3>متجر السعودية - GitHub</h3>
+                        <p>متجر سعودي متكامل على منصة GitHub Pages</p>
+                        <div class="price-ask">اطلب السعر</div>
                         <div class="demo-buttons">
                             <a href="https://sherow1982.github.io/saudi-matjar.arabsad.com/" class="btn btn-primary" target="_blank">🔴 عرض مباشر</a>
-                            <a href="https://wa.me/201110760081?text=أريد متجر مثل (متجر السعودية) بسعر 5900 ريال" class="btn btn-outline" target="_blank">💬 اطلب مثله</a>
+                            <a href="https://wa.me/201110760081?text=أريد متجر مثل متجر السعودية GitHub" class="btn btn-outline" target="_blank">💬 اطلب السعر</a>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <!-- Kuwait Store Card -->
-                <article class="demo-card product-card" itemscope itemtype="https://schema.org/Product">
-                    <div class="demo-image product-image"><div class="demo-preview">🇰🇼</div></div>
-                    <div class="demo-content">
-                        <h3 class="product-title" itemprop="name">متجر الكويت - Kuwait Store</h3>
-                        <p class="product-desc" itemprop="description">متجر كويتي بعناصر تصميم حديثة ودعم K-NET.</p>
-                        <ul class="product-specs">
-                            <li>فئات ومنتجات غير محدودة</li>
-                            <li>خصومات وكوبونات</li>
-                            <li>تحليلات وتقارير مبيعات</li>
-                        </ul>
-                        <div class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                            <meta itemprop="priceCurrency" content="SAR" />
-                            <span class="currency">ريال سعودي</span>
-                            <span class="amount" itemprop="price">6,900</span>
-                            <link itemprop="availability" href="https://schema.org/InStock" />
+                <!-- Saudi Arabia - MyEasyOrders -->
+                <div class="demo-card">
+                    <div class="demo-image">
+                        <div class="flag-wave">
+                            <img src="https://flagcdn.com/w80/sa.png" alt="علم السعودية" width="80" height="60" loading="lazy">
                         </div>
+                    </div>
+                    <div class="demo-content">
+                        <h3>تاجر السعودية - MyEasyOrders</h3>
+                        <p>متجر سعودي على منصة MyEasyOrders</p>
+                        <div class="price-ask">اطلب السعر</div>
+                        <div class="demo-buttons">
+                            <a href="https://tagerksa.myeasyorders.com/" class="btn btn-primary" target="_blank">🔴 عرض مباشر</a>
+                            <a href="https://wa.me/201110760081?text=أريد متجر مثل تاجر السعودية MyEasyOrders" class="btn btn-outline" target="_blank">💬 اطلب السعر</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UAE - MyEasyOrders -->
+                <div class="demo-card">
+                    <div class="demo-image">
+                        <div class="flag-wave">
+                            <img src="https://flagcdn.com/w80/ae.png" alt="علم الإمارات" width="80" height="60" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="demo-content">
+                        <h3>تاجر الإمارات - MyEasyOrders</h3>
+                        <p>متجر إماراتي على منصة MyEasyOrders</p>
+                        <div class="price-ask">اطلب السعر</div>
+                        <div class="demo-buttons">
+                            <a href="https://tageruae.myeasyorders.com/" class="btn btn-primary" target="_blank">🔴 عرض مباشر</a>
+                            <a href="https://wa.me/201110760081?text=أريد متجر مثل تاجر الإمارات MyEasyOrders" class="btn btn-outline" target="_blank">💬 اطلب السعر</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UAE - SellSite Noskha -->
+                <div class="demo-card">
+                    <div class="demo-image">
+                        <div class="flag-wave">
+                            <img src="https://flagcdn.com/w80/ae.png" alt="علم الإمارات" width="80" height="60" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="demo-content">
+                        <h3>نسخة إماراتية - SellSite</h3>
+                        <p>متجر إماراتي على منصة SellSite</p>
+                        <div class="price-ask">اطلب السعر</div>
+                        <div class="demo-buttons">
+                            <a href="https://noskha-emeratis.sellsite.net/" class="btn btn-primary" target="_blank">🔴 عرض مباشر</a>
+                            <a href="https://wa.me/201110760081?text=أريد متجر مثل نسخة إماراتية SellSite" class="btn btn-outline" target="_blank">💬 اطلب السعر</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UAE Shopping - SellSite -->
+                <div class="demo-card">
+                    <div class="demo-image">
+                        <div class="flag-wave">
+                            <img src="https://flagcdn.com/w80/ae.png" alt="علم الإمارات" width="80" height="60" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="demo-content">
+                        <h3>Emirates Shopping - SellSite</h3>
+                        <p>متجر تسوق إماراتي شامل</p>
+                        <div class="price-ask">اطلب السعر</div>
+                        <div class="demo-buttons">
+                            <a href="https://emirates-shopping.sellsite.net/" class="btn btn-primary" target="_blank">🔴 عرض مباشر</a>
+                            <a href="https://wa.me/201110760081?text=أريد متجر مثل Emirates Shopping SellSite" class="btn btn-outline" target="_blank">💬 اطلب السعر</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kuwait - GitHub -->
+                <div class="demo-card">
+                    <div class="demo-image">
+                        <div class="flag-wave">
+                            <img src="https://flagcdn.com/w80/kw.png" alt="علم الكويت" width="80" height="60" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="demo-content">
+                        <h3>متجر الكويت - GitHub</h3>
+                        <p>متجر كويتي على منصة GitHub Pages</p>
+                        <div class="price-ask">اطلب السعر</div>
                         <div class="demo-buttons">
                             <a href="https://sherow1982.github.io/matjar-Kuwait/" class="btn btn-primary" target="_blank">🔴 عرض مباشر</a>
-                            <a href="https://wa.me/201110760081?text=أريد متجر مثل (متجر الكويت) بسعر 6900 ريال" class="btn btn-outline" target="_blank">💬 اطلب مثله</a>
+                            <a href="https://wa.me/201110760081?text=أريد متجر مثل متجر الكويت GitHub" class="btn btn-outline" target="_blank">💬 اطلب السعر</a>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <!-- Oman Store Card -->
-                <article class="demo-card product-card" itemscope itemtype="https://schema.org/Product">
-                    <div class="demo-image product-image"><div class="demo-preview">🇴🇲</div></div>
-                    <div class="demo-content">
-                        <h3 class="product-title" itemprop="name">متجر عمان - Oman Store</h3>
-                        <p class="product-desc" itemprop="description">متجر متطور بخيارات شحن محلي وواجهة متعددة اللغات.</p>
-                        <ul class="product-specs">
-                            <li>إدارة مستودع وموردين</li>
-                            <li>قنوات دفع متعددة</li>
-                            <li>SEO متقدم للمتجر</li>
-                        </ul>
-                        <div class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                            <meta itemprop="priceCurrency" content="SAR" />
-                            <span class="currency">ريال سعودي</span>
-                            <span class="amount" itemprop="price">7,900</span>
-                            <link itemprop="availability" href="https://schema.org/InStock" />
+                <!-- Kuwait - SellSite -->
+                <div class="demo-card">
+                    <div class="demo-image">
+                        <div class="flag-wave">
+                            <img src="https://flagcdn.com/w80/kw.png" alt="علم الكويت" width="80" height="60" loading="lazy">
                         </div>
+                    </div>
+                    <div class="demo-content">
+                        <h3>تاجر الكويت - SellSite</h3>
+                        <p>متجر كويتي شامل على منصة SellSite</p>
+                        <div class="price-ask">اطلب السعر</div>
+                        <div class="demo-buttons">
+                            <a href="https://tagerkwait.sellsite.net/" class="btn btn-primary" target="_blank">🔴 عرض مباشر</a>
+                            <a href="https://wa.me/201110760081?text=أريد متجر مثل تاجر الكويت SellSite" class="btn btn-outline" target="_blank">💬 اطلب السعر</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oman - GitHub -->
+                <div class="demo-card">
+                    <div class="demo-image">
+                        <div class="flag-wave">
+                            <img src="https://flagcdn.com/w80/om.png" alt="علم عمان" width="80" height="60" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="demo-content">
+                        <h3>متجر عمان - GitHub</h3>
+                        <p>متجر عماني على منصة GitHub Pages</p>
+                        <div class="price-ask">اطلب السعر</div>
                         <div class="demo-buttons">
                             <a href="https://sherow1982.github.io/matjar-oman/" class="btn btn-primary" target="_blank">🔴 عرض مباشر</a>
-                            <a href="https://wa.me/201110760081?text=أريد متجر مثل (متجر عمان) بسعر 7900 ريال" class="btn btn-outline" target="_blank">💬 اطلب مثله</a>
+                            <a href="https://wa.me/201110760081?text=أريد متجر مثل متجر عمان GitHub" class="btn btn-outline" target="_blank">💬 اطلب السعر</a>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <!-- UAE Gifts Store Card -->
-                <article class="demo-card product-card" itemscope itemtype="https://schema.org/Product">
-                    <div class="demo-image product-image"><div class="demo-preview">🇦🇪</div></div>
-                    <div class="demo-content">
-                        <h3 class="product-title" itemprop="name">هدايا الإمارات - UAE Gifts</h3>
-                        <p class="product-desc" itemprop="description">متجر هدايا بتجربة تسوق أنيقة وسريعة.</p>
-                        <ul class="product-specs">
-                            <li>تصميم أنيق مخصص للهدايا</li>
-                            <li>تقييمات ومنتجات مميزة</li>
-                            <li>سلة وخطوات دفع بسيطة</li>
-                        </ul>
-                        <div class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                            <meta itemprop="priceCurrency" content="SAR" />
-                            <span class="currency">ريال سعودي</span>
-                            <span class="amount" itemprop="price">6,400</span>
-                            <link itemprop="availability" href="https://schema.org/InStock" />
+                <!-- UAE Gifts - GitHub -->
+                <div class="demo-card">
+                    <div class="demo-image">
+                        <div class="flag-wave">
+                            <img src="https://flagcdn.com/w80/ae.png" alt="علم الإمارات" width="80" height="60" loading="lazy">
                         </div>
+                    </div>
+                    <div class="demo-content">
+                        <h3>هدايا الإمارات - GitHub</h3>
+                        <p>متجر هدايا إماراتي على منصة GitHub</p>
+                        <div class="price-ask">اطلب السعر</div>
                         <div class="demo-buttons">
                             <a href="https://sherow1982.github.io/hadaya-emirates.arabsad.com/" class="btn btn-primary" target="_blank">🔴 عرض مباشر</a>
-                            <a href="https://wa.me/201110760081?text=أريد متجر مثل (هدايا الإمارات) بسعر 6400 ريال" class="btn btn-outline" target="_blank">💬 اطلب مثله</a>
+                            <a href="https://wa.me/201110760081?text=أريد متجر مثل هدايا الإمارات GitHub" class="btn btn-outline" target="_blank">💬 اطلب السعر</a>
                         </div>
                     </div>
-                </article>
-            </div>
+                </div>
 
-            <div class="live-demo-cta">
-                <h3>🚀 جاهز لمتجر مثل هذه المشاريع؟</h3>
-                <p>كل المتاجر المعروضة حقيقية وتعمل فعلياً. يمكنك الحصول على متجر مماثل خلال 7-14 يوم</p>
-                <a href="https://wa.me/201110760081?text=شاهدت بطاقات المتاجر الجاهزة وأريد متجر مثلها" class="btn btn-primary btn-large" target="_blank">🛒 اطلب متجرك الآن</a>
+                <!-- Jordan - SellSite -->
+                <div class="demo-card">
+                    <div class="demo-image">
+                        <div class="flag-wave">
+                            <img src="https://flagcdn.com/w80/jo.png" alt="علم الأردن" width="80" height="60" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="demo-content">
+                        <h3>متجر الأردن - SellSite</h3>
+                        <p>متجر أردني شامل على منصة SellSite</p>
+                        <div class="price-ask">اطلب السعر</div>
+                        <div class="demo-buttons">
+                            <a href="https://jordan-shopping.sellsite.net/" class="btn btn-primary" target="_blank">🔴 عرض مباشر</a>
+                            <a href="https://wa.me/201110760081?text=أريد متجر مثل متجر الأردن SellSite" class="btn btn-outline" target="_blank">💬 اطلب السعر</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ArabsAD - MyEasyOrders -->
+                <div class="demo-card">
+                    <div class="demo-image">
+                        <div class="flag-wave">
+                            <img src="https://flagcdn.com/w80/eg.png" alt="علم مصر" width="80" height="60" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="demo-content">
+                        <h3>متجر عربساد - MyEasyOrders</h3>
+                        <p>متجرنا الرئيسي على منصة MyEasyOrders</p>
+                        <div class="price-ask">اطلب السعر</div>
+                        <div class="demo-buttons">
+                            <a href="https://arabsad.myeasyorders.com/" class="btn btn-primary" target="_blank">🔴 عرض مباشر</a>
+                            <a href="https://wa.me/201110760081?text=أريد متجر مثل متجر عربساد MyEasyOrders" class="btn btn-outline" target="_blank">💬 اطلب السعر</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="live-demo-cta" style="text-align:center;margin-top:50px;padding:40px;background:linear-gradient(135deg,#1e40af,#3b82f6);color:#fff;border-radius:16px">
+                <h3 style="color:#fff;margin-bottom:16px">🚀 جاهز لمتجر مثل هذه المشاريع؟</h3>
+                <p style="color:rgba(255,255,255,0.9);margin-bottom:24px">كل المتاجر المعروضة حقيقية وتعمل على منصات مختلفة</p>
+                <a href="https://wa.me/201110760081?text=شاهدت المتاجر الجاهزة وأريد متجر مماثل" class="btn btn-primary btn-large" target="_blank" style="background:#fff;color:#1e40af">🛒 اطلب متجرك الآن</a>
             </div>
         </div>
     </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>مؤسسة إعلانات العرب</h3>
-                    <p>للتسويق الإلكتروني والإعلانات الممولة</p>
-                </div>
-                <div class="footer-contact">
-                    <h4>تواصل معنا</h4>
-                    <p>📞 00201110760081</p>
-                    <p>📞 00201093304677</p>
-                    <p>✉️ sherow1982@gmail.com</p>
-                    <p>🌐 arabsad.com</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 مؤسسة إعلانات العرب - جميع الحقوق محفوظة</p>
-            </div>
-        </div>
-    </footer>
 
     <script src="../script.js"></script>
 </body>
