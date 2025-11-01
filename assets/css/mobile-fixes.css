@@ -1,0 +1,36 @@
+@media (max-width: 480px){
+  /* Reduce header footprint */
+  .nav{padding:.5rem 0}
+  .nav-brand h1{font-size:1rem}
+  .nav-brand img{width:36px;height:36px}
+
+  /* Breadcrumb tuning and optional hide */
+  .breadcrumb{font-size:.8rem;padding:.5rem 0}
+  .breadcrumb ol{flex-wrap:nowrap;overflow:auto}
+  .breadcrumb a{white-space:nowrap}
+}
+
+@media (max-width: 400px){
+  /* Hide breadcrumb to avoid overlap on very narrow screens */
+  .breadcrumb{display:none}
+}
+
+/* Hero text wrapping and spacing */
+.hero .rev-title, .hero-service h1{word-break:break-word;overflow-wrap:anywhere}
+.hero .rev-sub, .hero-service .hero-subtitle{word-break:break-word;overflow-wrap:anywhere}
+
+@media (max-width: 480px){
+  .hero, .hero-service{padding:1.25rem 0}
+  .hero .rev-title{font-size:1.45rem!important}
+  .hero .rev-sub{font-size:.95rem!important}
+}
+
+/* Mobile menu not covering content after close */
+.nav-menu{z-index:1000}
+.header{z-index:1001}
+
+/* Shift floating buttons away from CTAs on small screens */
+@media (max-width: 480px){
+  .whatsapp-float{right:.75rem;bottom:4.25rem}
+  .back-to-top{left:.5rem;bottom:4.25rem}
+}
