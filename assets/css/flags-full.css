@@ -1,0 +1,15 @@
+/* Full-flag demo card visuals */
+.demos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:24px;margin:40px 0}
+.demo-card{background:#fff;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,0.08);overflow:hidden;border:1px solid #eef2f7;transition:transform .3s ease,box-shadow .3s ease}
+.demo-card:hover{transform:translateY(-10px);box-shadow:0 18px 48px rgba(0,0,0,0.14)}
+.demo-image{height:200px;position:relative;overflow:hidden}
+.flag-cover{position:absolute;inset:0;background-size:cover;background-position:center;filter:saturate(1.05) contrast(1.05)}
+.flag-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.25));pointer-events:none}
+.flag-wave-layer{position:absolute;inset:-10%;background-repeat:repeat-x;mix-blend-mode:soft-light;opacity:.35;animation:waveMove 6s ease-in-out infinite}
+@keyframes waveMove{0%{transform:translateX(0)}50%{transform:translateX(-5%)}100%{transform:translateX(0)}}
+.flag-shadow{position:absolute;bottom:-10px;left:0;right:0;height:40px;background:radial-gradient(closest-side,rgba(0,0,0,.22),transparent 70%);filter:blur(8px)}
+.demo-content{padding:18px}
+.demo-content h3{margin:0 0 6px;color:#0b1020;font-weight:700}
+.price-ask{background:#fef3c7;color:#7c2d12;padding:6px 12px;border-radius:999px;display:inline-block;margin:10px 0;font-weight:700}
+.demo-buttons{display:flex;gap:10px}
+.demo-buttons .btn{flex:1;padding:12px 14px;border-radius:10px;font-weight:700}
