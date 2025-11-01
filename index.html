@@ -18,39 +18,37 @@
   <meta property="og:description" content="خدمات تسويق رقمي احترافية: Google Ads، Social Media، SEO، وتصميم مواقع. نتائج موثوقة في دول الخليج.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://arabsad.com/">
-  <meta property="og:image" content="https://arabsad.com/assets/images/logo-hero.jpg">
+  <meta property="og:image" content="https://arabsad.com/assets/images/services-overview.png">
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json">
 
   <link rel="stylesheet" href="assets/css/main.css">
-  
   <style>
-    .hero-brand{display:flex;flex-direction:column;align-items:center;gap:12px}
-    .hero-logo{width:min(260px,60vw);height:auto}
-    .hero{padding:4.5rem 0;background:radial-gradient(1200px 400px at 50% -20%,rgba(22,163,74,.15),transparent 60%),linear-gradient(135deg,#0a2540 0%,#1e40af 55%,#0a2540 100%);color:#fff}
-    .hero h1,.hero h2,.hero p{color:#fff}
-    .service-card h3{display:flex;align-items:center;gap:8px}
+    /* Slider styles */
+    .hero{padding:0;background:#0a2540;color:#fff}
+    .rev-slider{position:relative;overflow:hidden}
+    .rev-slide{display:grid;place-items:center;min-height:58vh;background:linear-gradient(135deg,#0a2540,#1e40af)}
+    .rev-inner{max-width:1000px;margin:auto;text-align:center;padding:3rem 1rem;color:#fff}
+    .rev-kicker{font-weight:700;letter-spacing:.04em;color:#f59e0b;margin-bottom:.5rem}
+    .rev-title{font-size:clamp(1.6rem,4.8vw,3rem);font-weight:800;margin:0 0 .5rem}
+    .rev-sub{font-size:clamp(1rem,2.6vw,1.25rem);opacity:.9;margin:0 auto 1.25rem;max-width:720px}
+    .rev-cta{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap}
+    .slide-dots{position:absolute;inset:auto 0 10px 0;display:flex;gap:6px;justify-content:center}
+    .slide-dots button{width:10px;height:10px;border-radius:50%;border:0;background:#94a3b8;opacity:.6;cursor:pointer}
+    .slide-dots button.active{background:#f59e0b;opacity:1}
   </style>
 </head>
 <body>
   <a href="#main-content" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
-
-  <div class="banner-top">
-    <div class="container">
-      <div class="hero-brand">
-        <img src="assets/images/logo-hero.jpg" alt="شعار مؤسسة إعلانات العرب" width="400" height="400" class="hero-logo img-contain" loading="eager">
-      </div>
-    </div>
-  </div>
 
   <header class="header" role="banner">
     <nav class="nav" role="navigation" aria-label="التنقل الرئيسي">
       <div class="container">
         <div class="nav-brand">
           <a href="index.html">
-            <img src="assets/images/logo-hero.jpg" alt="شعار مؤسسة إعلانات العرب" width="40" height="40" loading="eager">
+            <img src="assets/images/logo.svg" alt="شعار مؤسسة إعلانات العرب" width="40" height="40" loading="eager">
             <div>
               <h1>مؤسسة إعلانات العرب</h1>
               <span class="domain">arabsad.com</span>
@@ -81,20 +79,66 @@
   <button id="backToTop" class="back-to-top" aria-label="الرجوع للأعلى" title="الرجوع للأعلى">↑</button>
 
   <main id="main-content" role="main">
+    <!-- Revolution-like Slider (Vanilla, خفيف وسريع) -->
     <section id="home" class="hero" aria-labelledby="hero-title">
-      <div class="container">
-        <div class="hero-content animate-fade-in" style="text-align:center">
-          <h1 id="hero-title">مؤسسة إعلانات العرب</h1>
-          <h2>للتسويق الإلكتروني والإعلانات الممولة</h2>
-          <p>نقدم حلولاً شاملة للتسويق الرقمي والإعلانات الممولة في دول الخليج العربي مع خبرة تزيد عن 10 سنوات. فريقنا يضمن أفضل النتائج وأعلى معدلات التحويل لنشاطك التجاري.</p>
-          <div class="hero-cta">
-            <a href="https://wa.me/201110760081?text=أريد بدء مشروع تسويقي احترافي" class="btn btn-primary" target="_blank" rel="nofollow noopener">📞 تواصل واتساب</a>
-            <a href="services-page.html" class="btn btn-secondary" target="_blank">🔍 تصفح الخدمات</a>
+      <div class="rev-slider" id="revSlider" aria-roledescription="carousel" aria-label="عروض خدمات مؤسسة إعلانات العرب" tabindex="0">
+        <!-- Slide 1: Google Ads -->
+        <div class="rev-slide" data-interval="5500">
+          <div class="rev-inner">
+            <div class="rev-kicker">Google Ads</div>
+            <h2 class="rev-title">إعلانات جوجل عالية الأداء لرفع ROAS وخفض CPA</h2>
+            <p class="rev-sub">Search، Display، YouTube، Shopping، Performance Max بإعداد احترافي وتتبع محسن.</p>
+            <div class="rev-cta">
+              <a href="google-ads-service.html" class="btn btn-secondary" target="_blank">تفاصيل الخدمة</a>
+              <a href="https://wa.me/201110760081?text=أريد بدء Google Ads" class="btn btn-primary" target="_blank" rel="nofollow noopener">🚀 ابدأ الآن</a>
+            </div>
           </div>
         </div>
+        
+        <!-- Slide 2: Social Ads -->
+        <div class="rev-slide" data-interval="5500">
+          <div class="rev-inner">
+            <div class="rev-kicker">Social Ads</div>
+            <h2 class="rev-title">سوشيال ميديا مؤثرة على Facebook وInstagram وTikTok وSnapchat</h2>
+            <p class="rev-sub">استهداف دقيق + محتوى بصري قوي + اختبارات A/B + تتبع server-side.</p>
+            <div class="rev-cta">
+              <a href="social-media-service.html" class="btn btn-secondary" target="_blank">تفاصيل الخدمة</a>
+              <a href="https://wa.me/201110760081?text=أريد حملة سوشيال" class="btn btn-primary" target="_blank" rel="nofollow noopener">📞 استشارة مجانية</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 3: SEO -->
+        <div class="rev-slide" data-interval="5500">
+          <div class="rev-inner">
+            <div class="rev-kicker">SEO 2025</div>
+            <h2 class="rev-title">سيو تقني ومحتوى ومحلي متوافق مع Core Web Vitals</h2>
+            <p class="rev-sub">تحسين ترتيبك، زيادة الزيارات العضوية، وبناء سلطة موقع مستدامة.</p>
+            <div class="rev-cta">
+              <a href="seo-service.html" class="btn btn-secondary" target="_blank">تفاصيل الخدمة</a>
+              <a href="https://wa.me/201110760081?text=أريد خطة SEO" class="btn btn-primary" target="_blank" rel="nofollow noopener">📈 اطلب خطة</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 4: E‑commerce -->
+        <div class="rev-slide" data-interval="5500">
+          <div class="rev-inner">
+            <div class="rev-kicker">E‑commerce</div>
+            <h2 class="rev-title">متاجر إلكترونية سريعة ومحسنة للتحويل</h2>
+            <p class="rev-sub">تصميم متجاوب، وسائل دفع محلية، وتجربة تسوق ممتازة.</p>
+            <div class="rev-cta">
+              <a href="ecommerce-service.html" class="btn btn-secondary" target="_blank">تفاصيل الخدمة</a>
+              <a href="https://wa.me/201110760081?text=أريد متجر إلكتروني" class="btn btn-primary" target="_blank" rel="nofollow noopener">🛒 اطلب عرض سعر</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-dots" role="tablist" aria-label="مؤشرات الشرائح"></div>
       </div>
     </section>
 
+    <!-- بقية الصفحة كما هي (الخدمات، لماذا نحن، التواصل) -->
     <section class="section" aria-labelledby="services-title">
       <div class="container">
         <h2 id="services-title" class="section-title">خدماتنا المتخصصة</h2>
@@ -126,7 +170,7 @@
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-content">
-        <div class="footer-brand"><a href="index.html"><img src="assets/images/logo-hero.jpg" alt="شعار مؤسسة إعلانات العرب" width="40" height="40" loading="lazy"></a><div><h3>مؤسسة إعلانات العرب</h3><p>للتسويق الإلكتروني والإعلانات الممولة في الخليج العربي</p></div></div>
+        <div class="footer-brand"><a href="index.html"><img src="assets/images/logo.svg" alt="شعار مؤسسة إعلانات العرب" width="40" height="40" loading="lazy"></a><div><h3>مؤسسة إعلانات العرب</h3><p>للتسويق الإلكتروني والإعلانات الممولة في الخليج العربي</p></div></div>
         <div class="footer-services"><h4>الخدمات</h4><ul><li><a href="google-ads-service.html" target="_blank">🎯 إعلانات جوجل</a></li><li><a href="social-media-service.html" target="_blank">📱 إعلانات السوشيال</a></li><li><a href="seo-service.html" target="_blank">🔍 تحسين محركات البحث</a></li><li><a href="ecommerce-service.html" target="_blank">🛒 المتاجر الإلكترونية</a></li></ul></div>
         <div class="footer-countries"><h4>دول الخليج</h4><ul><li><a href="sa.html" target="_blank">🇸🇦 السعودية</a></li><li><a href="ae.html" target="_blank">🇦🇪 الإمارات</a></li><li><a href="kw.html" target="_blank">🇰🇼 الكويت</a></li><li><a href="qa.html" target="_blank">🇶🇦 قطر</a></li><li><a href="bh.html" target="_blank">🇧🇭 البحرين</a></li><li><a href="om.html" target="_blank">🇴🇲 عُمان</a></li></ul></div>
         <div class="footer-contact"><h4>تواصل معنا</h4><p>📞 <a href="https://wa.me/201110760081" target="_blank" rel="nofollow noopener">+20 111 076 0081</a></p><p>📞 <a href="https://wa.me/201093304677" target="_blank" rel="nofollow noopener">+20 109 330 4677</a></p><p>✉️ <a href="mailto:sherow1982@gmail.com" target="_blank">sherow1982@gmail.com</a></p><p>🌐 <a href="https://arabsad.com" target="_blank">arabsad.com</a></p></div>
@@ -136,5 +180,38 @@
   </footer>
 
   <script src="script.js" defer></script>
+  <script>
+    // Minimal vanilla "revolution" slider
+    (function(){
+      const root = document.getElementById('revSlider');
+      if(!root) return;
+      const slides = Array.from(root.querySelectorAll('.rev-slide'));
+      const dotsWrap = root.querySelector('.slide-dots');
+      let i=0, timer;
+      function go(n){
+        i = (n+slides.length)%slides.length;
+        slides.forEach((s,idx)=>{ s.style.transform = `translateX(${(idx-i)*100}%)`; s.style.transition='transform .6s ease'; });
+        if (dotsWrap){ dotsWrap.querySelectorAll('button').forEach((b,bi)=>b.classList.toggle('active',bi===i)); }
+        reset();
+      }
+      function reset(){
+        clearTimeout(timer);
+        const intv = Number(slides[i].dataset.interval||5500);
+        timer = setTimeout(()=>go(i+1), intv);
+      }
+      // init positions
+      slides.forEach((s,idx)=>{ s.style.transform=`translateX(${idx*100}%)`; });
+      // dots
+      if (dotsWrap){
+        dotsWrap.innerHTML = slides.map((_,di)=>`<button aria-label="إظهار الشريحة ${di+1}"></button>`).join('');
+        dotsWrap.querySelectorAll('button').forEach((b,bi)=> b.addEventListener('click',()=>go(bi)));
+      }
+      go(0);
+      // keyboard support
+      root.addEventListener('keydown', (e)=>{
+        if(e.key==='ArrowLeft') go(i-1); else if(e.key==='ArrowRight') go(i+1);
+      });
+    })();
+  </script>
 </body>
 </html>
