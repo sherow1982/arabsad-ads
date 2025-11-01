@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- الصفحة الرئيسية -->
+    <url>
+        <loc>https://arabsad.com/</loc>
+        <lastmod>2025-11-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- صفحة الخدمات -->
+    <url>
+        <loc>https://arabsad.com/#services</loc>
+        <lastmod>2025-11-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- صفحة من نحن -->
+    <url>
+        <loc>https://arabsad.com/#about</loc>
+        <lastmod>2025-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- صفحة الأسعار -->
+    <url>
+        <loc>https://arabsad.com/#pricing</loc>
+        <lastmod>2025-11-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- صفحة المدونة -->
+    <url>
+        <loc>https://arabsad.com/#blog</loc>
+        <lastmod>2025-11-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- صفحة اتصل بنا -->
+    <url>
+        <loc>https://arabsad.com/#contact</loc>
+        <lastmod>2025-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- خدمات فردية -->
+    <url>
+        <loc>https://arabsad.com/services/google-ads</loc>
+        <lastmod>2025-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://arabsad.com/services/facebook-ads</loc>
+        <lastmod>2025-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://arabsad.com/services/snapchat-tiktok-ads</loc>
+        <lastmod>2025-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://arabsad.com/services/ecommerce-design</loc>
+        <lastmod>2025-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://arabsad.com/services/seo</loc>
+        <lastmod>2025-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://arabsad.com/services/social-media-management</loc>
+        <lastmod>2025-11-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+</urlset>
