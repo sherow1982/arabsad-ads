@@ -1,0 +1,38 @@
+User-agent: *
+Allow: /
+
+# ملفات Sitemap
+Sitemap: https://arabsad.com/sitemap.xml
+
+# منع الوصول للملفات الحساسة
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# السماح لمحركات البحث بالوصول للمحتوى المهم
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+
+# تحديد crawl-delay
+Crawl-delay: 1
+
+# ملفات خاصة بـ Google
+User-agent: Googlebot
+Allow: /
+
+# ملفات خاصة بـ Bing
+User-agent: Bingbot
+Allow: /
+
+# منع بعض البوتات غير المرغوب فيها
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
