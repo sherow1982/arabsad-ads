@@ -1,0 +1,50 @@
+/* UA/UAI/UX Light Elegant Style */
+:root{
+  --ua-bg:#ffffff;
+  --ua-surface:#f8fafc;
+  --ua-border:#e5e7eb;
+  --ua-muted:#6b7280;
+  --ua-text:#1f2937;
+  --ua-primary:#2563eb;
+  --ua-secondary:#8b5cf6;
+  --ua-radius:16px;
+  --ua-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+/* Global */
+body{ background:var(--ua-bg); color:var(--ua-text); }
+
+.section-header h2{ letter-spacing:-.02em; }
+.section-header p{ color:var(--ua-muted); }
+
+/* Surfaces */
+.ua-surface{ background:var(--ua-surface); border:1px solid var(--ua-border); border-radius:var(--ua-radius); box-shadow:var(--ua-shadow); }
+
+/* Inputs */
+input[type=email],input[type=text],textarea{ background:#fff; border:1.5px solid var(--ua-border); border-radius:14px; padding:.9rem 1rem; transition:border-color .2s ease, box-shadow .2s ease; }
+input:focus,textarea:focus{ border-color:var(--ua-primary); box-shadow:0 0 0 3px rgba(37,99,235,.12); outline:none; }
+
+/* Primary buttons */
+.btn,.contact-btn,.service-link{ border-radius:14px; font-weight:600; }
+.btn-primary,.btn-whatsapp{ background:linear-gradient(135deg,var(--ua-primary),var(--ua-secondary)); color:#fff; }
+.btn-primary:hover{ filter:brightness(1.05); }
+
+/* Cards */
+.service-card,.country-card,.feature{ background:#fff; border:1px solid var(--ua-border); border-radius:var(--ua-radius); box-shadow:var(--ua-shadow); }
+
+/* Nav */
+.main-nav{ background:rgba(255,255,255,.92); backdrop-filter:blur(10px); border-bottom:1px solid var(--ua-border); }
+.nav-link{ color:#374151; }
+.nav-link:hover,.nav-link.active{ color:var(--ua-primary); }
+
+/* Footer */
+.footer-modern{ background:#0f172a; }
+.footer-modern .footer-bottom{ border-top:1px solid rgba(255,255,255,.08); }
+
+/* Hero readability */
+.rev-title{ text-shadow:0 3px 12px rgba(0,0,0,.25); }
+.rev-subtitle{ opacity:.95; }
+
+/* Spacing system */
+section{ padding:64px 0; }
+@media (max-width:768px){ section{ padding:40px 0; } }
