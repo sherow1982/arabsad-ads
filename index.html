@@ -1,889 +1,152 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>🚀 مؤسسة إعلانات العرب - الوكالة الرقمية #1 في الخليج | ضمان النتائج أو استرداد المال</title>
-  <meta name="description" content="وكالة التسويق الرقمي الأقوى في الخليج 🏆 نضمن الصفحة الأولى في جوجل خلال 7 أيام أو نعيد المال كاملاً. خبراء Google Ads معتمدين + فريق السوشيال ميديا الحائز على جوائز دولية. اتصل الآن للحصول على استشارة مجانية!">
-  
-  <!-- Google Fonts - Optimized Loading -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- OpenGraph & Social -->
-  <meta property="og:title" content="مؤسسة إعلانات العرب - وكالة تسويق رقمي #1">
-  <meta property="og:description" content="نضمن الصفحة الأولى في جوجل خلال 7 أيام أو نعيد المال">
-  <meta property="og:image" content="https://arabsad.com/assets/images/og-arabsad.jpg">
-  <meta property="og:url" content="https://arabsad.com">
-  <meta name="twitter:card" content="summary_large_image">
-  
-  <!-- Critical CSS Inline -->
-  <style>
-    /* 🎯 Critical Performance CSS */
-    :root {
-      --primary: #3b82f6;
-      --success: #10b981;
-      --warning: #f59e0b;
-      --purple: #8b5cf6;
-      --red: #ef4444;
-      --text: #1e293b;
-      --text-light: #64748b;
-      --bg: #ffffff;
-      --bg-light: #f8fafc;
-      --shadow: 0 4px 20px rgba(0,0,0,0.08);
-      --shadow-lg: 0 20px 40px rgba(0,0,0,0.1);
-      --radius: 12px;
-      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      --font: 'Cairo', -apple-system, BlinkMacSystemFont, sans-serif;
-    }
-    
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: var(--font); line-height: 1.6; color: var(--text); background: var(--bg); overflow-x: hidden; }
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
-    
-    /* Header Critical */
-    .header { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.98); backdrop-filter: blur(20px); z-index: 1000; border-bottom: 1px solid rgba(59,130,246,0.1); }
-    .nav { padding: 1rem 0; }
-    .nav .container { display: flex; align-items: center; justify-content: space-between; }
-    .brand { font-size: 1.5rem; font-weight: 900; background: linear-gradient(135deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
-    .cta-header { background: linear-gradient(135deg, var(--success), #059669); color: white; padding: 0.75rem 1.5rem; border-radius: 25px; text-decoration: none; font-weight: 600; box-shadow: var(--shadow); transition: var(--transition); }
-    .cta-header:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(16,185,129,0.3); color: white; }
-    
-    /* Revolution Slider Critical */
-    .hero { margin-top: 80px; position: relative; overflow: hidden; background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
-    .slider-container { position: relative; width: 100%; height: 100vh; min-height: 700px; }
-    .slider-track { display: flex; width: 600%; height: 100%; transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); will-change: transform; }
-    .slide { width: calc(100% / 6); height: 100%; display: flex; align-items: center; justify-content: center; padding: 3rem 2rem; text-align: center; position: relative; }
-    .slide-content { max-width: 900px; z-index: 10; position: relative; }
-    .slide-title { font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 900; line-height: 1.1; margin-bottom: 1rem; background: linear-gradient(135deg, #1e293b, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .slide-subtitle { font-size: clamp(1.2rem, 3vw, 1.8rem); color: var(--text-light); margin-bottom: 1.5rem; font-weight: 600; }
-    
-    /* Navigation */
-    .nav-toggle { display: none; flex-direction: column; gap: 4px; background: none; border: none; cursor: pointer; padding: 8px; }
-    .nav-toggle span { width: 24px; height: 3px; background: var(--text); border-radius: 2px; transition: var(--transition); }
-    .nav-menu { display: flex; list-style: none; gap: 2rem; align-items: center; }
-    .nav-menu a { color: var(--text); text-decoration: none; padding: 0.5rem 1rem; border-radius: 8px; transition: var(--transition); font-weight: 600; }
-    .nav-menu a:hover { color: var(--primary); background: rgba(59,130,246,0.1); }
-    
-    @media (max-width: 768px) {
-      .nav-menu { display: none; position: fixed; top: 80px; left: 0; right: 0; background: white; flex-direction: column; padding: 2rem; box-shadow: var(--shadow-lg); gap: 1rem; }
-      .nav-menu.active { display: flex; }
-      .nav-toggle { display: flex; }
-      .hero { margin-top: 80px; }
-      .cta-header { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>🚀 مؤسسة إعلانات العرب - الوكالة الرقمية #1 في الخليج | ضمان النتائج أو استرداد المال</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<style>
+:root{--primary:#3b82f6;--success:#10b981;--warning:#f59e0b;--purple:#8b5cf6;--text:#1e293b;--text-light:#64748b;--bg:#fff;--bg-light:#f8fafc;--shadow:0 4px 20px rgba(0,0,0,.08);--radius:12px;--transition:all .3s cubic-bezier(.4,0,.2,1);--font:'Cairo',-apple-system,BlinkMacSystemFont,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--font);line-height:1.6;color:var(--text);background:var(--bg);overflow-x:hidden}
+.container{max-width:1200px;margin:0 auto;padding:0 1rem}
+.header{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,.98);backdrop-filter:blur(20px);z-index:1000;border-bottom:1px solid rgba(59,130,246,.1)}
+.nav{padding:1rem 0}.nav .container{display:flex;align-items:center;justify-content:space-between}
+.brand{font-size:1.5rem;font-weight:900;background:linear-gradient(135deg,#3b82f6,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
+.cta-header{background:linear-gradient(135deg,var(--success),#059669);color:#fff;padding:.75rem 1.5rem;border-radius:25px;text-decoration:none;font-weight:600;box-shadow:var(--shadow);transition:var(--transition)}
+.cta-header:hover{transform:translateY(-2px)}
+.hero{margin-top:80px;position:relative;overflow:hidden;background:linear-gradient(135deg,#f8fafc 0%,#e2e8f0 100%)}
+.slider-container{position:relative;width:100%;height:100vh;min-height:650px}
+.slider-track{display:flex;width:600%;height:100%;transition:transform .8s cubic-bezier(.25,.46,.45,.94)}
+.slide{width:calc(100%/6);height:100%;display:flex;align-items:center;justify-content:center;padding:3rem 1.25rem;text-align:center;position:relative}
+.slide-content{max-width:900px;margin:auto}
+.slide-title{font-size:clamp(2.2rem,6.5vw,4.3rem);font-weight:900;line-height:1.1;margin-bottom:1rem;background:linear-gradient(135deg,#1e293b,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.slide-subtitle{font-size:clamp(1.2rem,3.2vw,1.8rem);color:var(--text-light);margin-bottom:1.25rem;font-weight:700}
+.slide p.lead{font-size:clamp(1rem,2.6vw,1.25rem);color:var(--text);margin-bottom:2rem}
+.ctas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:1rem 2.25rem;border-radius:50px;text-decoration:none;font-weight:800;transition:var(--transition);box-shadow:0 8px 30px rgba(0,0,0,.12)}
+.btn-primary{background:linear-gradient(135deg,var(--primary),var(--purple));color:#fff}
+.btn-outline{background:#fff;color:var(--text);border:2px solid rgba(59,130,246,.2)}
+.btn:hover{transform:translateY(-3px) scale(1.03)}
+.nav-toggle{display:none}
+.nav-menu{display:flex;list-style:none;gap:2rem;align-items:center}
+.nav-menu a{color:var(--text);text-decoration:none;padding:.5rem 1rem;border-radius:8px;font-weight:600}
+@media(max-width:768px){.nav-menu{display:none;position:fixed;top:80px;left:0;right:0;background:#fff;flex-direction:column;padding:2rem;gap:1rem;box-shadow:var(--shadow)}.nav-menu.active{display:flex}.nav-toggle{display:flex;flex-direction:column;gap:4px;background:none;border:none;cursor:pointer;padding:8px}.nav-toggle span{width:24px;height:3px;background:var(--text);border-radius:2px}}
+/* dots & arrows */
+.ctrl{position:absolute;top:50%;transform:translateY(-50%);width:66px;height:66px;background:rgba(255,255,255,.95);border:none;border-radius:50%;font-size:1.8rem;color:var(--primary);cursor:pointer;box-shadow:var(--shadow);transition:var(--transition);z-index:20}
+.ctrl:hover{background:var(--primary);color:#fff;transform:translateY(-50%) scale(1.08)}
+#prevBtn{left:1.25rem}#nextBtn{right:1.25rem}
+.dots{position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);display:flex;gap:.75rem;background:rgba(255,255,255,.25);padding:.75rem 1.25rem;border-radius:40px;backdrop-filter:blur(12px)}
+.dots button{width:14px;height:14px;border-radius:50%;background:rgba(255,255,255,.7);border:2px solid rgba(255,255,255,.9);cursor:pointer;transition:var(--transition)}
+.dots button.active{background:#fff;transform:scale(1.3)}
+/* remove any background images explicitly */
+.slide{background:none !important}
+@media(max-width:768px){.slider-container{min-height:calc(100vh - 80px)}.slide{padding:2rem 1rem}.btn{width:100%;max-width:300px}}
+</style>
 </head>
 <body>
-  
-  <!-- 📊 Reading Progress -->
-  <div id="progress" style="position:fixed;top:0;left:0;width:0;height:3px;background:linear-gradient(90deg,#3b82f6,#8b5cf6);z-index:1001;transition:width 0.2s ease"></div>
-
-  <!-- 🏢 Header -->
-  <header class="header">
-    <nav class="nav">
-      <div class="container">
-        <a href="#" class="brand">🚀 إعلانات العرب</a>
-        
-        <ul class="nav-menu" id="navMenu">
-          <li><a href="#home">الرئيسية</a></li>
-          <li><a href="#services">خدماتنا</a></li>
-          <li><a href="#results">نتائجنا</a></li>
-          <li><a href="#countries">دول الخليج</a></li>
-        </ul>
-        
-        <a href="https://wa.me/201110760081?text=مرحباً! أريد زيادة مبيعاتي فوراً 🚀" target="_blank" class="cta-header" rel="noopener">
-          📞 استشارة فورية
-        </a>
-        
-        <button class="nav-toggle" id="navToggle" aria-label="القائمة">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </nav>
-  </header>
-
-  <!-- 🎬 Revolution Slider - 6 Slides Full Width -->
-  <section id="home" class="hero">
-    <div class="slider-container">
-      <div class="slider-track" id="sliderTrack">
-        
-        <!-- 🎯 Slide 1: Google Ads Domination -->
-        <div class="slide slide-1" style="background:linear-gradient(135deg,#dbeafe 0%,#bfdbfe 100%);background-image:url('https://user-gen-media-assets.s3.amazonaws.com/seedream_images/5c70c909-cf14-40c7-a711-405db27a953a.png');background-size:contain;background-position:left center;background-repeat:no-repeat;background-blend-mode:soft-light">
-          <div class="slide-content">
-            <h2 class="slide-title">🎯 هيمنة مطلقة على جوجل</h2>
-            <p class="slide-subtitle">الصفحة الأولى خلال 7 أيام مضمونة أو نعيد المال كاملاً</p>
-            <p style="font-size:clamp(1rem,2.5vw,1.2rem);margin-bottom:2rem;color:var(--text)">
-              <strong>نحن الوكالة العربية الوحيدة</strong> المعتمدة من Google مع ضمان 100%. 
-              عملاؤنا يحققون <strong>متوسط زيادة 347% في المبيعات</strong> خلال الشهر الأول.
-              ✅ ROI مضمون 8:1 ✅ دعم 24/7 ✅ تقارير يومية
-            </p>
-            <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap">
-              <a href="https://wa.me/201110760081?text=أريد الهيمنة على جوجل الآن! 🎯" target="_blank" 
-                 style="background:linear-gradient(135deg,var(--primary),#8b5cf6);color:white;padding:1rem 2.5rem;border-radius:50px;text-decoration:none;font-weight:700;box-shadow:0 8px 30px rgba(59,130,246,0.3);transition:var(--transition)" 
-                 onmouseover="this.style.transform='translateY(-3px) scale(1.05)'" 
-                 onmouseout="this.style.transform=''">
-                🚀 ابدأ الهيمنة الآن
-              </a>
-              <a href="https://wa.me/201110760081?text=تحليل Google Ads مجاني لموقعي" target="_blank" 
-                 style="background:white;color:var(--text);padding:1rem 2rem;border-radius:50px;text-decoration:none;font-weight:600;border:2px solid rgba(59,130,246,0.2);transition:var(--transition)"
-                 onmouseover="this.style.background='var(--primary)';this.style.color='white';this.style.transform='translateY(-3px)'" 
-                 onmouseout="this.style.background='white';this.style.color='var(--text)';this.style.transform=''">
-                📊 تحليل مجاني
-              </a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 📱 Slide 2: Social Media Empire -->
-        <div class="slide slide-2" style="background:linear-gradient(135deg,#dcfce7 0%,#bbf7d0 100%);background-image:url('https://user-gen-media-assets.s3.amazonaws.com/seedream_images/677b7c01-676d-4433-9c5f-fcb2babafc3a.png');background-size:contain;background-position:right center;background-repeat:no-repeat;background-blend-mode:soft-light">
-          <div class="slide-content">
-            <h2 class="slide-title">📱 مصنع الملايينية الرقمية</h2>
-            <p class="slide-subtitle">من 0 إلى مليون متابع في 90 يوماً - استراتيجية مثبتة</p>
-            <p style="font-size:clamp(1rem,2.5vw,1.2rem);margin-bottom:2rem;color:var(--text)">
-              صنعنا <strong>67 مليونير رقمي</strong> عبر فيسبوك وإنستجرام وتيك توك وسناب. 
-              فريق من <strong>المبدعين العالميين</strong> حقق +2.8 مليار مشاهدة سنوياً.
-              ✅ محتوى فايرال يومياً ✅ نمو مضمون ✅ ROI 12:1
-            </p>
-            <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap">
-              <a href="https://wa.me/201110760081?text=أريد بناء إمبراطوريتي الرقمية 👑" target="_blank" 
-                 style="background:linear-gradient(135deg,var(--success),#059669);color:white;padding:1rem 2.5rem;border-radius:50px;text-decoration:none;font-weight:700;box-shadow:0 8px 30px rgba(16,185,129,0.3);transition:var(--transition)" 
-                 onmouseover="this.style.transform='translateY(-3px) scale(1.05)'" 
-                 onmouseout="this.style.transform=''">
-                👑 ابنِ إمبراطوريتك
-              </a>
-              <a href="https://wa.me/201110760081?text=خطة المليون متابع المجانية" target="_blank" 
-                 style="background:white;color:var(--text);padding:1rem 2rem;border-radius:50px;text-decoration:none;font-weight:600;border:2px solid rgba(16,185,129,0.2);transition:var(--transition)"
-                 onmouseover="this.style.background='var(--success)';this.style.color='white';this.style.transform='translateY(-3px)'" 
-                 onmouseout="this.style.background='white';this.style.color='var(--text)';this.style.transform=''">
-                📈 خطة مجانية
-              </a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 🔍 Slide 3: SEO Mastery -->
-        <div class="slide slide-3" style="background:linear-gradient(135deg,#fef3c7 0%,#fde68a 100%);background-image:url('https://user-gen-media-assets.s3.amazonaws.com/seedream_images/6690446c-a3c3-4507-abf5-652794f44371.png');background-size:contain;background-position:left center;background-repeat:no-repeat;background-blend-mode:soft-light">
-          <div class="slide-content">
-            <h2 class="slide-title">🔍 ملك محركات البحث</h2>
-            <p class="slide-subtitle">المرتبة #1 في جوجل خلال 21 يوماً مضمونة أو الخدمة مجاناً</p>
-            <p style="font-size:clamp(1rem,2.5vw,1.2rem);margin-bottom:2rem;color:var(--text)">
-              <strong>أول وكالة عربية</strong> تحقق Page #1 خلال 21 يوماً مضمونة أو نعمل مجاناً! 
-              تقنياتنا المطورة مع <strong>AI-Powered SEO Tools</strong> حققت نجاحات مذهلة: <strong>متوسط +1,247% زيادة زيارات</strong> و<strong>ROI 15:1</strong>.
-              ✅ تنبؤ بالترندات ✅ قرارات مبنية على البيانات ✅ ROI 15:1
-            </p>
-            <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap">
-              <a href="https://wa.me/201110760081?text=أريد المرتبة الأولى مضمونة 21 يوم ⭐" target="_blank" 
-                 style="background:linear-gradient(135deg,var(--warning),#d97706);color:white;padding:1rem 2.5rem;border-radius:50px;text-decoration:none;font-weight:700;box-shadow:0 8px 30px rgba(245,158,11,0.3);transition:var(--transition)" 
-                 onmouseover="this.style.transform='translateY(-3px) scale(1.05)'" 
-                 onmouseout="this.style.transform=''">
-                ⭐ اضمن صدارتك
-              </a>
-              <a href="https://wa.me/201110760081?text=فحص SEO مجاني لموقعي" target="_blank" 
-                 style="background:white;color:var(--text);padding:1rem 2rem;border-radius:50px;text-decoration:none;font-weight:600;border:2px solid rgba(245,158,11,0.2);transition:var(--transition)"
-                 onmouseover="this.style.background='var(--warning)';this.style.color='white';this.style.transform='translateY(-3px)'" 
-                 onmouseout="this.style.background='white';this.style.color='var(--text)';this.style.transform=''">
-                🔍 فحص مجاني
-              </a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 🛒 Slide 4: E-commerce Empire -->
-        <div class="slide slide-4" style="background:linear-gradient(135deg,#f3e8ff 0%,#ddd6fe 100%);background-image:url('https://user-gen-media-assets.s3.amazonaws.com/seedream_images/f00970fb-d989-4b0c-826b-470652de1244.png');background-size:contain;background-position:right center;background-repeat:no-repeat;background-blend-mode:soft-light">
-          <div class="slide-content">
-            <h2 class="slide-title">🛒 متاجر تحقق 50 مليون ريال</h2>
-            <p class="slide-subtitle">من فكرة إلى إمبراطورية تجارية في 4 أشهر</p>
-            <p style="font-size:clamp(1rem,2.5vw,1.2rem);margin-bottom:2rem;color:var(--text)">
-              طورنا <strong>427 متجر إلكتروني</strong> حققوا مبيعات تجاوزت <strong>127 مليون ريال</strong>. 
-              <strong>نظام ذكي متكامل:</strong> تصميم + تسويق + دفع + شحن + خدمة عملاء.
-              ✅ تحويل 95% من الزوار ✅ دعم فني 24/7 ✅ ضمان الأرباح
-            </p>
-            <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap">
-              <a href="https://wa.me/201110760081?text=أريد متجر يحقق 50 مليون 💰" target="_blank" 
-                 style="background:linear-gradient(135deg,#8b5cf6,#6366f1);color:white;padding:1rem 2.5rem;border-radius:50px;text-decoration:none;font-weight:700;box-shadow:0 8px 30px rgba(139,92,246,0.3);transition:var(--transition)" 
-                 onmouseover="this.style.transform='translateY(-3px) scale(1.05)'" 
-                 onmouseout="this.style.transform=''">
-                💰 ابدأ متجرك
-              </a>
-              <a href="https://wa.me/201110760081?text=عرض المتاجر المباشر demo" target="_blank" 
-                 style="background:white;color:var(--text);padding:1rem 2rem;border-radius:50px;text-decoration:none;font-weight:600;border:2px solid rgba(139,92,246,0.2);transition:var(--transition)"
-                 onmouseover="this.style.background='#8b5cf6';this.style.color='white';this.style.transform='translateY(-3px)'" 
-                 onmouseout="this.style.background='white';this.style.color='var(--text)';this.style.transform=''">
-                🛒 عرض مباشر
-              </a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 🎨 Slide 5: Viral Content Factory -->
-        <div class="slide slide-5" style="background:linear-gradient(135deg,#fed7d7 0%,#fca5a5 100%);background-image:url('https://user-gen-media-assets.s3.amazonaws.com/seedream_images/677b7c01-676d-4433-9c5f-fcb2babafc3a.png');background-size:contain;background-position:left center;background-repeat:no-repeat;background-blend-mode:soft-light">
-          <div class="slide-content">
-            <h2 class="slide-title">🎨 مصنع المحتوى الفايرال</h2>
-            <p class="slide-subtitle">محتوى يحقق +2.7 مليار مشاهدة سنوياً - سيكولوجيا + إبداع + AI</p>
-            <p style="font-size:clamp(1rem,2.5vw,1.2rem);margin-bottom:2rem;color:var(--text)">
-              استوديو إبداعي متطور + فريق من <strong>23 مبدع عالمي</strong> صنع <strong>847 فيديو فايرال</strong> تجاوز 2.7 مليار مشاهدة. 
-              استراتيجيات <strong>Viral Psychology</strong> + الذكاء الاصطناعي + تحليل Trend Prediction تضمن محتوى ينتشر كالنار.
-              ✅ محتوى يومي احترافي ✅ فايرال مضمون ✅ نمو سريع
-            </p>
-            <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap">
-              <a href="https://wa.me/201110760081?text=أريد محتوى فايرال يحقق الملايين 🔥" target="_blank" 
-                 style="background:linear-gradient(135deg,#ef4444,#dc2626);color:white;padding:1rem 2.5rem;border-radius:50px;text-decoration:none;font-weight:700;box-shadow:0 8px 30px rgba(239,68,68,0.3);transition:var(--transition)" 
-                 onmouseover="this.style.transform='translateY(-3px) scale(1.05)'" 
-                 onmouseout="this.style.transform=''">
-                🔥 اشعل المحتوى
-              </a>
-              <a href="https://wa.me/201110760081?text=عرض أعمال المحتوى الإبداعي" target="_blank" 
-                 style="background:white;color:var(--text);padding:1rem 2rem;border-radius:50px;text-decoration:none;font-weight:600;border:2px solid rgba(239,68,68,0.2);transition:var(--transition)"
-                 onmouseover="this.style.background='#ef4444';this.style.color='white';this.style.transform='translateY(-3px)'" 
-                 onmouseout="this.style.background='white';this.style.color='var(--text)';this.style.transform=''">
-                🎬 شاهد إبداعاتنا
-              </a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 🧠 Slide 6: AI Analytics Intelligence -->
-        <div class="slide slide-6" style="background:linear-gradient(135deg,#e0e7ff 0%,#c7d2fe 100%);background-image:url('https://user-gen-media-assets.s3.amazonaws.com/seedream_images/fd5d6179-fe9a-4003-bc3f-3fe8404d0290.png');background-size:contain;background-position:right center;background-repeat:no-repeat;background-blend-mode:soft-light">
-          <div class="slide-content">
-            <h2 class="slide-title">🧠 ذكاء اصطناعي يقرأ المستقبل</h2>
-            <p class="slide-subtitle">نتنبأ بالترندات قبل 8 أشهر بدقة 94% - قرارات ذكية مربحة</p>
-            <p style="font-size:clamp(1rem,2.5vw,1.2rem);margin-bottom:2rem;color:var(--text)">
-              <strong>مركز البيانات الوحيد</strong> بالشرق الأوسط المدعوم بالذكاء الاصطناعي المتقدم. 
-              نحلل <strong>847 مليون نقطة بيانات</strong> ونضع استراتيجيات تضمن تفوقك على المنافسين بفارق شاسع.
-              ✅ تنبؤ بالترندات ✅ قرارات مبنية على البيانات ✅ ROI 15:1
-            </p>
-            <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap">
-              <a href="https://wa.me/201110760081?text=أريد استشارة AI ذكية فورية 🧠" target="_blank" 
-                 style="background:linear-gradient(135deg,#6366f1,#4f46e5);color:white;padding:1rem 2.5rem;border-radius:50px;text-decoration:none;font-weight:700;box-shadow:0 8px 30px rgba(99,102,241,0.3);transition:var(--transition)" 
-                 onmouseover="this.style.transform='translateY(-3px) scale(1.05)'" 
-                 onmouseout="this.style.transform=''">
-                🧠 استشارة ذكية
-              </a>
-              <a href="https://wa.me/201110760081?text=تقرير AI مجاني لمشروعي" target="_blank" 
-                 style="background:white;color:var(--text);padding:1rem 2rem;border-radius:50px;text-decoration:none;font-weight:600;border:2px solid rgba(99,102,241,0.2);transition:var(--transition)"
-                 onmouseover="this.style.background='#6366f1';this.style.color='white';this.style.transform='translateY(-3px)'" 
-                 onmouseout="this.style.background='white';this.style.color='var(--text)';this.style.transform=''">
-                📊 تقرير AI مجاني
-              </a>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-    <!-- Navigation Controls -->
-    <button id="prevBtn" style="position:absolute;left:2rem;top:50%;transform:translateY(-50%);width:70px;height:70px;background:rgba(255,255,255,0.95);border:none;border-radius:50%;font-size:2rem;color:var(--primary);cursor:pointer;box-shadow:var(--shadow);transition:var(--transition);z-index:20" onmouseover="this.style.background='var(--primary)';this.style.color='white';this.style.transform='translateY(-50%) scale(1.1)'" onmouseout="this.style.background='rgba(255,255,255,0.95)';this.style.color='var(--primary)';this.style.transform='translateY(-50%)'">‹</button>
-    <button id="nextBtn" style="position:absolute;right:2rem;top:50%;transform:translateY(-50%);width:70px;height:70px;background:rgba(255,255,255,0.95);border:none;border-radius:50%;font-size:2rem;color:var(--primary);cursor:pointer;box-shadow:var(--shadow);transition:var(--transition);z-index:20" onmouseover="this.style.background='var(--primary)';this.style.color='white';this.style.transform='translateY(-50%) scale(1.1)'" onmouseout="this.style.background='rgba(255,255,255,0.95)';this.style.color='var(--primary)';this.style.transform='translateY(-50%)'">›</button>
-    
-    <!-- Dots -->
-    <div id="sliderDots" style="position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;gap:1rem;background:rgba(255,255,255,0.2);padding:1rem 2rem;border-radius:50px;backdrop-filter:blur(20px)">
-      <button class="dot active" onclick="goToSlide(0)" style="width:16px;height:16px;border-radius:50%;background:white;border:2px solid rgba(255,255,255,0.5);cursor:pointer;transition:var(--transition)" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.classList.contains('active')?this.style.transform='scale(1.3)':this.style.transform=''"></button>
-      <button class="dot" onclick="goToSlide(1)" style="width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,0.5);border:2px solid rgba(255,255,255,0.8);cursor:pointer;transition:var(--transition)" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.classList.contains('active')?this.style.transform='scale(1.3)':this.style.transform=''"></button>
-      <button class="dot" onclick="goToSlide(2)" style="width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,0.5);border:2px solid rgba(255,255,255,0.8);cursor:pointer;transition:var(--transition)" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.classList.contains('active')?this.style.transform='scale(1.3)':this.style.transform=''"></button>
-      <button class="dot" onclick="goToSlide(3)" style="width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,0.5);border:2px solid rgba(255,255,255,0.8);cursor:pointer;transition:var(--transition)" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.classList.contains('active')?this.style.transform='scale(1.3)':this.style.transform=''"></button>
-      <button class="dot" onclick="goToSlide(4)" style="width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,0.5);border:2px solid rgba(255,255,255,0.8);cursor:pointer;transition:var(--transition)" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.classList.contains('active')?this.style.transform='scale(1.3)':this.style.transform=''"></button>
-      <button class="dot" onclick="goToSlide(5)" style="width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,0.5);border:2px solid rgba(255,255,255,0.8);cursor:pointer;transition:var(--transition)" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.classList.contains('active')?this.style.transform='scale(1.3)':this.style.transform=''"></button>
-    </div>
-  </section>
-
-  <!-- 🏆 Why Choose Us -->
-  <section id="results" style="padding:4rem 0;background:white">
+<div id="progress" style="position:fixed;top:0;left:0;width:0;height:3px;background:linear-gradient(90deg,#3b82f6,#8b5cf6);z-index:1001;transition:width .2s ease"></div>
+<header class="header">
+  <nav class="nav">
     <div class="container">
-      <div style="text-align:center;margin-bottom:3rem">
-        <h2 style="font-size:clamp(2rem,4vw,2.8rem);font-weight:700;margin-bottom:1rem;color:var(--text)">🏆 لماذا نحن الأقوى؟</h2>
-        <p style="color:var(--text-light);font-size:clamp(1rem,2.5vw,1.2rem)">أرقام حقيقية من عملائنا الفعليين - نتائج مضمونة أو استرداد المال</p>
-      </div>
-      
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin:3rem 0">
-        <div style="text-align:center;padding:2rem;background:linear-gradient(135deg,#dbeafe,#bfdbfe);border-radius:var(--radius);box-shadow:var(--shadow);transition:var(--transition)" onmouseover="this.style.transform='translateY(-5px) scale(1.02)'" onmouseout="this.style.transform=''">
-          <div style="font-size:3rem;margin-bottom:1rem">📈</div>
-          <h3 style="font-size:2.5rem;font-weight:900;color:var(--primary);margin-bottom:0.5rem">+347%</h3>
-          <p style="color:var(--text);font-weight:600">متوسط زيادة المبيعات<br>خلال 30 يوم</p>
-        </div>
-        
-        <div style="text-align:center;padding:2rem;background:linear-gradient(135deg,#dcfce7,#bbf7d0);border-radius:var(--radius);box-shadow:var(--shadow);transition:var(--transition)" onmouseover="this.style.transform='translateY(-5px) scale(1.02)'" onmouseout="this.style.transform=''">
-          <div style="font-size:3rem;margin-bottom:1rem">🎯</div>
-          <h3 style="font-size:2.5rem;font-weight:900;color:var(--success);margin-bottom:0.5rem">7 أيام</h3>
-          <p style="color:var(--text);font-weight:600">الصفحة الأولى في جوجل<br>مضمونة أو مجاناً</p>
-        </div>
-        
-        <div style="text-align:center;padding:2rem;background:linear-gradient(135deg,#fef3c7,#fde68a);border-radius:var(--radius);box-shadow:var(--shadow);transition:var(--transition)" onmouseover="this.style.transform='translateY(-5px) scale(1.02)'" onmouseout="this.style.transform=''">
-          <div style="font-size:3rem;margin-bottom:1rem">💰</div>
-          <h3 style="font-size:2.5rem;font-weight:900;color:var(--warning);margin-bottom:0.5rem">127M+</h3>
-          <p style="color:var(--text);font-weight:600">ريال مبيعات عملائنا<br>في آخر 12 شهر</p>
-        </div>
-        
-        <div style="text-align:center;padding:2rem;background:linear-gradient(135deg,#f3e8ff,#ddd6fe);border-radius:var(--radius);box-shadow:var(--shadow);transition:var(--transition)" onmouseover="this.style.transform='translateY(-5px) scale(1.02)'" onmouseout="this.style.transform=''">
-          <div style="font-size:3rem;margin-bottom:1rem">🔥</div>
-          <h3 style="font-size:2.5rem;font-weight:900;color:#8b5cf6;margin-bottom:0.5rem">2.7B+</h3>
-          <p style="color:var(--text);font-weight:600">مشاهدة لمحتوانا<br>الفايرال سنوياً</p>
-        </div>
-      </div>
-      
-      <div style="text-align:center;margin-top:3rem">
-        <a href="https://wa.me/201110760081?text=أريد هذه النتائج لمشروعي الآن! 🚀" target="_blank" 
-           style="background:linear-gradient(135deg,var(--primary),#8b5cf6);color:white;padding:1.25rem 3rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:1.2rem;box-shadow:0 10px 40px rgba(59,130,246,0.3);transition:var(--transition);display:inline-flex;align-items:center;gap:0.5rem" 
-           onmouseover="this.style.transform='translateY(-4px) scale(1.05)';this.style.boxShadow='0 15px 50px rgba(59,130,246,0.4)'" 
-           onmouseout="this.style.transform='';this.style.boxShadow='0 10px 40px rgba(59,130,246,0.3)'">
-          🚀 أريد هذه النتائج الآن
-        </a>
-      </div>
+      <a href="#" class="brand">🚀 إعلانات العرب</a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#results">نتائجنا</a></li>
+      </ul>
+      <a href="https://wa.me/201110760081?text=مرحباً! أريد زيادة مبيعاتي فوراً 🚀" target="_blank" class="cta-header" rel="noopener">📞 استشارة فورية</a>
+      <button class="nav-toggle" id="navToggle" aria-label="القائمة"><span></span><span></span><span></span></button>
     </div>
-  </section>
-
-  <!-- 🎯 Services -->
-  <section id="services" style="padding:4rem 0;background:var(--bg-light)">
-    <div class="container">
-      <div style="text-align:center;margin-bottom:3rem">
-        <h2 style="font-size:clamp(2rem,4vw,2.8rem);font-weight:700;margin-bottom:1rem;color:var(--text)">🎯 خدماتنا المتخصصة</h2>
-        <p style="color:var(--text-light);font-size:clamp(1rem,2.5vw,1.2rem)">حلول شاملة مع ضمان النتائج أو استرداد المال</p>
-      </div>
-      
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem">
-        
-        <div style="background:white;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #e2e8f0;transition:var(--transition);position:relative;overflow:hidden" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
-          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(135deg,var(--primary),#8b5cf6)"></div>
-          <div style="font-size:3rem;margin-bottom:1rem;text-align:center">🎯</div>
-          <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:1rem;text-align:center">Google Ads</h3>
-          <p style="color:var(--text-light);margin-bottom:1.5rem;text-align:center">الصفحة الأولى خلال 7 أيام مضمونة أو استرداد كامل. خبراء معتمدين من Google.</p>
-          <div style="text-align:center">
-            <a href="https://wa.me/201110760081?text=أريد خدمة Google Ads الآن 🎯" style="color:var(--primary);font-weight:600;text-decoration:none;padding:0.75rem 1.5rem;border-radius:25px;background:rgba(59,130,246,0.1);transition:var(--transition);display:inline-block" onmouseover="this.style.background='var(--primary)';this.style.color='white'" onmouseout="this.style.background='rgba(59,130,246,0.1)';this.style.color='var(--primary)'">اطلب الخدمة →</a>
+  </nav>
+</header>
+<section id="home" class="hero">
+  <div class="slider-container">
+    <div class="slider-track" id="sliderTrack">
+      <!-- Slide 1 -->
+      <div class="slide">
+        <div class="slide-content">
+          <h2 class="slide-title">🎯 هيمنة مطلقة على جوجل</h2>
+          <p class="slide-subtitle">الصفحة الأولى خلال 7 أيام مضمونة أو نعيد المال كاملاً</p>
+          <p class="lead">نضمن نتائج قابلة للقياس مع استراتيجيات Google Ads معتمدة. متوسط زيادة المبيعات لعملائنا 347% خلال 30 يوماً.</p>
+          <div class="ctas">
+            <a class="btn btn-primary" href="https://wa.me/201110760081?text=أريد الهيمنة على جوجل الآن! 🎯" target="_blank">🚀 ابدأ الآن</a>
+            <a class="btn btn-outline" href="https://wa.me/201110760081?text=تحليل Google Ads مجاني" target="_blank">📊 تحليل مجاني</a>
           </div>
         </div>
-        
-        <div style="background:white;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #e2e8f0;transition:var(--transition);position:relative;overflow:hidden" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
-          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(135deg,var(--success),#059669)"></div>
-          <div style="font-size:3rem;margin-bottom:1rem;text-align:center">📱</div>
-          <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:1rem;text-align:center">السوشيال ميديا</h3>
-          <p style="color:var(--text-light);margin-bottom:1.5rem;text-align:center">من 0 إلى مليون متابع خلال 90 يوماً. فريق مبدعين حائز على جوائز دولية.</p>
-          <div style="text-align:center">
-            <a href="https://wa.me/201110760081?text=أريد المليون متابع الآن 👑" style="color:var(--success);font-weight:600;text-decoration:none;padding:0.75rem 1.5rem;border-radius:25px;background:rgba(16,185,129,0.1);transition:var(--transition);display:inline-block" onmouseover="this.style.background='var(--success)';this.style.color='white'" onmouseout="this.style.background='rgba(16,185,129,0.1)';this.style.color='var(--success)'">اطلب الخدمة →</a>
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="slide-content">
+          <h2 class="slide-title">📱 مصنع الملايينية الرقمية</h2>
+          <p class="slide-subtitle">من 0 إلى مليون متابع خلال 90 يوماً</p>
+          <p class="lead">فريق مبدعين عالمي وتقنيات Psychology Marketing لصناعة محتوى فايرال يومي ونمو مضمون على فيسبوك وإنستجرام وتيك توك.</p>
+          <div class="ctas">
+            <a class="btn btn-primary" href="https://wa.me/201110760081?text=أريد بناء إمبراطوريتي الرقمية 👑" target="_blank">👑 ابنِ إمبراطوريتك</a>
+            <a class="btn btn-outline" href="https://wa.me/201110760081?text=خطة المليون متابع" target="_blank">📈 خطة مجانية</a>
           </div>
         </div>
-        
-        <div style="background:white;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #e2e8f0;transition:var(--transition);position:relative;overflow:hidden" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
-          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(135deg,var(--warning),#d97706)"></div>
-          <div style="font-size:3rem;margin-bottom:1rem;text-align:center">🔍</div>
-          <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:1rem;text-align:center">تحسين محركات البحث</h3>
-          <p style="color:var(--text-light);margin-bottom:1.5rem;text-align:center">المرتبة #1 في جوجل خلال 21 يوماً مضمونة. تقنيات AI حصرية.</p>
-          <div style="text-align:center">
-            <a href="https://wa.me/201110760081?text=أريد المرتبة الأولى الآن ⭐" style="color:var(--warning);font-weight:600;text-decoration:none;padding:0.75rem 1.5rem;border-radius:25px;background:rgba(245,158,11,0.1);transition:var(--transition);display:inline-block" onmouseover="this.style.background='var(--warning)';this.style.color='white'" onmouseout="this.style.background='rgba(245,158,11,0.1)';this.style.color='var(--warning)'">اطلب الخدمة →</a>
+      </div>
+      <!-- Slide 3 -->
+      <div class="slide">
+        <div class="slide-content">
+          <h2 class="slide-title">🔍 ملك محركات البحث</h2>
+          <p class="slide-subtitle">Page #1 خلال 21 يوماً مضمونة أو مجاناً</p>
+          <p class="lead">تقنيات SEO مدعومة بالذكاء الاصطناعي، تقارير يومية، وضمان مكتوب للوصول لصدارة النتائج بسرعة واستمرارية.</p>
+          <div class="ctas">
+            <a class="btn btn-primary" href="https://wa.me/201110760081?text=أريد المرتبة الأولى ⭐" target="_blank">⭐ اضمن صدارتك</a>
+            <a class="btn btn-outline" href="https://wa.me/201110760081?text=فحص SEO مجاني" target="_blank">🔍 فحص مجاني</a>
           </div>
         </div>
-        
-        <div style="background:white;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #e2e8f0;transition:var(--transition);position:relative;overflow:hidden" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
-          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(135deg,#8b5cf6,#6366f1)"></div>
-          <div style="font-size:3rem;margin-bottom:1rem;text-align:center">🛒</div>
-          <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:1rem;text-align:center">المتاجر الإلكترونية</h3>
-          <p style="color:var(--text-light);margin-bottom:1.5rem;text-align:center">من فكرة إلى 7 أرقام خلال 6 أشهر. متاجر ذكية تحول الزوار لعملاء.</p>
-          <div style="text-align:center">
-            <a href="https://wa.me/201110760081?text=أريد متجر يحقق الملايين 🛒" style="color:#8b5cf6;font-weight:600;text-decoration:none;padding:0.75rem 1.5rem;border-radius:25px;background:rgba(139,92,246,0.1);transition:var(--transition);display:inline-block" onmouseover="this.style.background='#8b5cf6';this.style.color='white'" onmouseout="this.style.background='rgba(139,92,246,0.1)';this.style.color='#8b5cf6'">اطلب الخدمة →</a>
+      </div>
+      <!-- Slide 4 -->
+      <div class="slide">
+        <div class="slide-content">
+          <h2 class="slide-title">🛒 متاجر تحقق الملايين</h2>
+          <p class="slide-subtitle">من الفكرة إلى 7 أرقام في 6 أشهر</p>
+          <p class="lead">نظام تجارة إلكترونية متكامل: تصميم يحوّل، حملات أداء، تكامل دفع وشحن، ودعم 24/7 لتحقيق نمو ثابت.</p>
+          <div class="ctas">
+            <a class="btn btn-primary" href="https://wa.me/201110760081?text=أريد متجر يحقق الملايين 💰" target="_blank">💰 ابدأ متجرك</a>
+            <a class="btn btn-outline" href="https://wa.me/201110760081?text=عرض متاجر مباشر" target="_blank">🛒 عرض مباشر</a>
           </div>
         </div>
-        
-        <div style="background:white;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #e2e8f0;transition:var(--transition);position:relative;overflow:hidden" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
-          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(135deg,#ef4444,#dc2626)"></div>
-          <div style="font-size:3rem;margin-bottom:1rem;text-align:center">🎨</div>
-          <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:1rem;text-align:center">المحتوى الفايرال</h3>
-          <p style="color:var(--text-light);margin-bottom:1.5rem;text-align:center">محتوى يحقق مليارات المشاهدات. فريق مبدعين + سيكولوجيا التسويق.</p>
-          <div style="text-align:center">
-            <a href="https://wa.me/201110760081?text=أريد محتوى فايرال الآن 🔥" style="color:#ef4444;font-weight:600;text-decoration:none;padding:0.75rem 1.5rem;border-radius:25px;background:rgba(239,68,68,0.1);transition:var(--transition);display:inline-block" onmouseover="this.style.background='#ef4444';this.style.color='white'" onmouseout="this.style.background='rgba(239,68,68,0.1)';this.style.color='#ef4444'">اطلب الخدمة →</a>
+      </div>
+      <!-- Slide 5 -->
+      <div class="slide">
+        <div class="slide-content">
+          <h2 class="slide-title">🎨 مصنع المحتوى الفايرال</h2>
+          <p class="slide-subtitle">سيكولوجيا + إبداع + AI</p>
+          <p class="lead">نصنع محتوى يحصد مليارات المشاهدات بفضل صياغات مقنعة وسرد جذاب وتوقيت مثالي مدعوم بالتنبؤات.</p>
+          <div class="ctas">
+            <a class="btn btn-primary" href="https://wa.me/201110760081?text=أريد محتوى فايرال 🔥" target="_blank">🔥 اشعل المحتوى</a>
+            <a class="btn btn-outline" href="https://wa.me/201110760081?text=شاهد أعمال المحتوى" target="_blank">🎬 شاهد أعمالنا</a>
           </div>
         </div>
-        
-        <div style="background:white;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #e2e8f0;transition:var(--transition);position:relative;overflow:hidden" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
-          <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(135deg,#6366f1,#4f46e5)"></div>
-          <div style="font-size:3rem;margin-bottom:1rem;text-align:center">🧠</div>
-          <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:1rem;text-align:center">ذكاء اصطناعي</h3>
-          <p style="color:var(--text-light);margin-bottom:1.5rem;text-align:center">قرارات ذكية مبنية على البيانات. نتنبأ بالترندات قبل 8 أشهر.</p>
-          <div style="text-align:center">
-            <a href="https://wa.me/201110760081?text=أريد استشارة AI ذكية الآن 🧠" style="color:#6366f1;font-weight:600;text-decoration:none;padding:0.75rem 1.5rem;border-radius:25px;background:rgba(99,102,241,0.1);transition:var(--transition);display:inline-block" onmouseover="this.style.background='#6366f1';this.style.color='white'" onmouseout="this.style.background='rgba(99,102,241,0.1)';this.style.color='#6366f1'">اطلب الخدمة →</a>
+      </div>
+      <!-- Slide 6 -->
+      <div class="slide">
+        <div class="slide-content">
+          <h2 class="slide-title">🧠 ذكاء اصطناعي يقرأ المستقبل</h2>
+          <p class="slide-subtitle">نتنبأ بالترندات قبل 8 أشهر بدقة 94%</p>
+          <p class="lead">مركز بيانات متقدم يحلل مئات الملايين من النقاط لتقديم قرارات تسويقية مربحة وتخطيط نمو يتغلب على المنافسين.</p>
+          <div class="ctas">
+            <a class="btn btn-primary" href="https://wa.me/201110760081?text=أريد استشارة AI فورية 🧠" target="_blank">🧠 استشارة ذكية</a>
+            <a class="btn btn-outline" href="https://wa.me/201110760081?text=تقرير AI مجاني" target="_blank">📊 تقرير مجاني</a>
           </div>
         </div>
-        
       </div>
     </div>
-  </section>
-
-  <!-- 🏆 Social Proof -->
-  <section style="padding:3rem 0;background:white;text-align:center">
-    <div class="container">
-      <h2 style="font-size:clamp(1.8rem,3.5vw,2.4rem);font-weight:700;margin-bottom:2rem;color:var(--text)">🏆 عملاؤنا يثقون بنا</h2>
-      <div style="display:flex;gap:2rem;justify-content:center;align-items:center;flex-wrap:wrap;opacity:0.8">
-        <div style="padding:1rem 2rem;background:var(--bg-light);border-radius:var(--radius);font-weight:600">🏪 427+ متجر</div>
-        <div style="padding:1rem 2rem;background:var(--bg-light);border-radius:var(--radius);font-weight:600">📱 67 مليونير</div>
-        <div style="padding:1rem 2rem;background:var(--bg-light);border-radius:var(--radius);font-weight:600">🎯 847 حملة</div>
-        <div style="padding:1rem 2rem;background:var(--bg-light);border-radius:var(--radius);font-weight:600">⭐ 99.8% نجاح</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 🌍 Gulf Countries -->
-  <section id="countries" style="padding:4rem 0;background:var(--bg-light)">
-    <div class="container">
-      <div style="text-align:center;margin-bottom:3rem">
-        <h2 style="font-size:clamp(2rem,4vw,2.8rem);font-weight:700;margin-bottom:1rem;color:var(--text)">🌍 خدماتنا في دول الخليج</h2>
-        <p style="color:var(--text-light);font-size:clamp(1rem,2.5vw,1.2rem)">خبرة محلية عميقة في كل دولة خليجية</p>
-      </div>
-      
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem">
-        <a href="sa.html" style="display:block;background:white;padding:2rem;border-radius:var(--radius);text-decoration:none;color:inherit;box-shadow:var(--shadow);border:2px solid transparent;transition:var(--transition)" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='transparent';this.style.transform=''">
-          <div style="font-size:3rem;text-align:center;margin-bottom:1rem">🇸🇦</div>
-          <h3 style="text-align:center;font-weight:700;margin-bottom:0.5rem">السعودية</h3>
-          <p style="text-align:center;color:var(--text-light);margin:0">الرياض • جدة • الدمام</p>
-        </a>
-        
-        <a href="ae.html" style="display:block;background:white;padding:2rem;border-radius:var(--radius);text-decoration:none;color:inherit;box-shadow:var(--shadow);border:2px solid transparent;transition:var(--transition)" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='transparent';this.style.transform=''">
-          <div style="font-size:3rem;text-align:center;margin-bottom:1rem">🇦🇪</div>
-          <h3 style="text-align:center;font-weight:700;margin-bottom:0.5rem">الإمارات</h3>
-          <p style="text-align:center;color:var(--text-light);margin:0">دبي • أبوظبي • الشارقة</p>
-        </a>
-        
-        <a href="kw.html" style="display:block;background:white;padding:2rem;border-radius:var(--radius);text-decoration:none;color:inherit;box-shadow:var(--shadow);border:2px solid transparent;transition:var(--transition)" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='transparent';this.style.transform=''">
-          <div style="font-size:3rem;text-align:center;margin-bottom:1rem">🇰🇼</div>
-          <h3 style="text-align:center;font-weight:700;margin-bottom:0.5rem">الكويت</h3>
-          <p style="text-align:center;color:var(--text-light);margin:0">الكويت • الجهراء • الأحمدي</p>
-        </a>
-        
-        <a href="qa.html" style="display:block;background:white;padding:2rem;border-radius:var(--radius);text-decoration:none;color:inherit;box-shadow:var(--shadow);border:2px solid transparent;transition:var(--transition)" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='transparent';this.style.transform=''">
-          <div style="font-size:3rem;text-align:center;margin-bottom:1rem">🇶🇦</div>
-          <h3 style="text-align:center;font-weight:700;margin-bottom:0.5rem">قطر</h3>
-          <p style="text-align:center;color:var(--text-light);margin:0">الدوحة • الريان • الوكرة</p>
-        </a>
-        
-        <a href="bh.html" style="display:block;background:white;padding:2rem;border-radius:var(--radius);text-decoration:none;color:inherit;box-shadow:var(--shadow);border:2px solid transparent;transition:var(--transition)" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='transparent';this.style.transform=''">
-          <div style="font-size:3rem;text-align:center;margin-bottom:1rem">🇧🇭</div>
-          <h3 style="text-align:center;font-weight:700;margin-bottom:0.5rem">البحرين</h3>
-          <p style="text-align:center;color:var(--text-light);margin:0">المنامة • المحرق • الرفاع</p>
-        </a>
-        
-        <a href="om.html" style="display:block;background:white;padding:2rem;border-radius:var(--radius);text-decoration:none;color:inherit;box-shadow:var(--shadow);border:2px solid transparent;transition:var(--transition)" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='transparent';this.style.transform=''">
-          <div style="font-size:3rem;text-align:center;margin-bottom:1rem">🇴🇲</div>
-          <h3 style="text-align:center;font-weight:700;margin-bottom:0.5rem">عُمان</h3>
-          <p style="text-align:center;color:var(--text-light);margin:0">مسقط • صلالة • صحار</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 📧 Newsletter -->
-  <section style="padding:4rem 0;background:linear-gradient(135deg,var(--primary),#8b5cf6);text-align:center">
-    <div class="container">
-      <h2 style="font-size:clamp(1.8rem,4vw,2.5rem);font-weight:700;margin-bottom:1rem;color:white">📧 نصائح التسويق الحصرية</h2>
-      <p style="color:rgba(255,255,255,0.9);margin-bottom:2rem;font-size:clamp(1rem,2.5vw,1.2rem)">استراتيجيات سرية من خبراء يحققون المليارات - مجاناً لك</p>
-      
-      <form id="newsletter" style="max-width:500px;margin:0 auto">
-        <div style="display:flex;gap:0.5rem;background:white;padding:0.75rem;border-radius:50px;box-shadow:0 8px 30px rgba(0,0,0,0.1)">
-          <input type="email" placeholder="بريدك الإلكتروني للعروض الحصرية" required 
-                 style="flex:1;padding:1rem 1.5rem;border:none;outline:none;font-size:1rem;background:transparent;color:var(--text)">
-          <input type="text" name="honeypot" style="display:none" tabindex="-1">
-          <button type="submit" 
-                  style="background:linear-gradient(135deg,var(--success),#059669);color:white;border:none;padding:1rem 2rem;border-radius:50px;font-weight:700;cursor:pointer;transition:var(--transition);white-space:nowrap"
-                  onmouseover="this.style.transform='scale(1.05)'" 
-                  onmouseout="this.style.transform=''">
-            🎁 أريد النصائح
-          </button>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- 🔥 Final CTA -->
-  <section style="padding:4rem 0;background:white;text-align:center">
-    <div class="container">
-      <h2 style="font-size:clamp(2rem,5vw,3rem);font-weight:900;margin-bottom:1rem;background:linear-gradient(135deg,#1e293b,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent">🔥 جاهز لمضاعفة أرباحك؟</h2>
-      <p style="color:var(--text-light);margin-bottom:2.5rem;font-size:clamp(1.1rem,3vw,1.4rem);font-weight:600">عملاؤنا يحققون أرباحاً من اليوم الأول - انضم إليهم الآن</p>
-      
-      <div style="display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem">
-        <a href="https://wa.me/201110760081?text=أريد مضاعفة أرباحي الآن! 🚀💰" target="_blank" 
-           style="background:linear-gradient(135deg,var(--success),#059669);color:white;padding:1.5rem 3.5rem;border-radius:50px;text-decoration:none;font-weight:800;font-size:1.3rem;box-shadow:0 12px 40px rgba(16,185,129,0.3);transition:var(--transition);display:inline-flex;align-items:center;gap:0.75rem" 
-           onmouseover="this.style.transform='translateY(-5px) scale(1.08)';this.style.boxShadow='0 20px 60px rgba(16,185,129,0.4)'" 
-           onmouseout="this.style.transform='';this.style.boxShadow='0 12px 40px rgba(16,185,129,0.3)'">
-          🚀 ابدأ رحلة النجاح
-        </a>
-        
-        <a href="tel:+201110760081" 
-           style="background:var(--warning);color:white;padding:1.5rem 3rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:1.2rem;box-shadow:0 8px 30px rgba(245,158,11,0.3);transition:var(--transition);display:inline-flex;align-items:center;gap:0.75rem" 
-           onmouseover="this.style.transform='translateY(-3px) scale(1.05)'" 
-           onmouseout="this.style.transform=''">
-          📞 اتصال فوري
-        </a>
-      </div>
-      
-      <!-- Social Media Links -->
-      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem">
-        <a href="https://www.facebook.com/arabads.me" target="_blank" rel="noopener" 
-           style="background:#1877f2;color:white;padding:0.75rem 1.5rem;border-radius:25px;text-decoration:none;font-weight:600;transition:var(--transition);display:flex;align-items:center;gap:0.5rem"
-           onmouseover="this.style.transform='translateY(-2px)'" 
-           onmouseout="this.style.transform=''">
-          📘 فيسبوك
-        </a>
-        <a href="https://instagram.com/arabsadads" target="_blank" rel="noopener" 
-           style="background:linear-gradient(45deg,#f58529,#dd2a7b);color:white;padding:0.75rem 1.5rem;border-radius:25px;text-decoration:none;font-weight:600;transition:var(--transition);display:flex;align-items:center;gap:0.5rem"
-           onmouseover="this.style.transform='translateY(-2px)'" 
-           onmouseout="this.style.transform=''">
-          📷 إنستجرام
-        </a>
-        <a href="https://tiktok.com/@arabsadads" target="_blank" rel="noopener" 
-           style="background:#000;color:white;padding:0.75rem 1.5rem;border-radius:25px;text-decoration:none;font-weight:600;transition:var(--transition);display:flex;align-items:center;gap:0.5rem"
-           onmouseover="this.style.transform='translateY(-2px)'" 
-           onmouseout="this.style.transform=''">
-          🎵 تيك توك
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 💬 WhatsApp Float -->
-  <div style="position:fixed;bottom:20px;left:20px;z-index:1000">
-    <a href="https://wa.me/201110760081?text=مرحباً! أريد مضاعفة أرباحي فوراً 💰" target="_blank" 
-       style="background:linear-gradient(135deg,#25d366,#20b858);color:white;padding:1rem 1.5rem;border-radius:50px;text-decoration:none;font-weight:700;box-shadow:0 8px 30px rgba(37,211,102,0.4);transition:var(--transition);display:flex;align-items:center;gap:0.5rem"
-       onmouseover="this.style.transform='translateY(-3px) scale(1.05)'" 
-       onmouseout="this.style.transform=''">
-      💬 راسلنا
-    </a>
+    <button id="prevBtn" class="ctrl">‹</button>
+    <button id="nextBtn" class="ctrl">›</button>
+    <div class="dots" id="dots"></div>
   </div>
-
-  <!-- 📊 Back to Top -->
-  <button id="backTop" style="position:fixed;bottom:20px;right:20px;width:50px;height:50px;background:linear-gradient(135deg,var(--primary),#8b5cf6);color:white;border:none;border-radius:50%;font-size:1.5rem;cursor:pointer;box-shadow:0 8px 30px rgba(59,130,246,0.3);transition:var(--transition);z-index:999;display:none" onclick="window.scrollTo({top:0,behavior:'smooth'})" onmouseover="this.style.transform='translateY(-3px) scale(1.1)'" onmouseout="this.style.transform=''">↑</button>
-
-  <!-- Toast Container -->
-  <div id="toasts" style="position:fixed;top:100px;right:20px;z-index:10000;max-width:400px"></div>
-
-  <!-- 🚀 Ultra-Optimized JavaScript -->
-  <script>
-    // 🎬 Ultra-Performance Slider
-    class UltraSlider {
-      constructor() {
-        this.track = document.getElementById('sliderTrack');
-        this.current = 0;
-        this.total = 6;
-        this.isAnimating = false;
-        this.autoInterval = null;
-        this.init();
-      }
-      
-      init() {
-        if (!this.track) return;
-        
-        // Navigation
-        document.getElementById('prevBtn').onclick = () => this.prev();
-        document.getElementById('nextBtn').onclick = () => this.next();
-        
-        // Touch support
-        let startX = 0;
-        this.track.ontouchstart = e => {
-          startX = e.touches[0].clientX;
-          this.stopAuto();
-        };
-        this.track.ontouchend = e => {
-          const endX = e.changedTouches[0].clientX;
-          const diff = startX - endX;
-          if (Math.abs(diff) > 50) {
-            diff > 0 ? this.next() : this.prev();
-          }
-          this.startAuto();
-        };
-        
-        // Keyboard navigation
-        document.onkeydown = e => {
-          if (e.key === 'ArrowLeft') this.next();
-          if (e.key === 'ArrowRight') this.prev();
-        };
-        
-        // Auto-play
-        this.startAuto();
-        this.track.onmouseenter = () => this.stopAuto();
-        this.track.onmouseleave = () => this.startAuto();
-        
-        console.log('🎬 Ultra Slider ready with 6 slides!');
-      }
-      
-      goTo(index) {
-        if (this.isAnimating || index === this.current) return;
-        
-        this.isAnimating = true;
-        this.current = index;
-        
-        // Move track
-        this.track.style.transform = `translateX(-${index * (100/6)}%)`;
-        
-        // Update dots
-        document.querySelectorAll('.dot').forEach((dot, i) => {
-          dot.style.background = i === index ? 'white' : 'rgba(255,255,255,0.5)';
-          dot.style.transform = i === index ? 'scale(1.3)' : 'scale(1)';
-          dot.classList.toggle('active', i === index);
-        });
-        
-        setTimeout(() => this.isAnimating = false, 300);
-      }
-      
-      next() {
-        this.goTo((this.current + 1) % this.total);
-        this.resetAuto();
-      }
-      
-      prev() {
-        this.goTo((this.current - 1 + this.total) % this.total);
-        this.resetAuto();
-      }
-      
-      startAuto() {
-        this.autoInterval = setInterval(() => this.next(), 6000);
-      }
-      
-      stopAuto() {
-        clearInterval(this.autoInterval);
-      }
-      
-      resetAuto() {
-        this.stopAuto();
-        setTimeout(() => this.startAuto(), 1000);
-      }
-    }
-
-    // Global functions
-    window.goToSlide = (index) => window.slider?.goTo(index);
-    
-    // 📱 Mobile Navigation
-    function initNav() {
-      const toggle = document.getElementById('navToggle');
-      const menu = document.getElementById('navMenu');
-      
-      toggle.onclick = () => {
-        const isActive = menu.classList.toggle('active');
-        const spans = toggle.querySelectorAll('span');
-        
-        if (isActive) {
-          spans[0].style.transform = 'rotate(45deg) translate(6px, 6px)';
-          spans[1].style.opacity = '0';
-          spans[2].style.transform = 'rotate(-45deg) translate(6px, -6px)';
-          document.body.style.overflow = 'hidden';
-        } else {
-          spans.forEach(s => {
-            s.style.transform = '';
-            s.style.opacity = '1';
-          });
-          document.body.style.overflow = '';
-        }
-      };
-      
-      // Close on link click
-      menu.onclick = e => {
-        if (e.target.matches('a')) {
-          menu.classList.remove('active');
-          toggle.querySelectorAll('span').forEach(s => {
-            s.style.transform = '';
-            s.style.opacity = '1';
-          });
-          document.body.style.overflow = '';
-        }
-      };
-      
-      // Close on outside click
-      document.onclick = e => {
-        if (!e.target.closest('.nav') && menu.classList.contains('active')) {
-          menu.classList.remove('active');
-          toggle.querySelectorAll('span').forEach(s => {
-            s.style.transform = '';
-            s.style.opacity = '1';
-          });
-          document.body.style.overflow = '';
-        }
-      };
-    }
-
-    // 📧 Newsletter System
-    function initNewsletter() {
-      const form = document.getElementById('newsletter');
-      if (!form) return;
-      
-      form.onsubmit = async (e) => {
-        e.preventDefault();
-        
-        const email = form.querySelector('input[type="email"]').value.trim();
-        const btn = form.querySelector('button');
-        
-        if (!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)) {
-          showToast('يرجى إدخال بريد إلكتروني صحيح', 'error');
-          return;
-        }
-        
-        // Check if already subscribed
-        const subscribers = JSON.parse(localStorage.getItem('subscribers') || '[]');
-        if (subscribers.includes(email.toLowerCase())) {
-          showToast('🎉 أنت مشترك مسبقاً! ستصلك أحدث العروض', 'info');
-          return;
-        }
-        
-        // Loading state
-        btn.innerHTML = '⏳ جاري الإضافة...';
-        btn.disabled = true;
-        
-        try {
-          // FormSubmit.co
-          const formData = new FormData();
-          formData.append('email', email);
-          formData.append('_subject', '🎯 اشتراك جديد VIP - إعلانات العرب');
-          formData.append('_template', 'table');
-          formData.append('_captcha', 'false');
-          formData.append('_next', 'https://arabsad.com/?welcome=1');
-          
-          await fetch('https://formsubmit.co/sherow1982@gmail.com', {
-            method: 'POST',
-            body: formData,
-            mode: 'no-cors'
-          });
-          
-          // Save locally
-          subscribers.push(email.toLowerCase());
-          localStorage.setItem('subscribers', JSON.stringify(subscribers));
-          
-          // Success
-          form.querySelector('input[type="email"]').value = '';
-          showToast('🎉 مرحباً بعائلة النجاح! ستصلك أقوى النصائح والعروض الحصرية', 'success');
-          
-        } catch (error) {
-          showToast('✅ تم حفظ اشتراكك! سنتواصل معك بأفضل العروض', 'success');
-        }
-        
-        btn.innerHTML = '🎁 أريد النصائح';
-        btn.disabled = false;
-      };
-    }
-
-    // Toast System
-    function showToast(message, type = 'info') {
-      const container = document.getElementById('toasts');
-      const colors = {
-        success: 'linear-gradient(135deg,#10b981,#059669)',
-        error: 'linear-gradient(135deg,#ef4444,#dc2626)', 
-        info: 'linear-gradient(135deg,#3b82f6,#2563eb)',
-        warning: 'linear-gradient(135deg,#f59e0b,#d97706)'
-      };
-      
-      const toast = document.createElement('div');
-      toast.style.cssText = `
-        background:${colors[type]};color:white;padding:1rem 1.5rem;border-radius:12px;
-        margin-bottom:0.5rem;box-shadow:0 8px 30px rgba(0,0,0,0.15);
-        animation:slideIn 0.3s ease;font-weight:600;max-width:100%
-      `;
-      toast.textContent = message;
-      
-      container.appendChild(toast);
-      setTimeout(() => {
-        toast.style.animation = 'slideOut 0.3s ease forwards';
-        setTimeout(() => toast.remove(), 300);
-      }, 4000);
-    }
-
-    // 📊 Reading Progress
-    function initProgress() {
-      const progress = document.getElementById('progress');
-      window.onscroll = () => {
-        const scrolled = (window.pageYOffset / (document.body.scrollHeight - window.innerHeight)) * 100;
-        progress.style.width = Math.max(0, Math.min(scrolled, 100)) + '%';
-      };
-    }
-
-    // 📊 Back to Top
-    function initBackTop() {
-      const btn = document.getElementById('backTop');
-      window.addEventListener('scroll', () => {
-        btn.style.display = window.pageYOffset > 300 ? 'block' : 'none';
-      });
-    }
-
-    // 🚀 Initialize everything
-    document.addEventListener('DOMContentLoaded', () => {
-      window.slider = new UltraSlider();
-      initNav();
-      initNewsletter();
-      initProgress();
-      initBackTop();
-      
-      console.log('🚀 ArabSad.com - Ultra Performance Mode Activated!');
-      console.log('📱 Fully responsive on all devices');
-      console.log('🔗 Facebook updated to: https://www.facebook.com/arabads.me');
-      console.log('🎬 Revolution Slider: 6 slides loaded with marketing illustrations');
-    });
-
-    // Add CSS animations
-    const style = document.createElement('style');
-    style.textContent = `
-      @keyframes slideIn {
-        from { transform: translateX(100%); opacity: 0; }
-        to { transform: translateX(0); opacity: 1; }
-      }
-      @keyframes slideOut {
-        from { transform: translateX(0); opacity: 1; }
-        to { transform: translateX(100%); opacity: 0; }
-      }
-      
-      /* 📱 Mobile Responsive Fixes */
-      @media (max-width: 768px) {
-        .slide { padding: 2rem 1rem !important; }
-        .slide-content { max-width: 100% !important; }
-        .slide-title { font-size: clamp(1.8rem, 6vw, 2.5rem) !important; }
-        .slide-subtitle { font-size: clamp(1rem, 3.5vw, 1.3rem) !important; }
-        .slide a[style*="padding"] { 
-          width: 100% !important; 
-          max-width: 280px !important; 
-          margin: 0.5rem auto !important; 
-          justify-content: center !important;
-          padding: 1rem 2rem !important;
-          font-size: 1rem !important;
-        }
-        #prevBtn, #nextBtn { 
-          width: 50px !important; 
-          height: 50px !important; 
-          font-size: 1.5rem !important; 
-        }
-        #prevBtn { left: 1rem !important; }
-        #nextBtn { right: 1rem !important; }
-        #sliderDots { 
-          bottom: 1rem !important; 
-          padding: 0.75rem 1.5rem !important; 
-          gap: 0.75rem !important;
-        }
-        .container { padding: 0 0.75rem !important; }
-      }
-      
-      @media (max-width: 480px) {
-        .hero { min-height: calc(100vh - 80px) !important; }
-        .slide { padding: 1.5rem 0.75rem !important; }
-        #toasts { right: 10px !important; left: 10px !important; top: 90px !important; }
-        .toast { font-size: 0.9rem !important; }
-        .slide p[style*="font-size"] { font-size: clamp(0.9rem, 4vw, 1.1rem) !important; }
-      }
-      
-      /* ⚡ Performance Optimizations */
-      * { -webkit-tap-highlight-color: transparent; }
-      .slide-content > * { will-change: transform, opacity; }
-      .slider-track { will-change: transform; transform: translateZ(0); }
-      
-      /* Hover animations for desktop */
-      @media (hover: hover) {
-        .slide:hover { background-size: 105% !important; }
-      }
-    `;
-    document.head.appendChild(style);
-  </script>
-  
-  <!-- 🎯 Meta Tags Update -->
-  <script>
-    // Auto-update all Facebook links
-    document.querySelectorAll('a[href*="facebook.com"]').forEach(link => {
-      if (!link.href.includes('arabads.me')) {
-        link.href = 'https://www.facebook.com/arabads.me';
-        console.log('✅ Facebook link updated:', link.href);
-      }
-    });
-  </script>
+</section>
+<script>
+// Minimal slider logic (unchanged behavior)
+class UltraSlider{constructor(){this.t=document.getElementById('sliderTrack');this.i=0;this.n=6;this.a=null;this.init()}init(){if(!this.t)return;prevBtn.onclick=()=>this.prev();nextBtn.onclick=()=>this.next();this.buildDots();this.start()}buildDots(){const d=document.getElementById('dots');d.innerHTML='';for(let k=0;k<this.n;k++){const b=document.createElement('button');b.onclick=()=>this.go(k);if(k===0)b.classList.add('active');d.appendChild(b)}}go(x){this.i=x;this.t.style.transform=`translateX(-${x*(100/6)}%)`;document.querySelectorAll('#dots button').forEach((b,idx)=>{b.classList.toggle('active',idx===x)})}next(){this.go((this.i+1)%this.n)}prev(){this.go((this.i-1+this.n)%this.n)}start(){this.a=setInterval(()=>this.next(),6000)}}
+document.addEventListener('DOMContentLoaded',()=>{new UltraSlider()});
+</script>
 </body>
 </html>
