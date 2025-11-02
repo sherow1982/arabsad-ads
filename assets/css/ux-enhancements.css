@@ -1,0 +1,15 @@
+/* UX Enhancements for blog articles and site-wide buttons */
+:root{--primary:#0073e6;--accent:#25D366;--dark:#1f2937;--muted:#6b7280}
+body{font-family:'IBM Plex Sans Arabic',system-ui,Segoe UI,Arial,sans-serif;}
+.btn, .button-cta{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:10px;padding:.9rem 1.1rem;font-weight:700;text-decoration:none}
+.btn-primary{background:var(--primary);color:#fff} .btn-primary:hover{background:#005bb5}
+.btn-success{background:var(--accent);color:#fff} .btn-success:hover{background:#128C7E}
+.cta-bar{position:sticky;bottom:0;inset-inline:0;background:#fffffffa;border-top:1px solid #e5e7eb;backdrop-filter:saturate(180%) blur(8px);padding:.65rem;display:flex;gap:.6rem;justify-content:center;z-index:50}
+.article-meta{display:flex;flex-wrap:wrap;gap:.8rem;color:var(--muted);font-size:.92rem;margin:.6rem 0 1rem}
+article img{max-width:100%;height:auto;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,.08)}
+blockquote{border-inline-start:4px solid var(--primary);background:#f3f7ff;padding:.8rem 1rem;border-radius:8px;color:#0f172a}
+.table{width:100%;border-collapse:collapse;margin:1rem 0;border:1px solid #e5e7eb}
+.table th,.table td{padding:.7rem .8rem;border:1px solid #e5e7eb;text-align:start}
+.badge{display:inline-block;background:#e6f2ff;color:#07438f;padding:.2rem .55rem;border-radius:999px;font-size:.78rem}
+.reading-progress{position:fixed;top:0;left:0;height:4px;background:linear-gradient(90deg,#60a5fa,#2563eb);width:0;z-index:60}
+@media (max-width:640px){.cta-bar{padding:.5rem .4rem}.btn,.button-cta{padding:.75rem .9rem;border-radius:9px}}
