@@ -1,147 +1,378 @@
-/* ملف الخطوط العربية الفاخرة والتحسينات العامة */
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+/* 
+ * خطوط عربية محسنة لمؤسسة إعلانات العرب
+ * Enhanced Arabic Fonts for ArabSad Digital Marketing
+ */
+
+/* استيراد خطوط Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700;800;900&display=swap');
 
-/* متغيرات عامة */
+/* تعريف متغيرات الخطوط */
 :root {
-  --font-heading: 'Cairo', 'IBM Plex Sans Arabic', sans-serif;
-  --font-body: 'IBM Plex Sans Arabic', 'Cairo', sans-serif;
-  --font-elegant: 'Amiri', 'Times New Roman', serif;
-  
-  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --gradient-gold: linear-gradient(135deg, #ffd700 0%, #ffb700 100%);
-  --color-primary: #1a365d;
-  --color-accent: #ed8936;
-  --shadow-elegant: 0 8px 25px rgba(0,0,0,0.15);
+  --font-primary: 'Cairo', 'IBM Plex Sans Arabic', 'Tajawal', 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
+  --font-secondary: 'IBM Plex Sans Arabic', 'Cairo', 'Tajawal', 'Noto Sans Arabic', sans-serif;
+  --font-display: 'Cairo', 'Tajawal', 'IBM Plex Sans Arabic', 'Noto Sans Arabic', sans-serif;
+  --font-body: 'IBM Plex Sans Arabic', 'Cairo', 'Noto Sans Arabic', 'Tajawal', sans-serif;
 }
 
-/* الخط الفاخر للعناوين */
-h1, h2, h3, h4, h5, h6,
-.rev-title, .hero h1, .hero h2,
-.display-1, .display-2, .display-3, .display-4, .display-5 {
-  font-family: var(--font-heading) !important;
-  font-weight: 700 !important;
+/* الخط الافتراضي للجسم */
+body {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga", "kern";
 }
 
-/* تدرج لوني فاخر للعناوين الرئيسية */
-h1, .rev-title {
-  font-weight: 800 !important;
-  background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+/* العناوين */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
 }
 
-/* عناوين ثانوية بلون أزرق راقي */
-h2, .display-2 {
-  color: var(--color-primary) !important;
-  font-weight: 700 !important;
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
 }
 
-/* الخط الفاخر للنصوص */
-p, .rev-sub, .display-7, body {
-  font-family: var(--font-body) !important;
-  line-height: 1.8;
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* الفقرات والنصوص */
+p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
   font-weight: 400;
 }
 
-/* تحسين الأزرار */
-.btn, button {
-  font-family: var(--font-body) !important;
-  font-weight: 600;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-  box-shadow: var(--shadow-elegant);
-  text-decoration: none;
-}
-
-.btn:hover, button:hover {
-  transform: translateY(-3px);
-  text-decoration: none;
-}
-
-.btn-primary {
-  background: var(--gradient-primary) !important;
-  border: none !important;
-  color: white !important;
-}
-
-.btn-success {
-  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%) !important;
-  border: none !important;
-  color: white !important;
-}
-
-/* تحسين البطاقات والعناصر التفاعلية */
-.card, .service-card, .item-wrapper {
-  border-radius: 15px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-
-.card:hover, .service-card:hover, .item-wrapper:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-elegant);
-}
-
-/* تحسين الصور */
-img {
-  transition: transform 0.3s ease;
-  border-radius: 8px;
-}
-
-img:hover {
-  transform: scale(1.02);
-}
-
-/* تحسين الروابط */
+/* الروابط */
 a {
+  font-family: inherit;
+  font-weight: 500;
+  text-decoration: none;
   transition: all 0.3s ease;
 }
 
-a:hover {
-  color: var(--color-accent) !important;
-  transform: translateY(-1px);
+/* الأزرار */
+.btn {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-transform: none;
 }
 
-/* تحسينات للجوال */
+/* القوائم */
+ul, ol {
+  font-family: var(--font-body);
+}
+
+li {
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+/* الجداول */
+table {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+
+th {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+/* النماذج */
+input, textarea, select {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+label {
+  font-family: var(--font-display);
+  font-weight: 500;
+}
+
+/* أنماط خاصة للعناصر التفاعلية */
+.brand-link {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.card-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.card-text {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* تحسينات الخطوط للجوال */
 @media (max-width: 768px) {
-  h1, .rev-title {
-    font-size: 2.2rem !important;
+  body {
+    font-size: 15px;
+    line-height: 1.6;
   }
   
-  h2, .display-2 {
-    font-size: 1.8rem !important;
+  h1 {
+    font-size: 2rem;
   }
   
-  .shared-header .header-content {
-    flex-direction: column !important;
-    gap: 1rem !important;
+  h2 {
+    font-size: 1.5rem;
   }
   
-  .shared-header .header-nav {
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 0.8rem !important;
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  h4 {
+    font-size: 1.125rem;
+  }
+  
+  p {
+    font-size: 0.95rem;
   }
 }
 
-/* تحسينات للأداء */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.6s ease;
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.375rem;
+  }
+  
+  h3 {
+    font-size: 1.125rem;
+  }
 }
 
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+/* تحسينات الأداء */
+@supports (font-display: swap) {
+  @font-face {
+    font-display: swap;
+  }
 }
 
-/* منع تضارب مع أنماط موجودة */
-* {
-  font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* تحسينات القراءة */
+.text-large {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.text-small {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.text-semibold {
+  font-weight: 500;
+}
+
+.text-regular {
+  font-weight: 400;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+/* تحسينات التباعد */
+.letter-tight {
+  letter-spacing: -0.02em;
+}
+
+.letter-normal {
+  letter-spacing: 0;
+}
+
+.letter-wide {
+  letter-spacing: 0.02em;
+}
+
+/* فئات الخطوط للعناصر الخاصة */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-primary {
+  font-family: var(--font-primary);
+}
+
+.font-secondary {
+  font-family: var(--font-secondary);
+}
+
+/* تحسينات إضافية للعربية */
+.arabic-numbers {
+  font-feature-settings: "tnum" 1;
+}
+
+.arabic-context {
+  font-feature-settings: "calt" 1, "liga" 1, "kern" 1;
+}
+
+/* أنماط للروابط الخليجية والقوائم */
+.inline-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  font-family: var(--font-display);
+}
+
+.inline-links li {
+  margin: 0;
+}
+
+.inline-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  color: #1a365d;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  min-height: 44px;
+  min-width: 120px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.inline-links a:hover,
+.inline-links a:focus {
+  background: #1a365d;
+  color: white;
+  border-color: #1a365d;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(26, 54, 93, 0.2);
+}
+
+/* تحسينات الجوال للروابط الخليجية */
+@media (max-width: 768px) {
+  .inline-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  
+  .inline-links a {
+    padding: 0.875rem 1rem;
+    font-size: 0.9rem;
+    min-width: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .inline-links a {
+    padding: 0.75rem 0.875rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* تحسينات إضافية للأزرار والعناصر التفاعلية */
+.whatsapp-btn {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.gulf-card h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #1a365d;
+}
+
+.gulf-card p {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+/* تحسينات خاصة للفوتر والهيدر */
+.shared-header,
+.shared-footer {
+  font-family: var(--font-primary);
+}
+
+.shared-header .brand-link {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.shared-footer h3,
+.shared-footer h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.shared-footer p,
+.shared-footer a {
+  font-family: var(--font-body);
 }
