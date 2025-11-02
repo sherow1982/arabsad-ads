@@ -4,9 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>مؤسسة إعلانات العرب - للتسويق الإلكتروني والإعلانات الممولة | arabsad.com</title>
-  <meta name="description" content="وكالة تسويق رقمي متخصصة في إعلانات جوجل وفيسبوك وإنستجرام وSEO وتصميم المواقع في العالم العربي.">
+  <meta name="description" content="وكالة تسويق رقمي متخصصة في إعلانات جوجل وفيسبوك وإنستجرام وSEO وتصميم المواقع في العالم العربي. خدمات احترافية مع نتائج مضمونة.">
+  <meta name="keywords" content="تسويق إلكتروني، إعلانات جوجل، فيسبوك أدز، إنستجرام، SEO، تصميم مواقع، تسويق رقمي، إعلانات ممولة">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="مؤسسة إعلانات العرب">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="مؤسسة إعلانات العرب - للتسويق الإلكتروني والإعلانات الممولة">
+  <meta property="og:description" content="وكالة تسويق رقمي متخصصة في إعلانات جوجل وفيسبوك وإنستجرام وSEO وتصميم المواقع في العالم العربي">
+  <meta property="og:image" content="https://arabsad.com/assets/images/og-image.jpg">
+  <meta property="og:url" content="https://arabsad.com">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_AR">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="مؤسسة إعلانات العرب - للتسويق الإلكتروني">
+  <meta name="twitter:description" content="وكالة تسويق رقمي متخصصة في إعلانات جوجل وفيسبوك وإنستجرام وSEO">
+  <meta name="twitter:image" content="https://arabsad.com/assets/images/twitter-card.jpg">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "مؤسسة إعلانات العرب",
+    "url": "https://arabsad.com",
+    "logo": "https://arabsad.com/assets/images/logo.svg",
+    "description": "وكالة تسويق رقمي متخصصة في إعلانات جوجل وفيسبوك وإنستجرام وSEO وتصميم المواقع",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "EG",
+      "addressRegion": "الجيزة"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+201110760081",
+      "contactType": "customer service",
+      "availableLanguage": "Arabic"
+    },
+    "sameAs": [
+      "https://wa.me/201110760081"
+    ]
+  }
+  </script>
+  
+  <!-- Preload Critical Resources -->
   <link rel="preload" href="assets/css/main.css" as="style">
   <link rel="preload" href="assets/css/slider.css" as="style">
+  <link rel="preload" href="assets/fonts/arabic-font.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <!-- Critical CSS -->
+  <style>
+    /* Critical CSS للتحميل السريع */
+    body{margin:0;font-family:'Cairo',sans-serif;direction:rtl;background:#fff}
+    .header{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.1);position:fixed;top:0;width:100%;z-index:1000}
+    .container{max-width:1200px;margin:0 auto;padding:0 20px}
+    .hero{padding-top:80px;min-height:70vh;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%)}
+    .loading{display:none}
+  </style>
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/slider.css">
   <link rel="stylesheet" href="assets/css/ux-enhancements.css">
@@ -15,16 +73,35 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="enhanced-arabic-fonts.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Performance Optimizations -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="dns-prefetch" href="//wa.me">
+  
+  <!-- محسن لمحركات البحث -->
+  <link rel="canonical" href="https://arabsad.com/">
+  <meta name="theme-color" content="#667eea">
 </head>
 <body>
-  <div class="reading-progress" id="progress"></div>
+  <!-- مؤشر تقدم القراءة -->
+  <div class="reading-progress" id="progress" aria-hidden="true"></div>
+  
+  <!-- رابط تخطي للمحتوى -->
   <a href="#main-content" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
 
+  <!-- Header -->
   <header class="header" role="banner">
     <nav class="nav" role="navigation" aria-label="التنقل الرئيسي">
       <div class="container">
         <div class="nav-brand">
-          <a href="index.html">
+          <a href="index.html" aria-label="الصفحة الرئيسية لمؤسسة إعلانات العرب">
             <img src="assets/images/logo.svg" alt="شعار مؤسسة إعلانات العرب" width="40" height="40" loading="eager">
             <div>
               <h1>مؤسسة إعلانات العرب</h1>
@@ -32,12 +109,12 @@
             </div>
           </a>
         </div>
-        <ul class="nav-menu" id="navMenu">
-          <li><a href="#home" class="nav-link" aria-current="page">🏠 الرئيسية</a></li>
-          <li><a href="services-page.html" class="nav-link" target="_blank">💼 خدماتنا</a></li>
-          <li><a href="seo-service.html" class="nav-link">🔍 SEO</a></li>
-          <li><a href="blog/index.html" class="nav-link" target="_blank">📰 مدونتنا</a></li>
-          <li><a href="#contact" class="nav-link">☎️ اتصل بنا</a></li>
+        <ul class="nav-menu" id="navMenu" role="menubar">
+          <li role="none"><a href="#home" class="nav-link" role="menuitem" aria-current="page">🏠 الرئيسية</a></li>
+          <li role="none"><a href="services-page.html" class="nav-link" role="menuitem" target="_blank" rel="noopener">💼 خدماتنا</a></li>
+          <li role="none"><a href="seo-service.html" class="nav-link" role="menuitem">🔍 SEO</a></li>
+          <li role="none"><a href="blog/index.html" class="nav-link" role="menuitem" target="_blank" rel="noopener">📰 مدونتنا</a></li>
+          <li role="none"><a href="#contact" class="nav-link" role="menuitem">☎️ اتصل بنا</a></li>
         </ul>
         <button class="nav-toggle" id="navToggle" aria-label="فتح/إغلاق القائمة" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -46,111 +123,317 @@
     </nav>
   </header>
 
+  <!-- Main Content -->
   <main id="main-content" role="main">
-    <section id="home" class="hero">
-      <div id="revSlider" class="rev-slider" tabindex="0" aria-label="سلايدر رئيسي">
+    <!-- Hero Section -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div id="revSlider" class="rev-slider" tabindex="0" aria-label="سلايدر رئيسي" role="region">
         <div class="rev-slide active" data-interval="6000">
           <div class="rev-inner">
             <span class="rev-kicker">وكالة إعلانات العرب</span>
-            <h2 class="rev-title">نتائج مدفوعة وUX سريع في أسواق الخليج</h2>
+            <h2 id="hero-title" class="rev-title">نتائج مدفوعة وUX سريع في أسواق الخليج</h2>
             <p class="rev-sub">Google Ads وSocial Ads وSEO مع صفحات هبوط سريعة واتساب مخصص وUTM تلقائي.</p>
             <div class="rev-cta">
-              <a class="btn btn-primary" target="_blank" href="https://wa.me/201110760081?text=أريد بدء حملة الآن">ابدأ الآن</a>
-              <a class="btn btn-success" target="_blank" href="https://wa.me/201110760081?text=أطلب خطة إعلانات">اطلب خطة</a>
+              <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/201110760081?text=أريد بدء حملة الآن" aria-label="ابدأ حملة إعلانية الآن عبر واتساب">ابدأ الآن</a>
+              <a class="btn btn-success" target="_blank" rel="noopener" href="https://wa.me/201110760081?text=أطلب خطة إعلانات" aria-label="اطلب خطة إعلانات مخصصة عبر واتساب">اطلب خطة</a>
             </div>
           </div>
-          <div class="slide-dots"></div>
+          <div class="slide-dots" aria-hidden="true"></div>
         </div>
+        
         <div class="rev-slide" data-interval="5500">
           <div class="rev-inner">
             <span class="rev-kicker">Google Ads</span>
             <h2 class="rev-title">بحث، شبكة، يوتيوب، وPerformance Max</h2>
             <p class="rev-sub">هيكلة صحيحة، تتبع وتحسين أسبوعي، ورسائل واتساب مخصصة حسب الصفحة والدولة.</p>
             <div class="rev-cta">
-              <a class="btn btn-primary" target="_blank" href="google-ads-service.html">تفاصيل الخدمة</a>
+              <a class="btn btn-primary" target="_blank" rel="noopener" href="google-ads-service.html" aria-label="تفاصيل خدمة إعلانات جوجل">تفاصيل الخدمة</a>
             </div>
           </div>
-          <div class="slide-dots"></div>
+          <div class="slide-dots" aria-hidden="true"></div>
         </div>
+        
         <div class="rev-slide" data-interval="5800">
           <div class="rev-inner">
             <span class="rev-kicker">UX + SEO</span>
             <h2 class="rev-title">سرعة، وضوح، وتحويل أعلى</h2>
             <p class="rev-sub">أزرار واتساب واضحة، CTA ثابت، وUTM تلقائي لقياس كل نقرة.</p>
             <div class="rev-cta">
-              <a class="btn btn-primary" target="_blank" href="seo-service.html">تحسين محركات البحث</a>
+              <a class="btn btn-primary" target="_blank" rel="noopener" href="seo-service.html" aria-label="خدمات تحسين محركات البحث">تحسين محركات البحث</a>
             </div>
           </div>
-          <div class="slide-dots"></div>
+          <div class="slide-dots" aria-hidden="true"></div>
         </div>
       </div>
     </section>
 
+    <!-- Services Preview Section -->
+    <section class="services-preview" aria-labelledby="services-title">
+      <div class="container">
+        <h2 id="services-title">خدماتنا المتميزة</h2>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">🎯</div>
+            <h3>إعلانات جوجل</h3>
+            <p>حملات احترافية على شبكة البحث والعرض ويوتيوب مع تتبع دقيق للنتائج</p>
+            <a href="google-ads-service.html" class="service-link" aria-label="تفاصيل خدمة إعلانات جوجل">تعرف أكثر</a>
+          </article>
+          
+          <article class="service-card">
+            <div class="service-icon">📱</div>
+            <h3>وسائل التواصل الاجتماعي</h3>
+            <p>حملات فيسبوك وإنستجرام وسناب شات وتيك توك لزيادة المبيعات والتفاعل</p>
+            <a href="social-media-service.html" class="service-link" aria-label="تفاصيل خدمة وسائل التواصل الاجتماعي">تعرف أكثر</a>
+          </article>
+          
+          <article class="service-card">
+            <div class="service-icon">🔍</div>
+            <h3>تحسين محركات البحث</h3>
+            <p>تحسين موقعك للظهور في النتائج الأولى لجوجل وزيادة الزيارات المجانية</p>
+            <a href="seo-service.html" class="service-link" aria-label="تفاصيل خدمة تحسين محركات البحث">تعرف أكثر</a>
+          </article>
+          
+          <article class="service-card">
+            <div class="service-icon">🛒</div>
+            <h3>المتاجر الإلكترونية</h3>
+            <p>تصميم وتطوير متاجر إلكترونية احترافية مع نظام دفع آمن وإدارة مخزون</p>
+            <a href="ecommerce-service.html" class="service-link" aria-label="تفاصيل خدمة المتاجر الإلكترونية">تعرف أكثر</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us" aria-labelledby="why-us-title">
+      <div class="container">
+        <h2 id="why-us-title">لماذا تختار مؤسسة إعلانات العرب؟</h2>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon">⚡</div>
+            <h3>سرعة في التنفيذ</h3>
+            <p>نبدأ حملاتك خلال 24 ساعة مع تتبع فوري للنتائج</p>
+          </div>
+          
+          <div class="feature">
+            <div class="feature-icon">📊</div>
+            <h3>تقارير شفافة</h3>
+            <p>تقارير مفصلة أسبوعية مع تحليل كامل للأداء والتوصيات</p>
+          </div>
+          
+          <div class="feature">
+            <div class="feature-icon">🎯</div>
+            <h3>استهداف دقيق</h3>
+            <p>استهداف الجمهور المناسب في الوقت المناسب لضمان أفضل النتائج</p>
+          </div>
+          
+          <div class="feature">
+            <div class="feature-icon">💰</div>
+            <h3>عائد استثمار مضمون</h3>
+            <p>نضمن تحقيق عائد إيجابي على استثمارك الإعلاني أو نعيد أموالك</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gulf Countries Section -->
+    <section class="gulf-countries" aria-labelledby="gulf-title">
+      <div class="container">
+        <h2 id="gulf-title">نخدم دول الخليج العربي</h2>
+        <div class="countries-grid">
+          <a href="sa.html" class="country-card" aria-label="خدماتنا في المملكة العربية السعودية">
+            <div class="country-flag">🇸🇦</div>
+            <h3>السعودية</h3>
+            <p>الرياض، جدة، الدمام</p>
+          </a>
+          
+          <a href="ae.html" class="country-card" aria-label="خدماتنا في دولة الإمارات العربية المتحدة">
+            <div class="country-flag">🇦🇪</div>
+            <h3>الإمارات</h3>
+            <p>دبي، أبوظبي، الشارقة</p>
+          </a>
+          
+          <a href="kw.html" class="country-card" aria-label="خدماتنا في دولة الكويت">
+            <div class="country-flag">🇰🇼</div>
+            <h3>الكويت</h3>
+            <p>مدينة الكويت، الأحمدي</p>
+          </a>
+          
+          <a href="qa.html" class="country-card" aria-label="خدماتنا في دولة قطر">
+            <div class="country-flag">🇶🇦</div>
+            <h3>قطر</h3>
+            <p>الدوحة، الريان</p>
+          </a>
+          
+          <a href="bh.html" class="country-card" aria-label="خدماتنا في مملكة البحرين">
+            <div class="country-flag">🇧🇭</div>
+            <h3>البحرين</h3>
+            <p>المنامة، المحرق</p>
+          </a>
+          
+          <a href="om.html" class="country-card" aria-label="خدماتنا في سلطنة عمان">
+            <div class="country-flag">🇴🇲</div>
+            <h3>عمان</h3>
+            <p>مسقط، صلالة</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="contact" aria-labelledby="contact-title">
       <div class="container">
-        <h2 id="contact-title">تواصل معنا</h2>
-        <p>للاستشارة والعروض، راسلنا عبر واتساب.</p>
+        <h2 id="contact-title">تواصل معنا الآن</h2>
+        <p>للاستشارة المجانية والحصول على عرض مخصص لمشروعك</p>
+        <div class="contact-methods">
+          <a href="https://wa.me/201110760081?text=أريد استشارة مجانية" target="_blank" rel="noopener" class="contact-btn whatsapp" aria-label="تواصل معنا عبر واتساب">
+            📱 واتساب: +201110760081
+          </a>
+          <a href="tel:+201110760081" class="contact-btn phone" aria-label="اتصل بنا هاتفياً">
+            📞 اتصل الآن: +201110760081
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
-  <div class="cta-bar">
-    <a class="btn btn-primary" target="_blank" href="https://wa.me/201110760081?text=أريد استشارة تسويقية الآن">📞 استشارة فورية</a>
-    <a class="btn btn-success" target="_blank" href="https://wa.me/201110760081?text=أطلب عرض لخطة إعلانات شاملة">🧭 اطلب خطة إعلانات</a>
+  <!-- Fixed CTA Bar -->
+  <div class="cta-bar" role="complementary" aria-label="أزرار العمل السريع">
+    <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/201110760081?text=أريد استشارة تسويقية الآن" aria-label="احصل على استشارة تسويقية فورية عبر واتساب">📞 استشارة فورية</a>
+    <a class="btn btn-success" target="_blank" rel="noopener" href="https://wa.me/201110760081?text=أطلب عرض لخطة إعلانات شاملة" aria-label="اطلب عرض سعر لخطة إعلانات شاملة عبر واتساب">🧭 اطلب خطة إعلانات</a>
   </div>
 
+  <!-- Footer -->
   <footer class="footer" role="contentinfo">
     <div class="container">
-      <p>&copy; 2025 مؤسسة إعلانات العرب</p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>مؤسسة إعلانات العرب</h3>
+          <p>وكالة تسويق رقمي متخصصة في تحقيق أفضل النتائج للشركات في العالم العربي</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>خدماتنا</h4>
+          <ul>
+            <li><a href="google-ads-service.html">إعلانات جوجل</a></li>
+            <li><a href="social-media-service.html">وسائل التواصل الاجتماعي</a></li>
+            <li><a href="seo-service.html">تحسين محركات البحث</a></li>
+            <li><a href="ecommerce-service.html">المتاجر الإلكترونية</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>روابط مهمة</h4>
+          <ul>
+            <li><a href="privacy-policy.html">سياسة الخصوصية</a></li>
+            <li><a href="terms-of-service.html">شروط الخدمة</a></li>
+            <li><a href="blog/index.html">المدونة</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>تواصل معنا</h4>
+          <p>📱 واتساب: +201110760081</p>
+          <p>🌐 الموقع: arabsad.com</p>
+          <p>📍 مصر - الجيزة</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 مؤسسة إعلانات العرب. جميع الحقوق محفوظة.</p>
+      </div>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="script.js" defer></script>
   <script src="assets/js/boot.js" defer></script>
+  
+  <!-- Reading Progress Script -->
   <script>
-    const progress=document.getElementById('progress');
-    window.addEventListener('scroll',()=>{const h=document.documentElement;const s=(h.scrollTop)/(h.scrollHeight-h.clientHeight)*100;progress.style.width=s+'%'});
+    (function() {
+      const progress = document.getElementById('progress');
+      let ticking = false;
+      
+      function updateProgress() {
+        const h = document.documentElement;
+        const scrollPercent = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+        progress.style.width = Math.min(scrollPercent, 100) + '%';
+        ticking = false;
+      }
+      
+      function requestTick() {
+        if (!ticking) {
+          requestAnimationFrame(updateProgress);
+          ticking = true;
+        }
+      }
+      
+      window.addEventListener('scroll', requestTick, { passive: true });
+    })();
   </script>
   
-  <!-- تحميل الهيدر والفوتر ديناميكياً -->
+  <!-- Dynamic Header and Footer Loading -->
   <script>
   document.addEventListener('DOMContentLoaded', function() {
-      // تحميل الهيدر
+      // تحميل الهيدر المشترك
       fetch('./shared-header.html')
           .then(response => response.ok ? response.text() : '')
           .then(html => {
               if (html) {
-                  document.body.insertAdjacentHTML('afterbegin', html);
+                  const headerPlaceholder = document.createElement('div');
+                  headerPlaceholder.innerHTML = html;
+                  document.body.insertBefore(headerPlaceholder.firstElementChild, document.body.firstChild);
               }
           })
-          .catch(() => console.log('لم يتم العثور على ملف الهيدر'));
+          .catch(() => console.log('تعذر تحميل الهيدر المشترك'));
 
-      // تحميل الفوتر قبل الفوتر الحالي
+      // تحميل الفوتر المشترك
       fetch('./shared-footer.html')
           .then(response => response.ok ? response.text() : '')
           .then(html => {
               if (html) {
                   const currentFooter = document.querySelector('.footer');
                   if (currentFooter) {
-                      currentFooter.insertAdjacentHTML('beforebegin', html);
-                  } else {
-                      document.body.insertAdjacentHTML('beforeend', html);
+                      const footerPlaceholder = document.createElement('div');
+                      footerPlaceholder.innerHTML = html;
+                      currentFooter.parentNode.insertBefore(footerPlaceholder.firstElementChild, currentFooter);
                   }
               }
           })
-          .catch(() => console.log('لم يتم العثور على ملف الفوتر'));
+          .catch(() => console.log('تعذر تحميل الفوتر المشترك'));
 
       // تحميل زر واتساب
       fetch('./whatsapp-button.html')
           .then(response => response.ok ? response.text() : '')
           .then(html => {
               if (html) {
-                  document.body.insertAdjacentHTML('beforeend', html);
+                  const whatsappPlaceholder = document.createElement('div');
+                  whatsappPlaceholder.innerHTML = html;
+                  document.body.appendChild(whatsappPlaceholder.firstElementChild);
               }
           })
-          .catch(() => console.log('لم يتم العثور على زر واتساب'));
+          .catch(() => console.log('تعذر تحميل زر واتساب'));
   });
   </script>
+  
+  <!-- Service Worker for PWA -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function(registration) {
+            console.log('ServiceWorker registration successful');
+          })
+          .catch(function(err) {
+            console.log('ServiceWorker registration failed');
+          });
+      });
+    }
+  </script>
+
+  <!-- Analytics (placeholder) -->
+  <!-- Google Analytics or other tracking codes can be added here -->
   
 </body>
 </html>
