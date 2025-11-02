@@ -1,73 +1,68 @@
 /*
-  Enhanced Arabic Fonts - Mixed Typography
-  خطوط عربية محسنة - مزج تايبوغرافي
-  Cairo for headings/buttons + IBM Plex Sans Arabic for body text
+  Enhanced Arabic Typography - Crystal Clear Reading
+  تحسين الخطوط العربية - قراءة واضحة كالكريستال
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --font-heading: 'Cairo', system-ui, -apple-system, sans-serif;
-  --font-body: 'IBM Plex Sans Arabic', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Cairo', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'IBM Plex Sans Arabic', 'Segoe UI', system-ui, sans-serif;
 }
 
-/* Base typography with mixed fonts */
+/* Base Typography - Crystal Clear */
 body {
   font-family: var(--font-body);
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.7;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
-/* Headings with Cairo */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  font-weight: 600;
-  line-height: 1.3;
-  margin-bottom: 0.5em;
-  color: #1f2937;
+/* Headings - Strong & Clear */
+h1, h2, h3, h4, h5, h6,
+.btn, .cta, .nav-link, .service-link {
+  font-family: var(--font-heading) !important;
+  font-weight: 700;
 }
 
-h1 { font-size: 2.5rem; font-weight: 800; }
-h2 { font-size: 2rem; font-weight: 700; }
-h3 { font-size: 1.5rem; font-weight: 600; }
-h4 { font-size: 1.25rem; font-weight: 600; }
+h1 { font-size: 2.75rem; font-weight: 800; line-height: 1.2; }
+h2 { font-size: 2.25rem; font-weight: 700; line-height: 1.25; }
+h3 { font-size: 1.75rem; font-weight: 600; line-height: 1.3; }
+h4 { font-size: 1.375rem; font-weight: 600; }
 h5 { font-size: 1.125rem; font-weight: 600; }
 h6 { font-size: 1rem; font-weight: 600; }
 
-/* Body text with IBM Plex Sans Arabic */
-p, li, span:not(.rev-kicker):not(.status), div:not([class*="icon"]) {
+/* Body Text - Optimal Reading */
+p, li, span:not(.rev-kicker), div:not([class*="icon"]) {
   font-family: var(--font-body);
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
 }
 
-/* Buttons and CTAs with Cairo */
-.btn, .cta, .nav-link, .service-link, .contact-btn {
-  font-family: var(--font-heading) !important;
-  font-weight: 600;
-}
-
-/* Form elements with body font */
+/* Form Elements */
 input, textarea, select {
   font-family: var(--font-body);
   font-weight: 400;
+  font-size: 0.95rem;
 }
 
-/* Hero text specifics */
+/* Hero Typography - Impact */
 .rev-title {
   font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 2.2rem;
-  line-height: 1.2;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
 }
 
 .rev-sub {
   font-family: var(--font-body);
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   opacity: 0.95;
 }
@@ -77,16 +72,17 @@ input, textarea, select {
   font-weight: 600;
   font-size: 0.9rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
 }
 
-/* Service cards */
+/* Card Typography */
 .service-card h3,
 .feature h3,
 .country-card h3 {
   font-family: var(--font-heading);
   font-weight: 600;
-  color: #1f2937;
+  color: #111827;
+  margin-bottom: 0.5rem;
 }
 
 .service-card p,
@@ -94,50 +90,79 @@ input, textarea, select {
 .country-card p {
   font-family: var(--font-body);
   font-weight: 400;
-  color: #4b5563;
+  color: #374151;
   line-height: 1.6;
 }
 
-/* Mobile optimizations */
-@media (max-width: 768px) {
-  body {
-    font-size: 15px;
-  }
-  
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.75rem; }
-  h3 { font-size: 1.4rem; }
-  
-  .rev-title {
-    font-size: 1.8rem;
-  }
-  
-  .rev-sub {
-    font-size: 1rem;
-  }
+/* Buttons Typography */
+.btn, .social-follow-btn, .contact-btn {
+  font-family: var(--font-heading) !important;
+  font-weight: 600;
+  letter-spacing: 0.025em;
 }
 
-/* RTL optimizations */
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  body { font-size: 15px; }
+  
+  h1 { font-size: 2.25rem; }
+  h2 { font-size: 1.9rem; }
+  h3 { font-size: 1.5rem; }
+  
+  .rev-title { font-size: 2rem; }
+  .rev-sub { font-size: 1.1rem; }
+}
+
+/* RTL Optimizations */
 [dir="rtl"] {
   text-align: right;
 }
 
 [dir="rtl"] .btn,
-[dir="rtl"] .cta {
+[dir="rtl"] .cta,
+[dir="rtl"] .social-follow-btn {
   text-align: center;
 }
 
-/* Reading optimization */
+/* Reading Comfort */
 p {
-  max-width: 65ch;
-  margin-bottom: 1em;
+  max-width: 70ch;
+  margin-bottom: 1.2em;
 }
 
-/* Accessibility */
+/* Enhanced Focus States */
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 3px solid rgba(37, 99, 235, 0.2);
+  outline-offset: 2px;
+}
+
+/* Accessibility - High Contrast Mode */
+@media (prefers-contrast: high) {
+  :root {
+    --text-super-dark: #000000;
+    --border-light: #666666;
+  }
+}
+
+/* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
-  * {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print Styles */
+@media print {
+  * {
+    background: white !important;
+    color: black !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
   }
 }
