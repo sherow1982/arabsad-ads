@@ -1,390 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- الصفحة الرئيسية -->
-  <url>
-    <loc>https://arabsad.com/</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://arabsad.com/" />
-    <xhtml:link rel="alternate" hreflang="ar-SA" href="https://arabsad.com/sa.html" />
-    <xhtml:link rel="alternate" hreflang="ar-AE" href="https://arabsad.com/ae.html" />
-    <xhtml:link rel="alternate" hreflang="ar-KW" href="https://arabsad.com/kw.html" />
-    <xhtml:link rel="alternate" hreflang="ar-QA" href="https://arabsad.com/qa.html" />
-    <xhtml:link rel="alternate" hreflang="ar-BH" href="https://arabsad.com/bh.html" />
-    <xhtml:link rel="alternate" hreflang="ar-OM" href="https://arabsad.com/om.html" />
-    <image:image>
-      <image:loc>https://arabsad.com/assets/images/logo.svg</image:loc>
-      <image:title>مؤسسة إعلانات العرب - للتسويق الرقمي</image:title>
-      <image:caption>شعار مؤسسة إعلانات العرب للتسويق الإلكتروني والإعلانات الممولة</image:caption>
-    </image:image>
-  </url>
+<!-- الصفحة الرئيسية -->
+<url>
+  <loc>https://arabsad.com/</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.0</priority>
+</url>
 
-  <!-- صفحة الخدمات الرئيسية -->
-  <url>
-    <loc>https://arabsad.com/services-page.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
-  </url>
+<!-- صفحات الدول الخليجية -->
+<url>
+  <loc>https://arabsad.com/sa.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
 
-  <!-- خدمات Google Ads -->
-  <url>
-    <loc>https://arabsad.com/google-ads-service.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://arabsad.com/assets/images/google-ads-service.jpg</image:loc>
-      <image:title>خدمات Google Ads في الخليج العربي</image:title>
-      <image:caption>إدارة حملات Google Ads احترافية في السعودية والإمارات والكويت وقطر والبحرين وعمان</image:caption>
-    </image:image>
-  </url>
+<url>
+  <loc>https://arabsad.com/ae.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
 
-  <!-- خدمات وسائل التواصل الاجتماعي -->
-  <url>
-    <loc>https://arabsad.com/social-media-service.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://arabsad.com/assets/images/social-media-ads.jpg</image:loc>
-      <image:title>إعلانات فيسبوك وإنستجرام وتيك توك</image:title>
-      <image:caption>إدارة حملات فيسبوك وإنستجرام وسناب شات وتيك توك لزيادة المبيعات والتفاعل</image:caption>
-    </image:image>
-  </url>
+<url>
+  <loc>https://arabsad.com/kw.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
 
-  <!-- خدمات SEO -->
-  <url>
-    <loc>https://arabsad.com/seo-service.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://arabsad.com/assets/images/seo-service.jpg</image:loc>
-      <image:title>خدمات SEO وتحسين محركات البحث</image:title>
-      <image:caption>تحسين موقعك للظهور في النتائج الأولى لجوجل وزيادة الزيارات المجانية</image:caption>
-    </image:image>
-  </url>
+<url>
+  <loc>https://arabsad.com/qa.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
 
-  <!-- خدمات المتاجر الإلكترونية -->
-  <url>
-    <loc>https://arabsad.com/ecommerce-service.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://arabsad.com/assets/images/ecommerce-design.jpg</image:loc>
-      <image:title>تصميم وتطوير المتاجر الإلكترونية</image:title>
-      <image:caption>تصميم وتطوير متاجر إلكترونية احترافية مع نظام دفع آمن وإدارة مخزون</image:caption>
-    </image:image>
-  </url>
+<url>
+  <loc>https://arabsad.com/bh.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
 
-  <!-- مقالات المدونة -->
-  <url>
-    <loc>https://arabsad.com/blog/ecommerce-seo-gulf-optimization.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://arabsad.com/assets/images/ecommerce-seo-gulf.jpg</image:loc>
-      <image:title>دليل شامل لتحسين المتاجر الإلكترونية للسيو في دول الخليج العربي</image:title>
-      <image:caption>دليل متخصص وشامل لتحسين محركات البحث للمتاجر الإلكترونية في السعودية والإمارات والكويت وقطر والبحرين وعمان</image:caption>
-    </image:image>
-  </url>
+<url>
+  <loc>https://arabsad.com/om.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
 
-  <url>
-    <loc>https://arabsad.com/blog/google-ads-saudi-guide-2025.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+<!-- صفحات الخدمات -->
+<url>
+  <loc>https://arabsad.com/google-ads-service.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
 
-  <url>
-    <loc>https://arabsad.com/blog/tiktok-snapchat-gulf-marketing-2025.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+<url>
+  <loc>https://arabsad.com/social-media-service.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
 
-  <url>
-    <loc>https://arabsad.com/blog/seo-arabic-websites-2025.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+<url>
+  <loc>https://arabsad.com/seo-service.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
 
-  <url>
-    <loc>https://arabsad.com/blog/ecommerce-design-gulf-2025.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+<url>
+  <loc>https://arabsad.com/ecommerce-service.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
 
-  <url>
-    <loc>https://arabsad.com/blog/facebook-instagram-ads-2025.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
+<url>
+  <loc>https://arabsad.com/services-page.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
 
-  <url>
-    <loc>https://arabsad.com/blog/digital-marketing-trends-gulf-2025.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
+<!-- المدونة -->
+<url>
+  <loc>https://arabsad.com/blog/</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
 
-  <!-- صفحات دول الخليج -->
-  <url>
-    <loc>https://arabsad.com/sa.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://arabsad.com/assets/images/saudi-flag.png</image:loc>
-      <image:title>خدمات التسويق الرقمي في المملكة العربية السعودية</image:title>
-    </image:image>
-  </url>
-  
-  <url>
-    <loc>https://arabsad.com/ae.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://arabsad.com/assets/images/uae-flag.png</image:loc>
-      <image:title>خدمات التسويق الرقمي في دولة الإمارات العربية المتحدة</image:title>
-    </image:image>
-  </url>
+<!-- مقالات Google Ads حسب الدولة -->
+<url>
+  <loc>https://arabsad.com/blog/google-ads-saudi-guide-2025.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
 
-  <url>
-    <loc>https://arabsad.com/kw.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://arabsad.com/assets/images/kuwait-flag.png</image:loc>
-      <image:title>خدمات التسويق الرقمي في دولة الكويت</image:title>
-    </image:image>
-  </url>
+<url>
+  <loc>https://arabsad.com/blog/google-ads-uae-guide-2025.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
 
-  <url>
-    <loc>https://arabsad.com/qa.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://arabsad.com/assets/images/qatar-flag.png</image:loc>
-      <image:title>خدمات التسويق الرقمي في دولة قطر</image:title>
-    </image:image>
-  </url>
+<url>
+  <loc>https://arabsad.com/blog/google-ads-kuwait-guide-2025.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
 
-  <url>
-    <loc>https://arabsad.com/bh.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://arabsad.com/assets/images/bahrain-flag.png</image:loc>
-      <image:title>خدمات التسويق الرقمي في مملكة البحرين</image:title>
-    </image:image>
-  </url>
+<url>
+  <loc>https://arabsad.com/blog/google-ads-qatar-guide-2025.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
 
-  <url>
-    <loc>https://arabsad.com/om.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://arabsad.com/assets/images/oman-flag.png</image:loc>
-      <image:title>خدمات التسويق الرقمي في سلطنة عمان</image:title>
-    </image:image>
-  </url>
+<url>
+  <loc>https://arabsad.com/blog/google-ads-bahrain-guide-2025.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
 
-  <!-- صفحة مدن الخليج -->
-  <url>
-    <loc>https://arabsad.com/gulf-cities.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
+<url>
+  <loc>https://arabsad.com/blog/google-ads-oman-guide-2025.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
 
-  <!-- صفحات المدن الرئيسية -->
-  <url>
-    <loc>https://arabsad.com/cities/riyadh.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+<!-- مقالات متخصصة -->
+<url>
+  <loc>https://arabsad.com/blog/ecommerce-seo-gulf-optimization.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
 
-  <url>
-    <loc>https://arabsad.com/cities/jeddah.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+<url>
+  <loc>https://arabsad.com/blog/tiktok-snapchat-gulf-marketing-2025.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
 
-  <url>
-    <loc>https://arabsad.com/cities/dammam.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
+<!-- صفحات قانونية -->
+<url>
+  <loc>https://arabsad.com/privacy-policy.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
 
-  <url>
-    <loc>https://arabsad.com/cities/dubai.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+<url>
+  <loc>https://arabsad.com/terms-of-service.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
 
-  <url>
-    <loc>https://arabsad.com/cities/abu-dhabi.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+<!-- أدوات إضافية -->
+<url>
+  <loc>https://arabsad.com/analytics-dashboard.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
 
-  <url>
-    <loc>https://arabsad.com/cities/sharjah.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-
-  <url>
-    <loc>https://arabsad.com/cities/kuwait-city.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://arabsad.com/cities/doha.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://arabsad.com/cities/manama.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-
-  <url>
-    <loc>https://arabsad.com/cities/muscat.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-
-  <!-- صفحات المدونة -->
-  <url>
-    <loc>https://arabsad.com/blog/index.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://arabsad.com/blog/ecommerce-seo-gulf-optimization.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://arabsad.com/assets/images/ecommerce-seo-gulf.jpg</image:loc>
-      <image:title>دليل شامل لتحسين المتاجر الإلكترونية للسيو في دول الخليج العربي</image:title>
-      <image:caption>دليل متخصص وشامل لتحسين محركات البحث للمتاجر الإلكترونية في السعودية والإمارات والكويت وقطر والبحرين وعمان - أكثر من 5000 كلمة من المحتوى الأصلي والمتخصص</image:caption>
-    </image:image>
-  </url>
-
-  <url>
-    <loc>https://arabsad.com/blog/google-ads-saudi-guide-2025.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://arabsad.com/blog/tiktok-snapchat-gulf-marketing-2025.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://arabsad.com/blog/seo-arabic-websites-2025.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://arabsad.com/blog/ecommerce-design-gulf-2025.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://arabsad.com/blog/facebook-instagram-ads-2025.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-
-  <url>
-    <loc>https://arabsad.com/blog/digital-marketing-trends-gulf-2025.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-
-  <!-- صفحات الخدمات الفرعية -->
-  <url>
-    <loc>https://arabsad.com/services/ecommerce.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  
-  <url>
-    <loc>https://arabsad.com/services/index.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-
-  <!-- الصفحات القانونية -->
-  <url>
-    <loc>https://arabsad.com/privacy-policy.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://arabsad.com/terms-of-service.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <!-- صفحة 404 -->
-  <url>
-    <loc>https://arabsad.com/404.html</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
+<url>
+  <loc>https://arabsad.com/gulf-cities.html</loc>
+  <lastmod>2025-11-02T20:16:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
 
 </urlset>
