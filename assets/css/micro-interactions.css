@@ -1,0 +1,50 @@
+/* Micro-interactions & UX polish without changing theme */
+:root{
+  --ease:smooth cubic-bezier(0.4,0,0.2,1);
+}
+
+/* Buttons */
+.btn,.contact-btn,.action-btn,.social-follow-btn,.service-link,.nav-btn{
+  transition: transform .2s var(--ease), box-shadow .2s var(--ease), background .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease);
+}
+.btn:active,.contact-btn:active,.action-btn:active,.social-follow-btn:active,.nav-btn:active{ transform: scale(0.98); }
+
+/* Hover shadows */
+.btn:hover,.nav-btn:hover,.contact-btn:hover,.action-btn:hover{ box-shadow:0 10px 25px rgba(0,0,0,.15); }
+
+/* Ripple effect */
+.btn, .contact-btn, .action-btn{
+  position: relative; overflow:hidden; isolation:isolate;
+}
+.btn::after,.contact-btn::after,.action-btn::after{
+  content:""; position:absolute; inset:auto; width:10px; height:10px; border-radius:50%; background:rgba(255,255,255,.35); transform:scale(0); opacity:.0; pointer-events:none;
+}
+.btn:where(:focus-visible,:active)::after,
+.contact-btn:where(:focus-visible,:active)::after,
+.action-btn:where(:focus-visible,:active)::after{
+  animation:ripple .6s ease-out; left:var(--x,50%); top:var(--y,50%);
+}
+@keyframes ripple{ to{ transform:scale(35); opacity:0; } }
+
+/* Cards hover */
+.service-card,.country-card,.feature,.service-card-modern,.country-card-modern,.feature-card-modern{
+  transition: transform .25s var(--ease), box-shadow .25s var(--ease), border-color .25s var(--ease);
+}
+.service-card:hover,.country-card:hover,.feature:hover,.service-card-modern:hover,.country-card-modern:hover,.feature-card-modern:hover{
+  transform:translateY(-4px); box-shadow:0 14px 35px rgba(0,0,0,.12); border-color:#2563eb !important;
+}
+
+/* Slider dots focus */
+.dot:focus-visible{ outline:none; box-shadow:0 0 0 3px rgba(255,255,255,.6); }
+
+/* Pulse for FABs after 8s idle */
+@keyframes softPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.fab-idle .chatbot-btn,.fab-idle .whatsapp-btn{ animation:softPulse 2.5s ease-in-out infinite; }
+
+/* Newsletter input hint */
+.form-group input:focus::placeholder{ opacity:.35; transform:translateY(-1px); transition:all .2s var(--ease); }
+
+/* Scroll reveal (reduced for users who prefer less motion) */
+.reveal{opacity:0; transform:translateY(16px); transition:opacity .35s var(--ease), transform .35s var(--ease);} 
+.reveal.show{opacity:1; transform:none;}
+@media (prefers-reduced-motion:reduce){ .reveal{opacity:1 !important; transform:none !important; transition:none !important;} }
