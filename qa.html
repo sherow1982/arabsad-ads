@@ -3,23 +3,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>وكالة تسويق رقمي في قطر | الدوحة</title>
+  <title>إعلانات مدفوعة و تسويق رقمي في قطر | Arabsad Ads</title>
   <meta name="description" content="حلول Google Ads وSocial Media وSEO في قطر. استهداف محلي للدوحة والريان مع مراعاة الثقافة والاهتمامات القطرية.">
+  <meta name="keywords" content="تسويق رقمي قطر، سناب شات قطر، تيك توك الدوحة، SEO قطر">
   <link rel="canonical" href="https://arabsad.com/qa.html">
   <link rel="alternate" hreflang="ar-QA" href="https://arabsad.com/qa.html">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhanced-arabic-fonts.css">
+  <meta property="og:title" content="إعلانات مدفوعة و تسويق رقمي في قطر | Arabsad Ads">
+  <meta property="og:description" content="حلول Google Ads وSocial Media وSEO في قطر">
+  <meta property="og:url" content="https://arabsad.com/qa.html">
+  <meta property="og:type" content="article">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "إعلانات مدفوعة و تسويق رقمي في قطر",
+    "description": "حلول Google Ads وSocial Media وSEO في قطر",
+    "author": {"@type": "Organization", "name": "مؤسسة إعلانات العرب"},
+    "datePublished": "2025-11-02",
+    "dateModified": "2025-11-02",
+    "mainEntityOfPage": "https://arabsad.com/qa.html"
+  }
+  </script>
 </head>
 <body>
+  <div data-include="shared-header.html"></div>
+
   <button id="backToTop" class="back-to-top" aria-label="الرجوع للأعلى">↑</button>
   <div class="whatsapp-float">
-    <a href="https://wa.me/201110760081?text=مرحباً، من قطر - أحتاج خدمات تسويق" target="_blank" class="whatsapp-btn" rel="nofollow noopener">🇶🇦 واتساب</a>
+    <a href="https://wa.me/201110760081?text=مرحباً، من قطر - أحتاج خدمات تسويق&utm_source=website&utm_medium=whatsapp&utm_campaign=gulf-qa" target="_blank" class="whatsapp-btn" rel="nofollow noopener">🇶🇦 واتساب</a>
   </div>
   
   <main class="container" style="padding:24px 0">
     <header>
-      <h1>وكالة تسويق رقمي في قطر</h1>
+      <h1>إعلانات مدفوعة و تسويق رقمي في قطر</h1>
       <p>عروض فريدة وإعلانات سناب وتيك توك مؤثرة للطلب السريع في الدوحة والريان.</p>
-      <p><a class="btn btn-primary" href="https://wa.me/201110760081?text=مرحبا، من قطر - أريد خدمات تسويق" target="_blank" rel="nofollow noopener">تواصل واتساب</a></p>
+      <p><a class="btn btn-primary" href="https://wa.me/201110760081?text=مرحبا، من قطر - أريد خدمات تسويق&utm_source=website&utm_medium=cta&utm_campaign=gulf-qa" target="_blank" rel="nofollow noopener">تواصل واتساب</a></p>
     </header>
 
     <section>
@@ -36,11 +57,35 @@
       </div>
     </section>
 
+    <section class="gulf-links" style="margin: 2rem 0;">
+      <h2>خدماتنا في الخليج</h2>
+      <ul class="inline-links">
+        <li><a href="ae.html">الإمارات</a></li>
+        <li><a href="bh.html">البحرين</a></li>
+        <li><a href="kw.html">الكويت</a></li>
+        <li><a href="om.html">عُمان</a></li>
+      </ul>
+    </section>
+
     <footer style="margin:18px 0">
-      <a class="btn btn-primary" href="https://wa.me/201110760081?text=مرحبا، من قطر - أريد بدء مشروع" target="_blank" rel="nofollow noopener">ابدأ الآن</a>
+      <a class="btn btn-primary" href="https://wa.me/201110760081?text=مرحبا، من قطر - أريد بدء مشروع&utm_source=website&utm_medium=cta&utm_campaign=gulf-qa-start" target="_blank" rel="nofollow noopener">ابدأ الآن</a>
       <a class="btn btn-secondary" href="index.html">الرئيسية</a>
     </footer>
   </main>
+
+  <div data-include="shared-footer.html"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('[data-include]').forEach(async function(el) {
+        try {
+          const file = el.getAttribute('data-include');
+          const response = await fetch(file);
+          if (response.ok) el.innerHTML = await response.text();
+        } catch (e) { console.log(e); }
+      });
+    });
+  </script>
   <script src="script.js" defer></script>
 </body>
 </html>

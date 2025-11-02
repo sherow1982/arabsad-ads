@@ -3,23 +3,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>وكالة تسويق رقمي في الكويت | مدينة الكويت وحولي</title>
+  <title>إعلانات مدفوعة و تسويق رقمي في الكويت | Arabsad Ads</title>
   <meta name="description" content="خدمات تسويق رقمي في الكويت: Google Ads وSocial Media وSEO. استهداف محلي للمحافظات الست والأعمال الكويتية.">
+  <meta name="keywords" content="تسويق رقمي الكويت، إعلانات جوجل الكويت، سناب شات الكويت، SEO الكويت">
   <link rel="canonical" href="https://arabsad.com/kw.html">
   <link rel="alternate" hreflang="ar-KW" href="https://arabsad.com/kw.html">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="enhanced-arabic-fonts.css">
+  <meta property="og:title" content="إعلانات مدفوعة و تسويق رقمي في الكويت | Arabsad Ads">
+  <meta property="og:description" content="خدمات تسويق رقمي في الكويت: Google Ads وSocial Media وSEO.">
+  <meta property="og:url" content="https://arabsad.com/kw.html">
+  <meta property="og:type" content="article">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "إعلانات مدفوعة و تسويق رقمي في الكويت",
+    "description": "خدمات تسويق رقمي في الكويت: Google Ads وSocial Media وSEO",
+    "author": {"@type": "Organization", "name": "مؤسسة إعلانات العرب"},
+    "datePublished": "2025-11-02",
+    "dateModified": "2025-11-02",
+    "mainEntityOfPage": "https://arabsad.com/kw.html"
+  }
+  </script>
 </head>
 <body>
+  <div data-include="shared-header.html"></div>
+
   <button id="backToTop" class="back-to-top" aria-label="الرجوع للأعلى">↑</button>
   <div class="whatsapp-float">
-    <a href="https://wa.me/201110760081?text=مرحباً، من الكويت - أحتاج خدمات تسويق" target="_blank" class="whatsapp-btn" rel="nofollow noopener">🇰🇼 واتساب</a>
+    <a href="https://wa.me/201110760081?text=مرحباً، من الكويت - أحتاج خدمات تسويق&utm_source=website&utm_medium=whatsapp&utm_campaign=gulf-kw" target="_blank" class="whatsapp-btn" rel="nofollow noopener">🇰🇼 واتساب</a>
   </div>
   
   <main class="container" style="padding:24px 0">
     <header>
-      <h1>وكالة تسويق رقمي في الكويت</h1>
+      <h1>إعلانات مدفوعة و تسويق رقمي في الكويت</h1>
       <p>حلول متعددة القنوات في مدينة الكويت وحولي، مع فهم خاص بالعادات الاستهلاكية المحلية.</p>
-      <p><a class="btn btn-primary" href="https://wa.me/201110760081?text=مرحبا، من الكويت - أريد خدمات تسويق" target="_blank" rel="nofollow noopener">تواصل واتساب</a></p>
+      <p><a class="btn btn-primary" href="https://wa.me/201110760081?text=مرحبا، من الكويت - أريد خدمات تسويق&utm_source=website&utm_medium=cta&utm_campaign=gulf-kw" target="_blank" rel="nofollow noopener">تواصل واتساب</a></p>
     </header>
 
     <section>
@@ -36,19 +57,35 @@
       </div>
     </section>
 
-    <section>
-      <h2>أسئلة شائعة - الكويت</h2>
-      <div class="card">
-        <h3>هل تدعمون الدفع بالدينار الكويتي؟</h3>
-        <p>نعم، نتعامل بجميع طرق الدفع المحلية بما في ها K-Net والبطاقات البنكية.</p>
-      </div>
+    <section class="gulf-links" style="margin: 2rem 0;">
+      <h2>خدماتنا في الخليج</h2>
+      <ul class="inline-links">
+        <li><a href="ae.html">الإمارات</a></li>
+        <li><a href="bh.html">البحرين</a></li>
+        <li><a href="om.html">عُمان</a></li>
+        <li><a href="qa.html">قطر</a></li>
+      </ul>
     </section>
 
     <footer style="margin:18px 0">
-      <a class="btn btn-primary" href="https://wa.me/201110760081?text=مرحبا، من الكويت - أريد بدء مشروع" target="_blank" rel="nofollow noopener">ابدأ الآن</a>
+      <a class="btn btn-primary" href="https://wa.me/201110760081?text=مرحبا، من الكويت - أريد بدء مشروع&utm_source=website&utm_medium=cta&utm_campaign=gulf-kw-start" target="_blank" rel="nofollow noopener">ابدأ الآن</a>
       <a class="btn btn-secondary" href="index.html">الرئيسية</a>
     </footer>
   </main>
+
+  <div data-include="shared-footer.html"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('[data-include]').forEach(async function(el) {
+        try {
+          const file = el.getAttribute('data-include');
+          const response = await fetch(file);
+          if (response.ok) el.innerHTML = await response.text();
+        } catch (e) { console.log(e); }
+      });
+    });
+  </script>
   <script src="script.js" defer></script>
 </body>
 </html>
