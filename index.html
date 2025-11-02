@@ -24,12 +24,12 @@
   <!-- Structured Data -->
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"مؤسسة إعلانات العرب","url":"https://arabsad.com","logo":"https://arabsad.com/assets/images/logo.svg","description":"وكالة تسويق رقمي متخصصة في إعلانات جوجل وفيسبوك وإنستجرام وSEO وتصميم المواقع","address":{"@type":"PostalAddress","addressCountry":"EG","addressRegion":"الجيزة"},"contactPoint":{"@type":"ContactPoint","telephone":"+201110760081","contactType":"customer service","availableLanguage":"Arabic"},"sameAs":["https://wa.me/201110760081"]}</script>
 
-  <!-- Baseline styles (no visual change) -->
+  <!-- Stylesheets (order preserved for visual lock) -->
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/slider.css">
   <link rel="stylesheet" href="assets/css/ux-enhancements.css">
   <link rel="stylesheet" href="enhanced-arabic-fonts.css">
-  <!-- STYLE LOCK: must be last CSS to preserve previous visual theme -->
+  <!-- STYLE LOCK: must be last to preserve visual theme -->
   <link rel="stylesheet" href="STYLE-LOCK.css">
 
   <!-- Favicon/Manifest -->
@@ -44,11 +44,11 @@
   <div class="reading-progress" id="progress" aria-hidden="true"></div>
   <a href="#main-content" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
 
-  <!-- Header restored visually to previous style via shared include + style lock -->
+  <!-- Header (shared include) -->
   <div id="shared-header-placeholder"></div>
 
   <main id="main-content" role="main">
-    <!-- Hero (visual style locked to previous gradient/colors via STYLE-LOCK) -->
+    <!-- Hero Section (visual style locked via STYLE-LOCK.css) -->
     <section id="home" class="hero" aria-labelledby="hero-title" style="padding-top:80px; min-height:70vh;">
       <div class="container">
         <div id="revSlider" class="rev-slider" tabindex="0" aria-label="سلايدر رئيسي" role="region">
@@ -92,7 +92,7 @@
       </div>
     </section>
 
-    <!-- Sections below keep previous visual via global CSS + lock -->
+    <!-- Services Section -->
     <section class="services-preview" aria-labelledby="services-title">
       <div class="container">
         <h2 id="services-title">خدماتنا المتميزة</h2>
@@ -125,6 +125,7 @@
       </div>
     </section>
 
+    <!-- Why Choose Us -->
     <section class="why-us" aria-labelledby="why-us-title">
       <div class="container">
         <h2 id="why-us-title">لماذا تختار مؤسسة إعلانات العرب؟</h2>
@@ -153,6 +154,7 @@
       </div>
     </section>
 
+    <!-- Gulf Countries -->
     <section class="gulf-countries" aria-labelledby="gulf-title">
       <div class="container">
         <h2 id="gulf-title">نخدم دول الخليج العربي</h2>
@@ -191,6 +193,7 @@
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="contact" aria-labelledby="contact-title">
       <div class="container">
         <h2 id="contact-title">تواصل معنا الآن</h2>
@@ -213,33 +216,112 @@
     <a class="btn btn-success" target="_blank" rel="noopener" href="https://wa.me/201110760081?text=أطلب عرض لخطة إعلانات شاملة&utm_source=homepage&utm_medium=fixed-cta&utm_campaign=plan" aria-label="اطلب عرض سعر لخطة إعلانات شاملة عبر واتساب">🧭 اطلب خطة إعلانات</a>
   </div>
 
-  <!-- Footer include -->
+  <!-- Shared components -->
   <div id="shared-footer-placeholder"></div>
-  <!-- WhatsApp floating & Chatbot placeholders -->
   <div id="whatsapp-placeholder"></div>
   <div id="chatbot-placeholder"></div>
 
-  <!-- Boot scripts (no visual changes) -->
+  <!-- Enhanced loading script -->
   <script>
     document.addEventListener('DOMContentLoaded', async function() {
+      console.log('🚀 بدء تحميل موارد ArabSad...');
+      
       const components = [
         { file: './shared-header.html', target: '#shared-header-placeholder' },
-        { file: './shared-footer.html', target: '#shared-footer-placeholder' },
+        { file: './shared-footer.html', target: '#shared-footer-placeholder' }, 
         { file: './whatsapp-button.html', target: '#whatsapp-placeholder' },
         { file: './chatbot.html', target: '#chatbot-placeholder' }
       ];
-      await Promise.allSettled(components.map(async ({file,target})=>{
-        try{const r=await fetch(file);if(r.ok){const h=await r.text();const t=document.querySelector(target);if(t&&h.trim())t.innerHTML=h;}}catch(e){}}
-      ));
-      // Load PWA & Performance without visual change
-      ['pwa-installer.js','assets/js/performance-optimizer.js'].forEach(src=>{const s=document.createElement('script');s.src=src;s.defer=true;document.head.appendChild(s);});
+      
+      const loadPromises = components.map(async ({ file, target }) => {
+        try {
+          const response = await fetch(file);
+          if (response.ok) {
+            const html = await response.text();
+            const targetElement = document.querySelector(target);
+            if (targetElement && html.trim()) {
+              targetElement.innerHTML = html;
+              console.log(`✅ تم تحميل ${file}`);
+            }
+          }
+        } catch (error) {
+          console.log(`⚠️ تعذر تحميل ${file}:`, error.message);
+        }
+      });
+      
+      await Promise.allSettled(loadPromises);
+      
+      // تحميل PWA installer (fixed version)
+      try {
+        const pwaScript = document.createElement('script');
+        pwaScript.src = './pwa-installer-fixed.js';
+        pwaScript.defer = true;
+        document.head.appendChild(pwaScript);
+        console.log('✅ تم تحميل PWA installer (مُحسن)');
+      } catch (error) {
+        console.log('⚠️ تعذر تحميل PWA installer');
+      }
+      
+      // تحميل performance optimizer
+      try {
+        const perfScript = document.createElement('script');
+        perfScript.src = './assets/js/performance-optimizer.js';
+        perfScript.defer = true;
+        document.head.appendChild(perfScript);
+        console.log('✅ تم تحميل Performance Optimizer');
+      } catch (error) {
+        console.log('⚠️ تعذر تحميل Performance Optimizer');
+      }
+      
+      console.log('✅ اكتمل تحميل جميع الموارد');
     });
   </script>
+  
+  <!-- Reading progress (safe) -->
   <script>
-    (function(){const progress=document.getElementById('progress');if(!progress) return;let ticking=false;function updateProgress(){try{const h=document.documentElement;const p=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100;progress.style.width=Math.min(Math.max(p||0,0),100)+'%';}catch(e){}ticking=false;}function requestTick(){if(!ticking){requestAnimationFrame(updateProgress);ticking=true;}}window.addEventListener('scroll',requestTick,{passive:true});updateProgress();})();
+    (function() {
+      const progress = document.getElementById('progress');
+      if (!progress) return;
+      
+      let ticking = false;
+      
+      function updateProgress() {
+        try {
+          const h = document.documentElement;
+          const scrollPercent = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+          progress.style.width = Math.min(Math.max(scrollPercent || 0, 0), 100) + '%';
+        } catch (e) {
+          console.debug('خطأ في تحديث مؤشر التقدم');
+        }
+        ticking = false;
+      }
+      
+      function requestTick() {
+        if (!ticking) {
+          requestAnimationFrame(updateProgress);
+          ticking = true;
+        }
+      }
+      
+      window.addEventListener('scroll', requestTick, { passive: true });
+      updateProgress();
+    })();
   </script>
+  
+  <!-- Service Worker (relative path) -->
   <script>
-    if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js').catch(()=>{});});}
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('./sw.js')
+          .then(function(registration) {
+            console.log('✅ ServiceWorker مسجل بنجاح');
+          })
+          .catch(function(err) {
+            console.log('⚠️ ServiceWorker تعذر تسجيله:', err);
+          });
+      });
+    }
   </script>
+
 </body>
 </html>
