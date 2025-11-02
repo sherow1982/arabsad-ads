@@ -1,0 +1,7 @@
+/* Extend Aurora background to selected sections with subtle intensity */
+section.services-section{background:linear-gradient(180deg,#ffffff 0%, #f8fafc 50%, #ffffff 100%)}
+section.features-section{background:linear-gradient(180deg,#ffffff 0%, #f1f5f9 55%, #ffffff 100%)}
+section.countries-section{background:linear-gradient(180deg,#ffffff 0%, #f7f0ff 45%, #ffffff 100%)}
+
+/* Keep newsletter & contact crisp white with gentle top border */
+section.newsletter-section,section.contact-section{background:#ffffff;border-top:1px solid #e5e7eb}
