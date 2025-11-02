@@ -1,37 +1,107 @@
 /*
-  STYLE-LOCK POLICY - DO NOT CHANGE VISUAL STYLES WITHOUT OWNER APPROVAL
-  هذه السياسة تقفل الستايل بصرياً.
-  يُسمح فقط بإصلاحات تقنية غير مرئية (أداء/أمان/تتبع) بدون تعديل ألوان/مسافات/أحجام/خطوط/تخطيطات.
-  أي تغيير مرئي يحتاج موافقة خطية من المالك.
+  ORIGINAL THEME RESTORATION - NON-DARK VERSION
+  استعادة الثيم الأصلي المشرق - غير الغامق
+  
+  هذا الملف يعيد الألوان المشرقة الأصلية قبل التحديثات الغامقة
+  ويصحح جميع المشاكل البصرية مع الحفاظ على التحسينات التقنية
 */
 
-/* حارس القيم البصرية الأساسية */
-:root{
-  /* قيم الثيم المثبتة */
-  --theme-primary: #667eea; /* اللون السابق المعتمد للهيرو والعناصر البارزة */
-  --theme-secondary: #764ba2;
-  --header-bg: #ffffff;
-  --text-color: #2d3748;
+:root {
+  /* الألوان الأصلية المشرقة */
+  --primary-color: #3b82f6;      /* أزرق مشرق بدلاً من الغامق */
+  --secondary-color: #8b5cf6;    /* بنفسجي مشرق */
+  --hero-bg-start: #3b82f6;      /* بداية تدرج الهيرو - أزرق مشرق */
+  --hero-bg-end: #8b5cf6;        /* نهاية تدرج الهيرو - بنفسجي مشرق */
+  --text-primary: #1f2937;       /* نص أسود للوضوح */
+  --text-secondary: #4b5563;     /* نص رمادي فاتح */
+  --bg-light: #ffffff;           /* خلفية بيضاء نظيفة */
+  --bg-section: #f8fafc;         /* خلفية أقسام فاتحة */
 }
 
-/* قفل ألوان الأزرار الأساسية كما كانت */
-.btn.btn-primary{
-  background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-secondary) 100%);
-  border-color: var(--theme-primary);
-  color: #fff;
+/* تصحيح ألوان الهيرو للثيم المشرق */
+.hero,
+#home.hero {
+  background: linear-gradient(135deg, var(--hero-bg-start) 0%, var(--hero-bg-end) 100%) !important;
+  color: white !important;
 }
 
-/* الهيرو بالستايل السابق (تثبيت شكلي فقط، لا يفرض إن غيّره الملف الأساسي صراحة) */
-.hero{
-  background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-secondary) 100%) !important;
+/* تصحيح ألوان الأزرار للثيم المشرق */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%) !important;
+  border-color: var(--primary-color) !important;
+  color: white !important;
 }
 
-/* العناوين بنفس الوزن السابق */
-h1,h2,h3{
-  font-weight: 700;
+.btn-primary:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4) !important;
 }
 
-/* CTA الثابت يحتفظ بالستايل الثابت القديم */
-.cta-bar{
-  background: rgba(255,255,255,0.95);
+.btn-success {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+  border-color: #10b981 !important;
+  color: white !important;
+}
+
+/* تصحيح ألوان العناوين */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary) !important;
+}
+
+.hero h1, .hero h2, .hero h3,
+.rev-title, .rev-sub, .rev-kicker {
+  color: white !important;
+}
+
+/* خلفيات الأقسام المشرقة */
+.services-preview {
+  background: var(--bg-section) !important;
+}
+
+.why-us {
+  background: var(--bg-light) !important;
+}
+
+.gulf-countries {
+  background: var(--bg-section) !important;
+}
+
+/* تصحيح ألوان البطاقات */
+.service-card, .country-card, .feature {
+  background: white !important;
+  color: var(--text-primary) !important;
+  border: 1px solid #e5e7eb !important;
+}
+
+.service-card:hover, .country-card:hover {
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15) !important;
+  transform: translateY(-2px);
+}
+
+/* CTA Bar بألوان مشرقة */
+.cta-bar {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-top: 1px solid #e5e7eb !important;
+  backdrop-filter: blur(10px);
+}
+
+/* Footer مشرق */
+.footer {
+  background: var(--text-primary) !important;
+  color: white !important;
+}
+
+/* تصحيح ألوان الروابط */
+a {
+  color: var(--primary-color) !important;
+}
+
+a:hover {
+  color: var(--secondary-color) !important;
+}
+
+/* تصحيح theme-color للمتصفح */
+meta[name="theme-color"] {
+  content: var(--primary-color) !important;
 }
