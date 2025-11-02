@@ -24,1046 +24,622 @@
   <!-- Structured Data -->
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"مؤسسة إعلانات العرب","url":"https://arabsad.com","logo":"https://arabsad.com/assets/images/logo.svg","description":"وكالة تسويق رقمي متخصصة في إعلانات جوجل وفيسبوك وإنستجرام وSEO وتصميم المواقع","address":{"@type":"PostalAddress","addressCountry":"EG","addressRegion":"الجيزة"},"contactPoint":{"@type":"ContactPoint","telephone":"+201110760081","contactType":"customer service","availableLanguage":"Arabic"},"sameAs":["https://wa.me/201110760081"]}</script>
 
-  <!-- Enhanced Arabic Fonts -->
+  <!-- Premium Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Stylesheets -->
+  <!-- Core Styles -->
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/slider.css">
-  <link rel="stylesheet" href="assets/css/ux-enhancements.css">
-  <link rel="stylesheet" href="enhanced-arabic-fonts.css">
-  <link rel="stylesheet" href="FIXED-THEME-WORKING.css">
+  <link rel="stylesheet" href="PREMIUM-UI.css">
 
   <!-- Favicon/Manifest -->
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
   <link rel="canonical" href="https://arabsad.com/">
-  <meta name="theme-color" content="#3b82f6">
+  <meta name="theme-color" content="#2563eb">
 </head>
 <body>
-  <div class="reading-progress" id="progress"></div>
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+      <div class="loader-logo">🎯</div>
+      <div class="loader-text">مؤسسة إعلانات العرب</div>
+      <div class="loading-bar"><div class="loading-progress"></div></div>
+    </div>
+  </div>
 
-  <!-- Header -->
-  <div id="shared-header-placeholder"></div>
+  <div class="reading-progress" id="readingProgress"></div>
 
-  <main id="main-content" role="main">
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+  <!-- Modern Navigation -->
+  <nav class="main-nav" id="mainNav">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <span class="brand-icon">🎯</span>
+        <span class="brand-text">إعلانات العرب</span>
+      </div>
+      
+      <div class="nav-links">
+        <a href="#home" class="nav-link active">الرئيسية</a>
+        <a href="#services" class="nav-link">الخدمات</a>
+        <a href="#countries" class="nav-link">الدول</a>
+        <a href="#contact" class="nav-link">تواصل</a>
+      </div>
+      
+      <div class="nav-cta">
+        <a href="https://wa.me/201110760081?text=أريد استشارة فورية&utm_source=nav&utm_medium=cta" target="_blank" class="nav-btn">💬 استشارة فورية</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- Premium Hero -->
+    <section id="home" class="hero-premium">
+      <div class="hero-background">
+        <div class="floating-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+      </div>
+      
       <div class="container">
-        <div id="revSlider" class="rev-slider">
-          <div class="rev-slide active" data-interval="6000">
-            <div class="rev-inner">
-              <span class="rev-kicker">وكالة إعلانات العرب</span>
-              <h2 class="rev-title">نتائج مدفوعة وUX سريع في أسواق الخليج</h2>
-              <p class="rev-sub">Google Ads وSocial Ads وSEO مع صفحات هبوط سريعة واتساب مخصص وUTM تلقائي.</p>
-              <div class="rev-cta">
-                <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/201110760081?text=أريد بدء حملة الآن&utm_source=homepage&utm_medium=hero&utm_campaign=start-now">ابدأ الآن</a>
-                <a class="btn btn-success" target="_blank" rel="noopener" href="https://wa.me/201110760081?text=أطلب خطة إعلانات&utm_source=homepage&utm_medium=hero&utm_campaign=get-plan">اطلب خطة</a>
-              </div>
+        <div class="hero-content">
+          <div class="hero-badge">⭐ الوكالة الرائدة في التسويق الرقمي</div>
+          <h1 class="hero-title">نحقق نتائج استثنائية في أسواق الخليج</h1>
+          <p class="hero-description">إعلانات Google وSocial Media وSEO وتطوير المواقع بنتائج مدفوعة ومضمونة</p>
+          
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">عميل راضي</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">95%</div>
+              <div class="stat-label">معدل نجاح</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">6</div>
+              <div class="stat-label">دول خليجية</div>
             </div>
           </div>
-
-          <div class="rev-slide" data-interval="5500">
-            <div class="rev-inner">
-              <span class="rev-kicker">Google Ads</span>
-              <h2 class="rev-title">بحث، شبكة، يوتيوب، وPerformance Max</h2>
-              <p class="rev-sub">هيكلة صحيحة، تتبع وتحسين أسبوعي، ورسائل واتساب مخصصة حسب الصفحة والدولة.</p>
-              <div class="rev-cta">
-                <a class="btn btn-primary" href="google-ads-service.html">تفاصيل الخدمة</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="rev-slide" data-interval="5800">
-            <div class="rev-inner">
-              <span class="rev-kicker">UX + SEO</span>
-              <h2 class="rev-title">سرعة، وضوح، وتحويل أعلى</h2>
-              <p class="rev-sub">أزرار واتساب واضحة، CTA ثابت، وUTM تلقائي لقياس كل نقرة.</p>
-              <div class="rev-cta">
-                <a class="btn btn-primary" href="seo-service.html">تحسين محركات البحث</a>
-              </div>
-            </div>
+          
+          <div class="hero-actions">
+            <a href="https://wa.me/201110760081?text=أريد بدء حملة إعلانية الآن&utm_source=hero&utm_medium=cta-primary" target="_blank" class="btn btn-primary btn-lg">
+              🚀 ابدأ الآن
+            </a>
+            <a href="https://wa.me/201110760081?text=أريد عرض سعر مفصل&utm_source=hero&utm_medium=cta-secondary" target="_blank" class="btn btn-outline btn-lg">
+              📋 احصل على عرض
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Services -->
-    <section class="services-preview">
+    <!-- Services Grid -->
+    <section id="services" class="services-modern">
       <div class="container">
-        <h2>خدماتنا المتميزة</h2>
-        <div class="services-grid">
-          <article class="service-card">
-            <div class="service-icon">🎯</div>
-            <h3>إعلانات جوجل</h3>
-            <p>حملات احترافية على شبكة البحث والعرض ويوتيوب مع تتبع دقيق للنتائج</p>
-            <a href="google-ads-service.html" class="service-link">تعرف أكثر</a>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">📱</div>
-            <h3>وسائل التواصل الاجتماعي</h3>
-            <p>حملات فيسبوك وإنستجرام وسناب شات وتيك توك لزيادة المبيعات والتفاعل</p>
-            <a href="social-media-service.html" class="service-link">تعرف أكثر</a>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">🔍</div>
-            <h3>تحسين محركات البحث</h3>
-            <p>تحسين موقعك للظهور في النتائج الأولى لجوجل وزيادة الزيارات المجانية</p>
-            <a href="seo-service.html" class="service-link">تعرف أكثر</a>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">🛒</div>
-            <h3>المتاجر الإلكترونية</h3>
-            <p>تصميم وتطوير متاجر إلكترونية احترافية مع نظام دفع آمن وإدارة مخزون</p>
-            <a href="ecommerce-service.html" class="service-link">تعرف أكثر</a>
-          </article>
+        <div class="section-header">
+          <span class="section-badge">خدماتنا</span>
+          <h2>حلول تسويقية شاملة</h2>
+          <p>نقدم خدمات تسويق رقمي متكاملة لضمان نجاح أعمالك</p>
         </div>
         
-        <!-- Social Media Follow Section - Professional Single Row -->
-        <div class="social-follow-section">
-          <h3>تابعنا</h3>
-          <div class="social-actions-row">
-            <a href="https://wa.me/201110760081?text=أريد التواصل عبر واتساب&utm_source=homepage&utm_medium=social-follow&utm_campaign=whatsapp" target="_blank" rel="noopener" class="social-follow-btn whatsapp">
-              💬 واتساب
+        <div class="services-grid-modern">
+          <div class="service-card-modern">
+            <div class="service-icon-modern">🎯</div>
+            <h3>إعلانات Google</h3>
+            <p>حملات احترافية على شبكة البحث والعرض ويوتيوب</p>
+            <div class="service-features">
+              <span class="feature-tag">البحث</span>
+              <span class="feature-tag">العرض</span>
+              <span class="feature-tag">يوتيوب</span>
+            </div>
+            <a href="google-ads-service.html" class="service-link-modern">تفاصيل الخدمة →</a>
+          </div>
+          
+          <div class="service-card-modern featured">
+            <div class="featured-badge">الأكثر طلباً</div>
+            <div class="service-icon-modern">📱</div>
+            <h3>وسائل التواصل</h3>
+            <p>حملات احترافية على جميع المنصات الاجتماعية</p>
+            <div class="service-features">
+              <span class="feature-tag">فيسبوك</span>
+              <span class="feature-tag">إنستجرام</span>
+              <span class="feature-tag">تيك توك</span>
+            </div>
+            <a href="social-media-service.html" class="service-link-modern">تفاصيل الخدمة →</a>
+          </div>
+          
+          <div class="service-card-modern">
+            <div class="service-icon-modern">🔍</div>
+            <h3>تحسين محركات البحث</h3>
+            <p>ظهور في النتائج الأولى وزيارات مجانية مستمرة</p>
+            <div class="service-features">
+              <span class="feature-tag">تحسين تقني</span>
+              <span class="feature-tag">محتوى</span>
+              <span class="feature-tag">روابط</span>
+            </div>
+            <a href="seo-service.html" class="service-link-modern">تفاصيل الخدمة →</a>
+          </div>
+          
+          <div class="service-card-modern">
+            <div class="service-icon-modern">🛒</div>
+            <h3>المتاجر الإلكترونية</h3>
+            <p>متاجر سريعة وآمنة مع أنظمة دفع محلية</p>
+            <div class="service-features">
+              <span class="feature-tag">تصميم</span>
+              <span class="feature-tag">برمجة</span>
+              <span class="feature-tag">دفع آمن</span>
+            </div>
+            <a href="ecommerce-service.html" class="service-link-modern">تفاصيل الخدمة →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section">
+      <div class="container">
+        <div class="social-content">
+          <h3>تابعنا على</h3>
+          <div class="social-grid">
+            <a href="https://wa.me/201110760081" target="_blank" class="social-item whatsapp">
+              <div class="social-icon">💬</div>
+              <span>واتساب</span>
             </a>
-            <a href="https://facebook.com/arabsadads" target="_blank" rel="noopener" class="social-follow-btn facebook">
-              📘 فيسبوك
+            <a href="https://facebook.com/arabsadads" target="_blank" class="social-item facebook">
+              <div class="social-icon">📘</div>
+              <span>فيسبوك</span>
             </a>
-            <a href="https://instagram.com/arabsadads" target="_blank" rel="noopener" class="social-follow-btn instagram">
-              📷 إنستجرام
+            <a href="https://instagram.com/arabsadads" target="_blank" class="social-item instagram">
+              <div class="social-icon">📷</div>
+              <span>إنستجرام</span>
             </a>
-            <a href="https://tiktok.com/@arabsadads" target="_blank" rel="noopener" class="social-follow-btn tiktok">
-              🎵 تيك توك
+            <a href="https://tiktok.com/@arabsadads" target="_blank" class="social-item tiktok">
+              <div class="social-icon">🎵</div>
+              <span>تيك توك</span>
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Why Us -->
-    <section class="why-us">
+    <!-- Why Choose Us -->
+    <section class="features-section">
       <div class="container">
-        <h2>لماذا تختار مؤسسة إعلانات العرب؟</h2>
-        <div class="features-grid">
-          <div class="feature">
-            <div class="feature-icon">⚡</div>
-            <h3>سرعة في التنفيذ</h3>
-            <p>نبدأ حملاتك خلال 24 ساعة مع تتبع فوري للنتائج</p>
+        <div class="section-header">
+          <h2>لماذا نحن الخيار الأفضل؟</h2>
+          <p>نتميز بالخبرة والإبداع في تحقيق أهدافك التسويقية</p>
+        </div>
+        
+        <div class="features-grid-modern">
+          <div class="feature-card-modern">
+            <div class="feature-icon-modern">⚡</div>
+            <h3>تنفيذ سريع</h3>
+            <p>نبدأ حملاتك خلال 24 ساعة مع تتبع فوري</p>
           </div>
-          <div class="feature">
-            <div class="feature-icon">📊</div>
+          <div class="feature-card-modern">
+            <div class="feature-icon-modern">📊</div>
             <h3>تقارير شفافة</h3>
-            <p>تقارير مفصلة أسبوعية مع تحليل كامل للأداء والتوصيات</p>
+            <p>تقارير مفصلة أسبوعية مع تحليل الأداء</p>
           </div>
-          <div class="feature">
-            <div class="feature-icon">🎯</div>
+          <div class="feature-card-modern">
+            <div class="feature-icon-modern">🎯</div>
             <h3>استهداف دقيق</h3>
-            <p>استهداف الجمهور المناسب في الوقت المناسب لضمان أفضل النتائج</p>
+            <p>نصل للجمهور المناسب في الوقت المناسب</p>
           </div>
-          <div class="feature">
-            <div class="feature-icon">💰</div>
-            <h3>عائد استثمار مضمون</h3>
-            <p>نضمن تحقيق عائد إيجابي على استثمارك الإعلاني أو نعيد أموالك</p>
+          <div class="feature-card-modern">
+            <div class="feature-icon-modern">💰</div>
+            <h3>ضمان العائد</h3>
+            <p>عائد إيجابي مضمون أو نعيد أموالك</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Gulf Countries -->
-    <section class="gulf-countries">
+    <!-- Countries We Serve -->
+    <section id="countries" class="countries-section">
       <div class="container">
-        <h2>نخدم دول الخليج العربي</h2>
-        <div class="countries-grid">
-          <a href="sa.html" class="country-card">
+        <div class="section-header">
+          <span class="section-badge">نطاق خدماتنا</span>
+          <h2>نخدم دول الخليج العربي</h2>
+        </div>
+        
+        <div class="countries-grid-modern">
+          <a href="sa.html" class="country-card-modern">
             <div class="country-flag">🇸🇦</div>
             <h3>السعودية</h3>
-            <p>الرياض، جدة، الدمام</p>
+            <p>الرياض • جدة • الدمام</p>
           </a>
-          <a href="ae.html" class="country-card">
+          <a href="ae.html" class="country-card-modern">
             <div class="country-flag">🇦🇪</div>
             <h3>الإمارات</h3>
-            <p>دبي، أبوظبي، الشارقة</p>
+            <p>دبي • أبوظبي • الشارقة</p>
           </a>
-          <a href="kw.html" class="country-card">
+          <a href="kw.html" class="country-card-modern">
             <div class="country-flag">🇰🇼</div>
             <h3>الكويت</h3>
-            <p>مدينة الكويت، الأحمدي</p>
+            <p>الكويت • الأحمدي</p>
           </a>
-          <a href="qa.html" class="country-card">
+          <a href="qa.html" class="country-card-modern">
             <div class="country-flag">🇶🇦</div>
             <h3>قطر</h3>
-            <p>الدوحة، الريان</p>
+            <p>الدوحة • الريان</p>
           </a>
-          <a href="bh.html" class="country-card">
+          <a href="bh.html" class="country-card-modern">
             <div class="country-flag">🇧🇭</div>
             <h3>البحرين</h3>
-            <p>المنامة، المحرق</p>
+            <p>المنامة • المحرق</p>
           </a>
-          <a href="om.html" class="country-card">
+          <a href="om.html" class="country-card-modern">
             <div class="country-flag">🇴🇲</div>
             <h3>عمان</h3>
-            <p>مسقط، صلالة</p>
+            <p>مسقط • صلالة</p>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- Newsletter Section -->
-    <section class="newsletter-section">
+    <!-- Newsletter -->
+    <section class="newsletter-modern">
       <div class="container">
-        <h2>📧 اشترك في نشرتنا</h2>
-        <p>بريدك الإلكتروني</p>
-        
-        <!-- WORKING FORM with direct action -->
-        <form action="https://formsubmit.co/sherow1982@gmail.com" method="POST" id="newsletter-form">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_subject" value="اشتراك جديد في نشرة إعلانات العرب">
-          <input type="hidden" name="_next" value="https://arabsad.com/?subscribed=1">
-          <input type="hidden" name="_autoresponse" value="شكراً لك! تم الاشتراك بنجاح.">
+        <div class="newsletter-content">
+          <h3>📧 اشترك في نشرتنا الأسبوعية</h3>
+          <p>احصل على أحدث النصائح والعروض الحصرية</p>
           
-          <div class="newsletter-form-row">
-            <input type="email" name="email" id="newsletter-email" placeholder="بريدك الإلكتروني" required>
-            <button type="submit">اشتراك</button>
-          </div>
-        </form>
-        
-        <div id="newsletter-message"></div>
+          <form action="https://formsubmit.co/sherow1982@gmail.com" method="POST" class="newsletter-form">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="اشتراك جديد في نشرة إعلانات العرب">
+            <input type="hidden" name="_next" value="https://arabsad.com/?subscribed=1">
+            
+            <div class="input-group">
+              <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+              <button type="submit">اشتراك</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact-modern">
       <div class="container">
-        <h2>تواصل معنا الآن</h2>
-        <p>للاستشارة المجانية والحصول على عرض مخصص لمشروعك</p>
-        <div class="contact-methods">
-          <a href="https://wa.me/201110760081?text=أريد استشارة مجانية&utm_source=homepage&utm_medium=contact&utm_campaign=consult" target="_blank" rel="noopener" class="contact-btn whatsapp">
-            📱 واتساب: +201110760081
-          </a>
-          <a href="tel:+201110760081" class="contact-btn phone">
-            📞 اتصل الآن: +201110760081
-          </a>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>تواصل معنا</h2>
+            <p>نحن هنا لمساعدتك في تحقيق أهدافك التسويقية</p>
+            
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-icon">📱</div>
+                <div class="contact-details">
+                  <h4>واتساب</h4>
+                  <p>+201110760081</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div class="contact-details">
+                  <h4>البريد الإلكتروني</h4>
+                  <p>info@arabsad.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-actions">
+            <a href="https://wa.me/201110760081?text=أريد استشارة مجانية&utm_source=contact&utm_medium=whatsapp" target="_blank" class="contact-btn primary">
+              💬 راسلنا واتساب
+            </a>
+            <a href="tel:+201110760081" class="contact-btn secondary">
+              📞 اتصل الآن
+            </a>
+            <button id="open-chat" class="contact-btn tertiary">
+              🤖 ابدأ شات مع البوت
+            </button>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Fixed CTA Bar -->
-  <div class="cta-bar">
-    <a class="btn btn-primary" target="_blank" rel="noopener" href="https://wa.me/201110760081?text=أريد استشارة تسويقية الآن&utm_source=homepage&utm_medium=fixed-cta&utm_campaign=instant">📞 استشارة فورية</a>
-    <a class="btn btn-success" target="_blank" rel="noopener" href="https://wa.me/201110760081?text=أطلب عرض لخطة إعلانات شاملة&utm_source=homepage&utm_medium=fixed-cta&utm_campaign=plan">🧭 اطلب خطة إعلانات</a>
-  </div>
-
-  <!-- Back to Top Button (LEFT side) -->
-  <button id="back-to-top" class="back-to-top-btn" style="display: none;">
-    ⬆️
-  </button>
-
-  <!-- Toast Container -->
-  <div id="toast-container"></div>
-
-  <!-- Footer -->
-  <div id="shared-footer-placeholder"></div>
-
-  <!-- WhatsApp Floating Button (RIGHT SIDE) -->
-  <a href="https://wa.me/201110760081?text=راسلنا واتساب - أريد استشارة&utm_source=homepage&utm_medium=floating-whatsapp&utm_campaign=contact" target="_blank" rel="noopener" class="whatsapp-float">
-    💬 راسلنا واتساب
-  </a>
-
-  <!-- AI Chatbot (LEFT SIDE - SEPARATE) -->
-  <div id="ai-chatbot" class="chatbot-widget" style="display: none;">
-    <div class="chatbot-header">
-      <div class="bot-avatar">🤖</div>
-      <div class="bot-info">
-        <h4>مساعدك التسويقي</h4>
-        <span class="status online">متاح الآن</span>
-      </div>
-      <button class="close-chat">&times;</button>
-    </div>
-    
-    <div class="chatbot-body">
-      <div class="chat-messages" id="chatMessages">
-        <div class="message bot-message">
-          <div class="message-content">
-            👋 أهلاً وسهلاً! أنا مساعدك التسويقي الذكي.<br>
-            أقدر أساعدك بأي لهجة عربية من الخليج للمغرب 🌍<br>
-            <small>🔒 محادثتنا آمنة ولا نحفظ أي بيانات شخصية.</small>
+  <!-- Modern Footer -->
+  <footer class="footer-modern">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <span class="brand-icon">🎯</span>
+            <span class="brand-name">مؤسسة إعلانات العرب</span>
+          </div>
+          <p>وكالة تسويق رقمي متخصصة في تحقيق النتائج</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>الخدمات</h4>
+            <a href="google-ads-service.html">إعلانات Google</a>
+            <a href="social-media-service.html">وسائل التواصل</a>
+            <a href="seo-service.html">تحسين محركات البحث</a>
+            <a href="ecommerce-service.html">المتاجر الإلكترونية</a>
+          </div>
+          <div class="link-group">
+            <h4>الدول</h4>
+            <a href="sa.html">السعودية</a>
+            <a href="ae.html">الإمارات</a>
+            <a href="kw.html">الكويت</a>
+            <a href="qa.html">قطر</a>
           </div>
         </div>
       </div>
       
-      <div class="quick-options">
-        <button class="quick-btn" data-action="google-ads">🎯 Google Ads</button>
-        <button class="quick-btn" data-action="social-media">📱 Social Media</button>
-        <button class="quick-btn" data-action="seo">🔍 SEO</button>
-        <button class="quick-btn" data-action="ecommerce">🛒 متاجر</button>
-      </div>
-      
-      <div class="chat-input-area">
-        <input type="text" id="chatInput" placeholder="اكتب رسالتك بأي لهجة..." maxlength="500">
-        <button id="sendMessage">➤</button>
+      <div class="footer-bottom">
+        <p>&copy; 2024 مؤسسة إعلانات العرب. جميع الحقوق محفوظة.</p>
       </div>
     </div>
-  </div>
-  
-  <!-- Chatbot Trigger (LEFT SIDE - SEPARATE FROM WHATSAPP) -->
-  <button id="chatbot-trigger" class="chatbot-fab-left" title="ابدأ شات مع البوت">
-    🤖
-    <span class="bot-label">ابدأ شات مع البوت</span>
-    <span class="notification-badge" id="chatNotification" style="display: none;">!</span>
-  </button>
+  </footer>
 
-  <!-- All Scripts -->
+  <!-- Compact Smart Chatbot -->
+  <div id="smart-chatbot" class="chatbot-compact" style="display: none;">
+    <div class="chatbot-header-compact">
+      <div class="bot-info">
+        <span class="bot-avatar">🤖</span>
+        <div>
+          <h4>مساعدك الذكي</h4>
+          <span class="bot-status">متاح الآن</span>
+        </div>
+      </div>
+      <button class="close-chat-compact">×</button>
+    </div>
+    
+    <div class="chatbot-messages" id="chatMessages">
+      <div class="bot-message-compact">
+        <div class="message-avatar">🤖</div>
+        <div class="message-text">
+          مرحباً! أنا مساعدك التسويقي الذكي 👋<br>
+          أساعدك بأي لهجة عربية من الخليج للمغرب
+        </div>
+      </div>
+    </div>
+    
+    <div class="quick-actions-compact">
+      <button class="quick-action" data-response="أسعار الخدمات تبدأ من 500 ج.م شهرياً. ما نوع نشاطك؟">💰 الأسعار</button>
+      <button class="quick-action" data-response="نبدأ Google Ads خلال 24 ساعة. SEO يحتاج 2-6 أشهر.">⏰ المدة</button>
+      <button class="quick-action" data-response="نضمن عائد إيجابي أو نعيد أموالك. مكتوب بالعقد.">✅ الضمان</button>
+    </div>
+    
+    <div class="chat-input-compact">
+      <input type="text" id="chatInputCompact" placeholder="اكتب رسالتك بأي لهجة...">
+      <button id="sendMessageCompact">→</button>
+    </div>
+  </div>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-actions">
+    <!-- WhatsApp (Right) -->
+    <a href="https://wa.me/201110760081?text=راسلنا واتساب&utm_source=float" target="_blank" class="fab fab-whatsapp" title="راسلنا واتساب">
+      <span class="fab-icon">💬</span>
+      <span class="fab-label">راسلنا واتساب</span>
+    </a>
+    
+    <!-- Chatbot (Left) -->
+    <button id="chatbot-trigger" class="fab fab-chatbot" title="ابدأ شات مع البوت">
+      <span class="fab-icon">🤖</span>
+      <span class="fab-label">ابدأ شات مع البوت</span>
+      <span class="fab-notification" id="chatNotification">!</span>
+    </button>
+    
+    <!-- Back to Top (Far Left) -->
+    <button id="back-to-top" class="fab fab-top" title="العودة للأعلى" style="display: none;">
+      <span class="fab-icon">↑</span>
+    </button>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toast-container"></div>
+
   <script>
-    // Component loading
-    document.addEventListener('DOMContentLoaded', async function() {
-      console.log('🚀 بدء تحميل ArabSad...');
-      
-      const components = [
-        { file: './shared-header.html', target: '#shared-header-placeholder' },
-        { file: './shared-footer.html', target: '#shared-footer-placeholder' }
-      ];
-      
-      for (const { file, target } of components) {
-        try {
-          const response = await fetch(file);
-          if (response.ok) {
-            const html = await response.text();
-            const targetElement = document.querySelector(target);
-            if (targetElement && html.trim()) {
-              targetElement.innerHTML = html;
-              console.log(`✅ تم تحميل ${file}`);
-            }
-          }
-        } catch (error) {
-          console.log(`⚠️ ${file} غير متاح`);
-        }
-      }
-      
-      // Check for subscription success
-      const urlParams = new URLSearchParams(window.location.search);
-      if (urlParams.get('subscribed') === '1') {
-        showToast('✅ تم الاشتراك بنجاح! ستصلك أحدث النصائح والعروض', 'success');
-        window.history.replaceState({}, document.title, window.location.pathname);
-      }
+    // Page Loader
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('pageLoader');
+      setTimeout(() => {
+        loader.style.opacity = '0';
+        setTimeout(() => loader.style.display = 'none', 300);
+      }, 800);
     });
 
-    // Back to Top Button (LEFT side)
-    (function() {
-      const backToTop = document.getElementById('back-to-top');
-      if (!backToTop) return;
+    // Navigation
+    const nav = document.getElementById('mainNav');
+    let lastScroll = 0;
+    
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
       
-      function toggleBackToTop() {
-        if (window.pageYOffset > 300) {
-          backToTop.style.display = 'flex';
-        } else {
-          backToTop.style.display = 'none';
-        }
+      if (currentScroll > 100) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
       }
       
-      backToTop.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
+      if (currentScroll > lastScroll && currentScroll > 200) {
+        nav.classList.add('nav-hidden');
+      } else {
+        nav.classList.remove('nav-hidden');
+      }
       
-      window.addEventListener('scroll', toggleBackToTop, { passive: true });
-    })();
+      lastScroll = currentScroll;
+    });
 
-    // Toast notifications
-    function showToast(text, type) {
-      const container = document.getElementById('toast-container');
-      if (!container) return;
-      
-      const toast = document.createElement('div');
-      toast.className = `toast toast-${type}`;
-      toast.textContent = text;
-      
-      container.appendChild(toast);
-      
-      setTimeout(() => {
-        toast.style.animation = 'slideOut 0.3s ease';
-        setTimeout(() => toast.remove(), 300);
-      }, 5000);
-    }
+    // Back to Top
+    const backToTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 400) {
+        backToTop.style.display = 'flex';
+      } else {
+        backToTop.style.display = 'none';
+      }
+    });
+    
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 
-    // Multi-Dialect AI Chatbot
-    class ArabSadSmartBot {
+    // Smart Chatbot
+    class SmartChatbot {
       constructor() {
         this.isOpen = false;
-        this.greeted = false;
-        this.dialectPatterns = {
-          gulf: /أبي|بغيت|حجز|دقه|فزعة|مسوي|شلون|ويش|يالله|زين/,
-          egyptian: /عايز|عاوز|كده|دلوقتي|حساب|فلوس|ازيك|إيه|حضرتك|معلش/,
-          levantine: /بدي|كتير|هلا|تمام|شو|كيفك|يلا|مشان|مين|وين/,
-          moroccan: /واش|بغيت|دابا|بزاف|كيداير|فين|شنو|وقتاش|أش|لا باس/
-        };
         this.init();
       }
       
       init() {
-        this.bindEvents();
-        this.smartAutoOpen();
-      }
-      
-      bindEvents() {
         const trigger = document.getElementById('chatbot-trigger');
-        const closeBtn = document.querySelector('.close-chat');
-        const sendBtn = document.getElementById('sendMessage');
-        const chatInput = document.getElementById('chatInput');
+        const openChat = document.getElementById('open-chat');
+        const closeBtn = document.querySelector('.close-chat-compact');
+        const sendBtn = document.getElementById('sendMessageCompact');
+        const input = document.getElementById('chatInputCompact');
         
         trigger?.addEventListener('click', () => this.toggle());
+        openChat?.addEventListener('click', () => this.open());
         closeBtn?.addEventListener('click', () => this.close());
         sendBtn?.addEventListener('click', () => this.send());
-        chatInput?.addEventListener('keypress', (e) => {
+        input?.addEventListener('keypress', (e) => {
           if (e.key === 'Enter') this.send();
         });
         
-        document.querySelectorAll('.quick-btn').forEach(btn => {
+        // Quick actions
+        document.querySelectorAll('.quick-action').forEach(btn => {
           btn.addEventListener('click', (e) => {
-            const action = e.target.dataset.action;
-            this.quickReply(action);
+            const response = e.target.dataset.response;
+            this.addBotMessage(response);
           });
         });
-      }
-      
-      smartAutoOpen() {
-        const lastSeen = localStorage.getItem('arabsad-chatbot-last-seen');
-        const now = Date.now();
-        const cooldownDays = 30;
         
-        if (lastSeen) {
-          const daysPassed = (now - parseInt(lastSeen)) / (1000 * 60 * 60 * 24);
-          if (daysPassed < cooldownDays) return;
-        }
-        
-        setTimeout(() => {
-          this.notify();
-          localStorage.setItem('arabsad-chatbot-last-seen', now.toString());
-        }, 12000);
+        // Auto notification
+        setTimeout(() => this.notify(), 15000);
       }
       
       notify() {
-        const trigger = document.getElementById('chatbot-trigger');
         const notification = document.getElementById('chatNotification');
-        if (trigger && notification) {
-          trigger.style.animation = 'bounce 2s infinite';
+        const trigger = document.getElementById('chatbot-trigger');
+        if (notification && !this.isOpen) {
           notification.style.display = 'block';
-          setTimeout(() => trigger.style.animation = '', 8000);
+          trigger.style.animation = 'bounce 1.5s ease-in-out 3';
         }
       }
       
       toggle() {
         this.isOpen ? this.close() : this.open();
-        const notification = document.getElementById('chatNotification');
-        if (notification) notification.style.display = 'none';
       }
       
       open() {
         this.isOpen = true;
-        const widget = document.getElementById('ai-chatbot');
-        if (widget) {
-          widget.style.display = 'flex';
-        }
+        const chatbot = document.getElementById('smart-chatbot');
+        const notification = document.getElementById('chatNotification');
+        chatbot.style.display = 'block';
+        notification.style.display = 'none';
+        setTimeout(() => {
+          const input = document.getElementById('chatInputCompact');
+          input?.focus();
+        }, 100);
       }
       
       close() {
         this.isOpen = false;
-        const widget = document.getElementById('ai-chatbot');
-        if (widget) widget.style.display = 'none';
-      }
-      
-      detectDialect(message) {
-        const msg = message.toLowerCase();
-        
-        // Check English
-        if (/[a-z]/i.test(message) && !/[ا-ي]/.test(message)) {
-          return 'english';
-        }
-        
-        // Check Arabic dialects
-        for (const [dialect, pattern] of Object.entries(this.dialectPatterns)) {
-          if (pattern.test(msg)) {
-            return dialect;
-          }
-        }
-        
-        return 'standard'; // Default to standard Arabic
+        const chatbot = document.getElementById('smart-chatbot');
+        chatbot.style.display = 'none';
       }
       
       send() {
-        const input = document.getElementById('chatInput');
-        if (!input || !input.value.trim()) return;
+        const input = document.getElementById('chatInputCompact');
+        if (!input.value.trim()) return;
         
-        const message = input.value.trim();
-        this.addUserMessage(message);
-        this.simulateTypingThenReply(message);
+        this.addUserMessage(input.value);
+        this.generateResponse(input.value);
         input.value = '';
       }
       
       addUserMessage(message) {
         const container = document.getElementById('chatMessages');
         const messageDiv = document.createElement('div');
-        messageDiv.className = 'message user-message';
-        messageDiv.innerHTML = `<div class="message-content">${message}</div>`;
+        messageDiv.className = 'user-message-compact';
+        messageDiv.innerHTML = `<div class="message-text">${message}</div>`;
         container.appendChild(messageDiv);
         container.scrollTop = container.scrollHeight;
-      }
-      
-      simulateTypingThenReply(message) {
-        const container = document.getElementById('chatMessages');
-        const typingDiv = document.createElement('div');
-        typingDiv.className = 'message bot-message';
-        typingDiv.innerHTML = '<div class="message-content">يكتب...</div>';
-        container.appendChild(typingDiv);
-        container.scrollTop = container.scrollHeight;
-        
-        setTimeout(() => {
-          typingDiv.remove();
-          const response = this.generateSmartResponse(message);
-          this.addBotMessage(response);
-        }, Math.random() * 600 + 400);
-      }
-      
-      generateSmartResponse(message) {
-        const dialect = this.detectDialect(message);
-        const msg = message.toLowerCase();
-        
-        // Price/Cost questions
-        if (/سعر|تكلفة|ميزانية|فلوس|كام|بكم|أسعار/.test(msg)) {
-          switch (dialect) {
-            case 'gulf':
-              return 'أسعارنا مناسبة وحسب احتياجك الله يعطيك العافية. نبدأ من 500 ريال شهرياً للحملات الأساسية. أي نوع نشاط تبي تسوقله؟';
-            case 'egyptian':
-              return 'أسعارنا مناسبة ومرنة حسب احتياجك يا باشا. نبدأ من 500 جنيه شهرياً للحملات الأساسية. إيه نوع النشاط اللي عايز تسوقله؟';
-            case 'levantine':
-              return 'أسعارنا مناسبة وحسب احتياجك تمام. نبدأ من 500 ليرة شهرياً للحملات الأساسية. شو نوع النشاط اللي بدك تسوقله؟';
-            case 'english':
-              return 'Our prices are competitive and flexible based on your needs. We start from $100 monthly for basic campaigns. What type of business do you want to promote?';
-            default:
-              return 'أسعارنا مناسبة ومرنة حسب احتياجك. نبدأ من 500 جنيه شهرياً للحملات الأساسية. ما نوع النشاط الذي تريد التسويق له؟';
-          }
-        }
-        
-        // Timing questions
-        if (/متى|وقت|مدة|زمن|كام يوم/.test(msg)) {
-          switch (dialect) {
-            case 'gulf':
-              return 'نطلق Google Ads خلال 24-48 ساعة بإذن الله. أما SEO فيحتاج 2-6 أشهر للنتائج المستدامة. أي واحد يهمك أكثر؟';
-            case 'egyptian':
-              return 'نشغّل Google Ads خلال يوم أو يومين كده. أما SEO فمحتاج من شهرين لـ6 شهور للنتائج الكويسة. أي واحد اللي مهم ليك أكتر؟';
-            case 'levantine':
-              return 'منشغّل Google Ads خلال يوم أو يومين. أما SEO فبدو من شهرين لـ6 أشهر للنتائج المستمرة. أيو واحد بدك أكتر؟';
-            case 'english':
-              return 'We launch Google Ads within 24-48 hours. SEO needs 2-6 months for sustainable results. Which one is your priority?';
-            default:
-              return 'نطلق Google Ads خلال 24-48 ساعة. أما SEO فيحتاج 2-6 أشهر للنتائج المستدامة. أي واحد أولويتك؟';
-          }
-        }
-        
-        // Guarantee questions
-        if (/ضمان|نتائج|عائد|مضمون/.test(msg)) {
-          switch (dialect) {
-            case 'gulf':
-              return 'نلتزم بتحقيق عائد إيجابي والله، أو نرد فلوسك. مكتوب في العقد. نحط KPIs واضحة ونراقب الأداء معك أسبوعياً.';
-            case 'egyptian':
-              return 'نضمن لك عائد إيجابي والله، أو نرجعلك فلوسك. ده مكتوب في العقد. نحط أهداف واضحة ونتابع معاك أسبوعياً.';
-            case 'levantine':
-              return 'منضمنلك عائد إيجابي، أو منرجعلك مصاريك. مكتوب بالعقد. منحط أهداف واضحة ومنتابع معك كل أسبوع.';
-            case 'english':
-              return 'We guarantee positive ROI or refund your money. It\'s written in our contract. We set clear KPIs and monitor performance weekly with you.';
-            default:
-              return 'نضمن تحقيق عائد إيجابي أو نعيد أموالك. مكتوب في عقدنا. نضع مؤشرات أداء واضحة ونراقب النتائج معك أسبوعياً.';
-          }
-        }
-        
-        // General greeting response based on dialect
-        switch (dialect) {
-          case 'gulf':
-            return 'مرحباً فيك! كيف أقدر أساعدك في التسويق الرقمي؟ عندك نشاط معين تبي تسوقله؟';
-          case 'egyptian':
-            return 'أهلاً بيك! إزيك؟ عايز أساعدك في إيه بالضبط في التسويق الرقمي؟ عندك نشاط معين عايز تسوقله؟';
-          case 'levantine':
-            return 'أهلاً وسهلاً! كيفك؟ شو بدك أساعدك فيه بالتسويق الرقمي؟ عندك نشاط معين بدك تسوقله؟';
-          case 'moroccan':
-            return 'مرحباً بك! كيداير؟ واش بغيتي نعاونك في التسويق الرقمي؟ عندك نشاط معين بغيتي تسوقو؟';
-          case 'english':
-            return 'Hello! How can I help you with digital marketing? Do you have a specific business you want to promote?';
-          default:
-            return 'مرحباً بك! كيف يمكنني مساعدتك في التسويق الرقمي؟ هل لديك نشاط معين تريد التسويق له؟';
-        }
-      }
-      
-      quickReply(action) {
-        const responses = {
-          'google-ads': 'إعلانات Google Ads أسرع طريقة لزيادة المبيعات. نحدد أفضل الكلمات ونصيغ إعلانات جذابة ونقيس العائد بدقة.',
-          'social-media': 'حملات مدروسة على فيسبوك وإنستجرام وتيك توك وسناب شات لزيادة التفاعل والمبيعات.',
-          'seo': 'تحسين محركات البحث يزيد الزيارات المجانية. تدقيق تقني، كلمات مربحة، محتوى قوي وروابط آمنة.',
-          'ecommerce': 'متاجر سريعة وآمنة مع دفع محلي وتكامل شحن وإدارة مخزون احترافية.'
-        };
-        
-        this.addBotMessage(responses[action] || 'كيف يمكنني مساعدتك؟');
       }
       
       addBotMessage(message) {
         const container = document.getElementById('chatMessages');
         const messageDiv = document.createElement('div');
-        messageDiv.className = 'message bot-message';
-        messageDiv.innerHTML = `<div class="message-content">${message}</div>`;
+        messageDiv.className = 'bot-message-compact';
+        messageDiv.innerHTML = `
+          <div class="message-avatar">🤖</div>
+          <div class="message-text">${message}</div>
+        `;
         container.appendChild(messageDiv);
         container.scrollTop = container.scrollHeight;
       }
+      
+      generateResponse(message) {
+        const msg = message.toLowerCase();
+        let response = 'شكراً لرسالتك! تواصل معنا عبر واتساب للرد السريع من خبرائنا.';
+        
+        if (/سعر|تكلفة|فلوس|كام/.test(msg)) {
+          if (/عايز|ايه|كده/.test(msg)) {
+            response = 'أسعارنا مناسبة يا فندم. نبدأ من 500 جنيه شهرياً. عايز تعرف أكتر عن أي خدمة؟';
+          } else if (/أبي|بغيت|شلون/.test(msg)) {
+            response = 'أسعارنا مناسبة أخوي. نبدأ من 500 ريال شهرياً. أي خدمة تبي تعرف عنها أكثر؟';
+          } else {
+            response = 'أسعارنا تنافسية تبدأ من 500 ج.م شهرياً. ما الخدمة التي تهمك؟';
+          }
+        } else if (/وقت|متى|مدة/.test(msg)) {
+          response = 'Google Ads خلال 24-48 ساعة، SEO من 2-6 أشهر. أيهما أولويتك؟';
+        } else if (/ضمان|نتائج/.test(msg)) {
+          response = 'نضمن عائد إيجابي أو نرد المبلغ. مكتوب في العقد رسمياً.';
+        }
+        
+        setTimeout(() => this.addBotMessage(response), 500);
+      }
     }
 
-    // Initialize smart chatbot
-    new ArabSadSmartBot();
-  </script>
-  
-  <!-- Reading progress -->
-  <script>
-    const progress = document.getElementById('progress');
-    if (progress) {
-      function updateProgress() {
-        try {
-          const h = document.documentElement;
-          const scrollPercent = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
-          progress.style.width = Math.min(Math.max(scrollPercent || 0, 0), 100) + '%';
-        } catch (e) {}
-      }
-      window.addEventListener('scroll', updateProgress, { passive: true });
-      updateProgress();
+    // Initialize chatbot
+    new SmartChatbot();
+
+    // Newsletter success check
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('subscribed') === '1') {
+      showToast('✅ تم الاشتراك بنجاح!', 'success');
+      window.history.replaceState({}, '', window.location.pathname);
     }
-  </script>
-  
-  <!-- Service Worker -->
-  <script>
+
+    // Toast function
+    function showToast(message, type) {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = `toast toast-${type}`;
+      toast.textContent = message;
+      container.appendChild(toast);
+      
+      setTimeout(() => {
+        toast.style.animation = 'slideOut 0.3s ease';
+        setTimeout(() => toast.remove(), 300);
+      }, 4000);
+    }
+
+    // Reading progress
+    const readingProgress = document.getElementById('readingProgress');
+    window.addEventListener('scroll', () => {
+      const scrollPercent = (window.pageYOffset / (document.body.scrollHeight - window.innerHeight)) * 100;
+      readingProgress.style.width = Math.min(scrollPercent, 100) + '%';
+    });
+
+    // Service Worker
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./sw.js')
-        .then(reg => console.log('✅ SW OK'))
-        .catch(err => console.log('⚠️ SW Error'));
+      navigator.serviceWorker.register('./sw.js');
     }
   </script>
-
-  <style>
-    /* SEPARATE POSITIONING: WhatsApp RIGHT, Bot LEFT */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 90px;
-      right: 20px;
-      background: #25d366;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      font-family: 'Cairo', system-ui, sans-serif;
-      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
-      transition: all 0.3s ease;
-      z-index: 9998;
-      font-size: 0.9rem;
-    }
-    
-    .whatsapp-float:hover {
-      background: #128c7e;
-      transform: translateY(-4px);
-      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
-    }
-    
-    /* Chatbot FAB - LEFT SIDE (SEPARATE) */
-    .chatbot-fab-left {
-      position: fixed;
-      bottom: 20px;
-      left: 80px; /* Next to back-to-top button */
-      width: 60px;
-      height: 60px;
-      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-      color: white;
-      border: none;
-      border-radius: 50%;
-      font-size: 1.4rem;
-      cursor: pointer;
-      box-shadow: 0 6px 25px rgba(99, 102, 241, 0.4);
-      transition: all 0.3s ease;
-      z-index: 9998;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .chatbot-fab-left:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 35px rgba(99, 102, 241, 0.5);
-    }
-    
-    .bot-label {
-      position: absolute;
-      right: 70px;
-      background: rgba(31, 41, 55, 0.9);
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      white-space: nowrap;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      pointer-events: none;
-      font-family: 'Cairo', system-ui, sans-serif;
-    }
-    
-    .chatbot-fab-left:hover .bot-label {
-      opacity: 1;
-    }
-
-    /* Chatbot Widget - LEFT POSITIONING */
-    .chatbot-widget {
-      position: fixed;
-      bottom: 90px;
-      left: 20px; /* LEFT SIDE instead of right */
-      width: 380px;
-      max-width: calc(100vw - 40px);
-      height: 500px;
-      background: white;
-      border-radius: 20px;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-      z-index: 9999;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-    }
-    
-    .chatbot-header {
-      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-      color: white;
-      padding: 1rem;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-    
-    .bot-avatar { font-size: 1.8rem; }
-    
-    .bot-info h4 {
-      margin: 0;
-      font-size: 1rem;
-      font-weight: 600;
-      font-family: 'Cairo', system-ui, sans-serif;
-    }
-    
-    .status { font-size: 0.8rem; opacity: 0.9; }
-    
-    .close-chat {
-      background: none;
-      border: none;
-      color: white;
-      font-size: 1.5rem;
-      cursor: pointer;
-      margin-left: auto;
-    }
-    
-    .chatbot-body {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .chat-messages {
-      flex: 1;
-      overflow-y: auto;
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-    
-    .message { max-width: 85%; word-wrap: break-word; }
-    
-    .message-content {
-      padding: 0.75rem 1rem;
-      border-radius: 18px;
-      font-size: 0.9rem;
-      line-height: 1.5;
-    }
-    
-    .bot-message { align-self: flex-start; }
-    .bot-message .message-content {
-      background: #f3f4f6;
-      color: #374151;
-    }
-    
-    .user-message { align-self: flex-end; }
-    .user-message .message-content {
-      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-      color: white;
-    }
-    
-    .quick-options {
-      padding: 1rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      border-top: 1px solid #e5e7eb;
-    }
-    
-    .quick-btn {
-      background: #f9fafb;
-      border: 1px solid #d1d5db;
-      color: #374151;
-      padding: 0.5rem 0.75rem;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      font-family: 'Cairo', system-ui, sans-serif;
-    }
-    
-    .quick-btn:hover {
-      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-      color: white;
-      border-color: transparent;
-    }
-    
-    .chat-input-area {
-      display: flex;
-      padding: 1rem;
-      border-top: 1px solid #e5e7eb;
-      gap: 0.5rem;
-    }
-    
-    #chatInput {
-      flex: 1;
-      padding: 0.75rem;
-      border: 1px solid #d1d5db;
-      border-radius: 25px;
-      font-size: 0.9rem;
-      outline: none;
-      font-family: 'IBM Plex Sans Arabic', system-ui, sans-serif;
-    }
-    
-    #chatInput:focus {
-      border-color: #6366f1;
-      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
-    }
-    
-    #sendMessage {
-      background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-      color: white;
-      border: none;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      cursor: pointer;
-      font-size: 1.2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    /* Social Follow Section - Professional Single Row */
-    .social-follow-section {
-      margin-top: 3rem;
-      text-align: center;
-      padding: 2rem 0;
-      border-top: 1px solid #e5e7eb;
-    }
-    
-    .social-follow-section h3 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #1f2937;
-      margin-bottom: 1.5rem;
-      font-family: 'Cairo', system-ui, sans-serif;
-    }
-    
-    .social-actions-row {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-    
-    .social-follow-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      height: 44px;
-      padding: 0 20px;
-      border-radius: 14px;
-      font-weight: 600;
-      font-family: 'Cairo', system-ui, sans-serif;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      font-size: 0.95rem;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    }
-    
-    .social-follow-btn.whatsapp {
-      background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
-      color: white;
-    }
-    
-    .social-follow-btn.facebook {
-      background: linear-gradient(135deg, #1877f2 0%, #166fe5 100%);
-      color: white;
-    }
-    
-    .social-follow-btn.instagram {
-      background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-      color: white;
-    }
-    
-    .social-follow-btn.tiktok {
-      background: linear-gradient(135deg, #000000 0%, #333333 100%);
-      color: white;
-    }
-    
-    .social-follow-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    }
-    
-    /* Newsletter Section - Matching Image Style */
-    .newsletter-section {
-      padding: 3rem 0;
-      background: #f8fafc;
-      text-align: center;
-    }
-    
-    .newsletter-section h2 {
-      color: #1f2937;
-      margin-bottom: 0.5rem;
-      font-size: 1.8rem;
-      font-family: 'Cairo', system-ui, sans-serif;
-    }
-    
-    .newsletter-section p {
-      color: #6b7280;
-      margin-bottom: 2rem;
-      font-size: 0.9rem;
-    }
-    
-    .newsletter-form-row {
-      max-width: 400px;
-      margin: 0 auto;
-      display: flex;
-      gap: 0;
-      border-radius: 25px;
-      overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-    
-    #newsletter-email {
-      flex: 1;
-      padding: 0.75rem 1.25rem;
-      border: none;
-      font-size: 0.9rem;
-      outline: none;
-      font-family: 'IBM Plex Sans Arabic', system-ui, sans-serif;
-      background: white;
-    }
-    
-    .newsletter-form-row button {
-      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s;
-      font-family: 'Cairo', system-ui, sans-serif;
-      font-size: 0.9rem;
-    }
-    
-    .newsletter-form-row button:hover {
-      background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
-    }
-    
-    #newsletter-message {
-      margin-top: 1rem;
-      font-weight: 500;
-      display: none;
-    }
-    
-    .notification-badge {
-      position: absolute;
-      top: -5px;
-      right: -5px;
-      background: #ef4444;
-      color: white;
-      font-size: 0.7rem;
-      padding: 0.2rem 0.4rem;
-      border-radius: 50%;
-      min-width: 18px;
-      text-align: center;
-      animation: pulse 2s infinite;
-    }
-    
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-      100% { transform: scale(1); }
-    }
-    
-    @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-      40% { transform: translateY(-10px); }
-      60% { transform: translateY(-5px); }
-    }
-    
-    /* Mobile responsive */
-    @media (max-width: 768px) {
-      .chatbot-widget {
-        width: calc(100vw - 20px);
-        left: 10px;
-        bottom: 90px;
-        height: 70vh;
-      }
-      
-      .chatbot-fab-left {
-        bottom: 15px;
-        left: 70px;
-        width: 50px;
-        height: 50px;
-        font-size: 1.2rem;
-      }
-      
-      .whatsapp-float {
-        bottom: 80px;
-        right: 15px;
-        font-size: 0.8rem;
-        padding: 10px 14px;
-      }
-      
-      .bot-label { display: none; }
-      
-      .social-actions-row {
-        flex-direction: column;
-        gap: 10px;
-      }
-      
-      .social-follow-btn {
-        min-width: 250px;
-        justify-content: center;
-      }
-      
-      .newsletter-form-row {
-        flex-direction: column;
-        max-width: 300px;
-        border-radius: 12px;
-      }
-      
-      #newsletter-email {
-        border-radius: 12px 12px 0 0;
-      }
-      
-      .newsletter-form-row button {
-        border-radius: 0 0 12px 12px;
-      }
-    }
-  </style>
 
 </body>
 </html>
