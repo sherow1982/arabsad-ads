@@ -49,584 +49,111 @@
         <span class="notification-badge" id="chatNotification">1</span>
     </button>
     
+    <!-- ضبط احترافي ونبرة بشرية -->
+    <script src="assets/js/chatbot-config.js" defer></script>
+    
     <script>
-        // مساعد ذكي متطور للتسويق
         class ArabSadAIChatbot {
             constructor() {
                 this.isOpen = false;
+                const cfg = window.ARABSAD_CHATBOT_CONFIG || {};
                 this.responses = {
                     'google-ads': {
-                        message: '🎯 **إعلانات Google Ads** هي أسرع طريقة لزيادة مبيعاتك!\n\n✅ **شبكة البحث**: استهداف العملاء الباحثين عن خدماتك\n✅ **شبكة العرض**: وصول لملايين العملاء المحتملين\n✅ **YouTube Ads**: إعلانات فيديو مؤثرة\n✅ **Performance Max**: أحدث تقنيات Google',
+                        message: '🎯 إعلانات Google Ads ترفع مبيعاتك بسرعة وبأمان. نحدد الكلمات، نصيغ الإعلانات، ونقيس العائد. هل نشاطك محلي أم خليجي؟',
                         actions: [
-                            { text: 'اطلب عرض سعر Google Ads', url: 'https://wa.me/201110760081?text=أريد عرض سعر Google Ads&utm_source=chatbot&utm_medium=ai&utm_campaign=google-ads' },
+                            { text: 'اطلب عرض سعر', url: 'https://wa.me/201110760081?text=عرض سعر Google Ads&utm_source=chatbot&utm_medium=ai', target: '_blank' },
                             { text: 'تفاصيل الخدمة', url: 'google-ads-service.html' }
                         ]
                     },
                     'social-media': {
-                        message: '📱 **إعلانات وسائل التواصل** لزيادة المبيعات والتفاعل!\n\n✅ **Facebook & Instagram**: استهداف دقيق للجمهور\n✅ **Snapchat Ads**: إعلانات قصص وعدسات AR\n✅ **TikTok Ads**: محتوى فيرالي ومؤثر\n✅ **LinkedIn Ads**: للشركات B2B',
+                        message: '📱 نُطلق حملات مدروسة على فيسبوك وإنستجرام وتيك توك وسناب شات مع اختبارات A/B وتحسين أسبوعي.',
                         actions: [
-                            { text: 'اطلب خطة Social Media', url: 'https://wa.me/201110760081?text=أريد خطة Social Media شاملة&utm_source=chatbot&utm_medium=ai&utm_campaign=social-media' },
-                            { text: 'أمثلة على الحملات', url: 'social-media-service.html' }
+                            { text: 'اطلب خطة Social', url: 'https://wa.me/201110760081?text=خطة Social&utm_source=chatbot&utm_medium=ai', target: '_blank' },
+                            { text: 'أمثلة الحملات', url: 'social-media-service.html' }
                         ]
                     },
                     'seo': {
-                        message: '🔍 **تحسين محركات البحث SEO** لزيارات مجانية أكثر!\n\n✅ **بحث الكلمات**: استهداف الكلمات المربحة\n✅ **تحسين تقني**: سرعة وأمان وتجربة مستخدم\n✅ **بناء روابط**: Link Building آمن وفعال\n✅ **محتوى محسن**: مقالات وصفحات محسنة',
+                        message: '🔍 SEO يزيد الزيارات المجانية بشكل مستمر. نبدأ بتدقيق تقني، كلمات مربحة، ثم محتوى وروابط آمنة.',
                         actions: [
-                            { text: 'تحليل مجاني لموقعك', url: 'https://wa.me/201110760081?text=أريد تحليل SEO مجاني لموقعي&utm_source=chatbot&utm_medium=ai&utm_campaign=seo-analysis' },
-                            { text: 'خدمة SEO الكاملة', url: 'seo-service.html' }
+                            { text: 'تحليل SEO مجاني', url: 'https://wa.me/201110760081?text=تحليل SEO مجاني&utm_source=chatbot&utm_medium=ai', target: '_blank' },
+                            { text: 'خدمة SEO', url: 'seo-service.html' }
                         ]
                     },
                     'ecommerce': {
-                        message: '🛒 **متاجر إلكترونية** عصرية وسريعة!\n\n✅ **تصميم متجاوب**: Mobile-First وسريع\n✅ **نظام دفع آمن**: جميع وسائل الدفع المحلية\n✅ **إدارة مخزون**: تلقائية وذكية\n✅ **تحليلات شاملة**: تتبع كامل للمبيعات',
+                        message: '🛒 متجر إلكتروني سريع وآمن مع بوابات دفع محلية وتكامل شحن. نُحسّن تجربة الشراء والتحويل.',
                         actions: [
-                            { text: 'عرض سعر متجر إلكتروني', url: 'https://wa.me/201110760081?text=أريد عرض سعر لمتجر إلكتروني&utm_source=chatbot&utm_medium=ai&utm_campaign=ecommerce' },
-                            { text: 'أمثلة متاجر سابقة', url: 'ecommerce-service.html' }
+                            { text: 'عرض متجر إلكتروني', url: 'https://wa.me/201110760081?text=عرض متجر إلكتروني&utm_source=chatbot&utm_medium=ai', target: '_blank' },
+                            { text: 'الخدمة', url: 'ecommerce-service.html' }
                         ]
                     },
                     'default': {
-                        message: 'شكراً لرسالتك! 😊\n\nأهم خدماتنا:\n• **Google Ads** - إعلانات مدفوعة\n• **Social Media** - فيسبوك، إنستجرام، تيك توك\n• **SEO** - تحسين محركات بحث\n• **متاجر إلكترونية** - حلول شاملة\n\n💬 للتواصل الفوري مع خبير تسويق:',
-                        actions: [
-                            { text: 'تواصل فوري عبر واتساب', url: 'https://wa.me/201110760081?text=أريد استشارة تسويقية فورية&utm_source=chatbot&utm_medium=ai&utm_campaign=consultation' },
-                            { text: 'استعرض جميع الخدمات', url: 'services-page.html' }
-                        ]
+                        message: (cfg.greeting || 'مرحباً بك! كيف يمكن المساعدة؟') + '\n' + (cfg.privacyNote || ''),
+                        actions: cfg.ctas || []
                     }
                 };
-                
-                this.smartResponses = [
-                    { keywords: ['سعر', 'تكلفة', 'ميزانية'], response: '💰 الأسعار تختلف حسب نوع الخدمة وحجم المشروع. نبدأ من 500 جنيه شهرياً لحملات Google Ads البسيطة. لعرض مخصص:' },
-                    { keywords: ['متى', 'وقت', 'مدة'], response: '⏱️ نبدأ حملاتك خلال 24-48 ساعة من الموافقة. Google Ads تظهر فوراً، SEO يحتاج 2-3 أشهر للنتائج المرئية.' },
-                    { keywords: ['ضمان', 'عائد'], response: '🛡️ نضمن عائداً إيجابياً على استثمارك أو نعيد أموالك بالكامل! هذا ضمان مكتوب في عقدنا.' },
-                    { keywords: ['موقع', 'تصميم'], response: '🎨 نصمم مواقع عربية عصرية، سريعة، ومحسنة لمحركات البحث. تبدأ من 1500 جنيه للموقع البسيط.' }
-                ];
-                
+                this.smart = cfg.responses || {};
+                this.typingRange = cfg.typingDelayMs || [200,500];
                 this.init();
             }
-            
-            init() {
-                this.setupEventListeners();
-                this.setupAutoTrigger();
+            init(){
+                this.bind();
+                this.autoOpen();
             }
-            
-            setupEventListeners() {
+            bind(){
                 const trigger = document.getElementById('chatbot-trigger');
                 const closeBtn = document.querySelector('.close-chat');
-                const chatWidget = document.getElementById('ai-chatbot');
                 const sendBtn = document.getElementById('sendMessage');
                 const chatInput = document.getElementById('chatInput');
-                
-                if (trigger) {
-                    trigger.addEventListener('click', () => this.toggleChat());
-                }
-                
-                if (closeBtn) {
-                    closeBtn.addEventListener('click', () => this.closeChat());
-                }
-                
-                if (sendBtn) {
-                    sendBtn.addEventListener('click', () => this.sendMessage());
-                }
-                
-                if (chatInput) {
-                    chatInput.addEventListener('keypress', (e) => {
-                        if (e.key === 'Enter') this.sendMessage();
-                    });
-                }
-                
-                // أزرار سريعة
-                document.querySelectorAll('.quick-btn').forEach(btn => {
-                    btn.addEventListener('click', (e) => {
-                        const action = e.target.dataset.action;
-                        this.handleQuickAction(action);
-                    });
-                });
+                trigger && trigger.addEventListener('click',()=>this.toggle());
+                closeBtn && closeBtn.addEventListener('click',()=>this.close());
+                sendBtn && sendBtn.addEventListener('click',()=>this.send());
+                chatInput && chatInput.addEventListener('keypress',(e)=>{if(e.key==='Enter') this.send();});
+                document.querySelectorAll('.quick-btn').forEach(btn=>btn.addEventListener('click',(e)=>{
+                    const action=e.target.dataset.action; this.reply(action);
+                }));
             }
-            
-            setupAutoTrigger() {
-                // فتح تلقائي بعد 15 ثانية
-                setTimeout(() => {
-                    if (!localStorage.getItem('chatbot-seen')) {
-                        this.showWelcomeAnimation();
-                        localStorage.setItem('chatbot-seen', 'true');
-                    }
-                }, 15000);
+            autoOpen(){
+                const cfg = (window.ARABSAD_CHATBOT_CONFIG||{}); const seen=localStorage.getItem('chatbot-seen');
+                if(!seen){ setTimeout(()=>{this.notify();}, cfg.openOnIdleMs||10000); localStorage.setItem('chatbot-seen','1'); }
             }
-            
-            showWelcomeAnimation() {
-                const trigger = document.getElementById('chatbot-trigger');
-                const notification = document.getElementById('chatNotification');
-                
-                if (trigger && notification) {
-                    trigger.style.animation = 'bounce 2s infinite';
-                    notification.style.display = 'block';
-                    
-                    setTimeout(() => {
-                        trigger.style.animation = '';
-                    }, 6000);
-                }
-            }
-            
-            toggleChat() {
-                const chatWidget = document.getElementById('ai-chatbot');
-                const notification = document.getElementById('chatNotification');
-                
-                if (!chatWidget) return;
-                
-                if (this.isOpen) {
-                    this.closeChat();
-                } else {
-                    this.openChat();
-                }
-                
-                if (notification) {
-                    notification.style.display = 'none';
-                }
-            }
-            
-            openChat() {
-                const chatWidget = document.getElementById('ai-chatbot');
-                if (chatWidget) {
-                    chatWidget.style.display = 'flex';
-                    chatWidget.style.animation = 'slideInUp 0.3s ease-out';
-                    this.isOpen = true;
-                    
-                    setTimeout(() => {
-                        const chatInput = document.getElementById('chatInput');
-                        if (chatInput) chatInput.focus();
-                    }, 300);
-                }
-            }
-            
-            closeChat() {
-                const chatWidget = document.getElementById('ai-chatbot');
-                if (chatWidget) {
-                    chatWidget.style.animation = 'slideOutDown 0.3s ease-in';
-                    setTimeout(() => {
-                        chatWidget.style.display = 'none';
-                    }, 300);
-                    this.isOpen = false;
-                }
-            }
-            
-            handleQuickAction(action) {
-                const response = this.responses[action];
-                if (response) {
-                    this.addBotMessage(response.message, response.actions);
-                }
-            }
-            
-            sendMessage() {
-                const chatInput = document.getElementById('chatInput');
-                if (!chatInput || !chatInput.value.trim()) return;
-                
-                const message = chatInput.value.trim();
-                this.addUserMessage(message);
-                
-                // معالجة ذكية للرسائل
-                setTimeout(() => {
-                    const response = this.generateSmartResponse(message);
-                    this.addBotMessage(response.message, response.actions);
-                }, 1000);
-                
-                chatInput.value = '';
-            }
-            
-            generateSmartResponse(message) {
-                const lowerMessage = message.toLowerCase();
-                
-                // بحث في الردود الذكية
-                for (const smartResponse of this.smartResponses) {
-                    if (smartResponse.keywords.some(keyword => lowerMessage.includes(keyword))) {
-                        return {
-                            message: smartResponse.response,
-                            actions: [{ 
-                                text: 'تواصل مع خبير', 
-                                url: `https://wa.me/201110760081?text=${encodeURIComponent(message)}&utm_source=chatbot&utm_medium=ai&utm_campaign=smart-response` 
-                            }]
-                        };
-                    }
-                }
-                
-                return this.responses.default;
-            }
-            
-            addUserMessage(message) {
-                const chatMessages = document.getElementById('chatMessages');
-                const messageDiv = document.createElement('div');
-                messageDiv.className = 'message user-message';
-                messageDiv.innerHTML = `<div class="message-content">${message}</div>`;
-                chatMessages.appendChild(messageDiv);
-                this.scrollToBottom();
-            }
-            
-            addBotMessage(message, actions = []) {
-                const chatMessages = document.getElementById('chatMessages');
-                const messageDiv = document.createElement('div');
-                messageDiv.className = 'message bot-message';
-                
-                let actionsHTML = '';
-                if (actions && actions.length > 0) {
-                    actionsHTML = '<div class="message-actions">';
-                    actions.forEach(action => {
-                        const target = action.url.startsWith('http') ? ' target="_blank" rel="noopener"' : '';
-                        actionsHTML += `<a href="${action.url}" class="action-btn"${target}>${action.text}</a>`;
-                    });
-                    actionsHTML += '</div>';
-                }
-                
-                messageDiv.innerHTML = `
-                    <div class="message-content">${message}</div>
-                    ${actionsHTML}
-                `;
-                
-                chatMessages.appendChild(messageDiv);
-                this.scrollToBottom();
-            }
-            
-            scrollToBottom() {
-                const chatMessages = document.getElementById('chatMessages');
-                if (chatMessages) {
-                    chatMessages.scrollTop = chatMessages.scrollHeight;
-                }
-            }
+            notify(){ const t=document.getElementById('chatbot-trigger'); const n=document.getElementById('chatNotification'); if(t&&n){ t.style.animation='bounce 2s infinite'; n.style.display='block'; setTimeout(()=>{t.style.animation='';},6000);} }
+            toggle(){ this.isOpen?this.close():this.open(); const n=document.getElementById('chatNotification'); if(n) n.style.display='none'; }
+            open(){ const w=document.getElementById('ai-chatbot'); if(w){ w.style.display='flex'; w.style.animation='slideInUp .3s ease-out'; this.focusInput(); this.systemGreet(); } }
+            close(){ const w=document.getElementById('ai-chatbot'); if(w){ w.style.animation='slideOutDown .3s ease-in'; setTimeout(()=>{w.style.display='none';},300); } }
+            focusInput(){ setTimeout(()=>{const i=document.getElementById('chatInput'); i&&i.focus();},300); }
+            async send(){ const i=document.getElementById('chatInput'); if(!i||!i.value.trim()) return; const msg=i.value.trim(); this.addUser(msg); await this.typeThenReply(msg); i.value=''; }
+            addUser(m){ const box=document.getElementById('chatMessages'); const d=document.createElement('div'); d.className='message user-message'; d.innerHTML=`<div class="message-content">${m}</div>`; box.appendChild(d); box.scrollTop=box.scrollHeight; }
+            async typeThenReply(m){ const box=document.getElementById('chatMessages'); const typing=document.createElement('div'); typing.className='message bot-message'; typing.innerHTML='<div class="message-content">يكتب…</div>'; box.appendChild(typing); box.scrollTop=box.scrollHeight; await new Promise(r=>setTimeout(r, Math.floor(Math.random()*(this.typingRange[1]-this.typingRange[0]+1))+this.typingRange[0] )); typing.remove(); const r=this.generate(m); this.addBot(r.message, r.actions); }
+            generate(m){ const s=m.toLowerCase(); const cfg=window.ARABSAD_CHATBOT_CONFIG||{}; if(/(سعر|تكلفة|ميزانية)/.test(s)) return {message: (cfg.responses?.pricing||'التسعير يعتمد على أهدافك وميزانيتك وسوقك. سنقترح الأفضل لتحقيق نتائج ملموسة.'), actions:(cfg.ctas||[])}; if(/(متى|وقت|مدة)/.test(s)) return {message: (cfg.responses?.timeline||'نطلق Google Ads خلال 24-48 ساعة وSEO يحتاج 2-6 أشهر.'), actions:(cfg.ctas||[])}; if(/(ضمان|نتائج|عائد)/.test(s)) return {message: (cfg.responses?.guarantee||'نلتزم بنتائج قابلة للقياس حسب البيانات.'), actions:(cfg.ctas||[])}; if(/(متجر|متاجر|اكومرس|ecommerce)/.test(s)) return {message: (cfg.responses?.ecommerce||'ننفّذ متاجر سريعة وآمنة مع دفع محلي وشحن.'), actions:(cfg.ctas||[])}; return this.responses.default; }
+            reply(action){ const r=this.responses[action]||this.responses.default; this.addBot(r.message, r.actions); }
+            addBot(message, actions=[]){ const box=document.getElementById('chatMessages'); const d=document.createElement('div'); d.className='message bot-message'; let a=''; if(actions.length){ a='<div class="message-actions">'+actions.map(act=>`<a href="${act.url}" class="action-btn" ${act.target?`target="${act.target}" rel="noopener"`:''}>${act.text}</a>`).join('')+'</div>'; } d.innerHTML=`<div class="message-content">${message}</div>${a}`; box.appendChild(d); box.scrollTop=box.scrollHeight; }
         }
-        
-        // تشغيل المساعد عند تحميل الصفحة
-        document.addEventListener('DOMContentLoaded', () => {
-            new ArabSadAIChatbot();
-        });
+        document.addEventListener('DOMContentLoaded',()=>{ new ArabSadAIChatbot(); });
     </script>
-    
+
+    <!-- تحسين تجربة الكتابة البشرية داخل البوت فقط -->
+    <link rel="preload" href="chatbot-inject.html" as="fetch" crossorigin>
+    <script>
+      // حقن ضبط إضافي للبوت دون تغيير بصري عام
+      fetch('chatbot-inject.html').then(r=>r.text()).then(html=>{ const div=document.createElement('div'); div.innerHTML=html; document.body.appendChild(div); }).catch(()=>{});
+    </script>
+
     <style>
-        /* أنماط المساعد الذكي */
-        .chatbot-widget {
-            position: fixed;
-            bottom: 120px;
-            right: 20px;
-            width: 380px;
-            max-width: calc(100vw - 40px);
-            height: 500px;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-            z-index: 9999;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            font-family: 'Cairo', sans-serif;
-        }
-        
-        .chatbot-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-        
-        .bot-avatar {
-            font-size: 2rem;
-            background: rgba(255,255,255,0.2);
-            padding: 0.5rem;
-            border-radius: 50%;
-            min-width: 50px;
-            text-align: center;
-        }
-        
-        .bot-info h4 {
-            margin: 0;
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
-        
-        .status {
-            font-size: 0.8rem;
-            opacity: 0.9;
-        }
-        
-        .status.online::before {
-            content: '•';
-            color: #4ade80;
-            margin-left: 0.5rem;
-        }
-        
-        .close-chat {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-            margin-right: auto;
-            padding: 0.25rem;
-            border-radius: 50%;
-            transition: background 0.3s ease;
-        }
-        
-        .close-chat:hover {
-            background: rgba(255,255,255,0.2);
-        }
-        
-        .chatbot-body {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-        
-        .chat-messages {
-            flex: 1;
-            padding: 1rem;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-        
-        .message {
-            max-width: 85%;
-            word-wrap: break-word;
-        }
-        
-        .bot-message {
-            align-self: flex-start;
-        }
-        
-        .user-message {
-            align-self: flex-end;
-        }
-        
-        .message-content {
-            padding: 0.75rem 1rem;
-            border-radius: 18px;
-            font-size: 0.9rem;
-            line-height: 1.4;
-        }
-        
-        .bot-message .message-content {
-            background: #f3f4f6;
-            color: #374151;
-        }
-        
-        .user-message .message-content {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-        
-        .message-actions {
-            margin-top: 0.5rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-        
-        .action-btn {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            text-decoration: none;
-            font-size: 0.85rem;
-            font-weight: 500;
-            text-align: center;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-        
-        .action-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
-            text-decoration: none;
-            color: white;
-        }
-        
-        .quick-options {
-            padding: 0.75rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            border-bottom: 1px solid #e5e7eb;
-        }
-        
-        .quick-btn {
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
-            color: #374151;
-            padding: 0.5rem 0.75rem;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-family: 'Cairo', sans-serif;
-        }
-        
-        .quick-btn:hover {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            transform: translateY(-1px);
-        }
-        
-        .chat-input-area {
-            padding: 1rem;
-            display: flex;
-            gap: 0.5rem;
-            border-top: 1px solid #e5e7eb;
-            background: #f9fafb;
-        }
-        
-        #chatInput {
-            flex: 1;
-            padding: 0.75rem;
-            border: 1px solid #d1d5db;
-            border-radius: 20px;
-            font-family: 'Cairo', sans-serif;
-            font-size: 0.9rem;
-            background: white;
-        }
-        
-        #chatInput:focus {
-            outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-        }
-        
-        #sendMessage {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            padding: 0.75rem 1rem;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 1rem;
-            min-width: 45px;
-            transition: all 0.3s ease;
-        }
-        
-        #sendMessage:hover {
-            transform: scale(1.1);
-        }
-        
-        .chatbot-fab {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            font-size: 1.5rem;
-            cursor: pointer;
-            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
-            transition: all 0.3s ease;
-            z-index: 9998;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .chatbot-fab:hover {
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
-        }
-        
-        .notification-badge {
-            position: absolute;
-            top: -5px;
-            right: -5px;
-            background: #ef4444;
-            color: white;
-            font-size: 0.7rem;
-            padding: 0.2rem 0.4rem;
-            border-radius: 50%;
-            min-width: 18px;
-            text-align: center;
-            display: none;
-            animation: pulse 2s infinite;
-        }
-        
-        /* انيميشنز */
-        @keyframes slideInUp {
-            from {
-                transform: translateY(100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-        
-        @keyframes slideOutDown {
-            from {
-                transform: translateY(0);
-                opacity: 1;
-            }
-            to {
-                transform: translateY(100%);
-                opacity: 0;
-            }
-        }
-        
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-10px);
-            }
-            60% {
-                transform: translateY(-5px);
-            }
-        }
-        
-        @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.1);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
-        
-        /* تحسينات الجوال */
-        @media (max-width: 768px) {
-            .chatbot-widget {
-                width: calc(100vw - 20px);
-                right: 10px;
-                bottom: 90px;
-                height: 70vh;
-            }
-            
-            .chatbot-fab {
-                bottom: 15px;
-                left: 15px;
-                width: 55px;
-                height: 55px;
-                font-size: 1.3rem;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .chatbot-widget {
-                height: 80vh;
-            }
-            
-            .quick-options {
-                padding: 0.5rem;
-            }
-            
-            .quick-btn {
-                font-size: 0.75rem;
-                padding: 0.4rem 0.6rem;
-            }
-            
-            .chat-input-area {
-                padding: 0.75rem;
-            }
-        }
+      /* أنماط البوت (داخل نافذة البوت فقط) */
+      .chatbot-widget { position: fixed; bottom: 120px; right: 20px; width: 380px; max-width: calc(100vw - 40px); height: 500px; background: white; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.15); z-index: 9999; display: flex; flex-direction: column; overflow: hidden; font-family: 'Cairo', sans-serif; }
+      .chatbot-header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1rem; display: flex; align-items: center; gap: .75rem; }
+      .chatbot-fab { position: fixed; bottom: 20px; left: 20px; width: 60px; height: 60px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 50%; font-size: 1.5rem; cursor: pointer; box-shadow: 0 4px 20px rgba(102,126,234,0.3); transition: .3s; z-index: 9998; display: flex; align-items: center; justify-content: center; }
+      .notification-badge { position: absolute; top: -5px; right: -5px; background: #ef4444; color: white; font-size: .7rem; padding: .2rem .4rem; border-radius: 50%; min-width: 18px; text-align: center; display: none; animation: pulse 2s infinite; }
+      .message { max-width: 85%; word-wrap: break-word; }
+      .message-content { padding: .75rem 1rem; border-radius: 18px; font-size: .9rem; line-height: 1.5; }
+      .bot-message .message-content { background: #f3f4f6; color: #374151; }
+      .user-message .message-content { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+      .message-actions { margin-top: .5rem; display: flex; flex-direction: column; gap: .5rem; }
+      .action-btn { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: .5rem 1rem; border-radius: 20px; text-decoration: none; font-size: .85rem; font-weight: 500; text-align: center; border: 2px solid transparent; transition: .3s; }
+      .action-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(102,126,234,.4); }
+      @keyframes bounce{0%,20%,50%,80%,100%{transform:translateY(0)}40%{transform:translateY(-10px)}60%{transform:translateY(-5px)}}
+      @keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.1)}100%{transform:scale(1)}}
+      @media(max-width:768px){ .chatbot-widget{ width: calc(100vw - 20px); right:10px; bottom:90px; height: 70vh;} .chatbot-fab{ bottom:15px; left:15px; width:55px; height:55px; font-size:1.3rem;} }
     </style>
 </body>
 </html>
