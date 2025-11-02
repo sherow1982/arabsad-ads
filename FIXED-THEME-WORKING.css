@@ -1,0 +1,282 @@
+/*
+  WORKING BRIGHT THEME - KEEPING EXACTLY AS REQUESTED
+  الثيم الفاتح العامل - بالضبط كما طُلب بدون أي تغيير
+*/
+
+/* الثيم الأصلي الفاتح الذي كان يعمل بشكل مثالي */
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #8b5cf6;
+  --success-color: #10b981;
+  --danger-color: #ef4444;
+  --warning-color: #f59e0b;
+  --text-dark: #1f2937;
+  --text-medium: #4b5563;
+  --text-light: #6b7280;
+  --bg-white: #ffffff;
+  --bg-light: #f8fafc;
+  --border-color: #e5e7eb;
+}
+
+/* Body must stay bright white */
+body {
+  background: var(--bg-white) !important;
+  color: var(--text-dark) !important;
+  font-family: 'IBM Plex Sans Arabic', system-ui, sans-serif;
+}
+
+/* Hero stays bright gradient as before */
+.hero {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+  color: white !important;
+}
+
+/* All sections stay light backgrounds */
+.services-preview { background: var(--bg-light) !important; }
+.why-us { background: var(--bg-white) !important; }
+.gulf-countries { background: var(--bg-light) !important; }
+.contact { background: var(--bg-white) !important; }
+.newsletter-section { background: var(--bg-light) !important; }
+
+/* Cards stay white with light shadows */
+.service-card, .country-card, .feature {
+  background: var(--bg-white) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-dark) !important;
+}
+
+/* Buttons stay bright gradients */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+  color: white !important;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, var(--success-color), #059669) !important;
+  color: white !important;
+}
+
+/* Headings stay dark for contrast */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-dark) !important;
+  font-family: 'Cairo', system-ui, sans-serif;
+}
+
+/* Hero text stays white */
+.hero h1, .hero h2, .hero h3,
+.rev-title, .rev-sub, .rev-kicker {
+  color: white !important;
+}
+
+/* Links stay bright blue */
+a { color: var(--primary-color) !important; }
+a:hover { color: var(--secondary-color) !important; }
+
+/* Back to top button (left side) */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+  z-index: 9997;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-to-top-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+}
+
+/* Newsletter form */
+.newsletter-section {
+  padding: 3rem 0;
+  background: var(--bg-light) !important;
+  text-align: center;
+}
+
+.form-group {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#newsletter-email {
+  flex: 1;
+  min-width: 250px;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 25px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#newsletter-email:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-group button {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Cairo', system-ui, sans-serif;
+}
+
+/* Social buttons row (professional inline layout) */
+.social-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 42px;
+  padding: 0 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-family: 'Cairo', system-ui, sans-serif;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.social-btn.whatsapp {
+  background: #25d366;
+  color: white;
+}
+
+.social-btn.facebook {
+  background: #1877f2;
+  color: white;
+}
+
+.social-btn.instagram {
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  color: white;
+}
+
+.social-btn.tiktok {
+  background: #000000;
+  color: white;
+}
+
+.social-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Toast notifications */
+#toast-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10000;
+  pointer-events: none;
+}
+
+.toast {
+  background: var(--text-dark);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  animation: slideIn 0.3s ease;
+  pointer-events: auto;
+  max-width: 350px;
+  word-wrap: break-word;
+}
+
+.toast-success { background: var(--success-color); }
+.toast-error { background: var(--danger-color); }
+
+@keyframes slideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideOut {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(100%); opacity: 0; }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .back-to-top-btn {
+    bottom: 15px;
+    left: 15px;
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
+  }
+  
+  .form-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  #newsletter-email { min-width: auto; }
+  
+  .social-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .social-btn {
+    min-width: 200px;
+    justify-content: center;
+  }
+  
+  #toast-container {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+  
+  .toast {
+    max-width: none;
+    text-align: center;
+  }
+}
+
+/* NO DARK MODE ALLOWED - PROTECTION */
+.dark, .dark-mode, .theme-dark,
+[data-theme="dark"], [class*="dark"] {
+  background: var(--bg-white) !important;
+  color: var(--text-dark) !important;
+  filter: none !important;
+}
+
+/* Ensure all pages stay bright */
+* {
+  color: inherit;
+}
+
+*:not(.hero):not(.hero *):not(.footer):not(.footer *) {
+  background-color: var(--bg-white) !important;
+}
