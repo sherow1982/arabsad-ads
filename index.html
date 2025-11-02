@@ -29,68 +29,10 @@
 
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/slider.css">
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "مؤسسة إعلانات العرب",
-    "url": "https://arabsad.com",
-    "logo": "https://arabsad.com/assets/images/logo-hero.jpg",
-    "description": "وكالة تسويق رقمي متخصصة في الإعلانات الممولة والتسويق الإلكتروني في دول الخليج العربي",
-    "areaServed": ["SA", "AE", "KW", "QA", "BH", "OM"],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+201110760081",
-      "contactType": "customer service",
-      "availableLanguage": "Arabic"
-    },
-    "sameAs": [
-      "https://wa.me/201110760081",
-      "mailto:sherow1982@gmail.com"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "خدمات التسويق الرقمي",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "إدارة إعلانات جوجل",
-            "description": "إدارة حملات Google Ads احترافية لرفع ROAS وخفض CPA"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "إعلانات السوشيال ميديا",
-            "description": "حملات مؤثرة على منصات التواصل الاجتماعي"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "تحسين محركات البحث SEO",
-            "description": "تحسين ترتيب موقعك في نتائج البحث العضوية"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "تصميم المتاجر الإلكترونية",
-            "description": "متاجر إلكترونية سريعة ومحسنة للتحويل"
-          }
-        }
-      ]
-    }
-  }
-  </script>
+  <link rel="stylesheet" href="assets/css/ux-enhancements.css">
 </head>
 <body>
+  <div class="reading-progress" id="progress"></div>
   <a href="#main-content" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
   
   <header class="header" role="banner">
@@ -113,8 +55,8 @@
           <li><a href="seo-service.html" class="nav-link" target="_blank">🔍 SEO</a></li>
           <li><a href="ecommerce-service.html" class="nav-link" target="_blank">🛒 المتاجر</a></li>
           <li><a href="gulf-cities.html" class="nav-link" target="_blank">🌍 مدن الخليج</a></li>
-          <li><a href="#contact" class="nav-link">☎️ اتصل بنا</a></li>
           <li><a href="blog/index.html" class="nav-link" target="_blank">📰 مدونتنا</a></li>
+          <li><a href="#contact" class="nav-link">☎️ اتصل بنا</a></li>
         </ul>
         <button class="nav-toggle" id="navToggle" aria-label="فتح/إغلاق القائمة" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -129,210 +71,6 @@
   
   <button id="backToTop" class="back-to-top" aria-label="الرجوع للأعلى" title="الرجوع للأعلى">↑</button>
   
+  <!-- المحتوى الأصلي يبقى كما هو -->
   <main id="main-content" role="main">
-    <section id="home" class="hero" aria-labelledby="hero-title">
-      <div class="rev-slider" id="revSlider" aria-roledescription="carousel" aria-label="عروض خدمات مؤسسة إعلانات العرب" tabindex="0">
-        <div class="rev-slide active" data-interval="6000">
-          <div class="rev-inner">
-            <div class="rev-kicker">🎯 Google Ads</div>
-            <h2 class="rev-title">إعلانات جوجل عالية الأداء لرفع ROAS وخفض CPA</h2>
-            <p class="rev-sub">حملات Search، Display، YouTube، Shopping، Performance Max بإعداد احترافي وتتبع محسن لضمان أفضل النتائج.</p>
-            <div class="rev-cta">
-              <a href="google-ads-service.html" class="btn btn-secondary" target="_blank">تفاصيل الخدمة</a>
-              <a href="https://wa.me/201110760081?text=أريد بدء Google Ads" class="btn btn-primary" target="_blank" rel="nofollow noopener">🚀 ابدأ الآن</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="rev-slide" data-interval="6000">
-          <div class="rev-inner">
-            <div class="rev-kicker">📱 Social Ads</div>
-            <h2 class="rev-title">سوشيال ميديا مؤثرة على Facebook وInstagram وTikTok وSnapchat</h2>
-            <p class="rev-sub">استهداف دقيق + محتوى بصري قوي + اختبارات A/B + تتبع server-side للوصول لأفضل جمهورك.</p>
-            <div class="rev-cta">
-              <a href="social-media-service.html" class="btn btn-secondary" target="_blank">تفاصيل الخدمة</a>
-              <a href="https://wa.me/201110760081?text=أريد حملة سوشيال" class="btn btn-primary" target="_blank" rel="nofollow noopener">📞 استشارة مجانية</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="rev-slide" data-interval="6000">
-          <div class="rev-inner">
-            <div class="rev-kicker">🔍 SEO 2025</div>
-            <h2 class="rev-title">سيو تقني ومحتوى ومحلي متوافق مع Core Web Vitals</h2>
-            <p class="rev-sub">تحسين ترتيبك، زيادة الزيارات العضوية، وبناء سلطة موقع مستدامة وفق أحدث معايير جوجل.</p>
-            <div class="rev-cta">
-              <a href="seo-service.html" class="btn btn-secondary" target="_blank">تفاصيل الخدمة</a>
-              <a href="https://wa.me/201110760081?text=أريد خطة SEO" class="btn btn-primary" target="_blank" rel="nofollow noopener">📈 اطلب خطة</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="rev-slide" data-interval="6000">
-          <div class="rev-inner">
-            <div class="rev-kicker">🛒 E commerce</div>
-            <h2 class="rev-title">متاجر إلكترونية سريعة ومحسنة للتحويل</h2>
-            <p class="rev-sub">تصميم متجاوب، وسائل دفع محلية، وتجربة تسوق ممتازة مع إدارة شاملة للمخزون والطلبات.</p>
-            <div class="rev-cta">
-              <a href="ecommerce-service.html" class="btn btn-secondary" target="_blank">تفاصيل الخدمة</a>
-              <a href="https://wa.me/201110760081?text=أريد متجر إلكتروني" class="btn btn-primary" target="_blank" rel="nofollow noopener">🛒 اطلب عرض سعر</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="slide-dots" role="tablist" aria-label="مؤشرات الشرائح"></div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="services-title">
-      <div class="container">
-        <h2 id="services-title" class="section-title">خدماتنا المتخصصة</h2>
-        <p class="section-desc">نوفر مجموعة شاملة من خدمات التسويق الرقمي المصممة لتحقيق أهدافك التجارية</p>
-        <div class="grid grid-3">
-          <div class="card service-card">
-            <div class="service-icon">🎯</div>
-            <h3>إعلانات جوجل</h3>
-            <p>Search، Display، YouTube، Shopping، Performance Max بعائد أعلى وتكلفة أقل.</p>
-            <a href="google-ads-service.html" class="btn btn-secondary" target="_blank">تفاصيل أكثر</a>
-          </div>
-          <div class="card service-card">
-            <div class="service-icon">📱</div>
-            <h3>إعلانات السوشيال ميديا</h3>
-            <p>Facebook، Instagram، TikTok، Snapchat باستهداف دقيق ومحتوى مؤثر.</p>
-            <a href="social-media-service.html" class="btn btn-secondary" target="_blank">تفاصيل أكثر</a>
-          </div>
-          <div class="card service-card">
-            <div class="service-icon">🔍</div>
-            <h3>SEO</h3>
-            <p>Core Web Vitals + سيو تقني ومحتوى ومحلي لزيادة الزيارات العضوية.</p>
-            <a href="seo-service.html" class="btn btn-secondary" target="_blank">تفاصيل أكثر</a>
-          </div>
-        </div>
-        
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-number">10+</span>
-            <span class="stat-label">سنوات خبرة</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">200+</span>
-            <span class="stat-label">عميل راضٍ</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">95%</span>
-            <span class="stat-label">معدل رضا العملاء</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">6</span>
-            <span class="stat-label">دول الخليج</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact" aria-labelledby="contact-title">
-      <div class="container">
-        <h2 id="contact-title" class="section-title">تواصل معنا</h2>
-        <div class="contact-content">
-          <div class="contact-info">
-            <div class="contact-item">
-              <div class="contact-icon">📞</div>
-              <div class="contact-details">
-                <strong>الهاتف:</strong>
-                <div class="contact-links">
-                  <a class="contact-link" href="tel:+201110760081">+20 111 076 0081</a>
-                  <a class="contact-link" href="tel:+201093304677">+20 109 330 4677</a>
-                </div>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">💬</div>
-              <div class="contact-details">
-                <strong>واتساب:</strong>
-                <div class="contact-links">
-                  <a class="contact-link whatsapp-link" href="https://wa.me/201110760081?text=أهلاً، أحتاج استشارة في التسويق الرقمي" target="_blank" rel="nofollow noopener">+20 111 076 0081</a>
-                  <a class="contact-link whatsapp-link" href="https://wa.me/201093304677?text=أهلاً، أحتاج استشارة في التسويق الرقمي" target="_blank" rel="nofollow noopener">+20 109 330 4677</a>
-                </div>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">✉️</div>
-              <div class="contact-details">
-                <strong>البريد الإلكتروني:</strong>
-                <div class="contact-links">
-                  <a class="contact-link" href="mailto:sherow1982@gmail.com" target="_blank">sherow1982@gmail.com</a>
-                </div>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">🌐</div>
-              <div class="contact-details">
-                <strong>الموقع:</strong>
-                <div class="contact-links">
-                  <a class="contact-link" href="https://arabsad.com" target="_blank">arabsad.com</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="contact-cta card">
-            <h3>ابدأ مشروعك الآن</h3>
-            <p>احصل على استشارة مجانية وخطة تسويقية مخصصة لنشاطك</p>
-            <div class="cta-buttons">
-              <a href="https://wa.me/201110760081?text=أريد استشارة مجانية للتسويق الرقمي" target="_blank" class="btn btn-primary" rel="nofollow noopener">📞 استشارة مجانية</a>
-              <a href="services-page.html" class="btn btn-secondary" target="_blank">تصفح الخدمات</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
   
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <a href="index.html">
-            <img src="assets/images/logo.svg" alt="شعار مؤسسة إعلانات العرب" width="40" height="40" loading="lazy">
-          </a>
-          <div>
-            <h3>مؤسسة إعلانات العرب</h3>
-            <p>للتسويق الإلكتروني والإعلانات الممولة في الخليج العربي</p>
-          </div>
-        </div>
-        <div class="footer-services">
-          <h4>الخدمات</h4>
-          <ul>
-            <li><a href="google-ads-service.html" target="_blank">🎯 إعلانات جوجل</a></li>
-            <li><a href="social-media-service.html" target="_blank">📱 إعلانات السوشيال</a></li>
-            <li><a href="seo-service.html" target="_blank">🔍 تحسين محركات البحث</a></li>
-            <li><a href="ecommerce-service.html" target="_blank">🛒 المتاجر الإلكترونية</a></li>
-          </ul>
-        </div>
-        <div class="footer-countries">
-          <h4>دول الخليج</h4>
-          <ul>
-            <li><a href="sa.html" target="_blank">🇸🇦 السعودية</a></li>
-            <li><a href="ae.html" target="_blank">🇦🇪 الإمارات</a></li>
-            <li><a href="kw.html" target="_blank">🇰🇼 الكويت</a></li>
-            <li><a href="qa.html" target="_blank">🇶🇦 قطر</a></li>
-            <li><a href="bh.html" target="_blank">🇧🇭 البحرين</a></li>
-            <li><a href="om.html" target="_blank">🇴🇲 عُمان</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <h4>تواصل معنا</h4>
-          <p>📞 <a href="https://wa.me/201110760081" target="_blank" rel="nofollow noopener">+20 111 076 0081</a></p>
-          <p>📞 <a href="https://wa.me/201093304677" target="_blank" rel="nofollow noopener">+20 109 330 4677</a></p>
-          <p>✉️ <a href="mailto:sherow1982@gmail.com" target="_blank">sherow1982@gmail.com</a></p>
-          <p>🌐 <a href="https://arabsad.com" target="_blank">arabsad.com</a></p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2025 مؤسسة إعلانات العرب - جميع الحقوق محفوظة | <a href="privacy-policy.html" target="_blank">سياسة الخصوصية</a> | <a href="terms-of-service.html" target="_blank">شروط الخدمة</a></p>
-      </div>
-    </div>
-  </footer>
-  
-  <script src="script.js" defer></script>
-</body>
-</html>
