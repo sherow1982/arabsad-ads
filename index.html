@@ -27,146 +27,185 @@
   <!-- Premium Arabic Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Core Stylesheets -->
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="enhanced-arabic-fonts.css">
-  <link rel="stylesheet" href="FIXED-THEME-WORKING.css">
-
+  <!-- 🎨 New Light Modern Theme -->
+  <link rel="stylesheet" href="assets/css/light-modern-theme.css">
+  
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
   <link rel="canonical" href="https://arabsad.com/">
-  <meta name="theme-color" content="#2563eb">
+  <meta name="theme-color" content="#3b82f6">
+  
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">انتقل إلى المحتوى الرئيسي</a>
 </head>
 <body>
+  <!-- 📊 Reading Progress Bar -->
   <div class="reading-progress" id="readingProgress"></div>
 
-  <!-- Header -->
-  <div id="shared-header-placeholder"></div>
+  <!-- 🏠 Enhanced Header -->
+  <header class="header" id="header">
+    <nav class="nav" role="navigation" aria-label="التنقل الرئيسي">
+      <div class="container">
+        <div class="nav-brand">
+          <a href="#home" aria-label="الصفحة الرئيسية">
+            <img src="assets/images/logo.svg" alt="شعار مؤسسة إعلانات العرب" width="42" height="42" loading="eager">
+            <div>
+              <h1>إعلانات العرب</h1>
+              <span class="domain">arabsad.com</span>
+            </div>
+          </a>
+        </div>
+        
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" aria-current="page">🏠 الرئيسية</a></li>
+          <li><a href="#services">🎯 الخدمات</a></li>
+          <li><a href="#countries">🌍 الدول</a></li>
+          <li><a href="#contact">📞 تواصل</a></li>
+        </ul>
+        
+        <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-  <main id="main-content">
-    <!-- Revolution Slider Hero -->
-    <section id="home" class="hero-section">
-      <div id="revSlider" class="rev-slider">
+  <!-- 🎯 Main Content -->
+  <main id="main-content" tabindex="-1">
+    <!-- 🌟 Revolutionary Hero Section -->
+    <section id="home" class="hero-section" role="banner">
+      <div class="rev-slider" aria-live="polite" aria-label="عرض الشرائح التفاعلي">
+        <!-- Slide 1: Primary CTA -->
         <div class="rev-slide active" data-interval="6000">
-          <div class="rev-content">
-            <span class="rev-kicker">🎯 وكالة إعلانات العرب</span>
-            <h1 class="rev-title">نحقق نتائج استثنائية في أسواق الخليج</h1>
-            <p class="rev-subtitle">Google Ads وSocial Media وSEO مع ضمان العائد الإيجابي أو استرداد أموالك</p>
-            <div class="rev-cta">
-              <a href="https://wa.me/201110760081?text=أريد بدء حملة إعلانية الآن&utm_source=hero&utm_medium=slider1&utm_campaign=start" target="_blank" class="btn btn-primary">
-                🚀 ابدأ حملتك الآن
-              </a>
-              <a href="https://wa.me/201110760081?text=أطلب عرض سعر مفصل&utm_source=hero&utm_medium=slider1&utm_campaign=quote" target="_blank" class="btn btn-secondary">
-                📋 احصل على عرض
-              </a>
+          <div class="container">
+            <div class="rev-content">
+              <span class="rev-kicker">🎯 وكالة إعلانات العرب الرائدة</span>
+              <h1 class="rev-title gradient-text">نحقق نتائج استثنائية في أسواق الخليج العربي</h1>
+              <p class="rev-subtitle">Google Ads وSocial Media وSEO مع ضمان العائد الإيجابي أو استرداد أموالك كاملة</p>
+              <div class="rev-cta">
+                <a href="https://wa.me/201110760081?text=أريد بدء حملة إعلانية الآن&utm_source=hero&utm_medium=slider1&utm_campaign=start" target="_blank" class="btn btn-primary shine-effect" rel="noopener">
+                  🚀 ابدأ حملتك الآن
+                </a>
+                <a href="https://wa.me/201110760081?text=أطلب عرض سعر مفصل&utm_source=hero&utm_medium=slider1&utm_campaign=quote" target="_blank" class="btn btn-secondary" rel="noopener">
+                  📋 احصل على عرض مجاني
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
+        <!-- Slide 2: Google Ads Focus -->
         <div class="rev-slide" data-interval="5500">
-          <div class="rev-content">
-            <span class="rev-kicker">🎯 Google Ads</span>
-            <h1 class="rev-title">حملات بحث وعرض ويوتيوب احترافية</h1>
-            <p class="rev-subtitle">استهداف دقيق وتتبع متقدم وتحسين يومي لضمان أفضل عائد استثمار</p>
-            <div class="rev-cta">
-              <a href="google-ads-service.html" class="btn btn-primary">
-                📈 تفاصيل خدمة Google Ads
-              </a>
-              <a href="https://wa.me/201110760081?text=أريد استشارة حول Google Ads&utm_source=hero&utm_medium=slider2" target="_blank" class="btn btn-secondary">
-                💬 استشارة مجانية
-              </a>
+          <div class="container">
+            <div class="rev-content">
+              <span class="rev-kicker">🎯 Google Ads المتقدمة</span>
+              <h1 class="rev-title gradient-text">حملات بحث وعرض ويوتيوب احترافية</h1>
+              <p class="rev-subtitle">استهداف دقيق وتتبع متقدم وتحسين يومي لضمان أفضل عائد استثمار في السوق</p>
+              <div class="rev-cta">
+                <a href="google-ads-service.html" class="btn btn-success shine-effect">
+                  📈 تفاصيل خدمة Google Ads
+                </a>
+                <a href="https://wa.me/201110760081?text=أريد استشارة حول Google Ads&utm_source=hero&utm_medium=slider2" target="_blank" class="btn btn-secondary" rel="noopener">
+                  💬 استشارة مجانية فورية
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
+        <!-- Slide 3: Social Media -->
         <div class="rev-slide" data-interval="5800">
-          <div class="rev-content">
-            <span class="rev-kicker">📱 وسائل التواصل</span>
-            <h1 class="rev-title">حملات فيسبوك وإنستجرام وتيك توك</h1>
-            <p class="rev-subtitle">محتوى إبداعي وتصميمات جذابة لزيادة التفاعل والمبيعات عبر جميع المنصات</p>
-            <div class="rev-cta">
-              <a href="social-media-service.html" class="btn btn-primary">
-                🎨 خدمات السوشيال ميديا
-              </a>
-              <a href="https://wa.me/201110760081?text=أريد حملة سوشيال ميديا&utm_source=hero&utm_medium=slider3" target="_blank" class="btn btn-secondary">
-                📞 تحدث معنا
-              </a>
+          <div class="container">
+            <div class="rev-content">
+              <span class="rev-kicker">📱 السوشيال ميديا الإبداعية</span>
+              <h1 class="rev-title gradient-text">حملات فيسبوك وإنستجرام وتيك توك</h1>
+              <p class="rev-subtitle">محتوى إبداعي وتصميمات جذابة لزيادة التفاعل والمبيعات عبر جميع المنصات الاجتماعية</p>
+              <div class="rev-cta">
+                <a href="social-media-service.html" class="btn btn-warning shine-effect">
+                  🎨 خدمات السوشيال ميديا
+                </a>
+                <a href="https://wa.me/201110760081?text=أريد حملة سوشيال ميديا&utm_source=hero&utm_medium=slider3" target="_blank" class="btn btn-secondary" rel="noopener">
+                  📞 تحدث معنا الآن
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Slider Controls -->
-        <div class="slider-dots">
-          <span class="dot active" data-slide="0"></span>
-          <span class="dot" data-slide="1"></span>
-          <span class="dot" data-slide="2"></span>
+        <!-- Modern Slider Controls -->
+        <div class="slider-dots" role="tablist" aria-label="التحكم في الشرائح">
+          <button class="dot active" data-slide="0" role="tab" aria-selected="true" aria-label="الشريحة الأولى"></button>
+          <button class="dot" data-slide="1" role="tab" aria-selected="false" aria-label="الشريحة الثانية"></button>
+          <button class="dot" data-slide="2" role="tab" aria-selected="false" aria-label="الشريحة الثالثة"></button>
         </div>
       </div>
     </section>
 
-    <!-- Services -->
-    <section id="services" class="services-section">
+    <!-- 🏢 Enhanced Services Section -->
+    <section id="services" class="section services-section">
       <div class="container">
-        <div class="section-header">
+        <header class="section-header">
           <h2>خدماتنا المتخصصة</h2>
-          <p>نقدم حلول تسويق رقمي شاملة مصممة لتحقيق أهدافك التجارية</p>
-        </div>
+          <p>نقدم حلول تسويق رقمي شاملة مصممة خصيصاً لتحقيق أهدافك التجارية وزيادة أرباحك</p>
+        </header>
         
         <div class="services-grid">
           <article class="service-card">
             <div class="service-icon">🎯</div>
-            <h3>إعلانات جوجل</h3>
+            <h3>إعلانات جوجل المتقدمة</h3>
             <p>حملات احترافية على شبكة البحث والعرض ويوتيوب مع تتبع دقيق للنتائج وضمان العائد الإيجابي</p>
-            <a href="google-ads-service.html" class="service-link">تعرف أكثر →</a>
+            <a href="google-ads-service.html" class="service-link">تعرف أكثر ←</a>
           </article>
           
           <article class="service-card featured">
-            <div class="featured-badge">الأكثر طلباً</div>
+            <div class="featured-badge">الأكثر طلباً ⭐</div>
             <div class="service-icon">📱</div>
             <h3>وسائل التواصل الاجتماعي</h3>
             <p>حملات فيسبوك وإنستجرام وسناب شات وتيك توك لزيادة المبيعات والوصول لجمهور أوسع</p>
-            <a href="social-media-service.html" class="service-link">تعرف أكثر →</a>
+            <a href="social-media-service.html" class="service-link">تعرف أكثر ←</a>
           </article>
           
           <article class="service-card">
             <div class="service-icon">🔍</div>
             <h3>تحسين محركات البحث</h3>
             <p>تحسين موقعك للظهور في النتائج الأولى لجوجل وزيادة الزيارات المجانية بشكل مستمر</p>
-            <a href="seo-service.html" class="service-link">تعرف أكثر →</a>
+            <a href="seo-service.html" class="service-link">تعرف أكثر ←</a>
           </article>
           
           <article class="service-card">
             <div class="service-icon">🛒</div>
             <h3>المتاجر الإلكترونية</h3>
             <p>تصميم وتطوير متاجر إلكترونية احترافية مع نظام دفع آمن وإدارة مخزون متطورة</p>
-            <a href="ecommerce-service.html" class="service-link">تعرف أكثر →</a>
+            <a href="ecommerce-service.html" class="service-link">تعرف أكثر ←</a>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Social Follow Section -->
-    <section class="social-follow">
+    <!-- 📱 Social Follow Section -->
+    <section class="social-follow section">
       <div class="container">
-        <h3>تابعنا على</h3>
+        <h3>تابعنا على وسائل التواصل</h3>
         <div class="social-buttons">
-          <a href="https://wa.me/201110760081?text=تابعتكم من الموقع&utm_source=social&utm_medium=whatsapp" target="_blank" class="social-btn whatsapp">
+          <a href="https://wa.me/201110760081?text=تابعتكم من الموقع&utm_source=social&utm_medium=whatsapp" target="_blank" class="social-btn whatsapp" rel="noopener">
             <span class="social-icon">💬</span>
             واتساب
           </a>
-          <a href="https://facebook.com/arabsadads" target="_blank" class="social-btn facebook">
+          <a href="https://facebook.com/arabsadads" target="_blank" class="social-btn facebook" rel="noopener">
             <span class="social-icon">📘</span>
             فيسبوك
           </a>
-          <a href="https://instagram.com/arabsadads" target="_blank" class="social-btn instagram">
+          <a href="https://instagram.com/arabsadads" target="_blank" class="social-btn instagram" rel="noopener">
             <span class="social-icon">📷</span>
             إنستجرام
           </a>
-          <a href="https://tiktok.com/@arabsadads" target="_blank" class="social-btn tiktok">
+          <a href="https://tiktok.com/@arabsadads" target="_blank" class="social-btn tiktok" rel="noopener">
             <span class="social-icon">🎵</span>
             تيك توك
           </a>
@@ -174,118 +213,118 @@
       </div>
     </section>
 
-    <!-- Why Choose Us -->
-    <section class="features-section">
+    <!-- ⭐ Why Choose Us Section -->
+    <section class="section features-section">
       <div class="container">
-        <div class="section-header">
+        <header class="section-header">
           <h2>لماذا تختار مؤسسة إعلانات العرب؟</h2>
-          <p>نتميز بالخبرة والالتزام في تحقيق أفضل النتائج لعملائنا</p>
-        </div>
+          <p>نتميز بالخبرة العميقة والالتزام الكامل في تحقيق أفضل النتائج لعملائنا الكرام</p>
+        </header>
         
         <div class="features-grid">
           <div class="feature-card">
             <div class="feature-icon">⚡</div>
             <h3>سرعة في التنفيذ</h3>
-            <p>نبدأ حملاتك خلال 24 ساعة مع تتبع فوري للنتائج</p>
+            <p>نبدأ حملاتك خلال 24 ساعة مع تتبع فوري ومباشر للنتائج</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📊</div>
-            <h3>تقارير شفافة</h3>
-            <p>تقارير مفصلة أسبوعية مع تحليل كامل للأداء والتوصيات</p>
+            <h3>تقارير شفافة ومفصلة</h3>
+            <p>تقارير أسبوعية مفصلة مع تحليل كامل للأداء والتوصيات المهنية</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🎯</div>
-            <h3>استهداف دقيق</h3>
+            <h3>استهداف دقيق ومتطور</h3>
             <p>استهداف الجمهور المناسب في الوقت المناسب لضمان أفضل النتائج</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">💰</div>
-            <h3>ضمان العائد</h3>
-            <p>نضمن تحقيق عائد إيجابي على استثمارك أو نعيد أموالك</p>
+            <h3>ضمان العائد 100%</h3>
+            <p>نضمن تحقيق عائد إيجابي على استثمارك أو نعيد أموالك كاملة</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Gulf Countries -->
-    <section id="countries" class="countries-section">
+    <!-- 🗺️ Gulf Countries Section -->
+    <section id="countries" class="section countries-section">
       <div class="container">
-        <div class="section-header">
+        <header class="section-header">
           <h2>نخدم دول الخليج العربي</h2>
-          <p>خبرة عميقة في الأسواق الخليجية وفهم خصائص كل دولة</p>
-        </div>
+          <p>خبرة عميقة في الأسواق الخليجية وفهم كامل لخصائص وثقافة كل دولة</p>
+        </header>
         
         <div class="countries-grid">
           <a href="sa.html" class="country-card">
             <div class="country-flag">🇸🇦</div>
-            <h3>السعودية</h3>
-            <p>الرياض • جدة • الدمام</p>
+            <h3>المملكة العربية السعودية</h3>
+            <p>الرياض • جدة • الدمام • مكة • المدينة</p>
           </a>
           <a href="ae.html" class="country-card">
             <div class="country-flag">🇦🇪</div>
-            <h3>الإمارات</h3>
-            <p>دبي • أبوظبي • الشارقة</p>
+            <h3>دولة الإمارات العربية</h3>
+            <p>دبي • أبوظبي • الشارقة • عجمان</p>
           </a>
           <a href="kw.html" class="country-card">
             <div class="country-flag">🇰🇼</div>
-            <h3>الكويت</h3>
-            <p>الكويت • الأحمدي</p>
+            <h3>دولة الكويت</h3>
+            <p>مدينة الكويت • الأحمدي • الجهراء</p>
           </a>
           <a href="qa.html" class="country-card">
             <div class="country-flag">🇶🇦</div>
-            <h3>قطر</h3>
-            <p>الدوحة • الريان</p>
+            <h3>دولة قطر</h3>
+            <p>الدوحة • الريان • الوكرة</p>
           </a>
           <a href="bh.html" class="country-card">
             <div class="country-flag">🇧🇭</div>
-            <h3>البحرين</h3>
-            <p>المنامة • المحرق</p>
+            <h3>مملكة البحرين</h3>
+            <p>المنامة • المحرق • الرفاع</p>
           </a>
           <a href="om.html" class="country-card">
             <div class="country-flag">🇴🇲</div>
-            <h3>عمان</h3>
-            <p>مسقط • صلالة</p>
+            <h3>سلطنة عمان</h3>
+            <p>مسقط • صلالة • نزوى</p>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- Newsletter -->
-    <section class="newsletter-section">
+    <!-- 📧 Enhanced Newsletter Section -->
+    <section class="newsletter-section section">
       <div class="container">
         <div class="newsletter-content">
-          <h3>📧 اشترك في نشرتنا الأسبوعية</h3>
-          <p>احصل على أحدث نصائح التسويق الرقمي والعروض الحصرية</p>
+          <h3>📧 اشترك في نشرتنا الأسبوعية المجانية</h3>
+          <p>احصل على أحدث نصائح التسويق الرقمي والاستراتيجيات المتطورة والعروض الحصرية</p>
           
           <form action="https://formsubmit.co/sherow1982@gmail.com" method="POST" class="newsletter-form">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_subject" value="اشتراك جديد في نشرة إعلانات العرب">
             <input type="hidden" name="_next" value="https://arabsad.com/?subscribed=1">
-            <input type="hidden" name="_autoresponse" value="شكراً لك! تم الاشتراك في نشرة إعلانات العرب بنجاح.">
+            <input type="hidden" name="_autoresponse" value="شكراً لك! تم الاشتراك في نشرة إعلانات العرب بنجاح. ستصلك أحدث النصائح والعروض قريباً.">
             
             <div class="form-group">
-              <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
-              <button type="submit">✉️ اشترك الآن</button>
+              <input type="email" name="email" placeholder="أدخل بريدك الإلكتروني هنا" required aria-label="البريد الإلكتروني">
+              <button type="submit" class="shine-effect">✉️ اشترك مجاناً</button>
             </div>
           </form>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="contact-section">
+    <!-- 📞 Enhanced Contact Section -->
+    <section id="contact" class="section contact-section">
       <div class="container">
         <div class="contact-content">
           <div class="contact-info">
-            <h2>تواصل معنا الآن</h2>
-            <p>للاستشارة المجانية والحصول على عرض مخصص لمشروعك</p>
+            <h2>تواصل معنا الآن للحصول على استشارة مجانية</h2>
+            <p>احصل على تحليل مجاني لموقعك وخطة تسويقية مخصصة لمشروعك خلال 24 ساعة</p>
             
             <div class="contact-methods">
               <div class="contact-item">
                 <div class="contact-icon">📱</div>
                 <div>
-                  <h4>واتساب</h4>
+                  <h4>واتساب - متاح 24/7</h4>
                   <p>+201110760081</p>
                 </div>
               </div>
@@ -300,14 +339,14 @@
           </div>
           
           <div class="contact-actions">
-            <a href="https://wa.me/201110760081?text=أريد استشارة مجانية&utm_source=contact&utm_medium=whatsapp" target="_blank" class="btn btn-whatsapp">
+            <a href="https://wa.me/201110760081?text=أريد استشارة مجانية فورية&utm_source=contact&utm_medium=whatsapp" target="_blank" class="btn btn-whatsapp shine-effect" rel="noopener">
               💬 راسلنا واتساب
             </a>
             <a href="tel:+201110760081" class="btn btn-phone">
-              📞 اتصل الآن
+              📞 اتصل الآن مباشرة
             </a>
             <button id="open-chatbot" class="btn btn-chat">
-              🤖 ابدأ شات مع البوت
+              🤖 ابدأ محادثة مع البوت الذكي
             </button>
           </div>
         </div>
@@ -315,29 +354,26 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <div id="shared-footer-placeholder"></div>
-
-  <!-- Smart Chatbot (Compact & Professional) -->
-  <div id="smartChatbot" class="chatbot-modern" style="display: none;">
-    <div class="chatbot-header">
+  <!-- 🤖 Smart Multi-Dialect Chatbot -->
+  <div id="smartChatbot" class="chatbot-modern" style="display: none;" role="dialog" aria-labelledby="chatbot-title" aria-hidden="true">
+    <header class="chatbot-header">
       <div class="bot-info">
         <span class="bot-avatar">🤖</span>
         <div class="bot-details">
-          <h4>مساعدك التسويقي الذكي</h4>
-          <span class="bot-status">متاح الآن • يتحدث بجميع اللهجات</span>
+          <h4 id="chatbot-title">مساعدك التسويقي الذكي</h4>
+          <span class="bot-status">متاح الآن • يتحدث بجميع اللهجات العربية</span>
         </div>
       </div>
-      <button class="close-chatbot">×</button>
-    </div>
+      <button class="close-chatbot" aria-label="إغلاق المحادثة">×</button>
+    </header>
     
-    <div class="chatbot-messages" id="chatbotMessages">
+    <div class="chatbot-messages" id="chatbotMessages" role="log" aria-live="polite">
       <div class="bot-message">
         <div class="message-avatar">🤖</div>
         <div class="message-content">
           مرحباً بك! أنا مساعدك التسويقي الذكي 👋<br>
-          أساعدك بأي لهجة عربية من الخليج للمغرب<br>
-          <small>🔒 محادثتنا آمنة تماماً</small>
+          أساعدك بأي لهجة عربية من الخليج للمغرب العربي<br>
+          <small>🔒 محادثتنا آمنة ومشفرة تماماً</small>
         </div>
       </div>
     </div>
@@ -349,38 +385,38 @@
     </div>
     
     <div class="chat-input">
-      <input type="text" id="chatbotInput" placeholder="اكتب رسالتك بأي لهجة..." maxlength="300">
-      <button id="sendChatMessage">→</button>
+      <input type="text" id="chatbotInput" placeholder="اكتب رسالتك بأي لهجة عربية..." maxlength="300" aria-label="اكتب رسالتك">
+      <button id="sendChatMessage" aria-label="إرسال الرسالة">→</button>
     </div>
   </div>
 
-  <!-- Fixed Action Buttons (Separated) -->
+  <!-- 🎯 Fixed Action Buttons -->
   <div class="fixed-actions">
-    <!-- WhatsApp (Right) -->
-    <a href="https://wa.me/201110760081?text=راسلنا واتساب - أريد استشارة&utm_source=float&utm_medium=whatsapp" target="_blank" class="action-btn whatsapp-btn" title="راسلنا واتساب">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/201110760081?text=راسلنا واتساب - أريد استشارة مجانية&utm_source=float&utm_medium=whatsapp" target="_blank" class="action-btn whatsapp-btn" title="راسلنا واتساب" rel="noopener">
       <span class="btn-icon">💬</span>
       <span class="btn-text">راسلنا واتساب</span>
     </a>
     
-    <!-- Chatbot (Center-Left) -->
-    <button id="chatbot-trigger" class="action-btn chatbot-btn" title="ابدأ شات مع البوت">
+    <!-- Chatbot Button -->
+    <button id="chatbot-trigger" class="action-btn chatbot-btn" title="ابدأ محادثة مع البوت الذكي">
       <span class="btn-icon">🤖</span>
-      <span class="btn-text">ابدأ شات مع البوت</span>
+      <span class="btn-text">البوت الذكي</span>
       <span class="notification-dot" id="chatNotification">!</span>
     </button>
     
-    <!-- Back to Top (Far Left) -->
-    <button id="backToTop" class="action-btn top-btn" style="display: none;" title="العودة للأعلى">
+    <!-- Back to Top -->
+    <button id="backToTop" class="action-btn top-btn" style="display: none;" title="العودة للأعلى" aria-label="العودة للأعلى">
       <span class="btn-icon">↑</span>
     </button>
   </div>
 
-  <!-- Toast Container -->
-  <div id="toastContainer"></div>
+  <!-- 🔔 Toast Notifications Container -->
+  <div id="toastContainer" aria-live="polite"></div>
 
-  <!-- All JavaScript -->
+  <!-- 🚀 Enhanced JavaScript -->
   <script>
-    // Professional Revolution Slider
+    // Modern Revolution Slider with Enhanced UX
     class RevolutionSlider {
       constructor(selector) {
         this.slider = document.querySelector(selector);
@@ -391,6 +427,8 @@
         this.currentSlide = 0;
         this.isPlaying = true;
         this.interval = null;
+        this.touchStartX = 0;
+        this.touchEndX = 0;
         
         this.init();
       }
@@ -398,52 +436,88 @@
       init() {
         this.bindEvents();
         this.startAutoplay();
-        this.updateDots();
+        this.updateAccessibility();
       }
       
       bindEvents() {
+        // Dot navigation
         this.dots.forEach((dot, index) => {
           dot.addEventListener('click', () => {
             this.goToSlide(index);
             this.restartAutoplay();
           });
+          
+          dot.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              this.goToSlide(index);
+              this.restartAutoplay();
+            }
+          });
         });
         
-        // Pause on hover
+        // Pause/Resume on hover
         this.slider.addEventListener('mouseenter', () => this.pause());
         this.slider.addEventListener('mouseleave', () => this.resume());
         
-        // Touch support
-        let startX = 0;
+        // Enhanced touch support
         this.slider.addEventListener('touchstart', (e) => {
-          startX = e.touches[0].clientX;
+          this.touchStartX = e.changedTouches[0].screenX;
           this.pause();
         }, { passive: true });
         
         this.slider.addEventListener('touchend', (e) => {
-          const endX = e.changedTouches[0].clientX;
-          const diff = startX - endX;
-          
-          if (Math.abs(diff) > 50) {
-            if (diff > 0) {
-              this.nextSlide();
-            } else {
-              this.prevSlide();
-            }
-          }
-          
+          this.touchEndX = e.changedTouches[0].screenX;
+          this.handleSwipe();
           this.restartAutoplay();
         }, { passive: true });
+        
+        // Keyboard navigation
+        this.slider.addEventListener('keydown', (e) => {
+          switch(e.key) {
+            case 'ArrowLeft':
+              e.preventDefault();
+              this.nextSlide();
+              this.restartAutoplay();
+              break;
+            case 'ArrowRight':
+              e.preventDefault();
+              this.prevSlide();
+              this.restartAutoplay();
+              break;
+          }
+        });
+      }
+      
+      handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = this.touchStartX - this.touchEndX;
+        
+        if (Math.abs(diff) > swipeThreshold) {
+          if (diff > 0) {
+            this.nextSlide();
+          } else {
+            this.prevSlide();
+          }
+        }
       }
       
       goToSlide(index) {
+        // Remove active states
         this.slides[this.currentSlide].classList.remove('active');
         this.dots[this.currentSlide].classList.remove('active');
+        this.dots[this.currentSlide].setAttribute('aria-selected', 'false');
         
+        // Set new active slide
         this.currentSlide = index;
         
+        // Add active states
         this.slides[this.currentSlide].classList.add('active');
         this.dots[this.currentSlide].classList.add('active');
+        this.dots[this.currentSlide].setAttribute('aria-selected', 'true');
+        
+        // Announce to screen readers
+        this.announceSlideChange();
       }
       
       nextSlide() {
@@ -490,29 +564,74 @@
         this.startAutoplay();
       }
       
-      updateDots() {
-        this.dots.forEach((dot, index) => {
-          dot.setAttribute('aria-label', `الانتقال للشريحة ${index + 1}`);
-        });
+      updateAccessibility() {
+        this.slider.setAttribute('role', 'region');
+        this.slider.setAttribute('aria-label', 'عرض الشرائح التفاعلي');
+        this.slider.setAttribute('tabindex', '0');
+      }
+      
+      announceSlideChange() {
+        const slideContent = this.slides[this.currentSlide].querySelector('.rev-title');
+        if (slideContent) {
+          // Create temporary announcement for screen readers
+          const announcement = document.createElement('div');
+          announcement.className = 'sr-only';
+          announcement.setAttribute('aria-live', 'polite');
+          announcement.textContent = `الشريحة ${this.currentSlide + 1}: ${slideContent.textContent}`;
+          document.body.appendChild(announcement);
+          
+          setTimeout(() => {
+            document.body.removeChild(announcement);
+          }, 1000);
+        }
       }
     }
 
-    // Multi-Dialect Smart Chatbot
+    // Advanced Multi-Dialect Smart Chatbot
     class SmartChatbot {
       constructor() {
         this.isOpen = false;
+        this.conversationHistory = [];
         this.dialectPatterns = {
-          gulf: /أبي|بغيت|حجز|شلون|ويش|زين|مسوي|والله|يالله/,
-          egyptian: /عايز|عاوز|كده|دلوقتي|ازيك|إيه|معلش|حضرتك|فلوس/,
-          levantine: /بدي|كتير|هلا|شو|كيفك|تمام|يلا|مين|وين|مشان/,
-          moroccan: /واش|بغيت|دابا|بزاف|كيداير|فين|شنو|وقتاش|لا باس/
+          gulf: /أبي|بغيت|حجز|شلون|ويش|زين|مسوي|والله|يالله|تراك|تكفى/,
+          egyptian: /عايز|عاوز|كده|دلوقتي|ازيك|إيه|معلش|حضرتك|فلوس|يسطا|يا عم/,
+          levantine: /بدي|كتير|هلا|شو|كيفك|تمام|يلا|مين|وين|مشان|حبيبي/,
+          moroccan: /واش|بغيت|دابا|بزاف|كيداير|فين|شنو|وقتاش|لا باس|واخا/,
+          iraqi: /ريد|شلون|وين|شگد|زين|ماكو|موجود|خوش|يبه|عمي/,
+          sudanese: /كيفك|داير|وين|شنو|زي|كده|ما|قاعد|ساكت|طيب/
         };
+        
+        this.responses = {
+          pricing: {
+            gulf: 'أسعارنا مناسبة أخوي. نبدأ من 500 ريال شهرياً للحملات الأساسية. أي نوع نشاط تبي تسوقله؟',
+            egyptian: 'أسعارنا مناسبة يا فندم. نبدأ من 500 جنيه شهرياً للحملات الأساسية. إيه نوع النشاط اللي عايز تسوقله؟',
+            levantine: 'أسعارنا منيحة. نبدأ من 500 ليرة شهرياً للحملات الأساسية. شو نوع النشاط اللي بدك تسوقله؟',
+            english: 'Our prices are competitive. We start from $100 monthly for basic campaigns. What type of business do you want to promote?',
+            standard: 'أسعارنا تنافسية وتبدأ من 500 جنيه شهرياً للحملات الأساسية. ما نوع النشاط الذي تريد التسويق له؟'
+          },
+          timing: {
+            gulf: 'نطلق Google Ads خلال 24-48 ساعة بإذن الله. SEO يحتاج 2-6 أشهر للنتائج القوية.',
+            egyptian: 'نشغل Google Ads خلال يوم أو يومين. SEO محتاج من شهرين لـ6 شهور للنتائج الكويسة.',
+            levantine: 'منشغل Google Ads خلال يوم أو يومين. SEO بدو من شهرين لـ6 أشهر للنتائج المنيحة.',
+            english: 'We launch Google Ads within 24-48 hours. SEO takes 2-6 months for solid results.',
+            standard: 'نطلق Google Ads خلال 24-48 ساعة. SEO يحتاج 2-6 أشهر للنتائج المستدامة.'
+          },
+          guarantee: {
+            gulf: 'نضمن لك عائد إيجابي والله، أو نرد فلوسك. مكتوب في العقد رسمياً.',
+            egyptian: 'نضمنلك عائد إيجابي يا باشا، أو نرجعلك فلوسك. ده مكتوب في العقد.',
+            levantine: 'منضمنلك عائد إيجابي، أو منرجعلك مصاريك. مكتوب بالعقد رسمياً.',
+            english: 'We guarantee positive ROI or full refund. It\'s written in our contract.',
+            standard: 'نضمن عائد إيجابي أو نعيد أموالك كاملة. مكتوب في العقد رسمياً.'
+          }
+        };
+        
         this.init();
       }
       
       init() {
         this.bindEvents();
         this.scheduleNotification();
+        this.loadConversationHistory();
       }
       
       bindEvents() {
@@ -526,10 +645,15 @@
         openChat?.addEventListener('click', () => this.open());
         closeBtn?.addEventListener('click', () => this.close());
         sendBtn?.addEventListener('click', () => this.sendMessage());
+        
         input?.addEventListener('keypress', (e) => {
-          if (e.key === 'Enter') this.sendMessage();
+          if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            this.sendMessage();
+          }
         });
         
+        // Quick replies
         document.querySelectorAll('.quick-reply').forEach(btn => {
           btn.addEventListener('click', (e) => {
             const message = e.target.dataset.message;
@@ -542,9 +666,9 @@
       scheduleNotification() {
         const lastNotified = localStorage.getItem('chatbot-last-notification');
         const now = Date.now();
-        const daysSince = lastNotified ? (now - parseInt(lastNotified)) / (1000 * 60 * 60 * 24) : 999;
+        const hoursSince = lastNotified ? (now - parseInt(lastNotified)) / (1000 * 60 * 60) : 999;
         
-        if (daysSince >= 1) {
+        if (hoursSince >= 24) {
           setTimeout(() => {
             this.showNotification();
             localStorage.setItem('chatbot-last-notification', now.toString());
@@ -556,11 +680,11 @@
         const notification = document.getElementById('chatNotification');
         const trigger = document.getElementById('chatbot-trigger');
         if (notification && !this.isOpen) {
-          notification.style.display = 'block';
-          trigger.style.animation = 'bounce 1s ease 3';
+          notification.style.display = 'flex';
+          trigger.style.animation = 'pulse-notification 2s ease 3';
           setTimeout(() => {
             trigger.style.animation = '';
-          }, 3000);
+          }, 6000);
         }
       }
       
@@ -574,18 +698,28 @@
         const notification = document.getElementById('chatNotification');
         
         chatbot.style.display = 'block';
+        chatbot.setAttribute('aria-hidden', 'false');
         notification.style.display = 'none';
         
+        // Focus management
         setTimeout(() => {
           const input = document.getElementById('chatbotInput');
           input?.focus();
         }, 300);
+        
+        // Announce to screen readers
+        this.announceToScreenReader('تم فتح نافذة المحادثة الذكية');
       }
       
       close() {
         this.isOpen = false;
         const chatbot = document.getElementById('smartChatbot');
         chatbot.style.display = 'none';
+        chatbot.setAttribute('aria-hidden', 'true');
+        
+        // Return focus to trigger
+        const trigger = document.getElementById('chatbot-trigger');
+        trigger?.focus();
       }
       
       sendMessage() {
@@ -595,6 +729,7 @@
         const message = input.value.trim();
         this.addUserMessage(message);
         this.generateResponse(message);
+        this.saveToHistory('user', message);
         input.value = '';
       }
       
@@ -602,7 +737,7 @@
         const container = document.getElementById('chatbotMessages');
         const messageEl = document.createElement('div');
         messageEl.className = 'user-message';
-        messageEl.innerHTML = `<div class="message-content user-content">${message}</div>`;
+        messageEl.innerHTML = `<div class="message-content user-content">${this.escapeHtml(message)}</div>`;
         container.appendChild(messageEl);
         this.scrollToBottom();
       }
@@ -617,15 +752,18 @@
         `;
         container.appendChild(messageEl);
         this.scrollToBottom();
+        this.saveToHistory('bot', message);
       }
       
       detectDialect(message) {
         const msg = message.toLowerCase();
         
+        // Check for English
         if (/[a-z]/.test(message) && !/[ا-ي]/.test(message)) {
           return 'english';
         }
         
+        // Check Arabic dialects
         for (const [dialect, pattern] of Object.entries(this.dialectPatterns)) {
           if (pattern.test(msg)) {
             return dialect;
@@ -640,680 +778,500 @@
         const msg = message.toLowerCase();
         let response = '';
         
-        if (/سعر|تكلفة|فلوس|كام|بكم/.test(msg)) {
-          switch (dialect) {
-            case 'gulf':
-              response = 'أسعارنا مناسبة أخوي. نبدأ من 500 ريال شهرياً للحملات الأساسية. أي نوع نشاط تبي تسوقله؟';
-              break;
-            case 'egyptian':
-              response = 'أسعارنا مناسبة يا فندم. نبدأ من 500 جنيه شهرياً للحملات الأساسية. إيه نوع النشاط اللي عايز تسوقله؟';
-              break;
-            case 'levantine':
-              response = 'أسعارنا منيحة. نبدأ من 500 ليرة شهرياً للحملات الأساسية. شو نوع النشاط اللي بدك تسوقله؟';
-              break;
-            case 'english':
-              response = 'Our prices are competitive. We start from $100 monthly for basic campaigns. What type of business do you want to promote?';
-              break;
-            default:
-              response = 'أسعارنا تنافسية وتبدأ من 500 جنيه شهرياً للحملات الأساسية. ما نوع النشاط الذي تريد التسويق له؟';
-          }
-        } else if (/وقت|متى|مدة/.test(msg)) {
-          switch (dialect) {
-            case 'gulf':
-              response = 'نطلق Google Ads خلال 24-48 ساعة بإذن الله. SEO يحتاج 2-6 أشهر للنتائج القوية.';
-              break;
-            case 'egyptian':
-              response = 'نشغل Google Ads خلال يوم أو يومين. SEO محتاج من شهرين لـ6 شهور للنتائج الكويسة.';
-              break;
-            case 'levantine':
-              response = 'منشغل Google Ads خلال يوم أو يومين. SEO بدو من شهرين لـ6 أشهر للنتائج المنيحة.';
-              break;
-            case 'english':
-              response = 'We launch Google Ads within 24-48 hours. SEO takes 2-6 months for solid results.';
-              break;
-            default:
-              response = 'نطلق Google Ads خلال 24-48 ساعة. SEO يحتاج 2-6 أشهر للنتائج المستدامة.';
-          }
-        } else if (/ضمان|نتائج|عائد/.test(msg)) {
-          switch (dialect) {
-            case 'gulf':
-              response = 'نضمن لك عائد إيجابي والله، أو نرد فلوسك. مكتوب في العقد رسمياً.';
-              break;
-            case 'egyptian':
-              response = 'نضمنلك عائد إيجابي يا باشا، أو نرجعلك فلوسك. ده مكتوب في العقد.';
-              break;
-            case 'levantine':
-              response = 'منضمنلك عائد إيجابي، أو منرجعلك مصاريك. مكتوب بالعقد رسمياً.';
-              break;
-            case 'english':
-              response = 'We guarantee positive ROI or full refund. It\'s written in our contract.';
-              break;
-            default:
-              response = 'نضمن عائد إيجابي أو نعيد أموالك كاملة. مكتوب في العقد رسمياً.';
-          }
+        // Determine response category
+        if (/سعر|تكلفة|فلوس|كام|بكم|price|cost/.test(msg)) {
+          response = this.responses.pricing[dialect] || this.responses.pricing.standard;
+        } else if (/وقت|متى|مدة|time|when|duration/.test(msg)) {
+          response = this.responses.timing[dialect] || this.responses.timing.standard;
+        } else if (/ضمان|نتائج|عائد|guarantee|results|roi/.test(msg)) {
+          response = this.responses.guarantee[dialect] || this.responses.guarantee.standard;
         } else {
           // General greeting based on dialect
-          switch (dialect) {
-            case 'gulf':
-              response = 'أهلاً وسهلاً فيك! كيف أقدر أساعدك في التسويق الرقمي؟';
-              break;
-            case 'egyptian':
-              response = 'أهلاً بيك! عايز أساعدك في إيه بالتسويق الرقمي؟';
-              break;
-            case 'levantine':
-              response = 'أهلاً وسهلاً! شو بدك أساعدك فيه بالتسويق الرقمي؟';
-              break;
-            case 'moroccan':
-              response = 'مرحباً بك! واش بغيتي نعاونك في التسويق الرقمي؟';
-              break;
-            case 'english':
-              response = 'Hello! How can I help you with digital marketing?';
-              break;
-            default:
-              response = 'مرحباً بك! كيف يمكنني مساعدتك في التسويق الرقمي؟';
-          }
+          const greetings = {
+            gulf: 'أهلاً وسهلاً فيك! كيف أقدر أساعدك في التسويق الرقمي؟',
+            egyptian: 'أهلاً بيك! عايز أساعدك في إيه بالتسويق الرقمي؟',
+            levantine: 'أهلاً وسهلاً! شو بدك أساعدك فيه بالتسويق الرقمي؟',
+            moroccan: 'مرحباً بك! واش بغيت نعاونك في التسويق الرقمي؟',
+            english: 'Hello! How can I help you with digital marketing?',
+            standard: 'مرحباً بك! كيف يمكنني مساعدتك في التسويق الرقمي؟'
+          };
+          response = greetings[dialect] || greetings.standard;
         }
         
-        setTimeout(() => this.addBotMessage(response), 700);
+        // Add typing indicator
+        this.showTypingIndicator();
+        
+        setTimeout(() => {
+          this.hideTypingIndicator();
+          this.addBotMessage(response);
+        }, 1000 + Math.random() * 500); // Realistic typing delay
+      }
+      
+      showTypingIndicator() {
+        const container = document.getElementById('chatbotMessages');
+        const indicator = document.createElement('div');
+        indicator.id = 'typing-indicator';
+        indicator.className = 'bot-message';
+        indicator.innerHTML = `
+          <div class="message-avatar">🤖</div>
+          <div class="message-content">
+            <div class="typing-dots">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        `;
+        container.appendChild(indicator);
+        this.scrollToBottom();
+      }
+      
+      hideTypingIndicator() {
+        const indicator = document.getElementById('typing-indicator');
+        if (indicator) {
+          indicator.remove();
+        }
       }
       
       scrollToBottom() {
         const container = document.getElementById('chatbotMessages');
         container.scrollTop = container.scrollHeight;
       }
+      
+      escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+      
+      saveToHistory(sender, message) {
+        this.conversationHistory.push({ sender, message, timestamp: Date.now() });
+        localStorage.setItem('chatbot-history', JSON.stringify(this.conversationHistory.slice(-20)));
+      }
+      
+      loadConversationHistory() {
+        const history = localStorage.getItem('chatbot-history');
+        if (history) {
+          this.conversationHistory = JSON.parse(history);
+        }
+      }
+      
+      announceToScreenReader(message) {
+        const announcement = document.createElement('div');
+        announcement.className = 'sr-only';
+        announcement.setAttribute('aria-live', 'polite');
+        announcement.textContent = message;
+        document.body.appendChild(announcement);
+        
+        setTimeout(() => {
+          document.body.removeChild(announcement);
+        }, 1000);
+      }
     }
 
-    // Initialize everything when DOM is ready
-    document.addEventListener('DOMContentLoaded', function() {
-      // Initialize Revolution Slider
-      new RevolutionSlider('#revSlider');
+    // Enhanced Navigation
+    class Navigation {
+      constructor() {
+        this.header = document.getElementById('header');
+        this.navToggle = document.getElementById('navToggle');
+        this.navMenu = document.getElementById('navMenu');
+        this.lastScrollY = window.pageYOffset;
+        
+        this.init();
+      }
       
-      // Initialize Smart Chatbot
-      new SmartChatbot();
+      init() {
+        this.bindEvents();
+      }
       
-      // Load shared components
-      loadSharedComponents();
-      
-      // Check newsletter subscription success
-      checkSubscriptionSuccess();
-      
-      // Initialize other features
-      initializeFeatures();
-    });
-
-    // Load shared components
-    async function loadSharedComponents() {
-      const components = [
-        { file: './shared-header.html', target: '#shared-header-placeholder' },
-        { file: './shared-footer.html', target: '#shared-footer-placeholder' }
-      ];
-      
-      for (const { file, target } of components) {
-        try {
-          const response = await fetch(file);
-          if (response.ok) {
-            const html = await response.text();
-            const targetElement = document.querySelector(target);
-            if (targetElement && html.trim()) {
-              targetElement.innerHTML = html;
-            }
+      bindEvents() {
+        // Mobile menu toggle
+        this.navToggle?.addEventListener('click', () => this.toggleMobileMenu());
+        
+        // Close mobile menu on link click
+        this.navMenu?.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => this.closeMobileMenu());
+        });
+        
+        // Close mobile menu on outside click
+        document.addEventListener('click', (e) => {
+          if (!this.header?.contains(e.target) && this.navMenu?.classList.contains('active')) {
+            this.closeMobileMenu();
           }
-        } catch (error) {
-          console.log(`Component ${file} not found`);
-        }
+        });
+        
+        // Scroll behavior
+        window.addEventListener('scroll', () => this.handleScroll(), { passive: true });
+        
+        // Keyboard navigation
+        this.navToggle?.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            this.toggleMobileMenu();
+          }
+        });
       }
-    }
-
-    // Newsletter subscription check
-    function checkSubscriptionSuccess() {
-      const urlParams = new URLSearchParams(window.location.search);
-      if (urlParams.get('subscribed') === '1') {
-        showToast('✅ تم الاشتراك بنجاح! ستصلك أحدث النصائح والعروض', 'success');
-        window.history.replaceState({}, document.title, window.location.pathname);
-      }
-    }
-
-    // Initialize other features
-    function initializeFeatures() {
-      // Reading progress
-      const readingProgress = document.getElementById('readingProgress');
-      window.addEventListener('scroll', () => {
-        const scrollPercent = (window.pageYOffset / (document.body.scrollHeight - window.innerHeight)) * 100;
-        readingProgress.style.width = Math.min(Math.max(scrollPercent, 0), 100) + '%';
-      }, { passive: true });
       
-      // Back to top button
-      const backToTop = document.getElementById('backToTop');
-      window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 400) {
-          backToTop.style.display = 'flex';
+      toggleMobileMenu() {
+        const isOpen = this.navMenu?.classList.contains('active');
+        
+        if (isOpen) {
+          this.closeMobileMenu();
         } else {
-          backToTop.style.display = 'none';
+          this.openMobileMenu();
         }
-      }, { passive: true });
+      }
       
-      backToTop?.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
+      openMobileMenu() {
+        this.navMenu?.classList.add('active');
+        this.navToggle?.setAttribute('aria-expanded', 'true');
+        this.navToggle?.setAttribute('aria-label', 'إغلاق القائمة');
+        
+        // Focus first menu item
+        const firstLink = this.navMenu?.querySelector('a');
+        firstLink?.focus();
+      }
+      
+      closeMobileMenu() {
+        this.navMenu?.classList.remove('active');
+        this.navToggle?.setAttribute('aria-expanded', 'false');
+        this.navToggle?.setAttribute('aria-label', 'فتح القائمة');
+      }
+      
+      handleScroll() {
+        const currentScrollY = window.pageYOffset;
+        
+        // Hide/show header on scroll
+        if (currentScrollY > this.lastScrollY && currentScrollY > 100) {
+          this.header?.classList.add('hidden');
+        } else {
+          this.header?.classList.remove('hidden');
+        }
+        
+        this.lastScrollY = currentScrollY;
+      }
     }
 
-    // Toast notifications
-    function showToast(message, type = 'info') {
-      const container = document.getElementById('toastContainer');
-      const toast = document.createElement('div');
-      toast.className = `toast toast-${type}`;
-      toast.textContent = message;
+    // Enhanced App Manager
+    class AppManager {
+      constructor() {
+        this.init();
+      }
       
-      container.appendChild(toast);
+      init() {
+        // Initialize components when DOM is ready
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', () => this.initializeComponents());
+        } else {
+          this.initializeComponents();
+        }
+      }
       
-      setTimeout(() => {
-        toast.style.animation = 'slideOut 0.3s ease forwards';
-        setTimeout(() => toast.remove(), 300);
-      }, 4000);
+      initializeComponents() {
+        // Initialize all components
+        new RevolutionSlider('#revSlider .rev-slider');
+        new SmartChatbot();
+        new Navigation();
+        
+        // Initialize other features
+        this.initializeReadingProgress();
+        this.initializeBackToTop();
+        this.initializeSmoothScrolling();
+        this.initializeFormHandling();
+        this.initializeAccessibility();
+        this.checkSubscriptionSuccess();
+        this.initializePerformanceOptimizations();
+      }
+      
+      initializeReadingProgress() {
+        const progressBar = document.getElementById('readingProgress');
+        if (!progressBar) return;
+        
+        window.addEventListener('scroll', () => {
+          const scrollPercent = (window.pageYOffset / (document.body.scrollHeight - window.innerHeight)) * 100;
+          progressBar.style.width = Math.min(Math.max(scrollPercent, 0), 100) + '%';
+        }, { passive: true });
+      }
+      
+      initializeBackToTop() {
+        const backToTopBtn = document.getElementById('backToTop');
+        if (!backToTopBtn) return;
+        
+        window.addEventListener('scroll', () => {
+          if (window.pageYOffset > 400) {
+            backToTopBtn.style.display = 'flex';
+          } else {
+            backToTopBtn.style.display = 'none';
+          }
+        }, { passive: true });
+        
+        backToTopBtn.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+      
+      initializeSmoothScrolling() {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = document.querySelector(anchor.getAttribute('href'));
+            if (target) {
+              const offsetTop = target.offsetTop - 80; // Account for fixed header
+              window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+            }
+          });
+        });
+      }
+      
+      initializeFormHandling() {
+        const newsletterForm = document.querySelector('.newsletter-form');
+        if (!newsletterForm) return;
+        
+        newsletterForm.addEventListener('submit', (e) => {
+          const email = newsletterForm.querySelector('input[type="email"]');
+          if (email && !this.isValidEmail(email.value)) {
+            e.preventDefault();
+            this.showToast('يرجى إدخال بريد إلكتروني صحيح', 'error');
+            email.focus();
+          } else {
+            this.showToast('جاري الاشتراك...', 'info');
+          }
+        });
+      }
+      
+      initializeAccessibility() {
+        // Add focus indicators
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Tab') {
+            document.body.classList.add('using-keyboard');
+          }
+        });
+        
+        document.addEventListener('mousedown', () => {
+          document.body.classList.remove('using-keyboard');
+        });
+        
+        // Skip link functionality
+        const skipLink = document.querySelector('.skip-link');
+        if (skipLink) {
+          skipLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = document.querySelector('#main-content');
+            if (target) {
+              target.focus();
+              target.scrollIntoView({ behavior: 'smooth' });
+            }
+          });
+        }
+      }
+      
+      initializePerformanceOptimizations() {
+        // Lazy load images
+        if ('IntersectionObserver' in window) {
+          const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  img.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                }
+                imageObserver.unobserve(img);
+              }
+            });
+          });
+          
+          document.querySelectorAll('img[data-src]').forEach(img => {
+            imageObserver.observe(img);
+          });
+        }
+        
+        // Preload critical resources
+        this.preloadCriticalResources();
+      }
+      
+      preloadCriticalResources() {
+        const criticalResources = [
+          'assets/images/logo.svg',
+          'https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap'
+        ];
+        
+        criticalResources.forEach(resource => {
+          const link = document.createElement('link');
+          link.rel = 'preload';
+          link.href = resource;
+          link.as = resource.includes('.css') ? 'style' : 'image';
+          document.head.appendChild(link);
+        });
+      }
+      
+      checkSubscriptionSuccess() {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('subscribed') === '1') {
+          this.showToast('✅ تم الاشتراك بنجاح! ستصلك أحدث النصائح والعروض قريباً', 'success');
+          window.history.replaceState({}, document.title, window.location.pathname);
+        }
+      }
+      
+      showToast(message, type = 'info') {
+        const container = document.getElementById('toastContainer');
+        if (!container) return;
+        
+        const toast = document.createElement('div');
+        toast.className = `toast toast-${type}`;
+        toast.textContent = message;
+        toast.setAttribute('role', 'alert');
+        
+        container.appendChild(toast);
+        
+        setTimeout(() => {
+          toast.style.animation = 'slideOutToast 0.4s ease forwards';
+          setTimeout(() => toast.remove(), 400);
+        }, 4000);
+      }
+      
+      isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
     }
 
-    // Service Worker
+    // Initialize the application
+    new AppManager();
+
+    // Service Worker registration
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('./sw.js')
-          .catch(() => {}); // Silent fail
+          .then(registration => console.log('SW registered:', registration))
+          .catch(error => console.log('SW registration failed:', error));
       });
     }
 
-    // Clean up on page hide to prevent cache issues
+    // Cleanup on page hide
     window.addEventListener('pagehide', () => {
-      // Clean up any intervals or listeners
-      const slider = document.querySelector('#revSlider')?.__slider;
-      if (slider) {
-        slider.stopAutoplay();
-      }
+      // Clear any running intervals or timeouts
+      performance.mark('page-hide');
     }, { passive: true });
+
+    // Error handling
+    window.addEventListener('error', (e) => {
+      console.error('JavaScript Error:', e.error);
+      // Could send to analytics service
+    });
+
+    // Performance monitoring
+    window.addEventListener('load', () => {
+      performance.mark('page-loaded');
+      // Could measure and report performance metrics
+    });
   </script>
 
-  <!-- Professional Styles -->
+  <!-- Additional Styles for Enhancements -->
   <style>
-    /* Revolution Slider Styles */
-    .hero-section {
-      position: relative;
-      min-height: 100vh;
-      overflow: hidden;
-    }
-    
-    .rev-slider {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      background: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%);
-    }
-    
-    .rev-slide {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+    /* Typing indicator animation */
+    .typing-dots {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 350ms ease-in-out;
+      gap: 4px;
+      padding: 8px 0;
     }
     
-    .rev-slide.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    
-    .rev-content {
-      text-align: center;
-      color: white;
-      max-width: 800px;
-      padding: 0 2rem;
-      z-index: 2;
-    }
-    
-    .rev-kicker {
-      display: inline-block;
-      background: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(10px);
-      padding: 0.5rem 1rem;
-      border-radius: 50px;
-      font-size: 0.9rem;
-      font-weight: 500;
-      margin-bottom: 1.5rem;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    
-    .rev-title {
-      font-family: 'Cairo', system-ui, sans-serif;
-      font-size: clamp(2.2rem, 4.5vw, 3.5rem);
-      font-weight: 800;
-      line-height: 1.1;
-      margin-bottom: 1.5rem;
-      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    }
-    
-    .rev-subtitle {
-      font-family: 'IBM Plex Sans Arabic', system-ui, sans-serif;
-      font-size: 1.25rem;
-      line-height: 1.6;
-      opacity: 0.95;
-      margin-bottom: 2.5rem;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    
-    .rev-cta {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    
-    .slider-dots {
-      position: absolute;
-      bottom: 2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 0.75rem;
-      z-index: 3;
-    }
-    
-    .dot {
-      width: 12px;
-      height: 12px;
+    .typing-dots span {
+      width: 8px;
+      height: 8px;
+      background: var(--text-tertiary);
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.4);
-      cursor: pointer;
-      transition: all 0.3s ease;
-      border: 2px solid transparent;
+      animation: typing 1.4s infinite;
     }
     
-    .dot.active {
-      background: white;
-      border-color: rgba(255, 255, 255, 0.5);
-      transform: scale(1.2);
+    .typing-dots span:nth-child(2) {
+      animation-delay: 0.2s;
     }
     
-    .dot:hover {
-      background: rgba(255, 255, 255, 0.7);
-      transform: scale(1.1);
+    .typing-dots span:nth-child(3) {
+      animation-delay: 0.4s;
     }
     
-    /* Fixed Action Buttons - SEPARATED POSITIONING */
-    .fixed-actions {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 9999;
-      pointer-events: none;
-    }
-    
-    .action-btn {
-      position: absolute;
-      bottom: 20px;
-      padding: 12px 16px;
-      border: none;
-      border-radius: 50px;
-      font-family: 'Cairo', system-ui, sans-serif;
-      font-weight: 600;
-      font-size: 0.9rem;
-      text-decoration: none;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      pointer-events: auto;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    }
-    
-    .action-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-    }
-    
-    /* WhatsApp Button - RIGHT */
-    .whatsapp-btn {
-      right: 20px;
-      background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
-      color: white;
-    }
-    
-    /* Chatbot Button - CENTER-LEFT */
-    .chatbot-btn {
-      left: 50%;
-      transform: translateX(-50%);
-      background: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%);
-      color: white;
-      position: relative;
-    }
-    
-    .notification-dot {
-      position: absolute;
-      top: -5px;
-      right: -5px;
-      width: 18px;
-      height: 18px;
-      background: #ef4444;
-      border-radius: 50%;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.7rem;
-      color: white;
-      animation: pulse 2s infinite;
-    }
-    
-    /* Back to Top - FAR LEFT */
-    .top-btn {
-      left: 20px;
-      width: 50px;
-      height: 50px;
-      background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
-      color: white;
-      border-radius: 50%;
-      padding: 0;
-    }
-    
-    .btn-text {
-      display: none;
-    }
-    
-    /* Show text on larger screens */
-    @media (min-width: 768px) {
-      .btn-text {
-        display: inline;
+    @keyframes typing {
+      0%, 60%, 100% {
+        transform: translateY(0);
+        opacity: 0.4;
       }
-      
-      .top-btn .btn-text {
-        display: none;
+      30% {
+        transform: translateY(-10px);
+        opacity: 1;
       }
     }
     
-    /* Compact Chatbot */
-    .chatbot-modern {
-      position: fixed;
-      bottom: 80px;
-      left: 20px;
-      width: 360px;
-      max-width: calc(100vw - 40px);
-      max-height: 500px;
-      background: white;
-      border-radius: 20px;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-      z-index: 10000;
-      border: 1px solid #e5e7eb;
-      display: flex;
-      flex-direction: column;
+    /* Focus styles for keyboard users */
+    .using-keyboard *:focus {
+      outline: 3px solid var(--primary-light) !important;
+      outline-offset: 2px !important;
     }
     
-    .chatbot-header {
-      background: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%);
-      color: white;
-      padding: 1rem 1.25rem;
-      border-radius: 20px 20px 0 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .bot-info {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-    
-    .bot-avatar {
-      font-size: 1.5rem;
-    }
-    
-    .bot-details h4 {
-      font-family: 'Cairo', system-ui, sans-serif;
-      font-weight: 600;
-      font-size: 1rem;
-      margin: 0;
-    }
-    
-    .bot-status {
-      font-size: 0.8rem;
-      opacity: 0.9;
-    }
-    
-    .close-chatbot {
-      background: none;
-      border: none;
-      color: white;
-      font-size: 1.5rem;
-      cursor: pointer;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background-color 0.3s ease;
-    }
-    
-    .close-chatbot:hover {
-      background: rgba(255, 255, 255, 0.2);
-    }
-    
-    .chatbot-messages {
-      flex: 1;
-      max-height: 300px;
-      overflow-y: auto;
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    
-    .bot-message {
-      display: flex;
-      gap: 0.75rem;
-      align-items: flex-start;
-    }
-    
-    .user-message {
-      display: flex;
-      justify-content: flex-end;
-    }
-    
-    .message-avatar {
-      font-size: 1.3rem;
-      flex-shrink: 0;
-    }
-    
-    .message-content {
-      background: #f3f4f6;
-      padding: 0.75rem 1rem;
-      border-radius: 18px 18px 18px 4px;
-      max-width: 85%;
-      line-height: 1.5;
-      font-size: 0.9rem;
-      color: #374151;
-    }
-    
-    .user-content {
-      background: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%);
-      color: white;
-      border-radius: 18px 18px 4px 18px;
-    }
-    
-    .quick-replies {
-      padding: 1rem;
-      border-top: 1px solid #e5e7eb;
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-    
-    .quick-reply {
-      background: #f9fafb;
-      border: 1px solid #d1d5db;
-      color: #374151;
-      padding: 0.5rem 0.75rem;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      font-family: 'Cairo', system-ui, sans-serif;
-    }
-    
-    .quick-reply:hover {
-      background: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%);
-      color: white;
-      border-color: transparent;
-    }
-    
-    .chat-input {
-      display: flex;
-      padding: 1rem;
-      border-top: 1px solid #e5e7eb;
-      gap: 0.75rem;
-    }
-    
-    .chat-input input {
-      flex: 1;
-      padding: 0.75rem 1rem;
-      border: 1px solid #d1d5db;
-      border-radius: 25px;
-      font-size: 0.9rem;
-      outline: none;
-      font-family: 'IBM Plex Sans Arabic', system-ui, sans-serif;
-    }
-    
-    .chat-input input:focus {
-      border-color: #2563eb;
-      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-    }
-    
-    .chat-input button {
-      width: 40px;
-      height: 40px;
-      background: linear-gradient(135deg, #2563eb 0%, #8b5cf6 100%);
-      color: white;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      font-size: 1.1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    /* Hidden header on scroll */
+    .header.hidden {
+      transform: translateY(-100%);
       transition: transform 0.3s ease;
     }
     
-    .chat-input button:hover {
-      transform: scale(1.05);
-    }
-    
-    /* Toast Notifications */
-    #toastContainer {
-      position: fixed;
-      top: 100px;
-      right: 20px;
-      z-index: 10001;
-      pointer-events: none;
-    }
-    
-    .toast {
-      background: #1f2937;
-      color: white;
-      padding: 1rem 1.5rem;
-      border-radius: 12px;
-      margin-bottom: 0.5rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-      animation: slideIn 0.3s ease;
-      pointer-events: auto;
-      max-width: 350px;
-      font-family: 'Cairo', system-ui, sans-serif;
-      font-weight: 500;
-    }
-    
-    .toast-success { background: #059669; }
-    .toast-error { background: #dc2626; }
-    
-    @keyframes slideIn {
-      from { transform: translateX(100%); opacity: 0; }
-      to { transform: translateX(0); opacity: 1; }
-    }
-    
-    @keyframes slideOut {
-      from { transform: translateX(0); opacity: 1; }
-      to { transform: translateX(100%); opacity: 0; }
-    }
-    
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-    }
-    
-    @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-      40% { transform: translateY(-8px); }
-      60% { transform: translateY(-4px); }
-    }
-    
-    /* Mobile Responsive */
+    /* Enhanced mobile menu */
     @media (max-width: 768px) {
-      .rev-content {
-        padding: 0 1rem;
-      }
-      
-      .rev-title {
-        font-size: 2rem;
-        line-height: 1.2;
-      }
-      
-      .rev-subtitle {
-        font-size: 1.1rem;
-        margin-bottom: 2rem;
-      }
-      
-      .rev-cta {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.75rem;
-      }
-      
-      .chatbot-modern {
-        left: 10px;
-        width: calc(100vw - 20px);
-        max-height: 70vh;
-        bottom: 70px;
-      }
-      
-      .action-btn {
-        bottom: 10px;
-        padding: 10px 14px;
-        font-size: 0.8rem;
-      }
-      
-      .whatsapp-btn {
-        right: 15px;
-      }
-      
-      .chatbot-btn {
-        left: 50%;
-        transform: translateX(-50%);
-      }
-      
-      .top-btn {
-        left: 15px;
-        width: 44px;
-        height: 44px;
-      }
-      
-      .btn-text {
+      .nav-menu {
         display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 2rem 1rem;
+        box-shadow: var(--shadow-xl);
+        border-top: 1px solid var(--border-light);
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+        z-index: 999;
+      }
+      
+      .nav-menu.active {
+        display: flex;
+      }
+      
+      .nav-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 8px;
+        border-radius: 4px;
+        transition: var(--transition-normal);
+      }
+      
+      .nav-toggle:hover {
+        background: var(--bg-light);
+      }
+      
+      .nav-toggle span {
+        width: 24px;
+        height: 3px;
+        background: var(--text-primary);
+        border-radius: 2px;
+        transition: var(--transition-normal);
+      }
+      
+      .nav-toggle[aria-expanded="true"] span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+      }
+      
+      .nav-toggle[aria-expanded="true"] span:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .nav-toggle[aria-expanded="true"] span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
       }
     }
   </style>
-
 </body>
 </html>
