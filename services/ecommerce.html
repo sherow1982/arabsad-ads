@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>تصميم متاجر إلكترونية خليجية احترافية | مؤسسة إعلانات العرب</title>
-<meta name="description" content="شاهد متاجر إلكترونية فعلية نعمل عليها عبر منصات مختلفة في الخليج العربي. جميع المتاجر مصممة باحتراف لأنظمة دفع وشحن محلية مع تجربة فاخرة. يمكنك الحصول على متجر مماثل خلال 7-14 يوم.">
+<meta name="description" content="شاهد متاجر إلكترونية فعلية نعمل عليها عبر منصات مختلفة في الخليج العربي. جميع المتاجر مصممة باحتراف لأنظمة دفع وشحن محلية مع تجربة فاخره. يمكنك الحصول على متجر بنفس الجودة خلال 7-14 يوم عمل.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -27,19 +27,20 @@ body{font-family:'Cairo',-apple-system,BlinkMacSystemFont,sans-serif;background:
 .live-badge{display:inline-block;background:linear-gradient(135deg,#dc2626,#eb3b5a);color:#fff;padding:6px 18px;border-radius:30px;font-weight:800;font-size:1.1rem;animation:pulse 1.7s infinite;margin-bottom:1.2rem}@keyframes pulse{0%,100%{transform:scale(.97)}50%{transform:scale(1.09)}}
 /* Cards */
 .demos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem;margin:40px auto 60px auto;position:relative}
-.demo-card{background:#fff;border-radius:24px;box-shadow:0 10px 30px rgba(0,0,0,.10);position:relative;transition:.35s;border:1.5px solid #fad39028;overflow:hidden;display:flex;flex-direction:column;align-items:center}
-.demo-card::after{content:'LIVE';position:absolute;top:14px;right:16px;background:#dc2626;color:#fff;padding:5px 14px;border-radius:16px;font-weight:900;font-size:.92rem;animation:blink 2s infinite}@keyframes blink{0%,100%{opacity:1}50%{opacity:.6}}
-.demo-image{width:100%;height:210px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.demo-image .flag-cover{width:85px;height:66px;background-size:cover;background-position:center;border-radius:24px 4px 24px 4px;box-shadow:0 4px 22px #fad39028;border:3px solid #fad39065;position:absolute;top:28px;right:24px}
-.demo-image .flag-badge{font-size:2rem;position:absolute;top:18px;left:23px;}
+.demo-card{background:#fff;border-radius:24px;box-shadow:0 10px 30px rgba(0,0,0,.10);position:relative;transition:.35s;border:1.5px solid #fad39028;overflow:hidden;display:flex;flex-direction:column;align-items:center;cursor:pointer}
+.demo-card::after{content:'LIVE';position:absolute;top:14px;right:16px;background:#dc2626;color:#fff;padding:5px 14px;border-radius:16px;font-weight:900;font-size:.92rem;animation:blink 2s infinite;z-index:10}@keyframes blink{0%,100%{opacity:1}50%{opacity:.6}}
+.demo-card:hover{transform:translateY(-8px);box-shadow:0 16px 45px rgba(246,185,59,.25);border-color:#f6b93b}
+.demo-image{width:100%;height:210px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(135deg,#f6b93b15,#26de8115)}
+.demo-image .flag-cover{width:100%;height:100%;background-size:cover;background-position:center;opacity:0.85;position:absolute;top:0;left:0}
+.demo-image .flag-badge{font-size:3.5rem;position:relative;z-index:5;text-shadow:0 3px 12px rgba(0,0,0,.3)}
 .demo-content{padding:26px 18px 20px 18px;text-align:center;width:100%}
 .demo-content h3{font-size:1.33rem;color:#1a2238;font-weight:900;margin:0 0 10px 0}
 .demo-platform{color:#4a69bd;font-weight:600;font-size:.98rem;margin-bottom:8px}
 .price-ask{background:linear-gradient(135deg,#fef3c7,#fde68a);color:#7c2d12;padding:6px 14px;border-radius:22px;display:inline-block;margin-bottom:10px;font-weight:800;box-shadow:0 2px 8px #fad39034}
 .demo-buttons{display:flex;gap:12px;margin-top:10px}
-.demo-buttons .btn-demo{flex:1;padding:13px 0;border-radius:16px;font-weight:700;background:linear-gradient(135deg,#f6b93b,#fad390);color:#16213e;border:none;transition:.3s;box-shadow:0 2px 12px #fad39022;text-decoration:none}
+.demo-buttons .btn-demo{flex:1;padding:13px 0;border-radius:16px;font-weight:700;background:linear-gradient(135deg,#f6b93b,#fad390);color:#16213e;border:none;transition:.3s;box-shadow:0 2px 12px #fad39022;text-decoration:none;text-align:center}
 .demo-buttons .btn-demo:hover{transform:translateY(-3px);background:linear-gradient(135deg,#f6b93b,#dc2626);color:#fff}
-.demo-buttons .btn-outline{flex:1;background:#fff;color:#4a69bd;border:2px solid #4a69bd;border-radius:16px;font-weight:700;padding:13px 0;transition:.3s;text-decoration:none}
+.demo-buttons .btn-outline{flex:1;background:#fff;color:#4a69bd;border:2px solid #4a69bd;border-radius:16px;font-weight:700;padding:13px 0;transition:.3s;text-decoration:none;text-align:center}
 .demo-buttons .btn-outline:hover{background:linear-gradient(135deg,#4a69bd,#6a89cc);color:#fff;border-color:#6a89cc}
 .live-demo-cta{text-align:center;margin:60px auto 0 auto;padding:50px;background:linear-gradient(135deg,#4a69bd,#6a89cc);color:#fff;border-radius:30px;box-shadow:0 15px 40px #4a69bd18;max-width:600px}
 .live-demo-cta h3{font-size:1.8rem;font-weight:900;margin-bottom:20px;color:#fff}
@@ -79,193 +80,340 @@ body{font-family:'Cairo',-apple-system,BlinkMacSystemFont,sans-serif;background:
 </header>
 <!-- Hero Section -->
 <section class="hero-demo">
-  <span class="live-badge">🛒 8 متاجر فعلية LIVE</span>
+  <span class="live-badge">🛒 15+ متجر فعلي LIVE</span>
   <h1>متاجر إلكترونية احترافية خليجية</h1>
   <div class="desc">شاهد متاجر حقيقية وفعالة تم تصميمها خصيصاً لسوقك المحلي بأنظمة دفع/شحن متكاملة وتجربة فاخره.<br>يمكنك الحصول على متجر بنفس الجودة خلال <b>7-14 يوم عمل</b>.</div>
 </section>
 <div class="container">
   <div class="demos-grid">
     <!-- Saudi Arabia - GitHub -->
-    <div class="demo-card">
+    <div class="demo-card" onclick="window.open('https://sherow1982.github.io/saudi-matjar.arabsad.com/', '_blank')">
       <div class="demo-image">
-        <span class="flag-badge">🇸🇦</span>
         <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/sa.png')"></div>
+        <span class="flag-badge">🇸🇦</span>
       </div>
       <div class="demo-content">
         <h3>متجر السعودية</h3>
         <p class="demo-platform">منصة GitHub Pages</p>
         <div class="price-ask">اطلب السعر</div>
         <div class="demo-buttons">
-          <a href="https://sherow1982.github.io/saudi-matjar.arabsad.com/" class="btn-demo" target="_blank">🔴 عرض مباشر</a>
-          <a href="https://wa.me/201110760081?text=أريد متجر مثل متجر السعودية GitHub" class="btn-outline" target="_blank">💬 اطلب السعر</a>
+          <a href="https://sherow1982.github.io/saudi-matjar.arabsad.com/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">🔴 عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=أريد متجر مثل متجر السعودية GitHub" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
         </div>
       </div>
     </div>
     <!-- Saudi Arabia - MyEasyOrders -->
-    <div class="demo-card">
+    <div class="demo-card" onclick="window.open('https://tagerksa.myeasyorders.com/', '_blank')">
       <div class="demo-image">
-        <span class="flag-badge">🇸🇦</span>
         <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/sa.png')"></div>
+        <span class="flag-badge">🇸🇦</span>
       </div>
       <div class="demo-content">
         <h3>تاجر السعودية</h3>
         <p class="demo-platform">منصة MyEasyOrders</p>
         <div class="price-ask">اطلب السعر</div>
         <div class="demo-buttons">
-          <a href="https://tagerksa.myeasyorders.com/" class="btn-demo" target="_blank">🔴 عرض مباشر</a>
-          <a href="https://wa.me/201110760081?text=أريد متجر مثل تاجر السعودية MyEasyOrders" class="btn-outline" target="_blank">💬 اطلب السعر</a>
+          <a href="https://tagerksa.myeasyorders.com/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">🔴 عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=أريد متجر مثل تاجر السعودية MyEasyOrders" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
         </div>
       </div>
     </div>
     <!-- UAE - MyEasyOrders -->
-    <div class="demo-card">
+    <div class="demo-card" onclick="window.open('https://tageruae.myeasyorders.com/', '_blank')">
       <div class="demo-image">
-        <span class="flag-badge">🇦🇪</span>
         <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/ae.png')"></div>
+        <span class="flag-badge">🇦🇪</span>
       </div>
       <div class="demo-content">
         <h3>تاجر الإمارات</h3>
         <p class="demo-platform">منصة MyEasyOrders</p>
         <div class="price-ask">اطلب السعر</div>
         <div class="demo-buttons">
-          <a href="https://tageruae.myeasyorders.com/" class="btn-demo" target="_blank">🔴 عرض مباشر</a>
-          <a href="https://wa.me/201110760081?text=أريد متجر مثل تاجر الإمارات MyEasyOrders" class="btn-outline" target="_blank">💬 اطلب السعر</a>
+          <a href="https://tageruae.myeasyorders.com/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">🔴 عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=أريد متجر مثل تاجر الإمارات MyEasyOrders" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
         </div>
       </div>
     </div>
     <!-- UAE - SellSite Noskha -->
-    <div class="demo-card">
+    <div class="demo-card" onclick="window.open('https://noskha-emeratis.sellsite.net/', '_blank')">
       <div class="demo-image">
-        <span class="flag-badge">🇦🇪</span>
         <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/ae.png')"></div>
+        <span class="flag-badge">🇦🇪</span>
       </div>
       <div class="demo-content">
         <h3>نسخة إماراتية</h3>
         <p class="demo-platform">منصة SellSite</p>
         <div class="price-ask">اطلب السعر</div>
         <div class="demo-buttons">
-          <a href="https://noskha-emeratis.sellsite.net/" class="btn-demo" target="_blank">🔴 عرض مباشر</a>
-          <a href="https://wa.me/201110760081?text=أريد متجر مثل نسخة إماراتية SellSite" class="btn-outline" target="_blank">💬 اطلب السعر</a>
+          <a href="https://noskha-emeratis.sellsite.net/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">🔴 عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=أريد متجر مثل نسخة إماراتية SellSite" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
         </div>
       </div>
     </div>
     <!-- UAE Shopping - SellSite -->
-    <div class="demo-card">
+    <div class="demo-card" onclick="window.open('https://emirates-shopping.sellsite.net/', '_blank')">
       <div class="demo-image">
-        <span class="flag-badge">🇦🇪</span>
         <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/ae.png')"></div>
+        <span class="flag-badge">🇦🇪</span>
       </div>
       <div class="demo-content">
         <h3>Emirates Shopping</h3>
         <p class="demo-platform">منصة SellSite</p>
         <div class="price-ask">اطلب السعر</div>
         <div class="demo-buttons">
-          <a href="https://emirates-shopping.sellsite.net/" class="btn-demo" target="_blank">🔴 عرض مباشر</a>
-          <a href="https://wa.me/201110760081?text=أريد متجر مثل Emirates Shopping SellSite" class="btn-outline" target="_blank">💬 اطلب السعر</a>
+          <a href="https://emirates-shopping.sellsite.net/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">🔴 عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=أريد متجر مثل Emirates Shopping SellSite" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
         </div>
       </div>
     </div>
     <!-- Kuwait - GitHub -->
-    <div class="demo-card">
+    <div class="demo-card" onclick="window.open('https://sherow1982.github.io/Kuwait-matjar/', '_blank')">
       <div class="demo-image">
-        <span class="flag-badge">🇰🇼</span>
         <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/kw.png')"></div>
+        <span class="flag-badge">🇰🇼</span>
       </div>
       <div class="demo-content">
         <h3>متجر الكويت</h3>
         <p class="demo-platform">منصة GitHub Pages</p>
         <div class="price-ask">اطلب السعر</div>
         <div class="demo-buttons">
-          <a href="https://sherow1982.github.io/Kuwait-matjar/" class="btn-demo" target="_blank">🔴 عرض مباشر</a>
-          <a href="https://wa.me/201110760081?text=أريد متجر مثل Kuwait-matjar GitHub" class="btn-outline" target="_blank">💬 اطلب السعر</a>
+          <a href="https://sherow1982.github.io/Kuwait-matjar/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">🔴 عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=أريد متجر مثل Kuwait-matjar GitHub" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
         </div>
       </div>
     </div>
     <!-- Kuwait - SellSite -->
-    <div class="demo-card">
+    <div class="demo-card" onclick="window.open('https://tagerkwait.sellsite.net/', '_blank')">
       <div class="demo-image">
-        <span class="flag-badge">🇰🇼</span>
         <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/kw.png')"></div>
+        <span class="flag-badge">🇰🇼</span>
       </div>
       <div class="demo-content">
         <h3>تاجر الكويت</h3>
         <p class="demo-platform">منصة SellSite</p>
         <div class="price-ask">اطلب السعر</div>
         <div class="demo-buttons">
-          <a href="https://tagerkwait.sellsite.net/" class="btn-demo" target="_blank">🔴 عرض مباشر</a>
-          <a href="https://wa.me/201110760081?text=أريد متجر مثل تاجر الكويت SellSite" class="btn-outline" target="_blank">💬 اطلب السعر</a>
+          <a href="https://tagerkwait.sellsite.net/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">🔴 عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=أريد متجر مثل تاجر الكويت SellSite" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
         </div>
       </div>
     </div>
     <!-- Oman - GitHub -->
-    <div class="demo-card">
+    <div class="demo-card" onclick="window.open('https://sherow1982.github.io/matjar-oman/', '_blank')">
       <div class="demo-image">
-        <span class="flag-badge">🇴🇲</span>
         <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/om.png')"></div>
+        <span class="flag-badge">🇴🇲</span>
       </div>
       <div class="demo-content">
         <h3>متجر عمان</h3>
         <p class="demo-platform">منصة GitHub Pages</p>
         <div class="price-ask">اطلب السعر</div>
         <div class="demo-buttons">
-          <a href="https://sherow1982.github.io/matjar-oman/" class="btn-demo" target="_blank">🔴 عرض مباشر</a>
-          <a href="https://wa.me/201110760081?text=أريد متجر مثل متجر عمان GitHub" class="btn-outline" target="_blank">💬 اطلب السعر</a>
+          <a href="https://sherow1982.github.io/matjar-oman/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">🔴 عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=أريد متجر مثل متجر عمان GitHub" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
         </div>
       </div>
     </div>
     <!-- UAE Gifts - GitHub -->
-    <div class="demo-card">
+    <div class="demo-card" onclick="window.open('https://sherow1982.github.io/hadaya-emirates.arabsad.com/', '_blank')">
       <div class="demo-image">
-        <span class="flag-badge">🇦🇪</span>
         <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/ae.png')"></div>
+        <span class="flag-badge">🇦🇪</span>
       </div>
       <div class="demo-content">
         <h3>هدايا الإمارات</h3>
         <p class="demo-platform">منصة GitHub Pages</p>
         <div class="price-ask">اطلب السعر</div>
         <div class="demo-buttons">
-          <a href="https://sherow1982.github.io/hadaya-emirates.arabsad.com/" class="btn-demo" target="_blank">🔴 عرض مباشر</a>
-          <a href="https://wa.me/201110760081?text=أريد متجر مثل هدايا الإمارات GitHub" class="btn-outline" target="_blank">💬 اطلب السعر</a>
+          <a href="https://sherow1982.github.io/hadaya-emirates.arabsad.com/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">🔴 عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=أريد متجر مثل هدايا الإمارات GitHub" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
         </div>
       </div>
     </div>
     <!-- Jordan - SellSite -->
-    <div class="demo-card">
+    <div class="demo-card" onclick="window.open('https://jordan-shopping.sellsite.net/', '_blank')">
       <div class="demo-image">
-        <span class="flag-badge">🇯🇴</span>
         <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/jo.png')"></div>
+        <span class="flag-badge">🇯🇴</span>
       </div>
       <div class="demo-content">
         <h3>متجر الأردن</h3>
         <p class="demo-platform">منصة SellSite</p>
         <div class="price-ask">اطلب السعر</div>
         <div class="demo-buttons">
-          <a href="https://jordan-shopping.sellsite.net/" class="btn-demo" target="_blank">🔴 عرض مباشر</a>
-          <a href="https://wa.me/201110760081?text=أريد متجر مثل متجر الأردن SellSite" class="btn-outline" target="_blank">💬 اطلب السعر</a>
+          <a href="https://jordan-shopping.sellsite.net/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">🔴 عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=أريد متجر مثل متجر الأردن SellSite" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
         </div>
       </div>
     </div>
     <!-- ArabsAD - MyEasyOrders -->
-    <div class="demo-card">
+    <div class="demo-card" onclick="window.open('https://arabsad.myeasyorders.com/', '_blank')">
       <div class="demo-image">
-        <span class="flag-badge">🇪🇬</span>
         <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/eg.png')"></div>
+        <span class="flag-badge">🇪🇬</span>
       </div>
       <div class="demo-content">
         <h3>متجر عربساد</h3>
         <p class="demo-platform">منصة MyEasyOrders</p>
         <div class="price-ask">اطلب السعر</div>
         <div class="demo-buttons">
-          <a href="https://arabsad.myeasyorders.com/" class="btn-demo" target="_blank">🔴 عرض مباشر</a>
-          <a href="https://wa.me/201110760081?text=أريد متجر مثل متجر عربساد MyEasyOrders" class="btn-outline" target="_blank">💬 اطلب السعر</a>
+          <a href="https://arabsad.myeasyorders.com/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">🔴 عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=أريد متجر مثل متجر عربساد MyEasyOrders" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ========== المتاجر الجديدة المضافة ========== -->
+    
+    <!-- منصة اعلانات العرب -->
+    <div class="demo-card" onclick="window.open('https://arabsad.com/', '_blank')">
+      <div class="demo-image">
+        <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/ae.png')"></div>
+        <span class="flag-badge">🌍</span>
+      </div>
+      <div class="demo-content">
+        <h3>إعلانات العرب - منصة إعلانات الخليج</h3>
+        <p class="demo-platform">منصة خاصة (HTML)</p>
+        <div class="price-ask">اطلب السعر</div>
+        <div class="demo-buttons">
+          <a href="https://arabsad.com/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">🔴 عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=أريد منصة مثل إعلانات العرب الخليجية" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
+        </div>
+      </div>
+    </div>
+    <!-- متجر سوق مصر -->
+    <div class="demo-card" onclick="window.open('https://sherow1982.github.io/sooq-masr/', '_blank')">
+      <div class="demo-image">
+        <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/eg.png')"></div>
+        <span class="flag-badge">🇪🇬</span>
+      </div>
+      <div class="demo-content">
+        <h3>سوق مصر الإلكتروني</h3>
+        <p class="demo-platform">GitHub Pages</p>
+        <div class="price-ask">اطلب السعر</div>
+        <div class="demo-buttons">
+          <a href="https://sherow1982.github.io/sooq-masr/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">🔴 عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=أريد متجر مثل سوق مصر GitHub" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
+        </div>
+      </div>
+    </div>
+    <!-- سوق الكويت الإلكتروني -->
+    <div class="demo-card" onclick="window.open('https://sooq-alkuwait.arabsad.com/', '_blank')">
+      <div class="demo-image">
+        <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/kw.png')"></div>
+        <span class="flag-badge">🇰🇼</span>
+      </div>
+      <div class="demo-content">
+        <h3>سوق الكويت الإلكتروني</h3>
+        <p class="demo-platform">GitHub Pages</p>
+        <div class="price-ask">اطلب السعر</div>
+        <div class="demo-buttons">
+          <a href="https://sooq-alkuwait.arabsad.com/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">🔴 عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=أريد متجر مثل سوق الكويت الإلكتروني" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
+        </div>
+      </div>
+    </div>
+    <!-- سوق الإمارات الإلكتروني -->
+    <div class="demo-card" onclick="window.open('https://sherow1982.github.io/sooq-alemarat/', '_blank')">
+      <div class="demo-image">
+        <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/ae.png')"></div>
+        <span class="flag-badge">🇦🇪</span>
+      </div>
+      <div class="demo-content">
+        <h3>سوق الإمارات الإلكتروني</h3>
+        <p class="demo-platform">GitHub Pages</p>
+        <div class="price-ask">اطلب السعر</div>
+        <div class="demo-buttons">
+          <a href="https://sherow1982.github.io/sooq-alemarat/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">🔴 عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=أريد متجر مثل سوق الإمارات الإلكتروني" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
+        </div>
+      </div>
+    </div>
+    <!-- هدايا الإمارات العربية المتحدة -->
+    <div class="demo-card" onclick="window.open('https://emirates-gifts.vercel.app/', '_blank')">
+      <div class="demo-image">
+        <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/ae.png')"></div>
+        <span class="flag-badge">🇦🇪</span>
+      </div>
+      <div class="demo-content">
+        <h3>هدايا الإمارات العربية</h3>
+        <p class="demo-platform">Vercel</p>
+        <div class="price-ask">اطلب السعر</div>
+        <div class="demo-buttons">
+          <a href="https://emirates-gifts.vercel.app/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">🔴 عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=أريد متجر مثل هدايا الإمارات العربية" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
+        </div>
+      </div>
+    </div>
+    <!-- متجر العراق الإلكتروني -->
+    <div class="demo-card" onclick="window.open('https://iraq-store.vercel.app/', '_blank')">
+      <div class="demo-image">
+        <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/iq.png')"></div>
+        <span class="flag-badge">🇮🇶</span>
+      </div>
+      <div class="demo-content">
+        <h3>متجر العراق الإلكتروني</h3>
+        <p class="demo-platform">Vercel</p>
+        <div class="price-ask">اطلب السعر</div>
+        <div class="demo-buttons">
+          <a href="https://iraq-store.vercel.app/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">🔴 عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=أريد متجر مثل متجر العراق الإلكتروني" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
+        </div>
+      </div>
+    </div>
+    <!-- متجر بورفوليو / المجرب -->
+    <div class="demo-card" onclick="window.open('https://sherow1982.github.io/portfolio/', '_blank')">
+      <div class="demo-image">
+        <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/eg.png')"></div>
+        <span class="flag-badge">🌐</span>
+      </div>
+      <div class="demo-content">
+        <h3>Portfolio | سيرة ذاتية احترافية</h3>
+        <p class="demo-platform">GitHub Pages</p>
+        <div class="price-ask">اطلب السعر</div>
+        <div class="demo-buttons">
+          <a href="https://sherow1982.github.io/portfolio/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">👁️ عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=تصميم صفحة بورتفوليو احترافية" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
+        </div>
+      </div>
+    </div>
+    <!-- متجر Mobirise -->
+    <div class="demo-card" onclick="window.open('https://sherow1982.github.io/mobirise/', '_blank')">
+      <div class="demo-image">
+        <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/eg.png')"></div>
+        <span class="flag-badge">🎨</span>
+      </div>
+      <div class="demo-content">
+        <h3>Mobirise | موقع تجريبي متعدد القوالب</h3>
+        <p class="demo-platform">GitHub Pages</p>
+        <div class="price-ask">اطلب السعر</div>
+        <div class="demo-buttons">
+          <a href="https://sherow1982.github.io/mobirise/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">👁️ عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=تصميم موقع متعدد القوالب مثل Mobirise" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
+        </div>
+      </div>
+    </div>
+    <!-- Emirates Shopping GitHub -->
+    <div class="demo-card" onclick="window.open('https://sherow1982.github.io/Emirates-shopping/', '_blank')">
+      <div class="demo-image">
+        <div class="flag-cover" style="background-image:url('https://flagcdn.com/w1600/ae.png')"></div>
+        <span class="flag-badge">🇦🇪</span>
+      </div>
+      <div class="demo-content">
+        <h3>Emirates Shopping - نسخة GitHub</h3>
+        <p class="demo-platform">GitHub Pages</p>
+        <div class="price-ask">اطلب السعر</div>
+        <div class="demo-buttons">
+          <a href="https://sherow1982.github.io/Emirates-shopping/" class="btn-demo" target="_blank" onclick="event.stopPropagation()">🔴 عرض مباشر</a>
+          <a href="https://wa.me/201110760081?text=أريد متجر مثل Emirates Shopping GitHub" class="btn-outline" target="_blank" onclick="event.stopPropagation()">💬 اطلب السعر</a>
         </div>
       </div>
     </div>
   </div>
   <div class="live-demo-cta">
     <h3>🚀 جاهز لمتجر إلكتروني فاخر مثل المشاريع أعلاه؟</h3>
-    <p>كل المتاجر المعروضة تعمل فعلياً على منصات خليجية.  احجز متجرك خلال أقل من 14 يوم عمل.</p>
-    <a href="https://wa.me/201110760081?text=شاهدت 8 متاجر جاهزة وأريد متجر مماثل لبلدي" class="btn-main" target="_blank">🛒 اطلب متجرك الآن</a>
+    <p>كل المتاجر المعروضة تعمل فعلياً على منصات خليجية. احجز متجرك خلال أقل من 14 يوم عمل.</p>
+    <a href="https://wa.me/201110760081?text=شاهدت 15+ متجر جاهز وأريد متجر مماثل لبلدي" class="btn-main" target="_blank">🛒 اطلب متجرك الآن</a>
   </div>
 </div>
 <footer class="footer">
