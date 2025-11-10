@@ -520,6 +520,7 @@ body {
   transition: var(--transition-base);
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .service-card::before {
@@ -544,6 +545,10 @@ body {
   border-color: rgba(246, 185, 59, 0.3);
   transform: translateY(-8px);
   box-shadow: var(--shadow-lg);
+}
+
+.service-card.clickable {
+  cursor: pointer;
 }
 
 .service-icon {
@@ -1037,6 +1042,7 @@ body {
         <li><a href="#stores">متاجرنا</a></li>
         <li><a href="#results">نتائجنا</a></li>
         <li><a href="blog/">المدونة</a></li>
+        <li><a href="google-ads.html" target="_blank">إعلانات Google Ads</a></li>
       </ul>
       
       <a href="https://wa.me/201110760081?text=مرحباً! أريد استشارة تسويقية" class="btn-login" target="_blank">
@@ -1124,14 +1130,14 @@ body {
     </div>
     
     <div class="services-grid">
-      <div class="service-card fade-in-up">
+      <div class="service-card fade-in-up clickable" onclick="window.open('google-ads.html', '_blank')">
         <div class="service-icon">🎯</div>
         <h3 class="service-title">إعلانات Google Ads</h3>
         <p class="service-description">
           الصفحة الأولى في جوجل خلال 7 أيام مضمونة. خبراء معتمدون من Google مع نتائج قابلة للقياس.
         </p>
-        <a href="https://wa.me/201110760081?text=أريد خدمة Google Ads" class="service-link" target="_blank">
-          <span>اطلب الخدمة</span>
+        <a href="google-ads.html" class="service-link" target="_blank" onclick="event.stopPropagation()">
+          <span>شاهد جميع الحملات</span>
           <span>←</span>
         </a>
       </div>
@@ -1356,7 +1362,7 @@ body {
       
       <div class="footer-section">
         <h3>خدماتنا</h3>
-        <a href="#services">إعلانات Google</a>
+        <a href="google-ads.html" target="_blank">إعلانات Google</a>
         <a href="#services">السوشيال ميديا</a>
         <a href="services/ecommerce.html">المتاجر الإلكترونية</a>
         <a href="#services">تحسين SEO</a>
