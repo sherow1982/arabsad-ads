@@ -2,808 +2,1550 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>🚀 مؤسسة إعلانات العرب - الوكالة الرقمية #1 في الخليج | ضمان النتائج أو استرداد المال</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🚀 مؤسسة إعلانات العرب - الوكالة الرقمية #1 في الخليج</title>
+<meta name="description" content="وكالة تسويق رقمي رائدة في الخليج العربي - خدمات Google Ads، إعلانات السوشيال ميديا، تصميم المتاجر، وتحسين محركات البحث">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--primary:#3b82f6;--success:#10b981;--warning:#f59e0b;--purple:#8b5cf6;--text:#1e293b;--text-light:#64748b;--bg:#fff;--bg-light:#f8fafc;--shadow:0 4px 20px rgba(0,0,0,.08);--radius:12px;--transition:all .3s cubic-bezier(.4,0,.2,1);--font:'Cairo',-apple-system,BlinkMacSystemFont,sans-serif}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:var(--font);line-height:1.6;color:var(--text);background:var(--bg);overflow-x:hidden}
-.container{max-width:1200px;margin:0 auto;padding:0 1rem}
-.header{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,.98);backdrop-filter:blur(20px);z-index:1000;border-bottom:1px solid rgba(59,130,246,.1)}
-.nav{padding:1rem 0}.nav .container{display:flex;align-items:center;justify-content:space-between}
-.brand{font-size:1.5rem;font-weight:900;background:linear-gradient(135deg,#3b82f6,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
-.cta-header{background:linear-gradient(135deg,var(--success),#059669);color:#fff;padding:.75rem 1.5rem;border-radius:25px;text-decoration:none;font-weight:600;box-shadow:var(--shadow);transition:var(--transition)}
-.cta-header:hover{transform:translateY(-2px)}
-.hero{margin-top:80px;position:relative;overflow:hidden;background:linear-gradient(135deg,#f8fafc 0%,#e2e8f0 100%)}
-.slider-container{position:relative;width:100%;height:100vh;min-height:650px}
-.slider-track{display:flex;width:600%;height:100%;transition:transform .8s cubic-bezier(.25,.46,.45,.94)}
-.slide{width:calc(100%/6);height:100%;display:flex;align-items:center;justify-content:center;padding:3rem 1.25rem;text-align:center;position:relative}
-.slide-content{max-width:900px;margin:auto}
-.slide-title{font-size:clamp(2.2rem,6.5vw,4.3rem);font-weight:900;line-height:1.1;margin-bottom:1rem;background:linear-gradient(135deg,#1e293b,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.slide-subtitle{font-size:clamp(1.2rem,3.2vw,1.8rem);color:var(--text-light);margin-bottom:1.25rem;font-weight:700}
-.slide p.lead{font-size:clamp(1rem,2.6vw,1.25rem);color:var(--text);margin-bottom:2rem}
-.ctas{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:1rem 2.25rem;border-radius:50px;text-decoration:none;font-weight:800;transition:var(--transition);box-shadow:0 8px 30px rgba(0,0,0,.12)}
-.btn-primary{background:linear-gradient(135deg,var(--primary),var(--purple));color:#fff}
-.btn-outline{background:#fff;color:var(--text);border:2px solid rgba(59,130,246,.2)}
-.btn:hover{transform:translateY(-3px) scale(1.03)}
-.nav-toggle{display:none}
-.nav-menu{display:flex;list-style:none;gap:2rem;align-items:center}
-.nav-menu a{color:var(--text);text-decoration:none;padding:.5rem 1rem;border-radius:8px;font-weight:600}
-/* dots & arrows */
-.ctrl{position:absolute;top:50%;transform:translateY(-50%);width:66px;height:66px;background:rgba(255,255,255,.95);border:none;border-radius:50%;font-size:1.8rem;color:var(--primary);cursor:pointer;box-shadow:var(--shadow);transition:var(--transition);z-index:20}
-.ctrl:hover{background:var(--primary);color:#fff;transform:translateY(-50%) scale(1.08)}
-#prevBtn{left:1.25rem}#nextBtn{right:1.25rem}
-.dots{position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);display:flex;gap:.75rem;background:rgba(255,255,255,.25);padding:.75rem 1.25rem;border-radius:40px;backdrop-filter:blur(12px)}
-.dots button{width:14px;height:14px;border-radius:50%;background:rgba(255,255,255,.7);border:2px solid rgba(255,255,255,.9);cursor:pointer;transition:var(--transition)}
-.dots button.active{background:#fff;transform:scale(1.3)}
-.slide{background:none !important}
-
-/* 🛒 E-commerce Showcase Styles */
-.ecommerce-spotlight{padding:4rem 0;background:linear-gradient(135deg,#f0f9ff 0%,#e0f2fe 100%);position:relative;overflow:hidden}
-.ecommerce-spotlight::before{content:'';position:absolute;top:-50%;right:-20%;width:500px;height:500px;background:radial-gradient(circle,rgba(59,130,246,0.1),transparent 70%);border-radius:50%}
-.spotlight-header{text-align:center;margin-bottom:3rem;position:relative;z-index:1}
-.spotlight-badge{display:inline-block;background:linear-gradient(135deg,#dc2626,#ef4444);color:#fff;padding:0.5rem 1.5rem;border-radius:25px;font-size:0.9rem;font-weight:700;margin-bottom:1rem;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
-.live-stores-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-bottom:3rem}
-.store-preview{background:#fff;border-radius:var(--radius);padding:1.5rem;box-shadow:var(--shadow);border:2px solid rgba(59,130,246,0.1);transition:var(--transition);position:relative;overflow:hidden}
-.store-preview::after{content:'LIVE';position:absolute;top:10px;right:10px;background:#dc2626;color:#fff;padding:4px 10px;border-radius:12px;font-size:0.7rem;font-weight:700;animation:blink 1.5s infinite}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:0.6}}
-.store-preview:hover{transform:translateY(-5px);box-shadow:0 15px 40px rgba(0,0,0,0.12);border-color:var(--primary)}
-.store-flag{font-size:2.5rem;text-align:center;margin-bottom:1rem}
-.store-name{font-size:1.1rem;font-weight:700;text-align:center;color:var(--text);margin-bottom:0.5rem}
-.store-platform{font-size:0.85rem;color:var(--text-light);text-align:center}
-
-.service-badge{position:absolute;top:-8px;right:-8px;background:linear-gradient(135deg,#dc2626,#ef4444);color:#fff;padding:4px 12px;border-radius:20px;font-size:0.75rem;font-weight:700;box-shadow:0 4px 15px rgba(220,38,38,0.4);animation:bounce 2s infinite}
-@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-
-/* 🔧 إصلاح التراكب على الجوال */
-@media (max-width: 480px) {
-  .header { min-height: 70px; z-index: 1001; }
-  .hero { margin-top: 78px !important; padding-top: 12px; }
-  .slider-container { min-height: calc(100vh - 90px); }
+/* ========== GULF MODERN DESIGN SYSTEM ========== */
+:root {
+  /* Primary Colors - Inspired by Gulf Luxury */
+  --navy-dark: #1a2238;
+  --navy-medium: #2d3561;
+  --navy-light: #3e4a7d;
+  --royal-blue: #4a69bd;
+  --sky-blue: #6a89cc;
   
-  /* إصلاح CTA العلوي */
-  .cta-header { 
-    padding: 0.6rem 1.1rem !important; 
-    font-size: 0.85rem !important;
-    border-radius: 18px !important;
-    white-space: nowrap;
-  }
+  /* Accent Colors */
+  --gold: #f6b93b;
+  --gold-light: #fad390;
+  --emerald: #26de81;
+  --emerald-light: #20bf6b;
   
-  /* إصلاح الأزرار العائمة */
-  div[style*="position:fixed"][style*="bottom:20px"] {
-    bottom: 90px !important;
-  }
+  /* Neutral Colors */
+  --white: #ffffff;
+  --cream: #f8f9fa;
+  --light-gray: #e8eaf0;
+  --medium-gray: #9fa8b8;
+  --dark-gray: #4a5568;
   
-  #backTop {
-    bottom: 90px !important;
-    right: 16px !important;
-    width: 45px !important;
-    height: 45px !important;
-    font-size: 1.2rem !important;
-  }
+  /* Semantic Colors */
+  --success: #26de81;
+  --warning: #f6b93b;
+  --danger: #eb3b5a;
+  --info: #4a69bd;
   
-  /* مسافة آمنة للـCTAs السفلية */
-  section[style*="text-align:center"] .ctas,
-  section[style*="text-align:center"] div[style*="gap:2rem"] {
-    padding-bottom: 100px !important;
-  }
+  /* Typography */
+  --font-primary: 'Cairo', -apple-system, BlinkMacSystemFont, sans-serif;
   
-  /* تحسين السلايدر */
-  .slide { padding: 1.8rem 0.8rem !important; }
-  .btn { 
-    width: 100% !important; 
-    max-width: 260px !important; 
-    padding: 0.9rem 1.8rem !important;
-    font-size: 0.95rem !important;
-  }
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 5rem;
   
-  .ctrl { 
-    width: 50px !important; 
-    height: 50px !important; 
-    font-size: 1.4rem !important; 
-  }
+  /* Borders */
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 30px;
+  --radius-xl: 50px;
   
-  #prevBtn { left: 0.8rem !important; }
-  #nextBtn { right: 0.8rem !important; }
+  /* Shadows */
+  --shadow-sm: 0 2px 10px rgba(0,0,0,0.05);
+  --shadow-md: 0 8px 30px rgba(0,0,0,0.1);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,0.15);
   
-  .dots { 
-    bottom: 0.8rem !important; 
-    padding: 0.6rem 1rem !important; 
-  }
-  
-  .live-stores-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
-  .store-preview{padding:1.2rem}
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (max-width: 390px) {
-  .hero { margin-top: 84px !important; }
-  .brand { font-size: 1.3rem !important; }
-  
-  .nav-menu.active {
-    top: 74px !important;
-    padding: 1.5rem !important;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-primary);
+  background: var(--navy-dark);
+  color: var(--white);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========== DECORATIVE BACKGROUND ========== */
+.bg-decorations {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.decoration-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+}
+
+.decoration-circle-1 {
+  width: 400px;
+  height: 400px;
+  background: var(--royal-blue);
+  top: -100px;
+  right: -100px;
+  animation: float 20s ease-in-out infinite;
+}
+
+.decoration-circle-2 {
+  width: 300px;
+  height: 300px;
+  background: var(--gold);
+  bottom: 10%;
+  left: -80px;
+  animation: float 15s ease-in-out infinite reverse;
+}
+
+.decoration-triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  opacity: 0.1;
+}
+
+.decoration-triangle-1 {
+  border-width: 0 100px 150px 100px;
+  border-color: transparent transparent var(--emerald) transparent;
+  top: 30%;
+  left: 5%;
+  animation: rotate 30s linear infinite;
+}
+
+.decoration-arc {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 15px solid var(--gold);
+  border-radius: 50%;
+  opacity: 0.1;
+  bottom: 20%;
+  right: 10%;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  animation: float 25s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  25% { transform: translateY(-30px) translateX(20px); }
+  50% { transform: translateY(-60px) translateX(0); }
+  75% { transform: translateY(-30px) translateX(-20px); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ========== CONTAINER ========== */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  position: relative;
+  z-index: 1;
+}
+
+/* ========== HEADER ========== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(26, 34, 56, 0.95);
+  backdrop-filter: blur(20px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  transition: var(--transition-base);
+}
+
+.header.scrolled {
+  background: rgba(26, 34, 56, 0.98);
+  box-shadow: var(--shadow-md);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-sm) 0;
+  gap: var(--spacing-md);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--gold), var(--emerald));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: var(--transition-base);
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+.nav-menu a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-base);
+  position: relative;
+}
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: var(--transition-base);
+  transform: translateX(-50%);
+}
+
+.nav-menu a:hover::after {
+  width: 80%;
+}
+
+.nav-menu a.active {
+  background: rgba(246, 185, 59, 0.1);
+  color: var(--gold);
+}
+
+.btn-login {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--royal-blue), var(--sky-blue));
+  color: var(--white);
+  padding: 10px 24px;
+  border-radius: var(--radius-xl);
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px solid transparent;
+  transition: var(--transition-base);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-login:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--gold);
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: var(--transition-base);
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: calc(80px + var(--spacing-xl)) 0 var(--spacing-xl);
+  position: relative;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(38, 222, 129, 0.1);
+  border: 1px solid var(--emerald);
+  color: var(--emerald);
+  padding: 8px 20px;
+  border-radius: var(--radius-xl);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-md);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: var(--spacing-md);
+  background: linear-gradient(135deg, var(--white), var(--light-gray));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: var(--medium-gray);
+  margin-bottom: var(--spacing-lg);
+  font-weight: 400;
+}
+
+.hero-cta {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px;
+  border-radius: var(--radius-xl);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: var(--transition-base);
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: var(--navy-dark);
+  box-shadow: 0 8px 25px rgba(246, 185, 59, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(246, 185, 59, 0.4);
+}
+
+.btn-secondary {
+  background: rgba(255,255,255,0.05);
+  color: var(--white);
+  border-color: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+}
+
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: var(--gold);
+}
+
+/* Hero Visual */
+.hero-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.palm-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.curved-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--royal-blue) 0%, var(--navy-medium) 100%);
+  clip-path: ellipse(60% 55% at 30% 45%);
+}
+
+.palm-icon {
+  position: relative;
+  width: 60%;
+  height: 60%;
+  z-index: 2;
+}
+
+.palm-leaf {
+  fill: var(--emerald);
+  filter: drop-shadow(0 10px 30px rgba(38, 222, 129, 0.3));
+}
+
+/* Stats Icons */
+.hero-stats {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: var(--spacing-sm);
+  background: var(--white);
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--navy-dark);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1.5rem;
+  transition: var(--transition-base);
+}
+
+.stat-icon:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, var(--royal-blue), var(--sky-blue));
+}
+
+/* ========== SERVICES SECTION ========== */
+.section {
+  padding: var(--spacing-xl) 0;
+  position: relative;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.section-badge {
+  display: inline-block;
+  background: rgba(246, 185, 59, 0.1);
+  color: var(--gold);
+  padding: 8px 20px;
+  border-radius: var(--radius-xl);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: var(--spacing-sm);
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: var(--medium-gray);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.service-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  transition: var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--gold), var(--emerald));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: var(--transition-base);
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.service-card:hover {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(246, 185, 59, 0.3);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.service-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--royal-blue), var(--sky-blue));
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.service-card:nth-child(2) .service-icon {
+  background: linear-gradient(135deg, var(--emerald), var(--emerald-light));
+}
+
+.service-card:nth-child(3) .service-icon {
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+}
+
+.service-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+}
+
+.service-description {
+  color: var(--medium-gray);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.8;
+}
+
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition-base);
+}
+
+.service-link:hover {
+  gap: 12px;
+}
+
+/* ========== STORES SHOWCASE ========== */
+.stores-showcase {
+  background: rgba(255,255,255,0.02);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  margin: var(--spacing-xl) 0;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.stores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.store-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: var(--transition-base);
+  position: relative;
+}
+
+.store-card::after {
+  content: 'LIVE';
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--danger);
+  color: var(--white);
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 700;
+  animation: blink 2s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.store-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.store-flag {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  background: linear-gradient(135deg, var(--royal-blue), var(--navy-medium));
+}
+
+.store-info {
+  padding: var(--spacing-md);
+  color: var(--navy-dark);
+}
+
+.store-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.store-platform {
+  color: var(--medium-gray);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.store-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--royal-blue);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: var(--transition-base);
+}
+
+.store-link:hover {
+  color: var(--gold);
+  gap: 10px;
+}
+
+/* ========== STATS SECTION ========== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.stat-box {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  text-align: center;
+  transition: var(--transition-base);
+}
+
+.stat-box:hover {
+  background: rgba(255,255,255,0.05);
+  border-color: var(--gold);
+  transform: scale(1.05);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--gold), var(--emerald));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  color: var(--medium-gray);
+  font-weight: 600;
+}
+
+/* ========== CTA SECTION ========== */
+.cta-section {
+  background: linear-gradient(135deg, var(--royal-blue), var(--navy-medium));
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 400px;
+  height: 400px;
+  background: rgba(246, 185, 59, 0.1);
+  border-radius: 50%;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: var(--spacing-md);
+}
+
+.cta-text {
+  font-size: 1.2rem;
+  color: var(--light-gray);
+  margin-bottom: var(--spacing-lg);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  background: rgba(0,0,0,0.2);
+  padding: var(--spacing-lg) 0 var(--spacing-md);
+  margin-top: var(--spacing-xl);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.footer-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--gold);
+}
+
+.footer-section p,
+.footer-section a {
+  color: var(--medium-gray);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: var(--transition-base);
+}
+
+.footer-section a:hover {
+  color: var(--gold);
+  padding-right: 5px;
+}
+
+.social-links {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.social-link {
+  width: 45px;
+  height: 45px;
+  background: rgba(255,255,255,0.05);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-decoration: none;
+  transition: var(--transition-base);
+  font-size: 1.3rem;
+}
+
+.social-link:hover {
+  background: linear-gradient(135deg, var(--gold), var(--emerald));
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  color: var(--medium-gray);
+}
+
+/* ========== WHATSAPP FLOAT ========== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 999;
+}
+
+.whatsapp-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #25d366, #20bf6b);
+  color: var(--white);
+  padding: 15px 25px;
+  border-radius: var(--radius-xl);
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+  transition: var(--transition-base);
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(37, 211, 102, 0.5);
+}
+
+/* ========== SCROLL TO TOP ========== */
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: var(--navy-dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-base);
+  z-index: 999;
+  box-shadow: var(--shadow-md);
+}
+
+.scroll-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-top:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 968px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
   
-  .slide-title { font-size: clamp(1.6rem, 7vw, 2.2rem) !important; }
-  .slide-subtitle { font-size: clamp(0.95rem, 4vw, 1.2rem) !important; }
-  .slide p.lead { font-size: clamp(0.85rem, 4.5vw, 1rem) !important; }
+  .hero-text {
+    max-width: 100%;
+  }
+  
+  .hero-cta {
+    justify-content: center;
+  }
+  
+  .palm-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 768px) {
-  .nav-menu{display:none;position:fixed;top:80px;left:0;right:0;background:#fff;flex-direction:column;padding:2rem;gap:1rem;box-shadow:var(--shadow)}
-  .nav-menu.active{display:flex}
-  .nav-toggle{display:flex;flex-direction:column;gap:4px;background:none;border:none;cursor:pointer;padding:8px}
-  .nav-toggle span{width:24px;height:3px;background:var(--text);border-radius:2px}
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: var(--navy-dark);
+    flex-direction: column;
+    padding: var(--spacing-md);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    transform: translateY(-120%);
+    transition: var(--transition-base);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .nav-menu.active {
+    transform: translateY(0);
+  }
+  
+  .menu-toggle {
+    display: flex;
+  }
+  
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+  
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+  
+  .hero {
+    padding-top: calc(70px + var(--spacing-lg));
+  }
+  
+  .whatsapp-float,
+  .scroll-top {
+    bottom: 100px;
+  }
+  
+  .whatsapp-btn {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
 }
+
+@media (max-width: 480px) {
+  :root {
+    --spacing-xl: 3rem;
+    --spacing-lg: 2rem;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .hero-badge {
+    font-size: 0.8rem;
+    padding: 6px 16px;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .service-card,
+  .store-card {
+    margin-bottom: var(--spacing-sm);
+  }
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* ========== UTILITIES ========== */
+.text-center { text-align: center; }
+.text-gold { color: var(--gold); }
+.text-emerald { color: var(--emerald); }
+.mb-1 { margin-bottom: var(--spacing-sm); }
+.mb-2 { margin-bottom: var(--spacing-md); }
+.mt-2 { margin-top: var(--spacing-md); }
 </style>
 </head>
 <body>
-<div id="progress" style="position:fixed;top:0;left:0;width:0;height:3px;background:linear-gradient(90deg,#3b82f6,#8b5cf6);z-index:1001;transition:width .2s ease"></div>
-<header class="header">
-  <nav class="nav">
-    <div class="container">
-      <a href="#" class="brand">🚀 إعلانات العرب</a>
+
+<!-- Background Decorations -->
+<div class="bg-decorations">
+  <div class="decoration-circle decoration-circle-1"></div>
+  <div class="decoration-circle decoration-circle-2"></div>
+  <div class="decoration-triangle decoration-triangle-1"></div>
+  <div class="decoration-arc"></div>
+</div>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container">
+    <nav class="nav">
+      <a href="#home" class="logo">
+        <span>🚀</span>
+        <span>إعلانات العرب</span>
+      </a>
+      
       <ul class="nav-menu" id="navMenu">
-        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#home" class="active">الرئيسية</a></li>
         <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#stores">متاجرنا</a></li>
         <li><a href="#results">نتائجنا</a></li>
-        <li><a href="blog/">📝 المدونة</a></li>
+        <li><a href="blog/">المدونة</a></li>
       </ul>
-      <a href="https://wa.me/201110760081?text=مرحباً! أريد زيادة مبيعاتي فوراً 🚀" target="_blank" class="cta-header" rel="noopener">📞 استشارة فورية</a>
-      <button class="nav-toggle" id="navToggle" aria-label="القائمة"><span></span><span></span><span></span></button>
-    </div>
-  </nav>
+      
+      <a href="https://wa.me/201110760081?text=مرحباً! أريد استشارة تسويقية" class="btn-login" target="_blank">
+        <span>👤</span>
+        <span>استشارة مجانية</span>
+      </a>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </div>
 </header>
 
-<section id="home" class="hero">
-  <div class="slider-container">
-    <div class="slider-track" id="sliderTrack">
-      <!-- Slide 1: Google Ads -->
-      <div class="slide" style="background:linear-gradient(135deg,#dbeafe 0%,#bfdbfe 100%)">
-        <div class="slide-content">
-          <h2 class="slide-title">🎯 هيمنة مطلقة على جوجل</h2>
-          <p class="slide-subtitle">الصفحة الأولى خلال 7 أيام مضمونة أو نعيد المال كاملاً</p>
-          <p class="lead">نضمن نتائج قابلة للقياس مع استراتيجيات Google Ads معتمدة. متوسط زيادة المبيعات لعملائنا 347% خلال 30 يوماً.</p>
-          <div class="ctas">
-            <a class="btn btn-primary" href="https://wa.me/201110760081?text=أريد الهيمنة على جوجل الآن! 🎯" target="_blank">🚀 ابدأ الآن</a>
-            <a class="btn btn-outline" href="https://wa.me/201110760081?text=تحليل Google Ads مجاني" target="_blank">📊 تحليل مجاني</a>
-          </div>
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text fade-in-up">
+        <div class="hero-badge">
+          <span>⚡</span>
+          <span>الوكالة الرقمية #1 في الخليج العربي</span>
+        </div>
+        
+        <h1 class="hero-title">
+          نضاعف أرباحك مع التسويق الذكي
+        </h1>
+        
+        <p class="hero-subtitle">
+          وكالة تسويق رقمي متخصصة في إعلانات Google، السوشيال ميديا، وتصميم المتاجر الإلكترونية. نتائج مضمونة أو استرداد المال خلال 30 يوماً.
+        </p>
+        
+        <div class="hero-cta">
+          <a href="https://wa.me/201110760081?text=أريد مضاعفة أرباحي الآن!" class="btn btn-primary" target="_blank">
+            <span>🚀</span>
+            <span>ابدأ رحلة النجاح</span>
+          </a>
+          <a href="#services" class="btn btn-secondary">
+            <span>📊</span>
+            <span>استكشف خدماتنا</span>
+          </a>
         </div>
       </div>
       
-      <!-- Slide 2: Social Media -->
-      <div class="slide" style="background:linear-gradient(135deg,#dcfce7 0%,#bbf7d0 100%)">
-        <div class="slide-content">
-          <h2 class="slide-title">📱 مصنع المليونيرية الرقمية</h2>
-          <p class="slide-subtitle">من 0 إلى مليون متابع خلال 90 يوماً</p>
-          <p class="lead">فريق مبدعين عالمي وتقنيات Psychology Marketing لصناعة محتوى فايرال يومي ونمو مضمون على فيسبوك وإنستجرام وتيك توك.</p>
-          <div class="ctas">
-            <a class="btn btn-primary" href="https://wa.me/201110760081?text=أريد بناء إمبراطوريتي الرقمية 👑" target="_blank">👑 ابنِ إمبراطوريتك</a>
-            <a class="btn btn-outline" href="https://wa.me/201110760081?text=خطة المليون متابع" target="_blank">📈 خطة مجانية</a>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Slide 3: SEO -->
-      <div class="slide" style="background:linear-gradient(135deg,#fef3c7 0%,#fde68a 100%)">
-        <div class="slide-content">
-          <h2 class="slide-title">🔍 ملك محركات البحث</h2>
-          <p class="slide-subtitle">Page #1 خلال 21 يوماً مضمونة أو مجاناً</p>
-          <p class="lead">تقنيات SEO مدعومة بالذكاء الاصطناعي، تقارير يومية، وضمان مكتوب للوصول لصدارة النتائج بسرعة واستمرارية.</p>
-          <div class="ctas">
-            <a class="btn btn-primary" href="https://wa.me/201110760081?text=أريد المرتبة الأولى ⭐" target="_blank">⭐ اضمن صدارتك</a>
-            <a class="btn btn-outline" href="https://wa.me/201110760081?text=فحص SEO مجاني" target="_blank">🔍 فحص مجاني</a>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Slide 4: E-commerce -->
-      <div class="slide" style="background:linear-gradient(135deg,#f3e8ff 0%,#ddd6fe 100%)">
-        <div class="slide-content">
-          <h2 class="slide-title">🛒 متاجر تحقق الملايين</h2>
-          <p class="slide-subtitle">من الفكرة إلى 7 أرقام في 6 أشهر</p>
-          <p class="lead">نظام تجارة إلكترونية متكامل: تصميم يحوّل، حملات أداء، تكامل دفع وشحن، ودعم 24/7 لتحقيق نمو ثابت.</p>
-          <div class="ctas">
-            <a class="btn btn-primary" href="https://wa.me/201110760081?text=أريد متجر يحقق الملايين 💰" target="_blank">💰 ابدأ متجرك</a>
-            <a class="btn btn-outline" href="https://wa.me/201110760081?text=عرض متاجر مباشر" target="_blank">🛒 عرض مباشر</a>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Slide 5: Content Creation -->
-      <div class="slide" style="background:linear-gradient(135deg,#fed7d7 0%,#fca5a5 100%)">
-        <div class="slide-content">
-          <h2 class="slide-title">🎨 مصنع المحتوى الفايرال</h2>
-          <p class="slide-subtitle">سيكولوجيا + إبداع + AI</p>
-          <p class="lead">نصنع محتوى يحصد مليارات المشاهدات بفضل صياغات مقنعة وسرد جذاب وتوقيت مثالي مدعوم بالتنبؤات.</p>
-          <div class="ctas">
-            <a class="btn btn-primary" href="https://wa.me/201110760081?text=أريد محتوى فايرال 🔥" target="_blank">🔥 اشعل المحتوى</a>
-            <a class="btn btn-outline" href="https://wa.me/201110760081?text=شاهد أعمال المحتوى" target="_blank">🎬 شاهد أعمالنا</a>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Slide 6: AI Analytics -->
-      <div class="slide" style="background:linear-gradient(135deg,#e0e7ff 0%,#c7d2fe 100%)">
-        <div class="slide-content">
-          <h2 class="slide-title">🧠 ذكاء اصطناعي يقرأ المستقبل</h2>
-          <p class="slide-subtitle">نتنبأ بالترندات قبل 8 أشهر بدقة 94%</p>
-          <p class="lead">مركز بيانات متقدم يحلل مئات الملايين من النقاط لتقديم قرارات تسويقية مربحة وتخطيط نمو يتغلب على المنافسين.</p>
-          <div class="ctas">
-            <a class="btn btn-primary" href="https://wa.me/201110760081?text=أريد استشارة AI فورية 🧠" target="_blank">🧠 استشارة ذكية</a>
-            <a class="btn btn-outline" href="https://wa.me/201110760081?text=تقرير AI مجاني" target="_blank">📊 تقرير مجاني</a>
+      <div class="hero-visual fade-in-up">
+        <div class="palm-container">
+          <div class="curved-bg"></div>
+          <svg class="palm-icon" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <g class="palm-leaf">
+              <!-- Palm Tree SVG -->
+              <path d="M100 180 L100 80 M100 80 Q70 60, 50 50 M100 80 Q130 60, 150 50 M100 80 Q85 50, 70 30 M100 80 Q115 50, 130 30 M100 80 Q95 40, 90 20 M100 80 Q105 40, 110 20" 
+                    stroke="currentColor" stroke-width="3" fill="none"/>
+              <ellipse cx="100" cy="100" rx="60" ry="40" opacity="0.3"/>
+              <circle cx="50" cy="50" r="15"/>
+              <circle cx="150" cy="50" r="15"/>
+              <circle cx="70" cy="30" r="12"/>
+              <circle cx="130" cy="30" r="12"/>
+              <circle cx="90" cy="20" r="10"/>
+              <circle cx="110" cy="20" r="10"/>
+            </g>
+          </svg>
+          
+          <div class="hero-stats">
+            <div class="stat-icon" title="إحصائيات">📊</div>
+            <div class="stat-icon" title="تحليلات">📈</div>
+            <div class="stat-icon" title="نجاح">✓</div>
           </div>
         </div>
       </div>
     </div>
-    <button id="prevBtn" class="ctrl">‹</button>
-    <button id="nextBtn" class="ctrl">›</button>
-    <div class="dots" id="dots"></div>
   </div>
 </section>
 
-<!-- 🛒 موقع 1: E-commerce Spotlight Section (بعد Hero) -->
-<section class="ecommerce-spotlight">
+<!-- Services Section -->
+<section class="section" id="services">
   <div class="container">
-    <div class="spotlight-header">
-      <div class="spotlight-badge">🔴 LIVE • 8 متاجر تعمل الآن</div>
-      <h2 style="font-size:clamp(2rem,4vw,2.8rem);font-weight:700;margin-bottom:1rem;color:var(--text)">🛒 شاهد متاجرنا الإلكترونية الحقيقية</h2>
-      <p style="color:var(--text-light);font-size:clamp(1rem,2.5vw,1.2rem);max-width:800px;margin:0 auto">متاجر فعلية تعمل الآن في 6 دول خليجية على منصات مختلفة - كل متجر مصمم خصيصاً لسوقه المحلي</p>
+    <div class="section-header">
+      <span class="section-badge">⭐ خدماتنا المتميزة</span>
+      <h2 class="section-title">حلول تسويقية متكاملة</h2>
+      <p class="section-subtitle">
+        نقدم مجموعة شاملة من الخدمات الرقمية المصممة خصيصاً للسوق الخليجي
+      </p>
     </div>
     
-    <div class="live-stores-grid">
-      <div class="store-preview">
-        <div class="store-flag">🇸🇦</div>
-        <div class="store-name">متجر السعودية</div>
-        <p class="store-platform">GitHub Pages</p>
-      </div>
-      <div class="store-preview">
-        <div class="store-flag">🇦🇪</div>
-        <div class="store-name">تاجر الإمارات</div>
-        <p class="store-platform">MyEasyOrders</p>
-      </div>
-      <div class="store-preview">
-        <div class="store-flag">🇰🇼</div>
-        <div class="store-name">متجر الكويت</div>
-        <p class="store-platform">GitHub Pages</p>
-      </div>
-      <div class="store-preview">
-        <div class="store-flag">🇴🇲</div>
-        <div class="store-name">متجر عمان</div>
-        <p class="store-platform">GitHub Pages</p>
-      </div>
-    </div>
-    
-    <div style="text-align:center">
-      <a href="services/ecommerce.html" 
-         style="background:linear-gradient(135deg,#8b5cf6,#6366f1);color:white;padding:1.25rem 3rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:1.2rem;box-shadow:0 10px 40px rgba(139,92,246,0.3);transition:var(--transition);display:inline-flex;align-items:center;gap:0.75rem" 
-         onmouseover="this.style.transform='translateY(-4px) scale(1.05)';this.style.boxShadow='0 15px 50px rgba(139,92,246,0.4)'" 
-         onmouseout="this.style.transform='';this.style.boxShadow='0 10px 40px rgba(139,92,246,0.3)'">
-        🔴 شاهد جميع المتاجر الـ 8 المباشرة
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- 🏆 Why Choose Us -->
-<section id="results" style="padding:4rem 0;background:white">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:3rem">
-      <h2 style="font-size:clamp(2rem,4vw,2.8rem);font-weight:700;margin-bottom:1rem;color:var(--text)">🏆 لماذا نحن الأقوى؟</h2>
-      <p style="color:var(--text-light);font-size:clamp(1rem,2.5vw,1.2rem)">أرقام حقيقية من عملائنا الفعليين - نتائج مضمونة أو استرداد المال</p>
-    </div>
-    
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin:3rem 0">
-      <div style="text-align:center;padding:2rem;background:linear-gradient(135deg,#dbeafe,#bfdbfe);border-radius:var(--radius);box-shadow:var(--shadow);transition:var(--transition)" onmouseover="this.style.transform='translateY(-5px) scale(1.02)'" onmouseout="this.style.transform=''">
-        <div style="font-size:3rem;margin-bottom:1rem">📈</div>
-        <h3 style="font-size:2.5rem;font-weight:900;color:var(--primary);margin-bottom:0.5rem">+347%</h3>
-        <p style="color:var(--text);font-weight:600">متوسط زيادة المبيعات<br>خلال 30 يوم</p>
-      </div>
-      
-      <div style="text-align:center;padding:2rem;background:linear-gradient(135deg,#dcfce7,#bbf7d0);border-radius:var(--radius);box-shadow:var(--shadow);transition:var(--transition)" onmouseover="this.style.transform='translateY(-5px) scale(1.02)'" onmouseout="this.style.transform=''">
-        <div style="font-size:3rem;margin-bottom:1rem">🎯</div>
-        <h3 style="font-size:2.5rem;font-weight:900;color:var(--success);margin-bottom:0.5rem">7 أيام</h3>
-        <p style="color:var(--text);font-weight:600">الصفحة الأولى في جوجل<br>مضمونة أو مجاناً</p>
-      </div>
-      
-      <div style="text-align:center;padding:2rem;background:linear-gradient(135deg,#fef3c7,#fde68a);border-radius:var(--radius);box-shadow:var(--shadow);transition:var(--transition)" onmouseover="this.style.transform='translateY(-5px) scale(1.02)'" onmouseout="this.style.transform=''">
-        <div style="font-size:3rem;margin-bottom:1rem">💰</div>
-        <h3 style="font-size:2.5rem;font-weight:900;color:var(--warning);margin-bottom:0.5rem">127M+</h3>
-        <p style="color:var(--text);font-weight:600">ريال مبيعات عملائنا<br>في آخر 12 شهر</p>
-      </div>
-      
-      <div style="text-align:center;padding:2rem;background:linear-gradient(135deg,#f3e8ff,#ddd6fe);border-radius:var(--radius);box-shadow:var(--shadow);transition:var(--transition)" onmouseover="this.style.transform='translateY(-5px) scale(1.02)'" onmouseout="this.style.transform=''">
-        <div style="font-size:3rem;margin-bottom:1rem">🔥</div>
-        <h3 style="font-size:2.5rem;font-weight:900;color:#8b5cf6;margin-bottom:0.5rem">2.7B+</h3>
-        <p style="color:var(--text);font-weight:600">مشاهدة لمحتوانا<br>الفايرال سنوياً</p>
-      </div>
-    </div>
-    
-    <div style="text-align:center;margin-top:3rem">
-      <a href="https://wa.me/201110760081?text=أريد هذه النتائج لمشروعي الآن! 🚀" target="_blank" 
-         style="background:linear-gradient(135deg,var(--primary),#8b5cf6);color:white;padding:1.25rem 3rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:1.2rem;box-shadow:0 10px 40px rgba(59,130,246,0.3);transition:var(--transition);display:inline-flex;align-items:center;gap:0.5rem" 
-         onmouseover="this.style.transform='translateY(-4px) scale(1.05)';this.style.boxShadow='0 15px 50px rgba(59,130,246,0.4)'" 
-         onmouseout="this.style.transform='';this.style.boxShadow='0 10px 40px rgba(59,130,246,0.3)'">
-        🚀 أريد هذه النتائج الآن
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- 🎯 موقع 2: Services مع تمييز خدمة المتاجر -->
-<section id="services" style="padding:4rem 0;background:var(--bg-light)">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:3rem">
-      <h2 style="font-size:clamp(2rem,4vw,2.8rem);font-weight:700;margin-bottom:1rem;color:var(--text)">🎯 خدماتنا المتخصصة</h2>
-      <p style="color:var(--text-light);font-size:clamp(1rem,2.5vw,1.2rem)">حلول شاملة مع ضمان النتائج أو استرداد المال</p>
-    </div>
-    
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem">
-      
-      <div style="background:white;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #e2e8f0;transition:var(--transition);position:relative;overflow:hidden" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
-        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(135deg,var(--primary),#8b5cf6)"></div>
-        <div style="font-size:3rem;margin-bottom:1rem;text-align:center">🎯</div>
-        <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:1rem;text-align:center">Google Ads</h3>
-        <p style="color:var(--text-light);margin-bottom:1.5rem;text-align:center">الصفحة الأولى خلال 7 أيام مضمونة أو استرداد كامل. خبراء معتمدين من Google.</p>
-        <div style="text-align:center">
-          <a href="https://wa.me/201110760081?text=أريد خدمة Google Ads الآن 🎯" style="color:var(--primary);font-weight:600;text-decoration:none;padding:0.75rem 1.5rem;border-radius:25px;background:rgba(59,130,246,0.1);transition:var(--transition);display:inline-block" onmouseover="this.style.background='var(--primary)';this.style.color='white'" onmouseout="this.style.background='rgba(59,130,246,0.1)';this.style.color='var(--primary)'">اطلب الخدمة →</a>
-        </div>
-      </div>
-      
-      <div style="background:white;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #e2e8f0;transition:var(--transition);position:relative;overflow:hidden" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
-        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(135deg,var(--success),#059669)"></div>
-        <div style="font-size:3rem;margin-bottom:1rem;text-align:center">📱</div>
-        <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:1rem;text-align:center">السوشيال ميديا</h3>
-        <p style="color:var(--text-light);margin-bottom:1.5rem;text-align:center">من 0 إلى مليون متابع خلال 90 يوماً. فريق مبدعين حائز على جوائز دولية.</p>
-        <div style="text-align:center">
-          <a href="https://wa.me/201110760081?text=أريد المليون متابع الآن 👑" style="color:var(--success);font-weight:600;text-decoration:none;padding:0.75rem 1.5rem;border-radius:25px;background:rgba(16,185,129,0.1);transition:var(--transition);display:inline-block" onmouseover="this.style.background='var(--success)';this.style.color='white'" onmouseout="this.style.background='rgba(16,185,129,0.1)';this.style.color='var(--success)'">اطلب الخدمة →</a>
-        </div>
-      </div>
-      
-      <div style="background:white;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #e2e8f0;transition:var(--transition);position:relative;overflow:hidden" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
-        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(135deg,var(--warning),#d97706)"></div>
-        <div style="font-size:3rem;margin-bottom:1rem;text-align:center">🔍</div>
-        <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:1rem;text-align:center">تحسين محركات البحث</h3>
-        <p style="color:var(--text-light);margin-bottom:1.5rem;text-align:center">المرتبة #1 في جوجل خلال 21 يوماً مضمونة. تقنيات AI حصرية.</p>
-        <div style="text-align:center">
-          <a href="https://wa.me/201110760081?text=أريد المرتبة الأولى الآن ⭐" style="color:var(--warning);font-weight:600;text-decoration:none;padding:0.75rem 1.5rem;border-radius:25px;background:rgba(245,158,11,0.1);transition:var(--transition);display:inline-block" onmouseover="this.style.background='var(--warning)';this.style.color='white'" onmouseout="this.style.background='rgba(245,158,11,0.1)';this.style.color='var(--warning)'">اطلب الخدمة →</a>
-        </div>
-      </div>
-      
-      <div style="background:white;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow);border:3px solid #8b5cf6;transition:var(--transition);position:relative;overflow:hidden" onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 25px 50px rgba(139,92,246,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
-        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(135deg,#8b5cf6,#6366f1)"></div>
-        <div class="service-badge">🔴 8 متاجر LIVE</div>
-        <div style="font-size:3rem;margin-bottom:1rem;text-align:center">🛒</div>
-        <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:1rem;text-align:center">المتاجر الإلكترونية</h3>
-        <p style="color:var(--text-light);margin-bottom:1.5rem;text-align:center">من فكرة إلى 7 أرقام خلال 6 أشهر. متاجر ذكية تحول الزوار لعملاء.</p>
-        <div style="text-align:center;display:flex;flex-direction:column;gap:0.75rem">
-          <a href="services/ecommerce.html" style="color:white;background:#8b5cf6;font-weight:700;text-decoration:none;padding:0.75rem 1.5rem;border-radius:25px;transition:var(--transition);display:inline-block" onmouseover="this.style.background='#6366f1';this.style.transform='scale(1.05)'" onmouseout="this.style.background='#8b5cf6';this.style.transform=''">🔴 شاهد المتاجر المباشرة</a>
-          <a href="https://wa.me/201110760081?text=أريد متجر يحقق الملايين 🛒" style="color:#8b5cf6;font-weight:600;text-decoration:none;padding:0.75rem 1.5rem;border-radius:25px;background:rgba(139,92,246,0.1);transition:var(--transition);display:inline-block" onmouseover="this.style.background='#8b5cf6';this.style.color='white'" onmouseout="this.style.background='rgba(139,92,246,0.1)';this.style.color='#8b5cf6'">اطلب السعر →</a>
-        </div>
-      </div>
-      
-      <div style="background:white;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #e2e8f0;transition:var(--transition);position:relative;overflow:hidden" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
-        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(135deg,#ef4444,#dc2626)"></div>
-        <div style="font-size:3rem;margin-bottom:1rem;text-align:center">🎨</div>
-        <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:1rem;text-align:center">المحتوى الفايرال</h3>
-        <p style="color:var(--text-light);margin-bottom:1.5rem;text-align:center">محتوى يحقق مليارات المشاهدات. فريق مبدعين + سيكولوجيا التسويق.</p>
-        <div style="text-align:center">
-          <a href="https://wa.me/201110760081?text=أريد محتوى فايرال الآن 🔥" style="color:#ef4444;font-weight:600;text-decoration:none;padding:0.75rem 1.5rem;border-radius:25px;background:rgba(239,68,68,0.1);transition:var(--transition);display:inline-block" onmouseover="this.style.background='#ef4444';this.style.color='white'" onmouseout="this.style.background='rgba(239,68,68,0.1)';this.style.color='#ef4444'">اطلب الخدمة →</a>
-        </div>
-      </div>
-      
-      <div style="background:white;padding:2rem;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #e2e8f0;transition:var(--transition);position:relative;overflow:hidden" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='';this.style.boxShadow='var(--shadow)'">
-        <div style="position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(135deg,#6366f1,#4f46e5)"></div>
-        <div style="font-size:3rem;margin-bottom:1rem;text-align:center">🧠</div>
-        <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:1rem;text-align:center">ذكاء اصطناعي</h3>
-        <p style="color:var(--text-light);margin-bottom:1.5rem;text-align:center">قرارات ذكية مبنية على البيانات. نتنبأ بالترندات قبل 8 أشهر.</p>
-        <div style="text-align:center">
-          <a href="https://wa.me/201110760081?text=أريد استشارة AI ذكية الآن 🧠" style="color:#6366f1;font-weight:600;text-decoration:none;padding:0.75rem 1.5rem;border-radius:25px;background:rgba(99,102,241,0.1);transition:var(--transition);display:inline-block" onmouseover="this.style.background='#6366f1';this.style.color='white'" onmouseout="this.style.background='rgba(99,102,241,0.1)';this.style.color='#6366f1'">اطلب الخدمة →</a>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</section>
-
-<!-- 🏆 Social Proof -->
-<section style="padding:3rem 0;background:white;text-align:center">
-  <div class="container">
-    <h2 style="font-size:clamp(1.8rem,3.5vw,2.4rem);font-weight:700;margin-bottom:2rem;color:var(--text)">🏆 عملاؤنا يثقون بنا</h2>
-    <div style="display:flex;gap:2rem;justify-content:center;align-items:center;flex-wrap:wrap;opacity:0.8">
-      <div style="padding:1rem 2rem;background:var(--bg-light);border-radius:var(--radius);font-weight:600">🏪 427+ متجر</div>
-      <div style="padding:1rem 2rem;background:var(--bg-light);border-radius:var(--radius);font-weight:600">📱 67 مليونير</div>
-      <div style="padding:1rem 2rem;background:var(--bg-light);border-radius:var(--radius);font-weight:600">🎯 847 حملة</div>
-      <div style="padding:1rem 2rem;background:var(--bg-light);border-radius:var(--radius);font-weight:600">⭐ 99.8% نجاح</div>
-    </div>
-  </div>
-</section>
-
-<!-- 🌍 Gulf Countries -->
-<section id="countries" style="padding:4rem 0;background:var(--bg-light)">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:3rem">
-      <h2 style="font-size:clamp(2rem,4vw,2.8rem);font-weight:700;margin-bottom:1rem;color:var(--text)">🌍 خدماتنا في دول الخليج</h2>
-      <p style="color:var(--text-light);font-size:clamp(1rem,2.5vw,1.2rem)">خبرة محلية عميقة في كل دولة خليجية</p>
-    </div>
-    
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem">
-      <a href="sa.html" style="display:block;background:white;padding:2rem;border-radius:var(--radius);text-decoration:none;color:inherit;box-shadow:var(--shadow);border:2px solid transparent;transition:var(--transition)" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='transparent';this.style.transform=''">
-        <div style="font-size:3rem;text-align:center;margin-bottom:1rem">🇸🇦</div>
-        <h3 style="text-align:center;font-weight:700;margin-bottom:0.5rem">السعودية</h3>
-        <p style="text-align:center;color:var(--text-light);margin:0">الرياض • جدة • الدمام</p>
-      </a>
-      
-      <a href="ae.html" style="display:block;background:white;padding:2rem;border-radius:var(--radius);text-decoration:none;color:inherit;box-shadow:var(--shadow);border:2px solid transparent;transition:var(--transition)" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='transparent';this.style.transform=''">
-        <div style="font-size:3rem;text-align:center;margin-bottom:1rem">🇦🇪</div>
-        <h3 style="text-align:center;font-weight:700;margin-bottom:0.5rem">الإمارات</h3>
-        <p style="text-align:center;color:var(--text-light);margin:0">دبي • أبوظبي • الشارقة</p>
-      </a>
-      
-      <a href="kw.html" style="display:block;background:white;padding:2rem;border-radius:var(--radius);text-decoration:none;color:inherit;box-shadow:var(--shadow);border:2px solid transparent;transition:var(--transition)" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='transparent';this.style.transform=''">
-        <div style="font-size:3rem;text-align:center;margin-bottom:1rem">🇰🇼</div>
-        <h3 style="text-align:center;font-weight:700;margin-bottom:0.5rem">الكويت</h3>
-        <p style="text-align:center;color:var(--text-light);margin:0">الكويت • الجهراء • الأحمدي</p>
-      </a>
-      
-      <a href="qa.html" style="display:block;background:white;padding:2rem;border-radius:var(--radius);text-decoration:none;color:inherit;box-shadow:var(--shadow);border:2px solid transparent;transition:var(--transition)" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='transparent';this.style.transform=''">
-        <div style="font-size:3rem;text-align:center;margin-bottom:1rem">🇶🇦</div>
-        <h3 style="text-align:center;font-weight:700;margin-bottom:0.5rem">قطر</h3>
-        <p style="text-align:center;color:var(--text-light);margin:0">الدوحة • الريان • الوكرة</p>
-      </a>
-      
-      <a href="bh.html" style="display:block;background:white;padding:2rem;border-radius:var(--radius);text-decoration:none;color:inherit;box-shadow:var(--shadow);border:2px solid transparent;transition:var(--transition)" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='transparent';this.style.transform=''">
-        <div style="font-size:3rem;text-align:center;margin-bottom:1rem">🇧🇭</div>
-        <h3 style="text-align:center;font-weight:700;margin-bottom:0.5rem">البحرين</h3>
-        <p style="text-align:center;color:var(--text-light);margin:0">المنامة • المحرق • الرفاع</p>
-      </a>
-      
-      <a href="om.html" style="display:block;background:white;padding:2rem;border-radius:var(--radius);text-decoration:none;color:inherit;box-shadow:var(--shadow);border:2px solid transparent;transition:var(--transition)" onmouseover="this.style.borderColor='var(--primary)';this.style.transform='translateY(-3px)'" onmouseout="this.style.borderColor='transparent';this.style.transform=''">
-        <div style="font-size:3rem;text-align:center;margin-bottom:1rem">🇴🇲</div>
-        <h3 style="text-align:center;font-weight:700;margin-bottom:0.5rem">عُمان</h3>
-        <p style="text-align:center;color:var(--text-light);margin:0">مسقط • صلالة • صحار</p>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- 🛒 موقع 3: Live E-commerce Stores Showcase (قبل Final CTA) -->
-<section style="padding:4rem 0;background:linear-gradient(135deg,#1e293b,#334155);color:white">
-  <div class="container">
-    <div style="text-align:center;margin-bottom:3rem">
-      <div style="display:inline-block;background:rgba(220,38,38,0.9);color:#fff;padding:0.5rem 1.5rem;border-radius:25px;font-size:0.9rem;font-weight:700;margin-bottom:1rem">🔴 LIVE الآن - 8 متاجر فعالة</div>
-      <h2 style="font-size:clamp(2rem,4vw,2.8rem);font-weight:700;margin-bottom:1rem">🛒 متاجرنا الإلكترونية تعمل الآن</h2>
-      <p style="color:rgba(255,255,255,0.85);font-size:clamp(1rem,2.5vw,1.2rem);max-width:800px;margin:0 auto">8 متاجر حقيقية تعمل على منصات مختلفة في 6 دول. جميعها مصممة باحترافية عالية مع أنظمة دفع وشحن محلية</p>
-    </div>
-    
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-bottom:3rem">
-      
-      <a href="services/ecommerce.html" style="display:block;background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);border:2px solid rgba(255,255,255,0.2);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:white;transition:var(--transition)" onmouseover="this.style.background='rgba(255,255,255,0.15)';this.style.transform='translateY(-5px)'" onmouseout="this.style.background='rgba(255,255,255,0.1)';this.style.transform=''">
-        <div style="font-size:2.5rem;text-align:center;margin-bottom:1rem">🇸🇦</div>
-        <h4 style="font-weight:700;text-align:center;margin-bottom:0.5rem;font-size:1.1rem">متجر السعودية</h4>
-        <p style="font-size:0.9rem;text-align:center;opacity:0.8;margin-bottom:0.75rem">GitHub Pages</p>
-        <div style="text-align:center;font-size:0.85rem;background:rgba(220,38,38,0.2);padding:0.4rem 1rem;border-radius:20px;border:1px solid rgba(220,38,38,0.4)">🔴 مباشر الآن</div>
-      </a>
-      
-      <a href="services/ecommerce.html" style="display:block;background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);border:2px solid rgba(255,255,255,0.2);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:white;transition:var(--transition)" onmouseover="this.style.background='rgba(255,255,255,0.15)';this.style.transform='translateY(-5px)'" onmouseout="this.style.background='rgba(255,255,255,0.1)';this.style.transform=''">
-        <div style="font-size:2.5rem;text-align:center;margin-bottom:1rem">🇦🇪</div>
-        <h4 style="font-weight:700;text-align:center;margin-bottom:0.5rem;font-size:1.1rem">تاجر الإمارات</h4>
-        <p style="font-size:0.9rem;text-align:center;opacity:0.8;margin-bottom:0.75rem">MyEasyOrders</p>
-        <div style="text-align:center;font-size:0.85rem;background:rgba(220,38,38,0.2);padding:0.4rem 1rem;border-radius:20px;border:1px solid rgba(220,38,38,0.4)">🔴 مباشر الآن</div>
-      </a>
-      
-      <a href="services/ecommerce.html" style="display:block;background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);border:2px solid rgba(255,255,255,0.2);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:white;transition:var(--transition)" onmouseover="this.style.background='rgba(255,255,255,0.15)';this.style.transform='translateY(-5px)'" onmouseout="this.style.background='rgba(255,255,255,0.1)';this.style.transform=''">
-        <div style="font-size:2.5rem;text-align:center;margin-bottom:1rem">🇰🇼</div>
-        <h4 style="font-weight:700;text-align:center;margin-bottom:0.5rem;font-size:1.1rem">متجر الكويت</h4>
-        <p style="font-size:0.9rem;text-align:center;opacity:0.8;margin-bottom:0.75rem">GitHub Pages</p>
-        <div style="text-align:center;font-size:0.85rem;background:rgba(220,38,38,0.2);padding:0.4rem 1rem;border-radius:20px;border:1px solid rgba(220,38,38,0.4)">🔴 مباشر الآن</div>
-      </a>
-      
-      <a href="services/ecommerce.html" style="display:block;background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);border:2px solid rgba(255,255,255,0.2);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:white;transition:var(--transition)" onmouseover="this.style.background='rgba(255,255,255,0.15)';this.style.transform='translateY(-5px)'" onmouseout="this.style.background='rgba(255,255,255,0.1)';this.style.transform=''">
-        <div style="font-size:2.5rem;text-align:center;margin-bottom:1rem">🇴🇲</div>
-        <h4 style="font-weight:700;text-align:center;margin-bottom:0.5rem;font-size:1.1rem">متجر عمان</h4>
-        <p style="font-size:0.9rem;text-align:center;opacity:0.8;margin-bottom:0.75rem">GitHub Pages</p>
-        <div style="text-align:center;font-size:0.85rem;background:rgba(220,38,38,0.2);padding:0.4rem 1rem;border-radius:20px;border:1px solid rgba(220,38,38,0.4)">🔴 مباشر الآن</div>
-      </a>
-      
-    </div>
-    
-    <div style="text-align:center;background:rgba(255,255,255,0.05);border:2px solid rgba(255,255,255,0.1);border-radius:20px;padding:2.5rem;backdrop-filter:blur(10px)">
-      <h3 style="font-size:1.8rem;font-weight:700;margin-bottom:1rem">✨ هل تريد متجر مثل هذه المشاريع؟</h3>
-      <p style="color:rgba(255,255,255,0.85);margin-bottom:2rem;font-size:1.1rem">كل المتاجر المعروضة حقيقية وتعمل على منصات مختلفة.<br>يمكنك الحصول على متجر مماثل بنفس الجودة خلال 7-14 يوم عمل</p>
-      <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap">
-        <a href="services/ecommerce.html" 
-           style="background:linear-gradient(135deg,#8b5cf6,#6366f1);color:white;padding:1.25rem 3rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:1.2rem;box-shadow:0 10px 40px rgba(139,92,246,0.4);transition:var(--transition);display:inline-flex;align-items:center;gap:0.75rem" 
-           onmouseover="this.style.transform='translateY(-4px) scale(1.05)';this.style.boxShadow='0 15px 50px rgba(139,92,246,0.5)'" 
-           onmouseout="this.style.transform='';this.style.boxShadow='0 10px 40px rgba(139,92,246,0.4)'">
-          🔴 شاهد جميع المتاجر الـ 8
+    <div class="services-grid">
+      <div class="service-card fade-in-up">
+        <div class="service-icon">🎯</div>
+        <h3 class="service-title">إعلانات Google Ads</h3>
+        <p class="service-description">
+          الصفحة الأولى في جوجل خلال 7 أيام مضمونة. خبراء معتمدون من Google مع نتائج قابلة للقياس.
+        </p>
+        <a href="https://wa.me/201110760081?text=أريد خدمة Google Ads" class="service-link" target="_blank">
+          <span>اطلب الخدمة</span>
+          <span>←</span>
         </a>
-        <a href="https://wa.me/201110760081?text=شاهدت المتاجر الإلكترونية وأريد متجر مماثل!" 
-           style="background:rgba(255,255,255,0.15);border:2px solid white;color:white;padding:1.25rem 3rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:1.2rem;transition:var(--transition);display:inline-flex;align-items:center;gap:0.75rem" 
-           onmouseover="this.style.background='white';this.style.color='#1e293b'" 
-           onmouseout="this.style.background='rgba(255,255,255,0.15)';this.style.color='white'">
-          💬 اطلب متجرك الآن
+      </div>
+      
+      <div class="service-card fade-in-up">
+        <div class="service-icon">📱</div>
+        <h3 class="service-title">إدارة السوشيال ميديا</h3>
+        <p class="service-description">
+          من 0 إلى مليون متابع خلال 90 يوماً. محتوى فايرال يومي وزيادة مضمونة في التفاعل.
+        </p>
+        <a href="https://wa.me/201110760081?text=أريد خدمة السوشيال ميديا" class="service-link" target="_blank">
+          <span>اطلب الخدمة</span>
+          <span>←</span>
+        </a>
+      </div>
+      
+      <div class="service-card fade-in-up">
+        <div class="service-icon">🛒</div>
+        <h3 class="service-title">تصميم المتاجر الإلكترونية</h3>
+        <p class="service-description">
+          متاجر احترافية جاهزة خلال 7-14 يوم. تكامل كامل مع الدفع والشحن وأنظمة الإدارة.
+        </p>
+        <a href="services/ecommerce.html" class="service-link">
+          <span>شاهد متاجرنا الحية</span>
+          <span>←</span>
+        </a>
+      </div>
+      
+      <div class="service-card fade-in-up">
+        <div class="service-icon">🔍</div>
+        <h3 class="service-title">تحسين محركات البحث SEO</h3>
+        <p class="service-description">
+          المرتبة #1 في جوجل خلال 21 يوماً. تقنيات AI حصرية وتقارير يومية مفصلة.
+        </p>
+        <a href="https://wa.me/201110760081?text=أريد خدمة SEO" class="service-link" target="_blank">
+          <span>اطلب الخدمة</span>
+          <span>←</span>
+        </a>
+      </div>
+      
+      <div class="service-card fade-in-up">
+        <div class="service-icon">🎨</div>
+        <h3 class="service-title">إنتاج المحتوى الإبداعي</h3>
+        <p class="service-description">
+          محتوى فايرال يحصد ملايين المشاهدات. فريق مبدعين متخصص في التسويق بعلم النفس.
+        </p>
+        <a href="https://wa.me/201110760081?text=أريد خدمة إنتاج المحتوى" class="service-link" target="_blank">
+          <span>اطلب الخدمة</span>
+          <span>←</span>
+        </a>
+      </div>
+      
+      <div class="service-card fade-in-up">
+        <div class="service-icon">🧠</div>
+        <h3 class="service-title">تحليلات الذكاء الاصطناعي</h3>
+        <p class="service-description">
+          قرارات ذكية مبنية على البيانات. نتنبأ بالترندات قبل 8 أشهر بدقة 94%.
+        </p>
+        <a href="https://wa.me/201110760081?text=أريد استشارة AI" class="service-link" target="_blank">
+          <span>اطلب الخدمة</span>
+          <span>←</span>
         </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 📝 Blog Preview -->
-<section style="padding:4rem 0;background:white">
+<!-- Live Stores Showcase -->
+<section class="section" id="stores">
   <div class="container">
-    <div style="text-align:center;margin-bottom:3rem">
-      <h2 style="font-size:clamp(2rem,4vw,2.8rem);font-weight:700;margin-bottom:1rem;color:var(--text)">📝 أحدث المقالات</h2>
-      <p style="color:var(--text-light);font-size:clamp(1rem,2.5vw,1.2rem)">نصائح واستراتيجيات تسويقية حصرية من الخبراء</p>
-    </div>
-    
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-bottom:2rem">
-      <a href="blog/google-ads-saudi-guide-2025.html" style="display:block;background:white;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;text-decoration:none;color:inherit;transition:var(--transition)" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
-        <div style="padding:2rem">
-          <div style="font-size:2rem;margin-bottom:1rem">🇸🇦</div>
-          <h3 style="font-weight:700;margin-bottom:0.5rem;font-size:1.2rem">دليل Google Ads السعودية 2025</h3>
-          <p style="color:var(--text-light);font-size:0.95rem">استراتيجيات محسنة للسوق السعودي</p>
-        </div>
-      </a>
-      
-      <a href="blog/google-ads-uae-guide-2025.html" style="display:block;background:white;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;text-decoration:none;color:inherit;transition:var(--transition)" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
-        <div style="padding:2rem">
-          <div style="font-size:2rem;margin-bottom:1rem">🇦🇪</div>
-          <h3 style="font-weight:700;margin-bottom:0.5rem;font-size:1.2rem">دليل Google Ads الإمارات 2025</h3>
-          <p style="color:var(--text-light);font-size:0.95rem">تحسينات خاصة لسوق دبي وأبوظبي</p>
-        </div>
-      </a>
-      
-      <a href="blog/ecommerce-seo-gulf-optimization.html" style="display:block;background:white;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;text-decoration:none;color:inherit;transition:var(--transition)" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
-        <div style="padding:2rem">
-          <div style="font-size:2rem;margin-bottom:1rem">🛒</div>
-          <h3 style="font-weight:700;margin-bottom:0.5rem;font-size:1.2rem">تحسين SEO للمتاجر الخليجية</h3>
-          <p style="color:var(--text-light);font-size:0.95rem">استراتيجيات متقدمة للتجارة الإلكترونية</p>
-        </div>
-      </a>
-    </div>
-    
-    <div style="text-align:center">
-      <a href="blog/" style="background:linear-gradient(135deg,var(--primary),#8b5cf6);color:white;padding:1rem 2rem;border-radius:50px;text-decoration:none;font-weight:600;transition:var(--transition)" onmouseover="this.style.transform='translateY(-2px) scale(1.02)'" onmouseout="this.style.transform=''">
-        📚 شاهد جميع المقالات
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- 📧 Newsletter -->
-<section style="padding:4rem 0;background:linear-gradient(135deg,var(--primary),#8b5cf6);text-align:center">
-  <div class="container">
-    <h2 style="font-size:clamp(1.8rem,4vw,2.5rem);font-weight:700;margin-bottom:1rem;color:white">📧 نصائح التسويق الحصرية</h2>
-    <p style="color:rgba(255,255,255,0.9);margin-bottom:2rem;font-size:clamp(1rem,2.5vw,1.2rem)">استراتيجيات سرية من خبراء يحققون المليارات - مجاناً لك</p>
-    
-    <form id="newsletter" style="max-width:500px;margin:0 auto">
-      <div style="display:flex;gap:0.5rem;background:white;padding:0.75rem;border-radius:50px;box-shadow:0 8px 30px rgba(0,0,0,0.1)">
-        <input type="email" placeholder="بريدك الإلكتروني للعروض الحصرية" required 
-               style="flex:1;padding:1rem 1.5rem;border:none;outline:none;font-size:1rem;background:transparent;color:var(--text)">
-        <input type="text" name="honeypot" style="display:none" tabindex="-1">
-        <button type="submit" 
-                style="background:linear-gradient(135deg,var(--success),#059669);color:white;border:none;padding:1rem 2rem;border-radius:50px;font-weight:700;cursor:pointer;transition:var(--transition);white-space:nowrap"
-                onmouseover="this.style.transform='scale(1.05)'" 
-                onmouseout="this.style.transform=''">
-          🎁 أريد النصائح
-        </button>
+    <div class="stores-showcase">
+      <div class="section-header">
+        <span class="section-badge">🔴 LIVE - متاجر تعمل الآن</span>
+        <h2 class="section-title">متاجرنا الإلكترونية الحية</h2>
+        <p class="section-subtitle">
+          8 متاجر حقيقية تعمل على منصات مختلفة في 6 دول خليجية
+        </p>
       </div>
-    </form>
-  </div>
-</section>
-
-<!-- 🔥 Final CTA -->
-<section style="padding:4rem 0;background:white;text-align:center">
-  <div class="container">
-    <h2 style="font-size:clamp(2rem,5vw,3rem);font-weight:900;margin-bottom:1rem;background:linear-gradient(135deg,#1e293b,#3b82f6);-webkit-background-clip:text;-webkit-text-fill-color:transparent">🔥 جاهز لمضاعفة أرباحك؟</h2>
-    <p style="color:var(--text-light);margin-bottom:2.5rem;font-size:clamp(1.1rem,3vw,1.4rem);font-weight:600">عملاؤنا يحققون أرباحاً من اليوم الأول - انضم إليهم الآن</p>
-    
-    <div style="display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem;padding-bottom:120px">
-      <a href="https://wa.me/201110760081?text=أريد مضاعفة أرباحي الآن! 🚀💰" target="_blank" 
-         style="background:linear-gradient(135deg,var(--success),#059669);color:white;padding:1.5rem 3.5rem;border-radius:50px;text-decoration:none;font-weight:800;font-size:1.3rem;box-shadow:0 12px 40px rgba(16,185,129,0.3);transition:var(--transition);display:inline-flex;align-items:center;gap:0.75rem" 
-         onmouseover="this.style.transform='translateY(-5px) scale(1.08)';this.style.boxShadow='0 20px 60px rgba(16,185,129,0.4)'" 
-         onmouseout="this.style.transform='';this.style.boxShadow='0 12px 40px rgba(16,185,129,0.3)'">
-        🚀 ابدأ رحلة النجاح
-      </a>
       
-      <a href="tel:+201110760081" 
-         style="background:var(--warning);color:white;padding:1.5rem 3rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:1.2rem;box-shadow:0 8px 30px rgba(245,158,11,0.3);transition:var(--transition);display:inline-flex;align-items:center;gap:0.75rem" 
-         onmouseover="this.style.transform='translateY(-3px) scale(1.05)'" 
-         onmouseout="this.style.transform=''">
-        📞 اتصال فوري
-      </a>
-    </div>
-    
-    <!-- Social Media Links -->
-    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:2rem">
-      <a href="https://www.facebook.com/arabads.me" target="_blank" rel="noopener" 
-         style="background:#1877f2;color:white;padding:0.75rem 1.5rem;border-radius:25px;text-decoration:none;font-weight:600;transition:var(--transition);display:flex;align-items:center;gap:0.5rem"
-         onmouseover="this.style.transform='translateY(-2px)'" 
-         onmouseout="this.style.transform=''">
-        📘 فيسبوك
-      </a>
-      <a href="https://instagram.com/arabsadads" target="_blank" rel="noopener" 
-         style="background:linear-gradient(45deg,#f58529,#dd2a7b);color:white;padding:0.75rem 1.5rem;border-radius:25px;text-decoration:none;font-weight:600;transition:var(--transition);display:flex;align-items:center;gap:0.5rem"
-         onmouseover="this.style.transform='translateY(-2px)'" 
-         onmouseout="this.style.transform=''">
-        📷 إنستجرام
-      </a>
-      <a href="https://tiktok.com/@arabsadads" target="_blank" rel="noopener" 
-         style="background:#000;color:white;padding:0.75rem 1.5rem;border-radius:25px;text-decoration:none;font-weight:600;transition:var(--transition);display:flex;align-items:center;gap:0.5rem"
-         onmouseover="this.style.transform='translateY(-2px)'" 
-         onmouseout="this.style.transform=''">
-        🎵 تيك توك
-      </a>
+      <div class="stores-grid">
+        <div class="store-card">
+          <div class="store-flag">🇸🇦</div>
+          <div class="store-info">
+            <h4 class="store-name">متجر السعودية</h4>
+            <p class="store-platform">GitHub Pages</p>
+            <a href="https://sherow1982.github.io/saudi-matjar.arabsad.com/" class="store-link" target="_blank">
+              <span>عرض مباشر</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="store-card">
+          <div class="store-flag">🇦🇪</div>
+          <div class="store-info">
+            <h4 class="store-name">تاجر الإمارات</h4>
+            <p class="store-platform">MyEasyOrders</p>
+            <a href="https://tageruae.myeasyorders.com/" class="store-link" target="_blank">
+              <span>عرض مباشر</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="store-card">
+          <div class="store-flag">🇰🇼</div>
+          <div class="store-info">
+            <h4 class="store-name">متجر الكويت</h4>
+            <p class="store-platform">GitHub Pages</p>
+            <a href="https://sherow1982.github.io/Kuwait-matjar/" class="store-link" target="_blank">
+              <span>عرض مباشر</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="store-card">
+          <div class="store-flag">🇴🇲</div>
+          <div class="store-info">
+            <h4 class="store-name">متجر عُمان</h4>
+            <p class="store-platform">GitHub Pages</p>
+            <a href="https://sherow1982.github.io/matjar-oman/" class="store-link" target="_blank">
+              <span>عرض مباشر</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-2">
+        <a href="services/ecommerce.html" class="btn btn-primary">
+          <span>🛒</span>
+          <span>شاهد جميع المتاجر الـ 8</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- 💬 WhatsApp Float - FIXED POSITIONING -->
-<div style="position:fixed;bottom:20px;left:20px;z-index:1000" id="whatsappFloat">
-  <a href="https://wa.me/201110760081?text=مرحباً! أريد مضاعفة أرباحي فوراً 💰" target="_blank" 
-     style="background:linear-gradient(135deg,#25d366,#20b858);color:white;padding:1rem 1.5rem;border-radius:50px;text-decoration:none;font-weight:700;box-shadow:0 8px 30px rgba(37,211,102,0.4);transition:var(--transition);display:flex;align-items:center;gap:0.5rem"
-     onmouseover="this.style.transform='translateY(-3px) scale(1.05)'" 
-     onmouseout="this.style.transform=''">
-    💬 راسلنا
+<!-- Results Section -->
+<section class="section" id="results">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">🏆 نتائج حقيقية</span>
+      <h2 class="section-title">أرقام تتحدث عن نفسها</h2>
+      <p class="section-subtitle">
+        إنجازات عملائنا خلال آخر 12 شهر
+      </p>
+    </div>
+    
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="stat-number">+347%</div>
+        <div class="stat-label">متوسط زيادة المبيعات</div>
+      </div>
+      
+      <div class="stat-box">
+        <div class="stat-number">7</div>
+        <div class="stat-label">أيام للصفحة الأولى</div>
+      </div>
+      
+      <div class="stat-box">
+        <div class="stat-number">127M+</div>
+        <div class="stat-label">ريال مبيعات عملائنا</div>
+      </div>
+      
+      <div class="stat-box">
+        <div class="stat-number">2.7B+</div>
+        <div class="stat-label">مشاهدة للمحتوى</div>
+      </div>
+      
+      <div class="stat-box">
+        <div class="stat-number">427+</div>
+        <div class="stat-label">متجر إلكتروني</div>
+      </div>
+      
+      <div class="stat-box">
+        <div class="stat-number">99.8%</div>
+        <div class="stat-label">معدل نجاح الحملات</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section">
+  <div class="container">
+    <div class="cta-section">
+      <div class="cta-content">
+        <h2 class="cta-title">جاهز لمضاعفة أرباحك؟</h2>
+        <p class="cta-text">
+          عملاؤنا يحققون أرباحاً من اليوم الأول. انضم إليهم الآن واحصل على استشارة مجانية من خبراء التسويق الرقمي.
+        </p>
+        <div class="hero-cta">
+          <a href="https://wa.me/201110760081?text=أريد مضاعفة أرباحي الآن! 🚀💰" class="btn btn-primary" target="_blank">
+            <span>🚀</span>
+            <span>ابدأ رحلة النجاح الآن</span>
+          </a>
+          <a href="tel:+201110760081" class="btn btn-secondary">
+            <span>📞</span>
+            <span>اتصال فوري</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>🚀 إعلانات العرب</h3>
+        <p>الوكالة الرقمية الرائدة في الخليج العربي</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/arabads.me" class="social-link" target="_blank">📘</a>
+          <a href="https://instagram.com/arabsadads" class="social-link" target="_blank">📷</a>
+          <a href="https://tiktok.com/@arabsadads" class="social-link" target="_blank">🎵</a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>خدماتنا</h3>
+        <a href="#services">إعلانات Google</a>
+        <a href="#services">السوشيال ميديا</a>
+        <a href="services/ecommerce.html">المتاجر الإلكترونية</a>
+        <a href="#services">تحسين SEO</a>
+      </div>
+      
+      <div class="footer-section">
+        <h3>روابط سريعة</h3>
+        <a href="#home">الرئيسية</a>
+        <a href="#services">خدماتنا</a>
+        <a href="#results">نتائجنا</a>
+        <a href="blog/">المدونة</a>
+      </div>
+      
+      <div class="footer-section">
+        <h3>تواصل معنا</h3>
+        <a href="https://wa.me/201110760081" target="_blank">📱 00201110760081</a>
+        <a href="mailto:sherow1982@gmail.com">✉️ sherow1982@gmail.com</a>
+        <p>🌐 arabsad.com</p>
+        <p>📍 مصر - الجيزة - حدائق أكتوبر</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 مؤسسة إعلانات العرب - جميع الحقوق محفوظة</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float Button -->
+<div class="whatsapp-float">
+  <a href="https://wa.me/201110760081?text=مرحباً! أريد مضاعفة أرباحي فوراً 💰" class="whatsapp-btn" target="_blank">
+    <span>💬</span>
+    <span>راسلنا الآن</span>
   </a>
 </div>
 
-<!-- 📊 Back to Top - FIXED POSITIONING -->
-<button id="backTop" style="position:fixed;bottom:20px;right:20px;width:50px;height:50px;background:linear-gradient(135deg,var(--primary),#8b5cf6);color:white;border:none;border-radius:50%;font-size:1.5rem;cursor:pointer;box-shadow:0 8px 30px rgba(59,130,246,0.3);transition:var(--transition);z-index:999;display:none" onclick="window.scrollTo({top:0,behavior:'smooth'})" onmouseover="this.style.transform='translateY(-3px) scale(1.1)'" onmouseout="this.style.transform=''">↑</button>
-
-<!-- Toast Container -->
-<div id="toasts" style="position:fixed;top:100px;right:20px;z-index:10000;max-width:400px"></div>
+<!-- Scroll to Top -->
+<div class="scroll-top" id="scrollTop">↑</div>
 
 <script>
-// Minimal slider logic (unchanged behavior)
-class UltraSlider{constructor(){this.t=document.getElementById('sliderTrack');this.i=0;this.n=6;this.a=null;this.init()}init(){if(!this.t)return;prevBtn.onclick=()=>this.prev();nextBtn.onclick=()=>this.next();this.buildDots();this.start()}buildDots(){const d=document.getElementById('dots');d.innerHTML='';for(let k=0;k<this.n;k++){const b=document.createElement('button');b.onclick=()=>this.go(k);if(k===0)b.classList.add('active');d.appendChild(b)}}go(x){this.i=x;this.t.style.transform=`translateX(-${x*(100/6)}%)`;document.querySelectorAll('#dots button').forEach((b,idx)=>{b.classList.toggle('active',idx===x)})}next(){this.go((this.i+1)%this.n)}prev(){this.go((this.i-1+this.n)%this.n)}start(){this.a=setInterval(()=>this.next(),6000)}}
+// Mobile Menu Toggle
+const menuToggle = document.getElementById('menuToggle');
+const navMenu = document.getElementById('navMenu');
 
-// Mobile Navigation
-function initNav(){const toggle=document.getElementById('navToggle');const menu=document.getElementById('navMenu');toggle.onclick=()=>{const isActive=menu.classList.toggle('active');const spans=toggle.querySelectorAll('span');if(isActive){spans[0].style.transform='rotate(45deg) translate(6px, 6px)';spans[1].style.opacity='0';spans[2].style.transform='rotate(-45deg) translate(6px, -6px)';document.body.style.overflow='hidden'}else{spans.forEach(s=>{s.style.transform='';s.style.opacity='1'});document.body.style.overflow=''}};menu.onclick=e=>{if(e.target.matches('a')){menu.classList.remove('active');toggle.querySelectorAll('span').forEach(s=>{s.style.transform='';s.style.opacity='1'});document.body.style.overflow=''}}}
-
-// Newsletter System
-function initNewsletter(){const form=document.getElementById('newsletter');if(!form)return;form.onsubmit=async(e)=>{e.preventDefault();const email=form.querySelector('input[type="email"]').value.trim();const btn=form.querySelector('button');if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){showToast('يرجى إدخال بريد إلكتروني صحيح','error');return}const subscribers=JSON.parse(localStorage.getItem('subscribers')||'[]');if(subscribers.includes(email.toLowerCase())){showToast('🎉 أنت مشترك مسبقاً! ستصلك أحدث العروض','info');return}btn.innerHTML='⏳ جاري الإضافة...';btn.disabled=true;try{const formData=new FormData();formData.append('email',email);formData.append('_subject','🎯 اشتراك جديد VIP - إعلانات العرب');formData.append('_template','table');formData.append('_captcha','false');formData.append('_next','https://arabsad.com/?welcome=1');await fetch('https://formsubmit.co/sherow1982@gmail.com',{method:'POST',body:formData,mode:'no-cors'});subscribers.push(email.toLowerCase());localStorage.setItem('subscribers',JSON.stringify(subscribers));form.querySelector('input[type="email"]').value='';showToast('🎉 مرحباً بعائلة النجاح! ستصلك أقوى النصائح والعروض الحصرية','success')}catch(error){showToast('✅ تم حفظ اشتراكك! سنتواصل معك بأفضل العروض','success')}btn.innerHTML='🎁 أريد النصائح';btn.disabled=false}}
-
-// Toast System
-function showToast(message,type='info'){const container=document.getElementById('toasts');const colors={success:'linear-gradient(135deg,#10b981,#059669)',error:'linear-gradient(135deg,#ef4444,#dc2626)',info:'linear-gradient(135deg,#3b82f6,#2563eb)',warning:'linear-gradient(135deg,#f59e0b,#d97706)'};const toast=document.createElement('div');toast.style.cssText=`background:${colors[type]};color:white;padding:1rem 1.5rem;border-radius:12px;margin-bottom:0.5rem;box-shadow:0 8px 30px rgba(0,0,0,0.15);animation:slideIn 0.3s ease;font-weight:600;max-width:100%`;toast.textContent=message;container.appendChild(toast);setTimeout(()=>{toast.style.animation='slideOut 0.3s ease forwards';setTimeout(()=>toast.remove(),300)},4000)}
-
-// Reading Progress
-function initProgress(){const progress=document.getElementById('progress');window.onscroll=()=>{const scrolled=(window.pageYOffset/(document.body.scrollHeight-window.innerHeight))*100;progress.style.width=Math.max(0,Math.min(scrolled,100))+'%'}}
-
-// Back to Top
-function initBackTop(){const btn=document.getElementById('backTop');window.addEventListener('scroll',()=>{btn.style.display=window.pageYOffset>300?'block':'none'})}
-
-// Initialize everything
-document.addEventListener('DOMContentLoaded',()=>{
-  new UltraSlider();
-  initNav();
-  initNewsletter();
-  initProgress();
-  initBackTop();
-  
-  console.log('🚀 ArabSad.com - Ultra Performance Mode Activated!');
-  console.log('🛒 E-commerce showcase added in 3 strategic locations');
-  console.log('📱 Mobile overlap issues fixed');
-  console.log('🔗 Facebook updated to: https://www.facebook.com/arabads.me');
-  console.log('📝 Blog linked and accessible');
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+  menuToggle.classList.toggle('active');
 });
 
-// Add CSS animations + Mobile Fixes
-const style=document.createElement('style');
-style.textContent=`
-@keyframes slideIn{from{transform:translateX(100%);opacity:0}to{transform:translateX(0);opacity:1}}
-@keyframes slideOut{from{transform:translateX(0);opacity:1}to{transform:translateX(100%);opacity:0}}
+// Close menu on link click
+navMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+    menuToggle.classList.remove('active');
+  });
+});
 
-/* 🔧 CRITICAL MOBILE FIXES */
-@media (max-width: 480px) {
-  /* Header safe zone */
-  .header { min-height: 72px; z-index: 1001; }
-  .hero { margin-top: 82px !important; padding-top: 8px; }
-  .slider-container { min-height: calc(100vh - 90px); }
-  
-  /* CTA Header compact */
-  .cta-header { 
-    padding: 0.6rem 1.1rem !important; 
-    font-size: 0.85rem !important;
-    border-radius: 18px !important;
-    white-space: nowrap;
-  }
-  
-  /* Fixed floating elements - NO OVERLAP */
-  #whatsappFloat {
-    bottom: 90px !important;
-    left: 16px !important;
-    transform: translateZ(0);
-  }
-  
-  #backTop {
-    bottom: 90px !important;
-    right: 16px !important;
-    width: 45px !important;
-    height: 45px !important;
-    font-size: 1.2rem !important;
-  }
-  
-  /* Safe padding for bottom CTAs */
-  section[style*="text-align:center"] div[style*="gap:2rem"] {
-    padding-bottom: 100px !important;
-  }
-  
-  /* Slider improvements */
-  .slide { padding: 1.8rem 0.8rem !important; }
-  .btn { 
-    width: 100% !important; 
-    max-width: 260px !important; 
-    padding: 0.9rem 1.8rem !important;
-    font-size: 0.95rem !important;
-    margin: 0.25rem auto !important;
-  }
-  
-  .ctrl { 
-    width: 52px !important; 
-    height: 52px !important; 
-    font-size: 1.5rem !important; 
-  }
-  
-  #prevBtn { left: 0.8rem !important; }
-  #nextBtn { right: 0.8rem !important; }
-  
-  .dots { 
-    bottom: 0.8rem !important; 
-    padding: 0.6rem 1rem !important; 
-    gap: 0.6rem !important;
-  }
-}
-
-@media (max-width: 390px) {
-  .hero { margin-top: 86px !important; }
-  .brand { font-size: 1.25rem !important; }
-  
-  .nav-menu.active {
-    top: 76px !important;
-    padding: 1.5rem !important;
-  }
-  
-  .slide-title { font-size: clamp(1.5rem, 7vw, 2.1rem) !important; }
-  .slide-subtitle { font-size: clamp(0.9rem, 4vw, 1.15rem) !important; }
-  .slide p.lead { font-size: clamp(0.8rem, 4.5vw, 0.95rem) !important; }
-  
-  /* Extra safe bottom spacing */
-  #whatsappFloat { bottom: 95px !important; left: 12px !important; }
-  #backTop { bottom: 95px !important; right: 12px !important; }
-}
-
-@media (max-width: 768px) {
-  .nav-menu{display:none;position:fixed;top:82px;left:0;right:0;background:#fff;flex-direction:column;padding:2rem;gap:1rem;box-shadow:var(--shadow)}
-  .nav-menu.active{display:flex}
-  .nav-toggle{display:flex;flex-direction:column;gap:4px;background:none;border:none;cursor:pointer;padding:8px}
-  .nav-toggle span{width:24px;height:3px;background:var(--text);border-radius:2px}
-  
-  .slide { padding: 2rem 1rem !important; }
-  .slide-content { max-width: 100% !important; }
-  .container { padding: 0 0.75rem !important; }
-}
-
-/* Performance optimizations */
-*{-webkit-tap-highlight-color:transparent}
-.slide-content>*{will-change:transform,opacity}
-.slider-track{will-change:transform;transform:translateZ(0)}
-`;
-document.head.appendChild(style);
-
-// Auto-update all Facebook links
-document.querySelectorAll('a[href*="facebook.com"]').forEach(link=>{
-  if(!link.href.includes('arabads.me')){
-    link.href='https://www.facebook.com/arabads.me';
-    console.log('✅ Facebook link updated:',link.href);
+// Header Scroll Effect
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
   }
 });
+
+// Scroll to Top Button
+const scrollTop = document.getElementById('scrollTop');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    scrollTop.classList.add('visible');
+  } else {
+    scrollTop.classList.remove('visible');
+  }
+});
+
+scrollTop.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+// Smooth Scroll for Anchor Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+
+// Animated Counter for Stats
+const animateCounter = (element, target, duration = 2000) => {
+  const start = 0;
+  const increment = target / (duration / 16);
+  let current = start;
+  
+  const timer = setInterval(() => {
+    current += increment;
+    if (current >= target) {
+      element.textContent = formatNumber(target);
+      clearInterval(timer);
+    } else {
+      element.textContent = formatNumber(Math.floor(current));
+    }
+  }, 16);
+};
+
+const formatNumber = (num) => {
+  if (num >= 1000000000) return (num / 1000000000).toFixed(1) + 'B+';
+  if (num >= 1000000) return (num / 1000000).toFixed(0) + 'M+';
+  if (num >= 1000) return (num / 1000).toFixed(0) + 'K+';
+  return num.toString();
+};
+
+// Intersection Observer for Animations
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fade-in-up');
+      
+      // Animate counters when stats section is visible
+      if (entry.target.classList.contains('stat-number')) {
+        const text = entry.target.textContent;
+        const number = parseFloat(text.replace(/[^0-9.]/g, ''));
+        const suffix = text.replace(/[0-9.]/g, '');
+        
+        let target = number;
+        if (suffix.includes('M')) target = number * 1000000;
+        if (suffix.includes('B')) target = number * 1000000000;
+        if (suffix.includes('%')) target = number;
+        
+        animateCounter(entry.target, target);
+      }
+      
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+// Observe all animated elements
+document.querySelectorAll('.service-card, .store-card, .stat-box').forEach(el => {
+  observer.observe(el);
+});
+
+document.querySelectorAll('.stat-number').forEach(el => {
+  observer.observe(el);
+});
+
+// Active Navigation Link
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-menu a[href^="#"]');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (scrollY >= sectionTop - 200) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === `#${current}`) {
+      link.classList.add('active');
+    }
+  });
+});
+
+// Console Log
+console.log('🚀 ArabSad.com - Gulf Modern Design Activated!');
+console.log('🎨 Premium UI/UX with Curved Shapes');
+console.log('📱 Fully Responsive & Mobile Optimized');
+console.log('⚡ Performance Optimized');
 </script>
 </body>
 </html>
