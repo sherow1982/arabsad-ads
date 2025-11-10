@@ -1,61 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>خدمة إعلانات جوجل الاحترافية | مؤسسة إعلانات العرب</title>
-<meta name="description" content="خدمة إعلانات جوجل Google Ads احترافية شاملة. حملات بحث وشبكة ويوتيوب وPerformance Max. إدارة متخصصة وتحسين مستمر.">
-<link rel="stylesheet" href="assets/css/main.css">
-<link rel="stylesheet" href="assets/css/ux-enhancements.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="enhanced-arabic-fonts.css">
-</head>
-<body>
-<div class="reading-progress" id="progress"></div>
-<main class="container">
-<div style="background: linear-gradient(135deg, #4285f4, #34a853); color: white; padding: 4rem 2rem; text-align: center; border-radius: 25px; margin: 2rem 0;">
-  <h1 style="font-size: 3.5rem; margin-bottom: 2rem;">🎯 خدمة إعلانات جوجل الاحترافية</h1>
-  <p style="font-size: 1.4rem; margin-bottom: 3rem;">حملات Google Ads متكاملة: بحث + شبكة + يوتيوب + Performance Max</p>
-  <a class="btn btn-success" href="https://wa.me/201110760081?text=أريد%20بدء%20حملة%20Google%20Ads" target="_blank" style="font-size: 1.2rem; padding: 1.2rem 2.5rem;">📞 ابدأ حملتك الآن</a>
-</div>
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0;">
-  <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.08);">
-    <h3>🔍 حملات البحث</h3>
-    <p>استهداف دقيق للكلمات المفتاحية عالية التحويل</p>
-  </div>
-  <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.08);">
-    <h3>🌐 شبكة العرض</h3>
-    <p>وصول واسع عبر ملايين المواقع الشريكة</p>
-  </div>
-  <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.08);">
-    <h3>📺 إعلانات يوتيوب</h3>
-    <p>فيديوهات ترويجية مؤثرة تصل لجمهور واسع</p>
-  </div>
-  <div style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.08);">
-    <h3>🚀 Performance Max</h3>
-    <p>تقنية الذكاء الاصطناعي لأقصى نتائج</p>
-  </div>
-</div>
-
-<div style="text-align: center; padding: 3rem; background: linear-gradient(135deg, #1a365d, #2c5aa0); color: white; border-radius: 20px; margin: 3rem 0;">
-  <h2>🎯 لماذا تختار خدمتنا؟</h2>
-  <p style="font-size: 1.2rem; margin: 2rem 0;">إدارة احترافية، تحسين مستمر، ونتائج مضمونة</p>
-  <a class="btn btn-primary" href="https://wa.me/201110760081?text=أطلب%20عرض%20سعر%20لحملة%20Google%20Ads" target="_blank">💰 اطلب عرض سعر</a>
-</div>
-
-</main>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    fetch('./shared-header.html').then(r => r.ok ? r.text() : '').then(html => { if (html) document.body.insertAdjacentHTML('afterbegin', html); });
-    fetch('./shared-footer.html').then(r => r.ok ? r.text() : '').then(html => { if (html) document.body.insertAdjacentHTML('beforeend', html); });
-    fetch('./whatsapp-button.html').then(r => r.ok ? r.text() : '').then(html => { if (html) document.body.insertAdjacentHTML('beforeend', html); });
-});
-
-const p=document.getElementById('progress');
-window.addEventListener('scroll',()=>{const h=document.documentElement;const s=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;p.style.width=s+'%'});
-</script>
-</body>
-</html>
