@@ -3,49 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>خدمة Google Ads | مؤسسة إعلانات العرب</title>
-    <meta name="description" content="كل خدمات Google Ads الإحترافية في الخليج - إستهدف جمهورك، ركز ميزانيتك، راقب النتائج">
+    <title>خدمات Google Ads الشاملة | إعلانات العرب</title>
+    <meta name="description" content="خبراء Google Ads في الخليج. إعلانات بحث، شبكة، فيديو، تسوق. حملات مستهدفة وإدارة احترافية لتحقيق أعلى عائد استثمار.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Almarai:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/modern-arabic-theme.css">
-    <style>body{background:var(--bg-gradient)}.hero-ga{text-align:center;margin:58px 0 30px}.hero-title{font-size:2.4rem;font-weight:900;margin-bottom:18px}.hero-subtitle{font-size:1.12rem;color:var(--text-muted);max-width:640px;margin:auto;margin-bottom:22px}.cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}.section-title{font-size:2.1rem;color:var(--primary-color);margin-bottom:40px}.features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:32px}.card{background:white;padding:32px 30px;border-radius:16px;box-shadow:var(--shadow-sm);transition:.3s}.card:hover{box-shadow:var(--shadow-lg);transform:translateY(-7px)}.card-icon{font-size:2.5rem;color:var(--accent-color);margin-bottom:18px}.card-title{font-weight:800;font-size:1.2rem;margin-bottom:10px;font-family:'Almarai',sans-serif}.card-desc{color:var(--text-secondary);font-size:1.05rem;line-height:1.7}.wa-float{position:fixed;bottom:27px;left:27px;z-index:999}.wa-float a{background:#25d366;color:#fff;padding:12px 26px;border-radius:35px;display:inline-flex;align-items:center;gap:8px;font-weight:700;box-shadow:0 4px 22px rgba(37,211,102,.25);transition:.3s}.wa-float a:hover{background:#128c7e;transform:scale(1.05)}@media(max-width:600px){.hero-title{font-size:1.38rem}.features-grid{grid-template-columns:1fr}.section-title{font-size:1.1rem}}</style>
+    <link rel="stylesheet" href="../assets/css/modern-arabic-theme.css">
+    <style>
+        body{background:linear-gradient(135deg,#fef3c7 0%,#fde68a 100%);min-height:100vh}
+        .service-hero{background:linear-gradient(135deg,#10b981 0%,#059669 100%);color:#fff;text-align:center;padding:70px 20px 60px;margin-bottom:50px;border-radius:0 0 30px 30px;box-shadow:0 10px 40px rgba(16,185,129,.3)}
+        .hero-title{font-size:2.8rem;font-weight:900;margin-bottom:20px;text-shadow:2px 2px 4px rgba(0,0,0,.2)}
+        .hero-subtitle{font-size:1.3rem;margin-bottom:30px;opacity:.95;line-height:1.8;max-width:800px;margin-left:auto;margin-right:auto}
+        .hero-btns{display:flex;gap:15px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+        .hero-btns .btn{padding:14px 32px;font-size:1.1rem;border-radius:50px;font-weight:700;transition:.3s;text-decoration:none;display:inline-flex;align-items:center;gap:10px}
+        .btn-light{background:#fff;color:#10b981;box-shadow:0 4px 15px rgba(255,255,255,.3)}
+        .btn-light:hover{background:#fde68a;transform:translateY(-3px)}
+        .btn-outline{background:transparent;color:#fff;border:2px solid #fff}
+        .btn-outline:hover{background:#fff;color:#10b981;transform:translateY(-3px)}
+        
+        .dashboard-preview{margin:40px 0;text-align:center}
+        .dashboard-preview img{max-width:100%;height:auto;border-radius:20px;box-shadow:0 10px 40px rgba(0,0,0,.15)}
+        
+        .ad-types-section{margin:60px 0}
+        .section-title{font-size:2.2rem;font-weight:900;text-align:center;margin-bottom:45px;color:#1f2937}
+        .ad-types-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+        .ad-type-card{background:#fff;padding:35px 25px;border-radius:18px;box-shadow:0 4px 20px rgba(0,0,0,.08);transition:.4s;border-top:4px solid #10b981}
+        .ad-type-card:hover{transform:translateY(-10px);box-shadow:0 8px 30px rgba(16,185,129,.2)}
+        .ad-type-icon{font-size:3rem;color:#10b981;margin-bottom:20px;display:block}
+        .ad-type-title{font-size:1.4rem;font-weight:800;margin-bottom:12px;color:#1f2937;font-family:'Almarai',sans-serif}
+        .ad-type-desc{font-size:1.05rem;color:#6b7280;line-height:1.8;margin-bottom:15px}
+        .ad-type-features{list-style:none;padding:0;margin:15px 0 0 0}
+        .ad-type-features li{padding:8px 0;font-size:1rem;color:#4b5563;display:flex;align-items:center;gap:10px}
+        .ad-type-features li i{color:#10b981;font-size:1.1rem}
+        
+        .benefits-section{background:#fff;padding:60px 20px;margin:60px 0;border-radius:30px;box-shadow:0 4px 30px rgba(0,0,0,.1)}
+        .benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin-top:40px}
+        .benefit-card{padding:25px;background:linear-gradient(135deg,#fef3c7 0%,#fde68a 100%);border-radius:15px;border-right:5px solid #10b981;transition:.3s}
+        .benefit-card:hover{transform:translateX(-8px);box-shadow:0 4px 20px rgba(16,185,129,.15)}
+        .benefit-icon{font-size:2.5rem;color:#10b981;margin-bottom:15px}
+        .benefit-title{font-size:1.2rem;font-weight:800;color:#1f2937;margin-bottom:10px}
+        .benefit-desc{font-size:1rem;color:#4b5563;line-height:1.7}
+        
+        .process-section{margin:60px 0}
+        .process-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;margin-top:40px}
+        .process-step{background:#fff;padding:30px 20px;border-radius:15px;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,.08);position:relative}
+        .step-number{width:60px;height:60px;background:linear-gradient(135deg,#10b981 0%,#059669 100%);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.8rem;font-weight:900;margin:0 auto 20px;box-shadow:0 4px 15px rgba(16,185,129,.3)}
+        .step-title{font-size:1.2rem;font-weight:800;margin-bottom:10px;color:#1f2937}
+        .step-desc{font-size:1rem;color:#6b7280;line-height:1.7}
+        
+        .stats-section{background:linear-gradient(135deg,#10b981 0%,#059669 100%);padding:60px 20px;margin:60px 0;border-radius:30px;box-shadow:0 8px 30px rgba(16,185,129,.3);color:#fff}
+        .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:25px;margin-top:40px}
+        .stat-card{background:rgba(255,255,255,.15);padding:30px 20px;border-radius:15px;text-align:center;backdrop-filter:blur(10px)}
+        .stat-number{font-size:2.5rem;font-weight:900;margin-bottom:10px}
+        .stat-label{font-size:1.1rem;font-weight:600;opacity:.95}
+        
+        .cta-section{background:linear-gradient(135deg,#fbbf24 0%,#f59e0b 100%);padding:50px 20px;text-align:center;border-radius:25px;margin:60px 0;box-shadow:0 8px 30px rgba(251,191,36,.3)}
+        .cta-title{font-size:2rem;font-weight:900;color:#1f2937;margin-bottom:15px}
+        .cta-subtitle{font-size:1.2rem;color:#374151;margin-bottom:30px}
+        .cta-btn{background:#10b981;color:#fff;padding:16px 40px;border-radius:50px;font-size:1.2rem;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:12px;transition:.3s;box-shadow:0 4px 20px rgba(16,185,129,.3)}
+        .cta-btn:hover{background:#059669;transform:translateY(-3px)}
+        
+        @media(max-width:768px){
+            .hero-title{font-size:1.8rem}
+            .hero-subtitle{font-size:1.05rem}
+            .section-title{font-size:1.6rem}
+            .ad-types-grid,.benefits-grid,.process-steps{grid-template-columns:1fr}
+        }
+    </style>
 </head>
 <body>
-    <div class="hero-ga">
-        <div class="hero-title">خدمات Google Ads الإحترافية</div>
-        <div class="hero-subtitle">نساعدك على جذب العملاء وتحقيق المبيعات الحقيقية من خلال حملات Google Ads الأعلى أداءً في الخليج والسوق العربي</div>
-        <div class="cta-btns">
-            <a href="https://wa.me/201110760081" class="btn btn-primary"><i class="fab fa-whatsapp"></i> استشارة مجانية</a>
-            <a href="services/index.html" class="btn btn-secondary"><i class="fas fa-list"></i> تصفح كل خدماتنا</a>
+    <div class="service-hero">
+        <div class="hero-title">خدمات Google Ads الشاملة والمتكاملة</div>
+        <div class="hero-subtitle">وكالة معتمدة من جوجل لإدارة الحملات الإعلانية الذكية. نحقق لك أعلى عائد استثمار (ROI) من خلال استراتيجيات مدروسة واستهداف دقيق لجمهورك في دول الخليج</div>
+        <div class="hero-btns">
+            <a href="https://wa.me/201110760081" class="btn btn-light"><i class="fab fa-whatsapp"></i> استشارة مجانية</a>
+            <a href="../index.html" class="btn btn-outline"><i class="fas fa-list"></i> تصفح كل خدماتنا</a>
         </div>
     </div>
+
     <div class="container">
-        <h2 class="section-title">ما الذي نقدمه في Google Ads؟</h2>
-        <div class="features-grid">
-            <div class="card">
-                <div class="card-icon"><i class="fab fa-google"></i></div>
-                <div class="card-title">تخصيص حملتك الإعلانية</div>
-                <div class="card-desc">نصنع لك حملة مخصصة تناسب منتجك وسوقك بأقل ميزانية وأقوى نتيجة</div>
-            </div>
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-chart-line"></i></div>
-                <div class="card-title">تحليل النتائج والمتابعة</div>
-                <div class="card-desc">لوحات تحكم وتحليلات رقمية لتراقب النتائج وتحدد العائد وتعدل أهدافك</div>
-            </div>
-            <div class="card">
-                <div class="card-icon"><i class="far fa-lightbulb"></i></div>
-                <div class="card-title">تجربة المستخدم الفائقة</div>
-                <div class="card-desc">كل إعلان يظهر بشكل مثالي لجميع الأجهزة لتحقيق تجربة استخدام أفضل وتحويل أعلى</div>
-            </div>
-            <div class="card">
-                <div class="card-icon"><i class="fas fa-rocket"></i></div>
-                <div class="card-title">إطلاق سريع للحملات</div>
-                <div class="card-desc">نطلق حملاتك خلال ساعات مع إعدادات احترافية لتحقق النتائج أسرع</div>
-            </div>
+        <div class="dashboard-preview">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Crect fill='%23f3f4f6' width='800' height='400'/%3E%3Ctext x='400' y='200' font-family='Arial' font-size='24' fill='%2310b981' text-anchor='middle'%3EGoogle Ads Dashboard - لوحة تحكم احترافية%3C/text%3E%3C/svg%3E" alt="لوحة تحكم Google Ads احترافية تعرض مقاييس الأداء والتحليلات التفصيلية للحملات الإعلانية">
         </div>
-    </div>
-    <div class="wa-float">
-        <a href="https://wa.me/201110760081" target="_blank"><i class="fab fa-whatsapp"></i> تواصل واتساب</a>
+
+        <section class="ad-types-section">
+            <h2 class="section-title">أنواع إعلانات Google التي نديرها</h2>
+            <div class="ad-types-grid">
+                <div class="ad-type-card">
+                    <i class="fas fa-search ad-type-icon"></i>
+                    <div class="ad-type-title">إعلانات البحث (Search Ads)</div>
+                    <div class="ad-type-desc">إعلانات نصية تظهر في نتائج بحث جوجل عند البحث عن كلمات مفتاحية مرتبطة بنشاطك التجاري</div>
+                    <ul class="ad-type-features">
+                        <li><i class="fas fa-check-circle"></i> استهداف الكلمات المفتاحية الأكثر ربحية</li>
+                        <li><i class="fas fa-check-circle"></i> ظهور فوري في الصفحة الأولى من جوجل</li>
+                        <li><i class="fas fa-check-circle"></i> عائد استثمار مرتفع جداً (High ROI)</li>
+                    </ul>
+                </div>
+                <div class="ad-type-card">
+                    <i class="fas fa-images ad-type-icon"></i>
+                    <div class="ad-type-title">إعلانات الشبكة الإعلانية (Display Ads)</div>
+                    <div class="ad-type-desc">إعلانات مرئية (بنرات وصور) تظهر على ملايين المواقع والتطبيقات الشريكة لجوجل</div>
+                    <ul class="ad-type-features">
+                        <li><i class="fas fa-check-circle"></i> وصول واسع لملايين المستخدمين</li>
+                        <li><i class="fas fa-check-circle"></i> تصاميم جذابة ومتنوعة الأحجام</li>
+                        <li><i class="fas fa-check-circle"></i> إعادة استهداف الزوار (Remarketing)</li>
+                    </ul>
+                </div>
+                <div class="ad-type-card">
+                    <i class="fas fa-video ad-type-icon"></i>
+                    <div class="ad-type-title">إعلانات الفيديو (YouTube Ads)</div>
+                    <div class="ad-type-desc">إعلانات فيديو احترافية على يوتيوب ثاني أكبر محرك بحث في العالم</div>
+                    <ul class="ad-type-features">
+                        <li><i class="fas fa-check-circle"></i> وصول لمليارات المشاهدات</li>
+                        <li><i class="fas fa-check-circle"></i> استهداف حسب الاهتمامات والمحتوى</li>
+                        <li><i class="fas fa-check-circle"></i> فيديوهات قابلة للتخطي وغير قابلة</li>
+                    </ul>
+                </div>
+                <div class="ad-type-card">
+                    <i class="fas fa-shopping-cart ad-type-icon"></i>
+                    <div class="ad-type-title">إعلانات التسوق (Shopping Ads)</div>
+                    <div class="ad-type-desc">عرض منتجاتك مباشرة في نتائج البحث مع الصور والأسعار والعروض الخاصة</div>
+                    <ul class="ad-type-features">
+                        <li><i class="fas fa-check-circle"></i> مثالية للمتاجر الإلكترونية</li>
+                        <li><i class="fas fa-check-circle"></i> زيادة معدل التحويل بشكل كبير</li>
+                        <li><i class="fas fa-check-circle"></i> عرض تفصيلي للمنتجات</li>
+                    </ul>
+                </div>
+                <div class="ad-type-card">
+                    <i class="fas fa-mobile-alt ad-type-icon"></i>
+                    <div class="ad-type-title">إعلانات التطبيقات (App Ads)</div>
+                    <div class="ad-type-desc">الترويج لتطبيقك على جوجل بلاي، يوتيوب، والشبكة الإعلانية لزيادة التحميلات</div>
+                    <ul class="ad-type-features">
+                        <li><i class="fas fa-check-circle"></i> زيادة تحميلات التطبيق</li>
+                        <li><i class="fas fa-check-circle"></i> استهداف مستخدمي أندرويد وiOS</li>
+                        <li><i class="fas fa-check-circle"></i> قياس التفاعل داخل التطبيق</li>
+                    </ul>
+                </div>
+                <div class="ad-type-card">
+                    <i class="fas fa-map-marker-alt ad-type-icon"></i>
+                    <div class="ad-type-title">الإعلانات المحلية (Local Ads)</div>
+                    <div class="ad-type-desc">جذب عملاء من منطقتك الجغرافية مباشرة إلى متجرك أو مقر عملك</div>
+                    <ul class="ad-type-features">
+                        <li><i class="fas fa-check-circle"></i> استهداف جغرافي دقيق</li>
+                        <li><i class="fas fa-check-circle"></i> ظهور على خرائط جوجل</li>
+                        <li><i class="fas fa-check-circle"></i> زيادة الزيارات الفعلية للمحل</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <h2 class="section-title">لماذا نحن الأفضل في إدارة Google Ads؟</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-certificate benefit-icon"></i>
+                    <div class="benefit-title">شركاء معتمدون من Google</div>
+                    <div class="benefit-desc">فريقنا حاصل على شهادات Google Ads المتقدمة ومعتمد كشريك رسمي</div>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line benefit-icon"></i>
+                    <div class="benefit-title">تحليلات متقدمة</div>
+                    <div class="benefit-desc">نستخدم أدوات تحليل احترافية لقياس كل نقرة وتحويل بدقة</div>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-dollar-sign benefit-icon"></i>
+                    <div class="benefit-title">أقل تكلفة لكل تحويل</div>
+                    <div class="benefit-desc">نحسن حملاتك باستمرار لتحقيق أعلى نتائج بأقل تكلفة ممكنة</div>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-bullseye benefit-icon"></i>
+                    <div class="benefit-title">استهداف دقيق جداً</div>
+                    <div class="benefit-desc">نستهدف جمهورك بناء على العمر، الموقع، الاهتمامات، والسلوك الشرائي</div>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-edit benefit-icon"></i>
+                    <div class="benefit-title">كتابة إعلانات جذابة</div>
+                    <div class="benefit-desc">نكتب نصوص إعلانية احترافية تحفز على النقر والشراء</div>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-sync-alt benefit-icon"></i>
+                    <div class="benefit-title">تحسين يومي</div>
+                    <div class="benefit-desc">مراقبة ومتابعة يومية للحملات وتعديل فوري لتحسين الأداء</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <h2 class="section-title">خطوات عملنا في إدارة حملات Google Ads</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-title">البحث والتحليل</div>
+                    <div class="step-desc">دراسة السوق والمنافسين وتحليل الكلمات المفتاحية الأكثر ربحية</div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-title">إعداد الحملة</div>
+                    <div class="step-desc">بناء بنية الحملة، المجموعات الإعلانية، وكتابة النصوص الجذابة</div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-title">الاستهداف الدقيق</div>
+                    <div class="step-desc">ضبط الاستهداف الجغرافي، الديموغرافي، والسلوكي بدقة</div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-title">الإطلاق والمراقبة</div>
+                    <div class="step-desc">إطلاق الحملة ومراقبة الأداء بشكل فوري ومستمر</div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-title">التحسين المستمر</div>
+                    <div class="step-desc">تحليل البيانات وتحسين الحملات يومياً لزيادة العائد</div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-title">التقارير الشهرية</div>
+                    <div class="step-desc">تقارير تفصيلية عن الأداء والنتائج وخطة الشهر القادم</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <h2 class="section-title" style="color:#fff">إنجازاتنا في أرقام</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">+450%</div>
+                    <div class="stat-label">زيادة متوسط العائد (ROI)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">-55%</div>
+                    <div class="stat-label">خفض تكلفة الاكتساب (CPA)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">حملة ناجحة ومربحة</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">رضا العملاء</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-title">جاهز لإطلاق حملتك على Google Ads؟</div>
+            <div class="cta-subtitle">احصل على استشارة مجانية وتقييم كامل لحملاتك الحالية أو خطة مخصصة لمشروعك</div>
+            <a href="https://wa.me/201110760081" class="cta-btn"><i class="fab fa-whatsapp"></i> تواصل معنا على واتساب</a>
+        </section>
     </div>
 </body>
 </html>
