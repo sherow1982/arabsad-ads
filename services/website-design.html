@@ -39,9 +39,153 @@
   }
   </script>
   <link rel="canonical" href="https://arabsad.com/services/website-design.html">
-  <style>/* جميع تنسيقات التصميم العصري */</style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {font-family: 'Cairo', sans-serif; background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%); color: #fff; line-height: 1.6;}
+    .container {max-width: 1200px; margin: 0 auto; padding: 0 20px;}
+    header {background: #15243b; box-shadow: 0 4px 30px rgba(26, 26, 46, 0.15); padding: 30px 0; text-align: center;}
+    header h1 {font-size: 2.5rem; font-weight: 900; color: #f6b93b; margin-bottom: 10px; letter-spacing: -1px;}
+    header p {font-size: 1.2rem; color: #26de81; opacity: 0.95;}
+    .hero {padding: 80px 0; text-align: center;}
+    .hero h2 {font-size: 2.8rem; color: #26de81; margin-bottom: 20px; font-weight: 900;}
+    .hero p {font-size: 1.3rem; max-width: 800px; margin: 0 auto 40px; opacity: 0.9;}
+    .cta-button {display: inline-block; background: #25d366; color: #fff; padding: 18px 50px; border-radius: 50px; text-decoration: none; font-size: 1.3rem; font-weight: 900; box-shadow: 0 10px 40px rgba(37, 211, 102, 0.4); transition: all 0.3s ease;}
+    .cta-button:hover {background: #1fb856; transform: translateY(-3px); box-shadow: 0 15px 50px rgba(37, 211, 102, 0.6);}
+    .features {padding: 60px 0;}
+    .features h2 {text-align: center; font-size: 2.3rem; color: #f6b93b; margin-bottom: 50px; font-weight: 900;}
+    .features-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;}
+    .feature-card {background: #203a43; padding: 35px; border-radius: 20px; box-shadow: 0 8px 30px rgba(38, 222, 129, 0.15); transition: all 0.3s ease;}
+    .feature-card:hover {transform: translateY(-5px); box-shadow: 0 12px 40px rgba(38, 222, 129, 0.25);}
+    .feature-card i {font-size: 3rem; color: #26de81; margin-bottom: 20px;}
+    .feature-card h3 {font-size: 1.6rem; color: #f6b93b; margin-bottom: 15px; font-weight: 700;}
+    .feature-card p {font-size: 1.1rem; opacity: 0.9; line-height: 1.8;}
+    .pricing {padding: 60px 0; background: rgba(21, 36, 59, 0.5);}
+    .pricing h2 {text-align: center; font-size: 2.3rem; color: #26de81; margin-bottom: 50px; font-weight: 900;}
+    .pricing-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;}
+    .pricing-card {background: linear-gradient(135deg, #203a43 0%, #2c5364 100%); padding: 40px; border-radius: 20px; text-align: center; box-shadow: 0 10px 40px rgba(246, 185, 59, 0.2); transition: all 0.3s ease; border: 2px solid transparent;}
+    .pricing-card:hover {transform: translateY(-8px); border-color: #f6b93b; box-shadow: 0 15px 50px rgba(246, 185, 59, 0.35);}
+    .pricing-card.featured {border-color: #26de81; box-shadow: 0 15px 50px rgba(38, 222, 129, 0.3);}
+    .pricing-card h3 {font-size: 1.8rem; color: #f6b93b; margin-bottom: 15px; font-weight: 800;}
+    .pricing-card .price {font-size: 3rem; color: #26de81; font-weight: 900; margin: 20px 0;}
+    .pricing-card ul {list-style: none; margin: 30px 0; text-align: right;}
+    .pricing-card li {padding: 12px 0; font-size: 1.1rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1);}
+    .pricing-card li i {color: #26de81; margin-left: 10px;}
+    .faq {padding: 60px 0;}
+    .faq h2 {text-align: center; font-size: 2.3rem; color: #f6b93b; margin-bottom: 50px; font-weight: 900;}
+    .faq-item {background: #203a43; padding: 25px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 5px 20px rgba(38, 222, 129, 0.1);}
+    .faq-item h3 {font-size: 1.4rem; color: #26de81; margin-bottom: 15px; font-weight: 700;}
+    .faq-item p {font-size: 1.1rem; opacity: 0.9; line-height: 1.8;}
+    .testimonials {padding: 60px 0; background: rgba(21, 36, 59, 0.5);}
+    .testimonials h2 {text-align: center; font-size: 2.3rem; color: #26de81; margin-bottom: 50px; font-weight: 900;}
+    .testimonials-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;}
+    .testimonial-card {background: #15243b; padding: 30px; border-radius: 15px; box-shadow: 0 8px 30px rgba(246, 185, 59, 0.15);}
+    .testimonial-card p {font-size: 1.1rem; font-style: italic; margin-bottom: 20px; line-height: 1.8;}
+    .testimonial-card .author {color: #f6b93b; font-weight: 700; font-style: normal;}
+    .stats {padding: 60px 0; text-align: center;}
+    .stats h2 {font-size: 2.3rem; color: #f6b93b; margin-bottom: 50px; font-weight: 900;}
+    .stats-grid {display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;}
+    .stat-item {background: #26de81; padding: 35px 30px; border-radius: 20px; min-width: 200px; box-shadow: 0 10px 40px rgba(38, 222, 129, 0.3);}
+    .stat-item .number {font-size: 3rem; font-weight: 900; color: #fff; display: block; margin-bottom: 10px;}
+    .stat-item .label {font-size: 1.1rem; color: #0f2027; font-weight: 700;}
+    footer {background: #15243b; padding: 40px 0 20px; text-align: center;}
+    footer p {font-size: 1.1rem; opacity: 0.9;}
+    .whatsapp-float {position: fixed; bottom: 30px; left: 30px; z-index: 999;}
+    .whatsapp-float a {display: flex; align-items: center; gap: 10px; background: #25d366; color: #fff; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-size: 1.1rem; font-weight: 900; box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5); transition: all 0.3s ease;}
+    .whatsapp-float a:hover {background: #1fb856; transform: translateY(-3px); box-shadow: 0 12px 40px rgba(37, 211, 102, 0.7);}
+    @media (max-width: 768px) {header h1 {font-size: 1.8rem;} .hero h2 {font-size: 2rem;} .hero p {font-size: 1.1rem;} .cta-button {padding: 15px 35px; font-size: 1.1rem;} .features h2, .pricing h2, .faq h2, .testimonials h2, .stats h2 {font-size: 1.8rem;}}
+  </style>
 </head>
-<body>
-<!-- باقي بقية التصميم العصري والمحتوى الثري -->
+<body>  <header>
+    <div class="container">
+      <h1>🌐 خدمة تصميم وبرمجة المواقع الإلكترونية الاحترافية</h1>
+      <p>مواقع عصرية، سريعة، متجاوبة وتحقق أهدافك بنجاح</p>
+    </div>
+  </header>  <section class="hero">
+    <div class="container">
+      <h2>اجعل موقعك واجهة أعمالك الذكية</h2>
+      <p>نبني مواقع إلكترونية مذهلة، متجاوبة لكل الأجهزة، آمنة وسريعة ومهيأة لمحركات البحث (SEO) بدعم فني فعلي من فريقنا المعتمد.</p>
+      <a href="https://wa.me/201110760081?text=أريد%20بدء%20تصميم%20موقع" class="cta-button"><i class="fab fa-whatsapp"></i> ابدأ مشروعك الآن</a>
+    </div>
+  </section>  <section class="stats">
+    <div class="container">
+      <h2>📈 نتائج تصميم المواقع</h2>
+      <div class="stats-grid">
+        <div class="stat-item"><span class="number">+350</span><span class="label">مشروع مكتمل</span></div>
+        <div class="stat-item"><span class="number">99%</span><span class="label">مواقع سريعة ومستقرة</span></div>
+        <div class="stat-item"><span class="number">100%</span><span class="label">توافق كامل للجوال</span></div>
+        <div class="stat-item"><span class="number">5 نجوم</span><span class="label">آراء المستخدمين</span></div>
+      </div>
+    </div>
+  </section>  <section class="features">
+    <div class="container">
+      <h2>✨ ماذا نقدم في خدمة تصميم المواقع؟</h2>
+      <div class="features-grid">
+        <div class="feature-card"><i class="fas fa-lightbulb"></i><h3>تصميم واجهات عصرية</h3><p>نصمم واجهات مستخدم حديثة متوافقة مع أحدث توجهات UX/UI وتناسب ذوقك وعلامتك التجارية.</p></div>
+        <div class="feature-card"><i class="fas fa-mobile-alt"></i><h3>توافق كامل مع الجوال</h3><p>كل المواقع متجاوبة بالكامل وتوفر تجربة مثالية على جميع الأجهزة والشاشات.</p></div>
+        <div class="feature-card"><i class="fas fa-bolt"></i><h3>سرعة تحميل عالية</h3><p>تحسين كامل لمؤشرات الأداء لضمان تحميل سريع ونتيجة ممتازة في Google PageSpeed.</p></div>
+        <div class="feature-card"><i class="fas fa-shield-alt"></i><h3>أمان وخصوصية</h3><p>تطبيق أحدث بروتوكولات الحماية وتشفير البيانات وحماية الموقع من الهجمات.</p></div>
+        <div class="feature-card"><i class="fas fa-search"></i><h3>تهيئة SEO</h3><p>بناء الموقع متوافق مع سيو، تهيئة الروابط والهيكلة والفحص قبل نشر الموقع لضمان تصدر نتائج البحث.</p></div>
+        <div class="feature-card"><i class="fas fa-headset"></i><h3>دعم فني مباشر</h3><p>دعم وتقارير دورية وتحديثات مستمرة وتواصل عبر واتساب دائماً.</p></div>
+      </div>
+    </div>
+  </section>  <section class="pricing">
+    <div class="container">
+      <h2>💰 باقات تصميم المواقع</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>🌟 باقة الدومين الشخصي</h3><div class="price">$499</div><p>لموقع شخصي/سيرة ذاتية</p>
+          <ul><li><i class="fas fa-check"></i> صفحة واحدة بتصميم عصري</li><li><i class="fas fa-check"></i> سرعة تحميل عالية</li><li><i class="fas fa-check"></i> سيو أساسي</li><li><i class="fas fa-check"></i> دعم فني شهر واحد</li></ul>
+          <a href="https://wa.me/201110760081?text=أريد%20باقة%20تصميم%20شخصي" class="cta-button">اختر الباقة</a>
+        </div>
+        <div class="pricing-card featured">
+          <h3>🚀 باقة الأعمال الصغيرة</h3><div class="price">$899</div><p>موقع شركة/مدونة/مشروع صغير</p>
+          <ul><li><i class="fas fa-check"></i> حتى 5 صفحات بتصميم عصري</li><li><i class="fas fa-check"></i> إيميل احترافي</li><li><i class="fas fa-check"></i> سيو متقدم</li><li><i class="fas fa-check"></i> دعم فني 3 شهور</li></ul>
+          <a href="https://wa.me/201110760081?text=أريد%20باقة%20تصميم%20أعمال" class="cta-button">الأكثر طلباً</a>
+        </div>
+        <div class="pricing-card">
+          <h3>🏆 باقة الشركات والمؤسسات</h3><div class="price">$1999</div><p>موقع متكامل لأي نشاط كبير</p>
+          <ul><li><i class="fas fa-check"></i> عدد صفحات غير محدودة</li><li><i class="fas fa-check"></i> تصميم خاص بالهوية</li><li><i class="fas fa-check"></i> تكامل مع خدمات أخرى</li><li><i class="fas fa-check"></i> دعم فني دائم/مدير حساب</li></ul>
+          <a href="https://wa.me/201110760081?text=أريد%20باقة%20تصميم%20شركة" class="cta-button">اختر الباقة</a>
+        </div>
+      </div>
+    </div>
+  </section>  <section class="testimonials">
+    <div class="container">
+      <h2>👥 آراء العملاء</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card"><p>"موقع سريع وسهل التحكم، والنتائج في Google ممتازة من أول شهر!"</p><div class="author">— فهد الزهراني، فريلانسر</div></div>
+        <div class="testimonial-card"><p>"التواصل مباشر ودعم احترافي، تم التنفيذ أسرع من المتوقع والجودة عالية."</p><div class="author">— ريم الجهني، صاحبة متجر إلكتروني</div></div>
+        <div class="testimonial-card"><p>"تم دمج استضافة وإيميل بشكل متكامل. خدمة فوق الممتاز."</p><div class="author">— أحمد الغامدي، مدير شركة تقنية</div></div>
+      </div>
+    </div>
+  </section>  <section class="faq">
+    <div class="container">
+      <h2>❓ الأسئلة الشائعة</h2>
+      <div class="faq-item"><h3>كم يستغرق بناء الموقع؟</h3><p>من 7 إلى 20 يوم عمل حسب حجم المشروع ونوع الموقع والمزايا المطلوبة.</p></div>
+      <div class="faq-item"><h3>هل الموقع آمن وسريع؟</h3><p>كل موقع يبنى بأحدث تقنيات الحماية وسرعة التحميل وفق المعايير الحديثة ويخضع للفحص الكامل.</p></div>
+      <div class="faq-item"><h3>هل الموقع متوافق مع الجوال؟</h3><p>جميع التصاميم متجاوبة كلياً وتعمل بأداء ممتاز على جميع الأجهزة والشاشات.</p></div>
+      <div class="faq-item"><h3>هل توفرون صيانة وتحديثات؟</h3><p>نعم، نقدم خطط صيانة وتحديثات دورية وحل أي مشاكل فنية فوراً.</p></div>
+      <div class="faq-item"><h3>هل يمكن إضافة متجر/حجز/بوابة دفع؟</h3><p>طبعاً، يمكن دمج جميع الوظائف الإضافية حسب احتياجك ومجال عملك.</p></div>
+    </div>
+  </section>  <section class="hero" style="background: rgba(21, 36, 59, 0.5); padding: 60px 0;">
+    <div class="container">
+      <h2>🚀 جاهز لتطوير موقعك؟</h2><p>ابدأ الآن واطلب استشارة مجانية وتصميم مخصص يناسبك!</p>
+      <a href="https://wa.me/201110760081?text=أريد%20استشارة%20مجانية%20عن%20تصميم%20المواقع" class="cta-button"><i class="fab fa-whatsapp"></i> استشارة مجانية الآن</a>
+    </div>
+  </section>  <footer>
+    <div class="container">
+      <p>جميع الحقوق محفوظة © مؤسسة إعلانات العرب 2025</p>
+      <p style="margin-top:10px;">
+        <a href="../index.html" style="color:#26de81;text-decoration:none;margin:0 10px;">الرئيسية</a>
+        <a href="index.html" style="color:#26de81;text-decoration:none;margin:0 10px;">جميع الخدمات</a>
+        <a href="../privacy-policy.html" style="color:#26de81;text-decoration:none;margin:0 10px;">سياسة الخصوصية</a>
+      </p>
+    </div>
+  </footer>
+  <div class="whatsapp-float">
+    <a href="https://wa.me/201110760081?text=أريد%20الاستفسار%20عن%20خدمات%20تصميم%20المواقع"><i class="fab fa-whatsapp" style="font-size:1.5rem;"></i><span>واتساب فوري</span></a>
+  </div>
 </body>
 </html>
