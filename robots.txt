@@ -1,30 +1,20 @@
 # Robots.txt for ArabSad.com - مؤسسة إعلانات العرب
-# Updated: 2025-11-02 - Ultra SEO Optimized
-
 User-agent: *
-Allow: /
-
-# السماح بفهرسة جميع الصفحات المهمة
+Allow: /services/index.html
+Allow: /services/google-ads.html
+Allow: /services/seo.html
+Allow: /services/website-design.html
+Allow: /services/ecommerce.html
+Allow: /services/social-management.html
+Allow: /services/social-media-ads.html
 Allow: /index.html
 Allow: /blog/
-Allow: /blog/*.html
-Allow: /sa.html
-Allow: /ae.html
-Allow: /kw.html
-Allow: /qa.html
-Allow: /bh.html
-Allow: /om.html
-Allow: /services/
-Allow: /*-service.html
 Allow: /assets/css/
 Allow: /assets/js/
 Allow: /assets/images/
-
-# حظر فهرسة الملفات الغير ضرورية
-Disallow: /THEME-*.css
-Disallow: /STYLE-*.css
-Disallow: /PREMIUM-*.css
-Disallow: /FIXED-*.css
+Disallow: /404.html
+Disallow: /500.html
+Disallow: /*-service.html
 Disallow: /*.md
 Disallow: /NOTICE-*
 Disallow: /IMPROVEMENTS-*
@@ -37,55 +27,26 @@ Disallow: /chatbot*.html
 Disallow: /shared-*.html
 Disallow: /whatsapp-button.html
 Disallow: /index-professional.html
-
-# حظر فهرسة صفحات الأخطاء
-Disallow: /404.html
-Disallow: /500.html
-
-# أرشفة الموقع وقاعدة البيانات
-# Main Sitemap - الفهرس الرئيسي
 Sitemap: https://arabsad.com/sitemap.xml
-
-# Google Search Console - الفهرسة المتقدمة
-# Crawl-delay: 1
-
-# تحسينات الفهرسة لمحركات بحث متخصصة:
-
-# Bing
 User-agent: bingbot
 Allow: /
 Crawl-delay: 1
-
-# Yandex
 User-agent: Yandex
 Allow: /
 Crawl-delay: 1
-
-# فيسبوك
 User-agent: facebookexternalhit
 Allow: /
-
-# تويتر
 User-agent: Twitterbot
 Allow: /
-
-# لينكد إن
 User-agent: LinkedInBot
 Allow: /
-
-# WhatsApp Link Preview
 User-agent: WhatsApp
 Allow: /
-
-# تقييد زاحفي الويب الضارين والمحتوى المدفوع
 User-agent: AhrefsBot
 Disallow: /
-
 User-agent: MJ12bot
 Disallow: /
-
 User-agent: SemrushBot
 Disallow: /
-
 User-agent: DotBot
 Disallow: /
