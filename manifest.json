@@ -1,119 +1,35 @@
 {
-  "name": "🚀 مؤسسة إعلانات العرب - الوكالة الرقمية #1",
+  "name": "مؤسسة إعلانات العرب للتسويق الرقمي",
   "short_name": "إعلانات العرب",
-  "description": "الوكالة الرقمية #1 في الخليج - Google Ads والسوشيال ميديا وSEO والمتاجر الإلكترونية مع ضمان النتائج",
-  "start_url": "/",
-  "scope": "/",
-  "display": "standalone",
-  "orientation": "portrait-primary",
-  "theme_color": "#3b82f6",
-  "background_color": "#ffffff",
+  "description": "وكالة متخصصة في التسويق الرقمي وإعلانات جوجل والسوشيال وتصميم المواقع والمتاجر.",
   "lang": "ar",
-  "dir": "rtl",
-  
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0f2027",
+  "theme_color": "#26de81",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "16x16 32x32",
-      "type": "image/x-icon",
-      "purpose": "any"
+      "src": "/assets/images/logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
     },
     {
-      "src": "favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png",
-      "purpose": "any"
+      "src": "/assets/images/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
-  
+  "orientation": "portrait",
+  "categories": ["business","marketing"],
   "screenshots": [
-    {
-      "src": "assets/images/desktop-screenshot.webp",
-      "sizes": "1920x1080",
-      "type": "image/webp",
-      "form_factor": "wide",
-      "label": "واجهة الحاسوب - مؤسسة إعلانات العرب"
-    },
-    {
-      "src": "assets/images/mobile-screenshot.webp",
-      "sizes": "430x932",
-      "type": "image/webp",
-      "form_factor": "narrow",
-      "label": "واجهة الجوال - مؤسسة إعلانات العرب"
-    }
+    {"src": "assets/images/desktop-screenshot.webp","sizes": "1920x1080","type": "image/webp"},
+    {"src": "assets/images/mobile-screenshot.webp","sizes": "430x932","type": "image/webp"}
   ],
-  
-  "categories": [
-    "business",
-    "productivity",
-    "marketing",
-    "finance"
-  ],
-  
   "shortcuts": [
-    {
-      "name": "🎯 Google Ads",
-      "short_name": "Google Ads",
-      "description": "خدمة Google Ads مع ضمان النتائج",
-      "url": "/google-ads-service.html",
-      "icons": [{
-        "src": "favicon.svg",
-        "sizes": "96x96"
-      }]
-    },
-    {
-      "name": "📱 سوشيال ميديا",
-      "short_name": "سوشيال ميديا",
-      "description": "خدمات إدارة ونمو السوشيال ميديا",
-      "url": "/social-media-service.html",
-      "icons": [{
-        "src": "favicon.svg",
-        "sizes": "96x96"
-      }]
-    },
-    {
-      "name": "📝 المدونة",
-      "short_name": "المدونة",
-      "description": "مقالات ونصائح تسويقية متخصصة",
-      "url": "/blog/",
-      "icons": [{
-        "src": "favicon.svg",
-        "sizes": "96x96"
-      }]
-    },
-    {
-      "name": "💬 تواصل فوري",
-      "short_name": "تواصل",
-      "description": "تواصل معنا عبر واتساب لاستشارة مجانية",
-      "url": "https://wa.me/201110760081?text=مرحباً! أريد استشارة فورية 🚀",
-      "icons": [{
-        "src": "favicon.svg",
-        "sizes": "96x96"
-      }]
-    }
-  ],
-  
-  "prefer_related_applications": false,
-  "edge_side_panel": {
-    "preferred_width": 400
-  },
-  
-  "launch_handler": {
-    "client_mode": "navigate-existing"
-  },
-  
-  "handle_links": "preferred",
-  
-  "protocol_handlers": [
-    {
-      "protocol": "web+arabsad",
-      "url": "/contact?utm_source=pwa&ref=%s"
-    }
+    { "name": "Google Ads", "short_name": "Google Ads", "url": "/services/google-ads.html", "description": "خدمة Google Ads رقم 1"},
+    { "name": "SEO", "short_name": "SEO", "url": "/services/seo.html", "description": "خدمات تحسين السيو"},
+    { "name": "Website Design", "short_name": "Website Design", "url": "/services/website-design.html", "description": "تصميم وبرمجة مواقع سريعة" },
+    { "name": "Ecommerce", "short_name": "Ecommerce", "url": "/services/ecommerce.html", "description": "تصميم متاجر إلكترونية عالية التحويل" },
+    { "name": "Social Media Management", "short_name": "Social Media", "url": "/services/social-management.html", "description": "إدارة تواصل احترافية" }
   ]
 }
