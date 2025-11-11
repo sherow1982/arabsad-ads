@@ -9,24 +9,21 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        
-      - name: Deploy
+      - name: Deploy (force rebuild)
         run: |
           echo "Forcing GitHub Pages deployment"
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          
       - name: Touch files to trigger rebuild
         run: |
           touch services/google-ads.html
           touch services/seo.html
           git add .
-          git diff --quiet && git diff --staged --quiet || git commit -m "Force rebuild [skip ci]"
-          
-Permissions:
-  contents: write
-  pages: write
-  id-token: write
+          git diff --quiet && git diff --staged --quiet || git commit -m "Force rebuild by deploy action [skip ci]"
