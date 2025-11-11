@@ -3,33 +3,61 @@
   "short_name": "إعلانات العرب",
   "description": "وكالة متخصصة في التسويق الرقمي وإعلانات جوجل والسوشيال وتصميم المواقع والمتاجر.",
   "lang": "ar",
+  "dir": "rtl",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#0f2027",
   "theme_color": "#26de81",
   "icons": [
     {
-      "src": "/assets/images/logo-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
     },
     {
-      "src": "/assets/images/logo-512.png",
-      "sizes": "512x512",
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
       "type": "image/png"
     }
   ],
-  "orientation": "portrait",
-  "categories": ["business","marketing"],
-  "screenshots": [
-    {"src": "assets/images/desktop-screenshot.webp","sizes": "1920x1080","type": "image/webp"},
-    {"src": "assets/images/mobile-screenshot.webp","sizes": "430x932","type": "image/webp"}
-  ],
+  "orientation": "portrait-primary",
+  "categories": ["business", "marketing", "productivity"],
   "shortcuts": [
-    { "name": "Google Ads", "short_name": "Google Ads", "url": "/services/google-ads.html", "description": "خدمة Google Ads رقم 1"},
-    { "name": "SEO", "short_name": "SEO", "url": "/services/seo.html", "description": "خدمات تحسين السيو"},
-    { "name": "Website Design", "short_name": "Website Design", "url": "/services/website-design.html", "description": "تصميم وبرمجة مواقع سريعة" },
-    { "name": "Ecommerce", "short_name": "Ecommerce", "url": "/services/ecommerce.html", "description": "تصميم متاجر إلكترونية عالية التحويل" },
-    { "name": "Social Media Management", "short_name": "Social Media", "url": "/services/social-management.html", "description": "إدارة تواصل احترافية" }
+    {
+      "name": "Google Ads",
+      "short_name": "Google Ads",
+      "url": "/services/google-ads.html",
+      "description": "خدمة Google Ads رقم 1"
+    },
+    {
+      "name": "SEO",
+      "short_name": "SEO",
+      "url": "/services/seo.html",
+      "description": "خدمات تحسين السيو"
+    },
+    {
+      "name": "Website Design",
+      "short_name": "Website Design",
+      "url": "/services/website-design.html",
+      "description": "تصميم وبرمجة مواقع سريعة"
+    },
+    {
+      "name": "Ecommerce",
+      "short_name": "Ecommerce",
+      "url": "/services/ecommerce.html",
+      "description": "تصميم متاجر إلكترونية عالية التحويل"
+    },
+    {
+      "name": "Social Media Management",
+      "short_name": "Social Media",
+      "url": "/services/social-management.html",
+      "description": "إدارة تواصل احترافية"
+    }
   ]
 }
