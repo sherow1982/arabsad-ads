@@ -11,6 +11,10 @@
   <meta property="og:image" content="https://arabsad.com/assets/images/og-seo.jpg">
   <meta property="og:url" content="https://arabsad.com/services/seo.html">
   <meta property="og:type" content="website">
+  <link rel="canonical" href="https://arabsad.com/services/seo.html">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -28,41 +32,609 @@
       }]
     },
     "areaServed": "الوطن العربي والخليج",
-    "serviceType": "SEO تحسين نتائج البحث، تدقيق الكلمات المفتاحية، بناء الروابط الداخلية والخارجية، تدعيم الصفحات لأفضل ظهور في جوجل، تحليلات أداء شهرية",
-    "url": "https://arabsad.com/services/seo.html",
-    "image": "https://arabsad.com/assets/images/og-seo.jpg",
-    "faq": [
-      {
-        "@type": "Question",
-        "name": "كم تحتاج خدمة السيو حتى تظهر النتائج؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "تبدأ التحسينات بإظهار نتائج فعّالة خلال 3 إلى 8 أسابيع كمتوسط حسب المنافسة."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "هل ألزم بتغيير محتوى الموقع؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "يتم التدقيق وكتابة محتوى جديد فقط عند الحاجة، دون الإضرار بهوية الموقع."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "هل الخدمة تشمل بناء روابط؟",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "نعم، بناء روابط داخلية وخارجية عالية الجودة جزء أساسي من الخدمة."
-        }
-      }
-    ]
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "180"
+    }
   }
   </script>
-  <link rel="canonical" href="https://arabsad.com/services/seo.html">
-  <style>/* جميع تنسيقات التصميم العصري السابقة */</style>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+      color: #fff;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    header {
+      background: #15243b;
+      box-shadow: 0 4px 30px rgba(26, 26, 46, 0.15);
+      padding: 30px 0;
+      text-align: center;
+    }
+    
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: #f6b93b;
+      margin-bottom: 10px;
+      letter-spacing: -1px;
+    }
+    
+    header p {
+      font-size: 1.2rem;
+      color: #26de81;
+      opacity: 0.95;
+    }
+    
+    .hero {
+      padding: 80px 0;
+      text-align: center;
+    }
+    
+    .hero h2 {
+      font-size: 2.8rem;
+      color: #26de81;
+      margin-bottom: 20px;
+      font-weight: 900;
+    }
+    
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      opacity: 0.9;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background: #25d366;
+      color: #fff;
+      padding: 18px 50px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 900;
+      box-shadow: 0 10px 40px rgba(37, 211, 102, 0.4);
+      transition: all 0.3s ease;
+    }
+    
+    .cta-button:hover {
+      background: #1fb856;
+      transform: translateY(-3px);
+      box-shadow: 0 15px 50px rgba(37, 211, 102, 0.6);
+    }
+    
+    .features {
+      padding: 60px 0;
+    }
+    
+    .features h2 {
+      text-align: center;
+      font-size: 2.3rem;
+      color: #f6b93b;
+      margin-bottom: 50px;
+      font-weight: 900;
+    }
+    
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    
+    .feature-card {
+      background: #203a43;
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(38, 222, 129, 0.15);
+      transition: all 0.3s ease;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(38, 222, 129, 0.25);
+    }
+    
+    .feature-card i {
+      font-size: 3rem;
+      color: #26de81;
+      margin-bottom: 20px;
+    }
+    
+    .feature-card h3 {
+      font-size: 1.6rem;
+      color: #f6b93b;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    
+    .feature-card p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      line-height: 1.8;
+    }
+    
+    .pricing {
+      padding: 60px 0;
+      background: rgba(21, 36, 59, 0.5);
+    }
+    
+    .pricing h2 {
+      text-align: center;
+      font-size: 2.3rem;
+      color: #26de81;
+      margin-bottom: 50px;
+      font-weight: 900;
+    }
+    
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    
+    .pricing-card {
+      background: linear-gradient(135deg, #203a43 0%, #2c5364 100%);
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(246, 185, 59, 0.2);
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+    
+    .pricing-card:hover {
+      transform: translateY(-8px);
+      border-color: #f6b93b;
+      box-shadow: 0 15px 50px rgba(246, 185, 59, 0.35);
+    }
+    
+    .pricing-card.featured {
+      border-color: #26de81;
+      box-shadow: 0 15px 50px rgba(38, 222, 129, 0.3);
+    }
+    
+    .pricing-card h3 {
+      font-size: 1.8rem;
+      color: #f6b93b;
+      margin-bottom: 15px;
+      font-weight: 800;
+    }
+    
+    .pricing-card .price {
+      font-size: 3rem;
+      color: #26de81;
+      font-weight: 900;
+      margin: 20px 0;
+    }
+    
+    .pricing-card ul {
+      list-style: none;
+      margin: 30px 0;
+      text-align: right;
+    }
+    
+    .pricing-card li {
+      padding: 12px 0;
+      font-size: 1.1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .pricing-card li i {
+      color: #26de81;
+      margin-left: 10px;
+    }
+    
+    .faq {
+      padding: 60px 0;
+    }
+    
+    .faq h2 {
+      text-align: center;
+      font-size: 2.3rem;
+      color: #f6b93b;
+      margin-bottom: 50px;
+      font-weight: 900;
+    }
+    
+    .faq-item {
+      background: #203a43;
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 20px rgba(38, 222, 129, 0.1);
+    }
+    
+    .faq-item h3 {
+      font-size: 1.4rem;
+      color: #26de81;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    
+    .faq-item p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      line-height: 1.8;
+    }
+    
+    .testimonials {
+      padding: 60px 0;
+      background: rgba(21, 36, 59, 0.5);
+    }
+    
+    .testimonials h2 {
+      text-align: center;
+      font-size: 2.3rem;
+      color: #26de81;
+      margin-bottom: 50px;
+      font-weight: 900;
+    }
+    
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    
+    .testimonial-card {
+      background: #15243b;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(246, 185, 59, 0.15);
+    }
+    
+    .testimonial-card p {
+      font-size: 1.1rem;
+      font-style: italic;
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+    
+    .testimonial-card .author {
+      color: #f6b93b;
+      font-weight: 700;
+      font-style: normal;
+    }
+    
+    .stats {
+      padding: 60px 0;
+      text-align: center;
+    }
+    
+    .stats h2 {
+      font-size: 2.3rem;
+      color: #f6b93b;
+      margin-bottom: 50px;
+      font-weight: 900;
+    }
+    
+    .stats-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+    
+    .stat-item {
+      background: #26de81;
+      padding: 35px 30px;
+      border-radius: 20px;
+      min-width: 200px;
+      box-shadow: 0 10px 40px rgba(38, 222, 129, 0.3);
+    }
+    
+    .stat-item .number {
+      font-size: 3rem;
+      font-weight: 900;
+      color: #fff;
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    .stat-item .label {
+      font-size: 1.1rem;
+      color: #0f2027;
+      font-weight: 700;
+    }
+    
+    footer {
+      background: #15243b;
+      padding: 40px 0 20px;
+      text-align: center;
+    }
+    
+    footer p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      z-index: 999;
+    }
+    
+    .whatsapp-float a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #25d366;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 900;
+      box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+      transition: all 0.3s ease;
+    }
+    
+    .whatsapp-float a:hover {
+      background: #1fb856;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(37, 211, 102, 0.7);
+    }
+    
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      
+      .hero h2 {
+        font-size: 2rem;
+      }
+      
+      .hero p {
+        font-size: 1.1rem;
+      }
+      
+      .cta-button {
+        padding: 15px 35px;
+        font-size: 1.1rem;
+      }
+      
+      .features h2,
+      .pricing h2,
+      .faq h2,
+      .testimonials h2,
+      .stats h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
 </head>
 <body>
-<!-- باقي المحتوى العصري المحسن الموجود بالفعل -->
+  <header>
+    <div class="container">
+      <h1>🔍 خدمة تحسين محركات البحث SEO</h1>
+      <p>تصدر نتائج البحث وحقق زيارات عضوية مستدامة</p>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>اجعل موقعك في الصفحة الأولى من جوجل</h2>
+      <p>نساعدك على تحسين ظهور موقعك في نتائج البحث، زيادة الزيارات العضوية المجانية، وتحقيق نمو مستدام في أعمالك. فريقنا من خبراء SEO معتمدين وجاهزون لرفع ترتيب موقعك.</p>
+      <a href="https://wa.me/201110760081?text=أريد%20تحسين%20SEO%20لموقعي" class="cta-button">
+        <i class="fab fa-whatsapp"></i> احصل على تحليل مجاني
+      </a>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="container">
+      <h2>📊 نتائجنا في السيو</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="number">+300</span>
+          <span class="label">موقع محسّن</span>
+        </div>
+        <div class="stat-item">
+          <span class="number">850%</span>
+          <span class="label">متوسط زيادة الزيارات</span>
+        </div>
+        <div class="stat-item">
+          <span class="number">TOP 3</span>
+          <span class="label">متوسط الترتيب</span>
+        </div>
+        <div class="stat-item">
+          <span class="number">90%</span>
+          <span class="label">معدل النجاح</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h2>✨ ماذا نقدم في خدمة السيو؟</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="fas fa-search"></i>
+          <h3>تحليل الكلمات المفتاحية</h3>
+          <p>دراسة شاملة للكلمات الأكثر بحثاً في مجالك واختيار الكلمات الأنسب لاستهداف عملائك المحتملين بدقة عالية.</p>
+        </div>
+        
+        <div class="feature-card">
+          <i class="fas fa-code"></i>
+          <h3>تحسين تقني للموقع</h3>
+          <p>إصلاح جميع المشاكل التقنية، تحسين السرعة، تحسين الأكواد، وضمان توافق الموقع مع معايير جوجل.</p>
+        </div>
+        
+        <div class="feature-card">
+          <i class="fas fa-edit"></i>
+          <h3>كتابة محتوى SEO</h3>
+          <p>إنشاء محتوى عالي الجودة محسّن لمحركات البحث يجذب الزوار ويحقق ترتيب أعلى في النتائج.</p>
+        </div>
+        
+        <div class="feature-card">
+          <i class="fas fa-link"></i>
+          <h3>بناء روابط خارجية</h3>
+          <p>استراتيجية بناء روابط خلفية عالية الجودة من مواقع موثوقة لتعزيز سلطة موقعك.</p>
+        </div>
+        
+        <div class="feature-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>تحسين للجوال</h3>
+          <p>ضمان ظهور مثالي لموقعك على جميع الأجهزة المحمولة والتوافق مع معايير Mobile-First.</p>
+        </div>
+        
+        <div class="feature-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>تقارير أداء دورية</h3>
+          <p>تقارير شاملة توضح تطور ترتيب موقعك، الزيارات، الكلمات المفتاحية، والتوصيات للتحسين المستمر.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing">
+    <div class="container">
+      <h2>💰 باقات تحسين السيو</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>🌟 باقة البداية</h3>
+          <div class="price">$399</div>
+          <p>للشهر</p>
+          <ul>
+            <li><i class="fas fa-check"></i> تدقيق SEO شامل</li>
+            <li><i class="fas fa-check"></i> 10 كلمات مفتاحية</li>
+            <li><i class="fas fa-check"></i> تحسين 5 صفحات</li>
+            <li><i class="fas fa-check"></i> تقرير شهري</li>
+            <li><i class="fas fa-check"></i> دعم أساسي</li>
+          </ul>
+          <a href="https://wa.me/201110760081?text=أريد%20باقة%20SEO%20البداية" class="cta-button">اختر الباقة</a>
+        </div>
+        
+        <div class="pricing-card featured">
+          <h3>🚀 باقة النمو</h3>
+          <div class="price">$699</div>
+          <p>للشهر</p>
+          <ul>
+            <li><i class="fas fa-check"></i> تدقيق SEO متقدم</li>
+            <li><i class="fas fa-check"></i> 25 كلمة مفتاحية</li>
+            <li><i class="fas fa-check"></i> تحسين 15 صفحة</li>
+            <li><i class="fas fa-check"></i> كتابة 4 مقالات</li>
+            <li><i class="fas fa-check"></i> بناء 15 رابط</li>
+            <li><i class="fas fa-check"></i> تقرير أسبوعي</li>
+          </ul>
+          <a href="https://wa.me/201110760081?text=أريد%20باقة%20SEO%20النمو" class="cta-button">الأكثر طلباً</a>
+        </div>
+        
+        <div class="pricing-card">
+          <h3>🏆 باقة الاحتراف</h3>
+          <div class="price">$1299</div>
+          <p>للشهر</p>
+          <ul>
+            <li><i class="fas fa-check"></i> تدقيق SEO كامل</li>
+            <li><i class="fas fa-check"></i> كلمات مفتاحية غير محدودة</li>
+            <li><i class="fas fa-check"></i> تحسين شامل للموقع</li>
+            <li><i class="fas fa-check"></i> كتابة 8 مقالات</li>
+            <li><i class="fas fa-check"></i> بناء 30 رابط</li>
+            <li><i class="fas fa-check"></i> مدير حساب مخصص</li>
+          </ul>
+          <a href="https://wa.me/201110760081?text=أريد%20باقة%20SEO%20الاحتراف" class="cta-button">اختر الباقة</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2>👥 قصص نجاح عملائنا</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p>"ارتفع ترتيب موقعي من الصفحة 5 إلى الصفحة الأولى في 4 أشهر. زيارات مضاعفة ومبيعات حقيقية."</p>
+          <div class="author">— خالد المنصور، صاحب متجر إلكتروني</div>
+        </div>
+        
+        <div class="testimonial-card">
+          <p>"استراتيجية سيو احترافية وتقارير واضحة. أصبحنا نظهر في أول 3 نتائج لأهم الكلمات."</p>
+          <div class="author">— نورة الشمري، مديرة تسويق</div>
+        </div>
+        
+        <div class="testimonial-card">
+          <p>"زيادة 700% في الزيارات العضوية خلال 6 أشهر. خدمة استثنائية ودعم مستمر."</p>
+          <div class="author">— عمر الدوسري، مالك شركة خدمات</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container">
+      <h2>❓ الأسئلة الشائعة</h2>
+      
+      <div class="faq-item">
+        <h3>كم تحتاج خدمة السيو حتى تظهر النتائج؟</h3>
+        <p>تبدأ التحسينات بإظهار نتائج فعّالة خلال 3 إلى 8 أسابيع كمتوسط، وتستمر النتائج بالتحسن على مدى 6-12 شهراً للحصول على أفضل النتائج المستدامة.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>هل ألزم بتغيير محتوى الموقع؟</h3>
+        <p>يتم التدقيق وكتابة محتوى جديد فقط عند الحاجة، دون الإضرار بهوية الموقع. نحسّن المحتوى الموجود ونضيف محتوى جديد يدعم الكلمات المستهدفة.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>هل الخدمة تشمل بناء روابط؟</h3>
+        <p>نعم، بناء روابط داخلية وخارجية عالية الجودة جزء أساسي من الخدمة. نستخدم استراتيجيات White Hat فقط لضمان نتائج آمنة ومستدامة.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>هل تعملون على مواقع عربية وإنجليزية؟</h3>
+        <p>نعم، نقدم خدمات SEO للمواقع العربية والإنجليزية والمواقع ثنائية اللغة، مع فهم كامل لخصوصية كل سوق.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h3>هل يمكن استهداف مدن معينة في السيو؟</h3>
+        <p>نعم، نتخصص في Local SEO لاستهداف مدن ومناطق جغرافية محددة، مثالي للأعمال المحلية والعيادات والمحلات.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero" style="background: rgba(21, 36, 59, 0.5); padding: 60px 0;">
+    <div class="container">
+      <h2>🎯 جاهز لتصدر نتائج البحث؟</h2>
+      <p>احصل على تحليل مجاني لموقعك وخطة SEO مخصصة الآن</p>
+      <a href="https://wa.me/201110760081?text=أريد%20تحليل%20SEO%20مجاني%20لموقعي" class="cta-button">
+        <i class="fab fa-whatsapp"></i> تحليل مجاني الآن
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>جميع الحقوق محفوظة © مؤسسة إعلانات العرب 2025</p>
+      <p style="margin-top: 10px;">
+        <a href="../index.html" style="color: #26de81; text-decoration: none; margin: 0 10px;">الرئيسية</a>
+        <a href="index.html" style="color: #26de81; text-decoration: none; margin: 0 10px;">جميع الخدمات</a>
+        <a href="../privacy-policy.html" style="color: #26de81; text-decoration: none; margin: 0 10px;">سياسة الخصوصية</a>
+      </p>
+    </div>
+  </footer>
+
+  <div class="whatsapp-float">
+    <a href="https://wa.me/201110760081?text=أريد%20الاستفسار%20عن%20خدمات%20SEO">
+      <i class="fab fa-whatsapp" style="font-size: 1.5rem;"></i>
+      <span>واتساب فوري</span>
+    </a>
+  </div>
 </body>
 </html>
