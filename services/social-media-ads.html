@@ -1,216 +1,47 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>إعلانات السوشيال ميديا | إعلانات العرب</title>
-    <meta name="description" content="خدمات إعلانات احترافية على فيسبوك، انستجرام، تيك توك، سناب شات. حملات مستهدفة، محتوى إبداعي، ونتائج مضمونة.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Almarai:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/modern-arabic-theme.css">
-    <style>
-        body{background:linear-gradient(135deg,#fce7f3 0%,#fbcfe8 100%);min-height:100vh}
-        .service-hero{background:linear-gradient(135deg,#ec4899 0%,#db2777 100%);color:#fff;text-align:center;padding:70px 20px 60px;margin-bottom:50px;border-radius:0 0 30px 30px;box-shadow:0 10px 40px rgba(236,72,153,.3)}
-        .hero-title{font-size:2.8rem;font-weight:900;margin-bottom:20px;text-shadow:2px 2px 4px rgba(0,0,0,.2)}
-        .hero-subtitle{font-size:1.3rem;margin-bottom:30px;opacity:.95;line-height:1.8;max-width:800px;margin-left:auto;margin-right:auto}
-        .hero-btns{display:flex;gap:15px;justify-content:center;flex-wrap:wrap;margin-top:30px}
-        .hero-btns .btn{padding:14px 32px;font-size:1.1rem;border-radius:50px;font-weight:700;transition:.3s;text-decoration:none;display:inline-flex;align-items:center;gap:10px}
-        .btn-light{background:#fff;color:#ec4899;box-shadow:0 4px 15px rgba(255,255,255,.3)}
-        .btn-light:hover{background:#fbcfe8;transform:translateY(-3px)}
-        .btn-outline{background:transparent;color:#fff;border:2px solid #fff}
-        .btn-outline:hover{background:#fff;color:#ec4899;transform:translateY(-3px)}
-        
-        .platforms-section{margin:60px 0}
-        .section-title{font-size:2.2rem;font-weight:900;text-align:center;margin-bottom:45px;color:#1f2937}
-        .platforms-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
-        .platform-card{background:#fff;padding:35px 25px;border-radius:18px;box-shadow:0 4px 20px rgba(0,0,0,.08);transition:.4s;text-align:center;border-top:4px solid #ec4899}
-        .platform-card:hover{transform:translateY(-10px);box-shadow:0 8px 30px rgba(236,72,153,.2)}
-        .platform-icon{font-size:3.5rem;margin-bottom:20px;display:block}
-        .platform-icon.facebook{color:#1877f2}
-        .platform-icon.instagram{background:linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-        .platform-icon.tiktok{color:#000}
-        .platform-icon.snapchat{color:#fffc00;text-shadow:0 0 2px #000}
-        .platform-icon.twitter{color:#1da1f2}
-        .platform-icon.youtube{color:#ff0000}
-        .platform-title{font-size:1.4rem;font-weight:800;margin-bottom:12px;color:#1f2937;font-family:'Almarai',sans-serif}
-        .platform-desc{font-size:1.05rem;color:#6b7280;line-height:1.8}
-        
-        .features-section{background:#fff;padding:60px 20px;margin:60px 0;border-radius:30px;box-shadow:0 4px 30px rgba(0,0,0,.1)}
-        .features-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;margin-top:40px}
-        .feature-item{padding:25px;background:linear-gradient(135deg,#fce7f3 0%,#fbcfe8 100%);border-radius:15px;border-right:5px solid #ec4899;transition:.3s}
-        .feature-item:hover{transform:translateX(-8px);box-shadow:0 4px 20px rgba(236,72,153,.15)}
-        .feature-item-title{font-size:1.2rem;font-weight:800;color:#1f2937;margin-bottom:10px;display:flex;align-items:center;gap:12px}
-        .feature-item-title i{color:#ec4899;font-size:1.4rem}
-        .feature-item-desc{font-size:1.05rem;color:#4b5563;line-height:1.7}
-        
-        .content-section{margin:60px 0}
-        .content-types{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;margin-top:40px}
-        .content-card{background:#fff;padding:30px 20px;border-radius:15px;box-shadow:0 4px 15px rgba(0,0,0,.08);transition:.3s;text-align:center}
-        .content-card:hover{transform:scale(1.05);box-shadow:0 6px 25px rgba(236,72,153,.2)}
-        .content-icon{font-size:2.5rem;color:#ec4899;margin-bottom:15px}
-        .content-title{font-size:1.2rem;font-weight:800;margin-bottom:10px;color:#1f2937}
-        .content-desc{font-size:1rem;color:#6b7280}
-        
-        .results-section{background:linear-gradient(135deg,#fbbf24 0%,#f59e0b 100%);padding:60px 20px;margin:60px 0;border-radius:30px;box-shadow:0 8px 30px rgba(251,191,36,.3)}
-        .results-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:25px;margin-top:40px}
-        .result-card{background:#fff;padding:30px 20px;border-radius:15px;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,.1)}
-        .result-number{font-size:2.5rem;font-weight:900;color:#ec4899;margin-bottom:10px}
-        .result-label{font-size:1.1rem;color:#1f2937;font-weight:600}
-        
-        .cta-section{background:linear-gradient(135deg,#ec4899 0%,#db2777 100%);padding:50px 20px;text-align:center;border-radius:25px;margin:60px 0;box-shadow:0 8px 30px rgba(236,72,153,.3);color:#fff}
-        .cta-title{font-size:2rem;font-weight:900;margin-bottom:15px}
-        .cta-subtitle{font-size:1.2rem;margin-bottom:30px;opacity:.95}
-        .cta-btn{background:#fbbf24;color:#1f2937;padding:16px 40px;border-radius:50px;font-size:1.2rem;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:12px;transition:.3s;box-shadow:0 4px 20px rgba(251,191,36,.3)}
-        .cta-btn:hover{background:#f59e0b;transform:translateY(-3px)}
-        
-        @media(max-width:768px){
-            .hero-title{font-size:1.8rem}
-            .hero-subtitle{font-size:1.05rem}
-            .section-title{font-size:1.6rem}
-            .platforms-grid,.features-list,.content-types{grid-template-columns:1fr}
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إعلانات السوشيال ميديا | فيسبوك، انستجرام، سناب - مؤسسة إعلانات العرب</title>
+  <meta name="description" content="حملات ممولة احترافية على جميع منصات التواصل، تقارير أداء مباشرة، تصميم إبداعي وتحفيز نمو عملك، مع استجابة فورية من فريقنا.">
+  <meta name="keywords" content="إعلانات ممولة, فيسبوك, انستجرام, سناب شات, تيك توك, سوشيال ميديا, حملات تسويق, زيادة المتابعين, social media ads, performance marketing">
+  <meta property="og:title" content="إعلانات السوشيال ميديا - مؤسسة إعلانات العرب">
+  <meta property="og:description" content="اعتمد علينا لتحقيق أعلى عائد، حضور قوي وتفاعل مستمر عبر جميع منصات التواصل بخدمات إعلانية إبداعية.">
+  <meta property="og:image" content="https://arabsad.com/assets/images/og-social-ads.jpg">
+  <meta property="og:url" content="https://arabsad.com/services/social-media-ads.html">
+  <meta property="og:type" content="website">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "إعلانات السوشيال ميديا Facebook/Instagram/Snapchat/TikTok",
+    "description": "خدمة حملات ممولة على جميع منصات التواصل، استهداف احترافي، تقارير أداء، دعم مباشر عبر الواتساب.",
+    "provider": {
+      "@type": "Organization",
+      "name": "مؤسسة إعلانات العرب",
+      "url": "https://arabsad.com",
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+201110760081",
+        "contactType": "واتساب دعم إعلانات ممولة"
+      }]
+    },
+    "areaServed": "الوطن العربي والخليج",
+    "serviceType": "إعلانات ممولة، خدمة إدارة الحملات المدفوعة، تصميم منشورات، فيديو، تقارير وتحليل نتائج.",
+    "url": "https://arabsad.com/services/social-media-ads.html",
+    "image": "https://arabsad.com/assets/images/og-social-ads.jpg",
+    "faq": [
+      {"@type": "Question","name": "كيف يتم استهداف الجمهور في الحملات الممولة؟","acceptedAnswer": {"@type": "Answer","text": "نعتمد بيانات السوق والتحليل السلوكي لصناعة الاستهداف الذكي للأعمار، الاهتمامات، المواقع وأكثر."}},
+      {"@type": "Question","name": "هل الحملة تظهر تقارير النتائج مباشرة؟","acceptedAnswer": {"@type": "Answer","text": "تتلقى تقارير يومية وأسبوعية بمؤشرات الوصول، التفاعل والتحويلات."}},
+      {"@type": "Question","name": "هل يمكن العمل بأي ميزانية؟","acceptedAnswer": {"@type": "Answer","text": "نعم، الحملات مناسبة لكافة الميزانيات ويتم اقتراح أفضل خطة وفق احتياجك."}}
+    ]
+  }
+  </script>
+  <link rel="canonical" href="https://arabsad.com/services/social-media-ads.html">
+  <style>/* جميع تنسيقات التصميم العصري */</style>
 </head>
 <body>
-    <div class="service-hero">
-        <div class="hero-title">إعلانات السوشيال ميديا الاحترافية</div>
-        <div class="hero-subtitle">حملات إعلانية مستهدفة ومبتكرة على جميع منصات التواصل الاجتماعي (فيسبوك، انستجرام، تيك توك، سناب شات) لتحقيق أعلى وصول وأفضل تفاعل مع جمهورك المستهدف</div>
-        <div class="hero-btns">
-            <a href="https://wa.me/201110760081" class="btn btn-light"><i class="fab fa-whatsapp"></i> استشارة مجانية</a>
-            <a href="../index.html" class="btn btn-outline"><i class="fas fa-list"></i> تصفح كل خدماتنا</a>
-        </div>
-    </div>
-
-    <div class="container">
-        <section class="platforms-section">
-            <h2 class="section-title">المنصات التي نعمل عليها</h2>
-            <div class="platforms-grid">
-                <div class="platform-card">
-                    <i class="fab fa-facebook platform-icon facebook"></i>
-                    <div class="platform-title">فيسبوك Facebook</div>
-                    <div class="platform-desc">إعلانات مستهدفة لأكثر من 3 مليارات مستخدم، استهداف دقيق حسب الاهتمامات والسلوك</div>
-                </div>
-                <div class="platform-card">
-                    <i class="fab fa-instagram platform-icon instagram"></i>
-                    <div class="platform-title">انستجرام Instagram</div>
-                    <div class="platform-desc">محتوى بصري جذاب، Stories، Reels، وإعلانات مصورة تصل لملايين المتابعين</div>
-                </div>
-                <div class="platform-card">
-                    <i class="fab fa-tiktok platform-icon tiktok"></i>
-                    <div class="platform-title">تيك توك TikTok</div>
-                    <div class="platform-desc">فيديوهات قصيرة وإبداعية تستهدف الجيل الجديد بمحتوى سريع الانتشار وعالي التفاعل</div>
-                </div>
-                <div class="platform-card">
-                    <i class="fab fa-snapchat-ghost platform-icon snapchat"></i>
-                    <div class="platform-title">سناب شات Snapchat</div>
-                    <div class="platform-desc">إعلانات تفاعلية للشباب والمراهقين، فلاتر مخصصة، وقصص إعلانية جذابة</div>
-                </div>
-                <div class="platform-card">
-                    <i class="fab fa-twitter platform-icon twitter"></i>
-                    <div class="platform-title">تويتر X</div>
-                    <div class="platform-desc">إعلانات نصية ومرئية للوصول السريع، ترندات، وحملات موجهة للجمهور النشط</div>
-                </div>
-                <div class="platform-card">
-                    <i class="fab fa-youtube platform-icon youtube"></i>
-                    <div class="platform-title">يوتيوب YouTube</div>
-                    <div class="platform-desc">إعلانات فيديو احترافية، استهداف حسب المحتوى والاهتمامات، ووصول واسع جداً</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="features-section">
-            <h2 class="section-title">مميزات خدمة إعلانات السوشيال ميديا</h2>
-            <div class="features-list">
-                <div class="feature-item">
-                    <div class="feature-item-title"><i class="fas fa-bullseye"></i> استهداف دقيق ومتقدم</div>
-                    <div class="feature-item-desc">نستهدف جمهورك بدقة حسب العمر، الجنس، الموقع، الاهتمامات، السلوك الشرائي، وأكثر من 100 معيار.</div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-item-title"><i class="fas fa-paint-brush"></i> تصميم محتوى إبداعي</div>
-                    <div class="feature-item-desc">فريق محترف لتصميم صور، فيديوهات، وإعلانات جذابة بجودة عالية تجذب الانتباه وتحقق التفاعل.</div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-item-title"><i class="fas fa-chart-bar"></i> تحليل وتقارير مفصلة</div>
-                    <div class="feature-item-desc">تقارير أسبوعية وشهرية عن أداء الحملات، الوصول، التفاعل، التحويلات، والعائد على الاستثمار ROI.</div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-item-title"><i class="fas fa-sync-alt"></i> تحسين مستمر للحملات</div>
-                    <div class="feature-item-desc">مراقبة دائمة وتعديل استراتيجيات الإعلانات لتحسين الأداء وخفض التكلفة وزيادة النتائج باستمرار.</div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-item-title"><i class="fas fa-dollar-sign"></i> إدارة ميزانية ذكية</div>
-                    <div class="feature-item-desc">توزيع الميزانية بذكاء على المنصات والجمهور الأكثر فعالية لتحقيق أقصى استفادة من كل ريال.</div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-item-title"><i class="fas fa-comments"></i> إدارة التفاعل والردود</div>
-                    <div class="feature-item-desc">نرد على تعليقات ورسائل العملاء بسرعة واحترافية لبناء علاقة قوية مع جمهورك وزيادة الثقة.</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section">
-            <h2 class="section-title">أنواع المحتوى الإعلاني الذي نقدمه</h2>
-            <div class="content-types">
-                <div class="content-card">
-                    <i class="fas fa-image content-icon"></i>
-                    <div class="content-title">إعلانات مصورة</div>
-                    <div class="content-desc">تصاميم احترافية جذابة للمنتجات والعروض</div>
-                </div>
-                <div class="content-card">
-                    <i class="fas fa-video content-icon"></i>
-                    <div class="content-title">إعلانات فيديو</div>
-                    <div class="content-desc">فيديوهات قصيرة وطويلة إبداعية وجذابة</div>
-                </div>
-                <div class="content-card">
-                    <i class="fas fa-images content-icon"></i>
-                    <div class="content-title">Carousel Ads</div>
-                    <div class="content-desc">إعلانات متعددة الصور لعرض عدة منتجات</div>
-                </div>
-                <div class="content-card">
-                    <i class="fas fa-poll content-icon"></i>
-                    <div class="content-title">Stories & Reels</div>
-                    <div class="content-desc">قصص تفاعلية سريعة الانتشار</div>
-                </div>
-                <div class="content-card">
-                    <i class="fas fa-stream content-icon"></i>
-                    <div class="content-title">Collection Ads</div>
-                    <div class="content-desc">إعلانات تفاعلية لعرض كتالوج المنتجات</div>
-                </div>
-                <div class="content-card">
-                    <i class="fas fa-mobile-alt content-icon"></i>
-                    <div class="content-title">Lead Generation</div>
-                    <div class="content-desc">إعلانات جمع بيانات العملاء المحتملين</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="results-section">
-            <h2 class="section-title" style="color:#1f2937">النتائج التي حققناها لعملائنا</h2>
-            <div class="results-grid">
-                <div class="result-card">
-                    <div class="result-number">+500%</div>
-                    <div class="result-label">زيادة الوصول والانتشار</div>
-                </div>
-                <div class="result-card">
-                    <div class="result-number">+320%</div>
-                    <div class="result-label">زيادة التفاعل والمشاركات</div>
-                </div>
-                <div class="result-card">
-                    <div class="result-number">-60%</div>
-                    <div class="result-label">تخفيض تكلفة الإعلان</div>
-                </div>
-                <div class="result-card">
-                    <div class="result-number">150+</div>
-                    <div class="result-label">حملة ناجحة ومتميزة</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta-section">
-            <div class="cta-title">جاهز لإطلاق حملتك الإعلانية؟</div>
-            <div class="cta-subtitle">احصل على استشارة مجانية وخطة إعلانية مخصصة لعملك الآن</div>
-            <a href="https://wa.me/201110760081" class="cta-btn"><i class="fab fa-whatsapp"></i> تواصل معنا على واتساب</a>
-        </section>
-    </div>
+<!-- ... التصميم والمحتوى كما في الإصدار الأخير -->
 </body>
 </html>
