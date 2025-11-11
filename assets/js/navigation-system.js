@@ -10,12 +10,12 @@ const SITE_PAGES = {
     ],
     services: [
         { name: 'جميع الخدمات', url: 'services/index.html', icon: 'fa-list' },
-        { name: 'إعلانات Google Ads', url: 'services/google-ads-complete.html', icon: 'fab fa-google' },
-        { name: 'SEO تحسين محركات البحث', url: 'services/seo-complete.html', icon: 'fa-search' },
+        { name: 'إعلانات Google Ads', url: 'services/google-ads.html', icon: 'fab fa-google' },
+        { name: 'SEO تحسين محركات البحث', url: 'services/seo.html', icon: 'fa-search' },
         { name: 'المتاجر الإلكترونية', url: 'services/ecommerce.html', icon: 'fa-shopping-cart' },
         { name: 'إدارة السوشيال ميديا', url: 'services/social-media-ads.html', icon: 'fa-hashtag' },
-        { name: 'تصميم المواقع', url: 'services/website-design-complete.html', icon: 'fa-palette' },
-        { name: 'خدمات المدن الخليجية', url: 'services/gulf-cities.html', icon: 'fa-city' }
+        { name: 'تصميم المواقع', url: 'services/website-design.html', icon: 'fa-palette' },
+        { name: 'إدارة الحسابات', url: 'services/social-management.html', icon: 'fa-users' }
     ],
     countries: [
         { name: 'السعودية 🇸🇦', url: 'sa.html', icon: 'fa-map-marker-alt' },
@@ -25,32 +25,10 @@ const SITE_PAGES = {
         { name: 'البحرين 🇧🇭', url: 'bh.html', icon: 'fa-map-marker-alt' },
         { name: 'عمان 🇴🇲', url: 'om.html', icon: 'fa-map-marker-alt' }
     ],
-    cities: [
-        { name: 'دبي', url: 'cities/dubai-digital-marketing.html', icon: 'fa-building' },
-        { name: 'أبوظبي', url: 'cities/abudhabi-digital-marketing.html', icon: 'fa-building' },
-        { name: 'الرياض', url: 'cities/riyadh-google-ads.html', icon: 'fa-building' },
-        { name: 'جدة', url: 'cities/jeddah-google-ads.html', icon: 'fa-building' },
-        { name: 'الدمام', url: 'cities/dammam-google-ads.html', icon: 'fa-building' },
-        { name: 'الدوحة', url: 'cities/doha-digital-marketing.html', icon: 'fa-building' },
-        { name: 'مدينة الكويت', url: 'cities/kuwait-digital-marketing.html', icon: 'fa-building' },
-        { name: 'المنامة', url: 'cities/manama-digital-marketing.html', icon: 'fa-building' }
-    ],
-    blog: [
-        { name: 'جميع المقالات', url: 'blog/index.html', icon: 'fa-blog' },
-        { name: 'Google Ads السعودية', url: 'blog/google-ads-saudi-guide-2025.html', icon: 'fa-newspaper' },
-        { name: 'Google Ads الإمارات', url: 'blog/google-ads-uae-guide-2025.html', icon: 'fa-newspaper' },
-        { name: 'Google Ads الكويت', url: 'blog/google-ads-kuwait-guide-2025.html', icon: 'fa-newspaper' },
-        { name: 'Google Ads قطر', url: 'blog/google-ads-qatar-guide-2025.html', icon: 'fa-newspaper' },
-        { name: 'Google Ads البحرين', url: 'blog/google-ads-bahrain-guide-2025.html', icon: 'fa-newspaper' },
-        { name: 'Google Ads عمان', url: 'blog/google-ads-oman-guide-2025.html', icon: 'fa-newspaper' },
-        { name: 'SEO للمتاجر الخليجية', url: 'blog/ecommerce-seo-gulf-optimization.html', icon: 'fa-newspaper' },
-        { name: 'TikTok وSnapchat', url: 'blog/tiktok-snapchat-gulf-marketing-2025.html', icon: 'fa-newspaper' }
-    ],
     tools: [
         { name: 'لوحة التحليلات', url: 'analytics-dashboard.html', icon: 'fa-chart-bar' },
         { name: 'Chatbot', url: 'chatbot.html', icon: 'fa-robot' },
         { name: 'Google Ads', url: 'google-ads.html', icon: 'fab fa-google' },
-        { name: 'مدن الخليج', url: 'gulf-cities.html', icon: 'fa-city' },
         { name: 'إدارة السوشيال ميديا', url: 'social-media-management.html', icon: 'fa-users' },
         { name: 'قائمة الخدمات', url: 'services-page.html', icon: 'fa-concierge-bell' }
     ],
