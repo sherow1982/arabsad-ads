@@ -35,15 +35,6 @@ GULF_COUNTRIES = {
             "نجران": {"lat": 17.6927, "lng": 44.1860},
             "حفر الباطن": {"lat": 28.4347, "lng": 45.3569},
         },
-        "keywords": [
-            "تسويق رقمي السعودية",
-            "إعلانات جوجل الرياض",
-            "Google Ads جدة",
-            "تحسين محركات البحث السعودية",
-            "Facebook Ads الدمام",
-            "SEO مكة",
-            "تصميم مواقع السعودية",
-        ]
     },
     "AE": {
         "name": "الإمارات",
@@ -59,16 +50,6 @@ GULF_COUNTRIES = {
             "رأس الخيمة": {"lat": 25.7482, "lng": 55.9754},
             "الفجيرة": {"lat": 25.1242, "lng": 56.3540},
         },
-        "keywords": [
-            "تسويق رقمي الإمارات",
-            "إعلانات جوجل دبي",
-            "Google Ads أبوظبي",
-            "SEO الشارقة",
-            "تحسين محركات البحث الإمارات",
-            "Facebook Ads دبي",
-            "تصميم مواقع الإمارات",
-            "خدمات تسويق رقمي دبي",
-        ]
     },
     "KW": {
         "name": "الكويت",
@@ -84,15 +65,6 @@ GULF_COUNTRIES = {
             "مبارك الكبير": {"lat": 29.0269, "lng": 47.7373},
             "العاصمة": {"lat": 29.3759, "lng": 47.9774},
         },
-        "keywords": [
-            "تسويق رقمي الكويت",
-            "إعلانات جوجل الكويت",
-            "Google Ads مدينة الكويت",
-            "SEO الكويت",
-            "تحسين محركات البحث الكويت",
-            "Facebook Ads الكويت",
-            "تصميم مواقع الكويت",
-        ]
     },
     "QA": {
         "name": "قطر",
@@ -107,15 +79,6 @@ GULF_COUNTRIES = {
             "أم صلال": {"lat": 25.4167, "lng": 51.5000},
             "الشمال": {"lat": 25.8500, "lng": 51.2500},
         },
-        "keywords": [
-            "تسويق رقمي قطر",
-            "إعلانات جوجل الدوحة",
-            "Google Ads قطر",
-            "SEO الدوحة",
-            "تحسين محركات البحث قطر",
-            "Facebook Ads الدوحة",
-            "تصميم مواقع قطر",
-        ]
     },
     "BH": {
         "name": "البحرين",
@@ -129,15 +92,6 @@ GULF_COUNTRIES = {
             "الجفير": {"lat": 26.1778, "lng": 50.4389},
             "سلمان آباد": {"lat": 26.0833, "lng": 50.5000},
         },
-        "keywords": [
-            "تسويق رقمي البحرين",
-            "إعلانات جوجل البحرين",
-            "Google Ads المنامة",
-            "SEO البحرين",
-            "تحسين محركات البحث البحرين",
-            "Facebook Ads البحرين",
-            "تصميم مواقع البحرين",
-        ]
     },
     "OM": {
         "name": "عمان",
@@ -153,53 +107,7 @@ GULF_COUNTRIES = {
             "شناص": {"lat": 24.7167, "lng": 56.7833},
             "هيماء": {"lat": 24.2000, "lng": 56.6000},
         },
-        "keywords": [
-            "تسويق رقمي عمان",
-            "إعلانات جوجل مسقط",
-            "Google Ads عمان",
-            "SEO مسقط",
-            "تحسين محركات البحث عمان",
-            "Facebook Ads عمان",
-            "تصميم مواقع عمان",
-        ]
     },
-}
-
-GLOBAL_KEYWORDS = {
-    "google_ads": [
-        "Google Ads",
-        "إعلانات جوجل",
-        "حملات جوجل",
-        "Google Search Ads",
-        "إعلانات البحث",
-        "Google Display Network",
-        "GDN",
-    ],
-    "facebook_ads": [
-        "Facebook Ads",
-        "إعلانات فيسبوك",
-        "Instagram Ads",
-        "إعلانات إنستجرام",
-        "Social Media Ads",
-        "إعلانات وسائل التواصل",
-    ],
-    "seo": [
-        "SEO",
-        "تحسين محركات البحث",
-        "Search Engine Optimization",
-        "الترتيب في جوجل",
-        "محسن البحث",
-        "Link Building",
-        "بناء الروابط",
-    ],
-    "web_design": [
-        "تصميم المواقع",
-        "Web Design",
-        "تصميم موقع",
-        "Website Design",
-        "تطوير المواقع",
-        "Web Development",
-    ],
 }
 
 # ================== الدوال الأساسية ==================
@@ -257,31 +165,28 @@ def build_page_url(file_path: Path) -> str:
     return f"https://sherow1982.github.io/arabsad-ads/{url_path}"
 
 def extract_page_keywords(file_path: Path, title: str) -> list:
-    """استخراج keywords من الصفحة وإضافة keywords الخليج كاملة"""
+    """استخراج keywords"""
     keywords = []
     
-    # أضف keywords حسب نوع الخدمة
-    if 'google-ads' in str(file_path).lower():
-        keywords.extend(GLOBAL_KEYWORDS["google_ads"])
-    elif 'seo' in str(file_path).lower():
-        keywords.extend(GLOBAL_KEYWORDS["seo"])
-    elif 'social' in str(file_path).lower():
-        keywords.extend(GLOBAL_KEYWORDS["facebook_ads"])
-    elif 'website' in str(file_path).lower() or 'design' in str(file_path).lower():
-        keywords.extend(GLOBAL_KEYWORDS["web_design"])
+    # Global keywords
+    keywords.extend([
+        "Google Ads", "إعلانات جوجل", "Facebook Ads", "إعلانات فيسبوك",
+        "SEO", "تحسين محركات البحث", "تسويق رقمي", "التسويق الرقمي",
+        "تصميم المواقع", "Web Design", "Social Media Ads", "إعلانات وسائل التواصل"
+    ])
     
-    # أضف keywords كل دول الخليج والمدن
+    # Country keywords
     for country_code, country_data in GULF_COUNTRIES.items():
-        keywords.extend(country_data["keywords"][:2])
+        keywords.append(f"تسويق رقمي {country_data['name']}")
+        keywords.append(f"إعلانات جوجل {country_data['name']}")
         for city in list(country_data["cities"].keys())[:2]:
             keywords.append(f"تسويق رقمي {city}")
+            keywords.append(f"Google Ads {city}")
     
-    # أضف العنوان
     keywords.append(title)
-    
-    return list(set(keywords))[:20]
+    return list(set(keywords))[:25]
 
-# ================== Schema وMeta ==================
+# ================== Schema ==================
 
 def create_service_schema(title: str, image: str, url: str, description: str) -> str:
     """Service Schema"""
@@ -306,14 +211,7 @@ def create_service_schema(title: str, image: str, url: str, description: str) ->
         },
         "url": url,
         "areaServed": area_served,
-        "priceRange": "$$-$$$",
-        "potentialAction": {
-            "@type": "ReserveAction",
-            "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "https://wa.me/201110760081?text=أريد استشارة"
-            }
-        }
+        "priceRange": "$$-$$$"
     }
     return json.dumps(schema, ensure_ascii=False, indent=2)
 
@@ -333,17 +231,11 @@ def create_article_schema(title: str, image: str, url: str, description: str, fi
         "description": description,
         "datePublished": date_modified,
         "dateModified": date_modified,
-        "author": {
-            "@type": "Organization",
-            "name": "مؤسسة إعلانات العرب"
-        },
+        "author": {"@type": "Organization", "name": "مؤسسة إعلانات العرب"},
         "publisher": {
             "@type": "Organization",
             "name": "مؤسسة إعلانات العرب",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://sherow1982.github.io/arabsad-ads/assets/images/logo.svg"
-            }
+            "logo": {"@type": "ImageObject", "url": "https://sherow1982.github.io/arabsad-ads/assets/images/logo.svg"}
         },
         "url": url
     }
@@ -367,71 +259,16 @@ def create_organization_schema() -> str:
             "addressCountry": "EG",
             "addressRegion": "الجيزة",
             "addressLocality": "حدائق أكتوبر"
-        },
-        "sameAs": [
-            "https://www.facebook.com/arabsad",
-            "https://www.twitter.com/arabsad",
-            "https://www.instagram.com/arabsad"
-        ]
+        }
     }
     return json.dumps(schema, ensure_ascii=False, indent=2)
-
-def create_local_business_schemas_all() -> list:
-    """LocalBusiness Schema لكل دول ومدن الخليج"""
-    import json
-    schemas = []
-    
-    for country_code, country_data in GULF_COUNTRIES.items():
-        for city_name, city_coords in country_data["cities"].items():
-            schema = {
-                "@context": "https://schema.org",
-                "@type": "LocalBusiness",
-                "name": f"مؤسسة إعلانات العرب - {city_name}",
-                "alternateName": f"ArabSad {city_name}",
-                "image": "https://sherow1982.github.io/arabsad-ads/assets/images/logo.svg",
-                "url": "https://sherow1982.github.io/arabsad-ads/",
-                "telephone": "+201110760081",
-                "email": "info@arabsad.com",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressCountry": country_code,
-                    "addressRegion": country_data['name'],
-                    "addressLocality": city_name
-                },
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": city_coords['lat'],
-                    "longitude": city_coords['lng']
-                },
-                "openingHours": "Su-Sa 08:00-23:00",
-                "priceRange": "$$",
-                "areaServed": [city_name, country_data['name']],
-                "serviceArea": [
-                    {
-                        "@type": "City",
-                        "name": city_name,
-                        "areaServed": country_data['name']
-                    }
-                ]
-            }
-            schemas.append(json.dumps(schema, ensure_ascii=False, indent=2))
-    
-    return schemas
 
 def create_breadcrumb_schema(file_path: Path) -> str:
     """Breadcrumb Schema"""
     import json
     relative = file_path.relative_to(Path("."))
     parts = relative.parts
-    breadcrumb_items = []
-    base_url = "https://sherow1982.github.io/arabsad-ads"
-    
-    breadcrumb_items.append({
-        "@type": "ListItem",
-        "position": 1,
-        "name": "الرئيسية",
-        "item": base_url
-    })
+    breadcrumb_items = [{"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": "https://sherow1982.github.io/arabsad-ads"}]
     
     current_path = ""
     for i, part in enumerate(parts[:-1], start=2):
@@ -441,18 +278,14 @@ def create_breadcrumb_schema(file_path: Path) -> str:
             "@type": "ListItem",
             "position": i,
             "name": name,
-            "item": f"{base_url}/{current_path}"
+            "item": f"https://sherow1982.github.io/arabsad-ads/{current_path}"
         })
     
-    schema = {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": breadcrumb_items
-    }
+    schema = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": breadcrumb_items}
     return json.dumps(schema, ensure_ascii=False, indent=2)
 
 def create_meta_tags(title: str, image: str, url: str, description: str, keywords: list) -> str:
-    """Meta Tags محسّنة مع Keywords"""
+    """Meta Tags"""
     if len(description) > 155:
         desc_short = description[:152] + "..."
     else:
@@ -471,30 +304,21 @@ def create_meta_tags(title: str, image: str, url: str, description: str, keyword
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="language" content="ar">
     <meta name="author" content="مؤسسة إعلانات العرب">
-    <meta name="geo.region" content="EG">
-    <meta name="geo.placename" content="مصر">
     <link rel="canonical" href="{url}">
-    <link rel="alternate" hreflang="ar" href="{url}">
     <!-- Open Graph -->
     <meta property="og:title" content="{title_clean} - مؤسسة إعلانات العرب">
     <meta property="og:description" content="{desc_short}">
     <meta property="og:image" content="{image}">
     <meta property="og:url" content="{url}">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="مؤسسة إعلانات العرب">
     <meta property="og:locale" content="ar_EG">
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{title_clean}">
-    <meta name="twitter:description" content="{desc_short}">
-    <meta name="twitter:image" content="{image}">
     """
     return meta
 
-# ================== Local Business Data ==================
+# ================== Google Business Profiles ==================
 
 def create_google_business_profile_json() -> str:
-    """إنشاء Google Business Profile Data JSON لكل دول ومدن الخليج"""
+    """إنشاء Google Business Profile Data JSON لكل المدن"""
     import json
     profiles = []
     
@@ -510,36 +334,57 @@ def create_google_business_profile_json() -> str:
                 "latitude": city_coords['lat'],
                 "longitude": city_coords['lng'],
                 "services": [
-                    "Google Ads",
-                    "Facebook Ads",
-                    "Instagram Ads",
-                    "SEO",
-                    "تصميم المواقع",
-                    "التسويق الرقمي",
-                    "تطوير المتاجر الإلكترونية"
+                    "Google Ads", "Facebook Ads", "Instagram Ads", "SEO",
+                    "تصميم المواقع", "التسويق الرقمي"
                 ],
                 "opening_hours": {
-                    "monday": "08:00-23:00",
-                    "tuesday": "08:00-23:00",
-                    "wednesday": "08:00-23:00",
-                    "thursday": "08:00-23:00",
-                    "friday": "08:00-23:00",
-                    "saturday": "08:00-23:00",
+                    "monday": "08:00-23:00", "tuesday": "08:00-23:00",
+                    "wednesday": "08:00-23:00", "thursday": "08:00-23:00",
+                    "friday": "08:00-23:00", "saturday": "08:00-23:00",
                     "sunday": "08:00-23:00"
                 },
-                "service_areas": [city_name, country_data['name']],
-                "keywords": country_data["keywords"]
+                "service_areas": [city_name, country_data['name']]
             }
             profiles.append(profile)
     
-    return json.dumps(profiles, ensure_ascii=False, indent=2)
+    # حفظ بشكل صحيح
+    json_str = json.dumps(profiles, ensure_ascii=False, indent=2)
+    return json_str
+
+def create_local_business_schemas_all() -> list:
+    """LocalBusiness Schema لكل المدن"""
+    import json
+    schemas = []
+    
+    for country_code, country_data in GULF_COUNTRIES.items():
+        for city_name, city_coords in country_data["cities"].items():
+            schema = {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": f"مؤسسة إعلانات العرب - {city_name}",
+                "image": "https://sherow1982.github.io/arabsad-ads/assets/images/logo.svg",
+                "url": "https://sherow1982.github.io/arabsad-ads/",
+                "telephone": "+201110760081",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": country_code,
+                    "addressLocality": city_name
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": city_coords['lat'],
+                    "longitude": city_coords['lng']
+                }
+            }
+            schemas.append(json.dumps(schema, ensure_ascii=False, indent=2))
+    
+    return schemas
 
 # ================== Sitemap ==================
 
 def generate_sitemap(all_files: list) -> str:
     """توليد Sitemap XML"""
-    sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n'
-    sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     
     for file_path in all_files:
         if file_path.name.endswith('.html'):
@@ -549,18 +394,8 @@ def generate_sitemap(all_files: list) -> str:
             except:
                 last_mod = datetime.now().strftime('%Y-%m-%d')
             
-            if file_path.name == 'index.html':
-                priority = "1.0"
-                changefreq = "daily"
-            elif 'services' in str(file_path):
-                priority = "0.8"
-                changefreq = "weekly"
-            elif 'blog' in str(file_path):
-                priority = "0.7"
-                changefreq = "weekly"
-            else:
-                priority = "0.6"
-                changefreq = "monthly"
+            priority = "1.0" if file_path.name == 'index.html' else "0.7"
+            changefreq = "daily" if file_path.name == 'index.html' else "weekly"
             
             sitemap += f"""  <url>
     <loc>{url}</loc>
@@ -576,24 +411,18 @@ def generate_sitemap(all_files: list) -> str:
 # ================== Robots.txt ==================
 
 def generate_robots_txt() -> str:
-    """توليد robots.txt محسّن"""
-    robots = """User-agent: *
+    """توليد robots.txt"""
+    return """User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
-Disallow: /?*
-Disallow: /*?*
 
 User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
 Allow: /
 
 Sitemap: https://sherow1982.github.io/arabsad-ads/sitemap.xml
 Crawl-delay: 1
 """
-    return robots
 
 # ================== الحقن الرئيسي ==================
 
@@ -605,12 +434,7 @@ def inject_seo(html: str, title: str, image: str, url: str, description: str, fi
         else:
             html = html + '</head>'
     
-    html = re.sub(
-        r'<script\s+type=["\']?application/ld\+json["\']?\s*>.*?</script>',
-        '',
-        html,
-        flags=re.DOTALL | re.IGNORECASE
-    )
+    html = re.sub(r'<script\s+type=["\']?application/ld\+json["\']?\s*>.*?</script>', '', html, flags=re.DOTALL | re.IGNORECASE)
     
     meta = create_meta_tags(title, image, url, description, keywords)
     
@@ -622,21 +446,17 @@ def inject_seo(html: str, title: str, image: str, url: str, description: str, fi
     org_schema = create_organization_schema()
     breadcrumb_schema = create_breadcrumb_schema(file_path)
     
-    # حقن 5 Local Business Schemas (لتقليل حجم الملف)
-    local_business_snippets = "\n".join([
-        f"<script type=\"application/ld+json\">\n{schema}\n</script>"
-        for schema in local_business_schemas[:5]
-    ])
+    local_business_snippets = "\n".join([f"<script type=\"application/ld+json\">\n{schema}\n</script>" for schema in local_business_schemas[:10]])
     
     injection = f"""
 {meta}
 
-<!-- Service/Article Schema JSON-LD (Auto) -->
+<!-- Main Schema (Auto) -->
 <script type="application/ld+json">
 {main_schema}
 </script>
 
-<!-- Organization Schema JSON-LD (Auto) -->
+<!-- Organization Schema (Auto) -->
 <script type="application/ld+json">
 {org_schema}
 </script>
@@ -644,7 +464,7 @@ def inject_seo(html: str, title: str, image: str, url: str, description: str, fi
 <!-- LocalBusiness Schemas - Gulf Countries (Auto) -->
 {local_business_snippets}
 
-<!-- Breadcrumb Schema JSON-LD (Auto) -->
+<!-- Breadcrumb Schema (Auto) -->
 <script type="application/ld+json">
 {breadcrumb_schema}
 </script>
@@ -654,7 +474,7 @@ def inject_seo(html: str, title: str, image: str, url: str, description: str, fi
     return html.replace('</head>', injection, 1)
 
 def process_file(file_path: Path, all_files: list, local_business_schemas: list) -> tuple:
-    """معالجة ملف واحد"""
+    """معالجة ملف"""
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             html = f.read()
@@ -671,9 +491,9 @@ def process_file(file_path: Path, all_files: list, local_business_schemas: list)
         with open(file_path, "w", encoding="utf-8") as f:
             f.write(updated)
         
-        return (True, file_path.relative_to(Path(".")), page_type, keywords)
+        return (True, file_path.relative_to(Path(".")), page_type)
     except Exception as e:
-        return (False, file_path.relative_to(Path(".")), str(e), [])
+        return (False, file_path.relative_to(Path(".")), str(e))
 
 def main():
     print("\n" + "="*80)
@@ -703,29 +523,23 @@ def main():
         sys.exit(1)
 
     print(f"\n📦 إجمالي الملفات: {len(all_files)}\n")
-    print("-" * 80 + "\n")
 
-    # إنشاء Local Business Schemas الكاملة
-    print("🏗️ جاري إنشاء Local Business Schemas لجميع المدن...")
+    # إنشاء Local Business Schemas
+    print("🏗️ جاري إنشاء Local Business Schemas...")
     local_business_schemas = create_local_business_schemas_all()
     print(f"   ✅ تم إنشاء {len(local_business_schemas)} Local Business Schema\n")
 
     ok = 0
     fail = 0
-    stats = {"service": 0, "article": 0, "city": 0, "blog": 0, "page": 0}
-    all_keywords = []
 
     # معالجة الملفات
     for i, fp in enumerate(all_files, 1):
         rel_path = fp.relative_to(root)
         print(f"[{i}/{len(all_files)}] {rel_path} ...", end=" ")
         
-        success, filename, result, keywords = process_file(fp, all_files, local_business_schemas)
+        success, filename, result = process_file(fp, all_files, local_business_schemas)
         if success:
-            page_type = result
-            stats[page_type] = stats.get(page_type, 0) + 1
-            all_keywords.extend(keywords)
-            print(f"✅ ({page_type})")
+            print(f"✅")
             ok += 1
         else:
             print(f"❌ {result}")
@@ -748,47 +562,39 @@ def main():
     # إنشاء Google Business Profile JSON
     print("🏪 جاري إنشاء Google Business Profile Data...")
     gbp_content = create_google_business_profile_json()
-    with open(root / "google-business-profiles.json", "w", encoding="utf-8") as f:
+    gbp_file_path = root / "google-business-profiles.json"
+    
+    with open(gbp_file_path, "w", encoding="utf-8") as f:
         f.write(gbp_content)
-    total_profiles = gbp_content.count('"business_name"')
-    print(f"   ✅ google-business-profiles.json تم إنشاؤها ({total_profiles} ملف تعريف)")
-
+    
+    # التحقق من عدد الملفات
+    gbp_count = gbp_content.count('"business_name"')
+    print(f"   ✅ google-business-profiles.json تم إنشاؤها ({gbp_count} ملف تعريف)\n")
+    
     # النتائج النهائية
-    print("\n" + "="*80)
+    print("="*80)
     print("📊 النتائج النهائية:")
     print("="*80)
     print(f"✅ ملفات محدثة: {ok}")
     print(f"❌ ملفات فشلت: {fail}")
     print(f"📈 نسبة النجاح: {(ok/len(all_files)*100):.1f}%")
-    print("\n📋 تفاصيل حسب النوع:")
-    for page_type, count in stats.items():
-        if count > 0:
-            print(f"   • {page_type}: {count} ملف")
 
     print("\n📁 الملفات المُنشأة:")
-    print("   ✅ sitemap.xml - خريطة الموقع XML")
-    print("   ✅ robots.txt - توجيهات محركات البحث")
-    print(f"   ✅ google-business-profiles.json - {total_profiles} ملف تعريف تجاري")
+    print("   ✅ sitemap.xml")
+    print("   ✅ robots.txt")
+    print(f"   ✅ google-business-profiles.json ({gbp_count} ملف تعريف)")
 
-    print("\n🌐 دول الخليج المُدعومة كاملة:")
+    print("\n🌐 دول الخليج المُدعومة:")
     total_cities = 0
     for code, country in GULF_COUNTRIES.items():
         city_count = len(country["cities"])
         total_cities += city_count
-        cities_list = ", ".join(list(country["cities"].keys())[:3]) + "..."
-        print(f"   • {country['name']} ({code}): {city_count} مدينة - {cities_list}")
-    print(f"\n   💰 إجمالي المدن: {total_cities} مدينة في {len(GULF_COUNTRIES)} دول")
+        print(f"   ✅ {country['name']} ({code}): {city_count} مدينة")
+    
+    print(f"\n   💰 إجمالي: {total_cities} مدينة في {len(GULF_COUNTRIES)} دول")
+    print(f"   💰 إجمالي Google Business Profiles: {gbp_count}")
 
-    print("\n" + "="*80)
-    print("✨ تم إنشاء حل SEO متكامل شامل!")
-    print("="*80)
-    print("\n📝 الخطوات التالية:")
-    print("1. ارفع sitemap.xml و robots.txt على GitHub")
-    print("2. ادخل Google Search Console وأضف sitemap.xml")
-    print("3. استخدم google-business-profiles.json لإنشاء Google Business Profiles")
-    print("4. اربط الملف google-business-profiles.json بـ Google Business Profile API")
-    print("5. حسّن المحتوى بـ 1500+ كلمة مع استخدام Keywords")
-    print("\n")
+    print("\n" + "="*80 + "\n")
 
 if __name__ == "__main__":
     main()

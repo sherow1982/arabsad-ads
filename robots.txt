@@ -2,13 +2,8 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
-Disallow: /?*
-Disallow: /*?*
 
 User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
 Allow: /
 
 Sitemap: https://sherow1982.github.io/arabsad-ads/sitemap.xml
