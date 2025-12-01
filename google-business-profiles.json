@@ -11,9 +11,11 @@
     "services": [
       "Google Ads",
       "Facebook Ads",
+      "Instagram Ads",
       "SEO",
       "تصميم المواقع",
-      "التسويق الرقمي"
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
     ],
     "opening_hours": {
       "monday": "08:00-23:00",
@@ -30,9 +32,12 @@
     ],
     "keywords": [
       "تسويق رقمي السعودية",
-      "إعلانات جوجل السعودية",
-      "Google Ads الرياض",
-      "Facebook Ads جدة"
+      "إعلانات جوجل الرياض",
+      "Google Ads جدة",
+      "تحسين محركات البحث السعودية",
+      "Facebook Ads الدمام",
+      "SEO مكة",
+      "تصميم مواقع السعودية"
     ]
   },
   {
@@ -42,14 +47,16 @@
     "city": "جدة",
     "phone": "+201110760081",
     "website": "https://sherow1982.github.io/arabsad-ads/",
-    "latitude": 24.7136,
-    "longitude": 46.6753,
+    "latitude": 21.5485,
+    "longitude": 39.1721,
     "services": [
       "Google Ads",
       "Facebook Ads",
+      "Instagram Ads",
       "SEO",
       "تصميم المواقع",
-      "التسويق الرقمي"
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
     ],
     "opening_hours": {
       "monday": "08:00-23:00",
@@ -66,9 +73,12 @@
     ],
     "keywords": [
       "تسويق رقمي السعودية",
-      "إعلانات جوجل السعودية",
-      "Google Ads الرياض",
-      "Facebook Ads جدة"
+      "إعلانات جوجل الرياض",
+      "Google Ads جدة",
+      "تحسين محركات البحث السعودية",
+      "Facebook Ads الدمام",
+      "SEO مكة",
+      "تصميم مواقع السعودية"
     ]
   },
   {
@@ -78,14 +88,16 @@
     "city": "الدمام",
     "phone": "+201110760081",
     "website": "https://sherow1982.github.io/arabsad-ads/",
-    "latitude": 24.7136,
-    "longitude": 46.6753,
+    "latitude": 26.3989,
+    "longitude": 50.2048,
     "services": [
       "Google Ads",
       "Facebook Ads",
+      "Instagram Ads",
       "SEO",
       "تصميم المواقع",
-      "التسويق الرقمي"
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
     ],
     "opening_hours": {
       "monday": "08:00-23:00",
@@ -102,9 +114,422 @@
     ],
     "keywords": [
       "تسويق رقمي السعودية",
-      "إعلانات جوجل السعودية",
-      "Google Ads الرياض",
-      "Facebook Ads جدة"
+      "إعلانات جوجل الرياض",
+      "Google Ads جدة",
+      "تحسين محركات البحث السعودية",
+      "Facebook Ads الدمام",
+      "SEO مكة",
+      "تصميم مواقع السعودية"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - الخبر",
+    "country_code": "SA",
+    "country_name": "المملكة العربية السعودية",
+    "city": "الخبر",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 26.2156,
+    "longitude": 50.2106,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "الخبر",
+      "السعودية"
+    ],
+    "keywords": [
+      "تسويق رقمي السعودية",
+      "إعلانات جوجل الرياض",
+      "Google Ads جدة",
+      "تحسين محركات البحث السعودية",
+      "Facebook Ads الدمام",
+      "SEO مكة",
+      "تصميم مواقع السعودية"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - القطيف",
+    "country_code": "SA",
+    "country_name": "المملكة العربية السعودية",
+    "city": "القطيف",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 26.1801,
+    "longitude": 50.0157,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "القطيف",
+      "السعودية"
+    ],
+    "keywords": [
+      "تسويق رقمي السعودية",
+      "إعلانات جوجل الرياض",
+      "Google Ads جدة",
+      "تحسين محركات البحث السعودية",
+      "Facebook Ads الدمام",
+      "SEO مكة",
+      "تصميم مواقع السعودية"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - مكة",
+    "country_code": "SA",
+    "country_name": "المملكة العربية السعودية",
+    "city": "مكة",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 21.4225,
+    "longitude": 39.8262,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "مكة",
+      "السعودية"
+    ],
+    "keywords": [
+      "تسويق رقمي السعودية",
+      "إعلانات جوجل الرياض",
+      "Google Ads جدة",
+      "تحسين محركات البحث السعودية",
+      "Facebook Ads الدمام",
+      "SEO مكة",
+      "تصميم مواقع السعودية"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - المدينة",
+    "country_code": "SA",
+    "country_name": "المملكة العربية السعودية",
+    "city": "المدينة",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 24.4647,
+    "longitude": 39.6074,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "المدينة",
+      "السعودية"
+    ],
+    "keywords": [
+      "تسويق رقمي السعودية",
+      "إعلانات جوجل الرياض",
+      "Google Ads جدة",
+      "تحسين محركات البحث السعودية",
+      "Facebook Ads الدمام",
+      "SEO مكة",
+      "تصميم مواقع السعودية"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - الطائف",
+    "country_code": "SA",
+    "country_name": "المملكة العربية السعودية",
+    "city": "الطائف",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 21.2745,
+    "longitude": 40.4158,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "الطائف",
+      "السعودية"
+    ],
+    "keywords": [
+      "تسويق رقمي السعودية",
+      "إعلانات جوجل الرياض",
+      "Google Ads جدة",
+      "تحسين محركات البحث السعودية",
+      "Facebook Ads الدمام",
+      "SEO مكة",
+      "تصميم مواقع السعودية"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - تبوك",
+    "country_code": "SA",
+    "country_name": "المملكة العربية السعودية",
+    "city": "تبوك",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 28.3852,
+    "longitude": 36.5627,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "تبوك",
+      "السعودية"
+    ],
+    "keywords": [
+      "تسويق رقمي السعودية",
+      "إعلانات جوجل الرياض",
+      "Google Ads جدة",
+      "تحسين محركات البحث السعودية",
+      "Facebook Ads الدمام",
+      "SEO مكة",
+      "تصميم مواقع السعودية"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - أبها",
+    "country_code": "SA",
+    "country_name": "المملكة العربية السعودية",
+    "city": "أبها",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 18.2155,
+    "longitude": 42.5054,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "أبها",
+      "السعودية"
+    ],
+    "keywords": [
+      "تسويق رقمي السعودية",
+      "إعلانات جوجل الرياض",
+      "Google Ads جدة",
+      "تحسين محركات البحث السعودية",
+      "Facebook Ads الدمام",
+      "SEO مكة",
+      "تصميم مواقع السعودية"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - جيزان",
+    "country_code": "SA",
+    "country_name": "المملكة العربية السعودية",
+    "city": "جيزان",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 16.8892,
+    "longitude": 42.5521,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "جيزان",
+      "السعودية"
+    ],
+    "keywords": [
+      "تسويق رقمي السعودية",
+      "إعلانات جوجل الرياض",
+      "Google Ads جدة",
+      "تحسين محركات البحث السعودية",
+      "Facebook Ads الدمام",
+      "SEO مكة",
+      "تصميم مواقع السعودية"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - نجران",
+    "country_code": "SA",
+    "country_name": "المملكة العربية السعودية",
+    "city": "نجران",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 17.6927,
+    "longitude": 44.186,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "نجران",
+      "السعودية"
+    ],
+    "keywords": [
+      "تسويق رقمي السعودية",
+      "إعلانات جوجل الرياض",
+      "Google Ads جدة",
+      "تحسين محركات البحث السعودية",
+      "Facebook Ads الدمام",
+      "SEO مكة",
+      "تصميم مواقع السعودية"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - حفر الباطن",
+    "country_code": "SA",
+    "country_name": "المملكة العربية السعودية",
+    "city": "حفر الباطن",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 28.4347,
+    "longitude": 45.3569,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "حفر الباطن",
+      "السعودية"
+    ],
+    "keywords": [
+      "تسويق رقمي السعودية",
+      "إعلانات جوجل الرياض",
+      "Google Ads جدة",
+      "تحسين محركات البحث السعودية",
+      "Facebook Ads الدمام",
+      "SEO مكة",
+      "تصميم مواقع السعودية"
     ]
   },
   {
@@ -114,14 +539,16 @@
     "city": "دبي",
     "phone": "+201110760081",
     "website": "https://sherow1982.github.io/arabsad-ads/",
-    "latitude": 23.4241,
-    "longitude": 53.8478,
+    "latitude": 25.2048,
+    "longitude": 55.2708,
     "services": [
       "Google Ads",
       "Facebook Ads",
+      "Instagram Ads",
       "SEO",
       "تصميم المواقع",
-      "التسويق الرقمي"
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
     ],
     "opening_hours": {
       "monday": "08:00-23:00",
@@ -140,7 +567,11 @@
       "تسويق رقمي الإمارات",
       "إعلانات جوجل دبي",
       "Google Ads أبوظبي",
-      "SEO دبي"
+      "SEO الشارقة",
+      "تحسين محركات البحث الإمارات",
+      "Facebook Ads دبي",
+      "تصميم مواقع الإمارات",
+      "خدمات تسويق رقمي دبي"
     ]
   },
   {
@@ -150,14 +581,16 @@
     "city": "أبوظبي",
     "phone": "+201110760081",
     "website": "https://sherow1982.github.io/arabsad-ads/",
-    "latitude": 23.4241,
-    "longitude": 53.8478,
+    "latitude": 24.4539,
+    "longitude": 54.3773,
     "services": [
       "Google Ads",
       "Facebook Ads",
+      "Instagram Ads",
       "SEO",
       "تصميم المواقع",
-      "التسويق الرقمي"
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
     ],
     "opening_hours": {
       "monday": "08:00-23:00",
@@ -176,7 +609,11 @@
       "تسويق رقمي الإمارات",
       "إعلانات جوجل دبي",
       "Google Ads أبوظبي",
-      "SEO دبي"
+      "SEO الشارقة",
+      "تحسين محركات البحث الإمارات",
+      "Facebook Ads دبي",
+      "تصميم مواقع الإمارات",
+      "خدمات تسويق رقمي دبي"
     ]
   },
   {
@@ -186,14 +623,16 @@
     "city": "الشارقة",
     "phone": "+201110760081",
     "website": "https://sherow1982.github.io/arabsad-ads/",
-    "latitude": 23.4241,
-    "longitude": 53.8478,
+    "latitude": 25.3548,
+    "longitude": 55.3944,
     "services": [
       "Google Ads",
       "Facebook Ads",
+      "Instagram Ads",
       "SEO",
       "تصميم المواقع",
-      "التسويق الرقمي"
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
     ],
     "opening_hours": {
       "monday": "08:00-23:00",
@@ -212,7 +651,179 @@
       "تسويق رقمي الإمارات",
       "إعلانات جوجل دبي",
       "Google Ads أبوظبي",
-      "SEO دبي"
+      "SEO الشارقة",
+      "تحسين محركات البحث الإمارات",
+      "Facebook Ads دبي",
+      "تصميم مواقع الإمارات",
+      "خدمات تسويق رقمي دبي"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - عجمان",
+    "country_code": "AE",
+    "country_name": "الإمارات العربية المتحدة",
+    "city": "عجمان",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 25.3986,
+    "longitude": 55.4501,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "عجمان",
+      "الإمارات"
+    ],
+    "keywords": [
+      "تسويق رقمي الإمارات",
+      "إعلانات جوجل دبي",
+      "Google Ads أبوظبي",
+      "SEO الشارقة",
+      "تحسين محركات البحث الإمارات",
+      "Facebook Ads دبي",
+      "تصميم مواقع الإمارات",
+      "خدمات تسويق رقمي دبي"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - أم القيوين",
+    "country_code": "AE",
+    "country_name": "الإمارات العربية المتحدة",
+    "city": "أم القيوين",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 25.5645,
+    "longitude": 55.5597,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "أم القيوين",
+      "الإمارات"
+    ],
+    "keywords": [
+      "تسويق رقمي الإمارات",
+      "إعلانات جوجل دبي",
+      "Google Ads أبوظبي",
+      "SEO الشارقة",
+      "تحسين محركات البحث الإمارات",
+      "Facebook Ads دبي",
+      "تصميم مواقع الإمارات",
+      "خدمات تسويق رقمي دبي"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - رأس الخيمة",
+    "country_code": "AE",
+    "country_name": "الإمارات العربية المتحدة",
+    "city": "رأس الخيمة",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 25.7482,
+    "longitude": 55.9754,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "رأس الخيمة",
+      "الإمارات"
+    ],
+    "keywords": [
+      "تسويق رقمي الإمارات",
+      "إعلانات جوجل دبي",
+      "Google Ads أبوظبي",
+      "SEO الشارقة",
+      "تحسين محركات البحث الإمارات",
+      "Facebook Ads دبي",
+      "تصميم مواقع الإمارات",
+      "خدمات تسويق رقمي دبي"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - الفجيرة",
+    "country_code": "AE",
+    "country_name": "الإمارات العربية المتحدة",
+    "city": "الفجيرة",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 25.1242,
+    "longitude": 56.354,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "الفجيرة",
+      "الإمارات"
+    ],
+    "keywords": [
+      "تسويق رقمي الإمارات",
+      "إعلانات جوجل دبي",
+      "Google Ads أبوظبي",
+      "SEO الشارقة",
+      "تحسين محركات البحث الإمارات",
+      "Facebook Ads دبي",
+      "تصميم مواقع الإمارات",
+      "خدمات تسويق رقمي دبي"
     ]
   },
   {
@@ -227,9 +838,11 @@
     "services": [
       "Google Ads",
       "Facebook Ads",
+      "Instagram Ads",
       "SEO",
       "تصميم المواقع",
-      "التسويق الرقمي"
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
     ],
     "opening_hours": {
       "monday": "08:00-23:00",
@@ -247,8 +860,11 @@
     "keywords": [
       "تسويق رقمي الكويت",
       "إعلانات جوجل الكويت",
+      "Google Ads مدينة الكويت",
       "SEO الكويت",
-      "Facebook Ads الكويت"
+      "تحسين محركات البحث الكويت",
+      "Facebook Ads الكويت",
+      "تصميم مواقع الكويت"
     ]
   },
   {
@@ -258,14 +874,16 @@
     "city": "الأحمدي",
     "phone": "+201110760081",
     "website": "https://sherow1982.github.io/arabsad-ads/",
-    "latitude": 29.3759,
-    "longitude": 47.9774,
+    "latitude": 29.1118,
+    "longitude": 47.6929,
     "services": [
       "Google Ads",
       "Facebook Ads",
+      "Instagram Ads",
       "SEO",
       "تصميم المواقع",
-      "التسويق الرقمي"
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
     ],
     "opening_hours": {
       "monday": "08:00-23:00",
@@ -283,8 +901,216 @@
     "keywords": [
       "تسويق رقمي الكويت",
       "إعلانات جوجل الكويت",
+      "Google Ads مدينة الكويت",
       "SEO الكويت",
-      "Facebook Ads الكويت"
+      "تحسين محركات البحث الكويت",
+      "Facebook Ads الكويت",
+      "تصميم مواقع الكويت"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - الجهراء",
+    "country_code": "KW",
+    "country_name": "دولة الكويت",
+    "city": "الجهراء",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 29.4444,
+    "longitude": 47.6804,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "الجهراء",
+      "الكويت"
+    ],
+    "keywords": [
+      "تسويق رقمي الكويت",
+      "إعلانات جوجل الكويت",
+      "Google Ads مدينة الكويت",
+      "SEO الكويت",
+      "تحسين محركات البحث الكويت",
+      "Facebook Ads الكويت",
+      "تصميم مواقع الكويت"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - الفروانية",
+    "country_code": "KW",
+    "country_name": "دولة الكويت",
+    "city": "الفروانية",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 29.2269,
+    "longitude": 47.8558,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "الفروانية",
+      "الكويت"
+    ],
+    "keywords": [
+      "تسويق رقمي الكويت",
+      "إعلانات جوجل الكويت",
+      "Google Ads مدينة الكويت",
+      "SEO الكويت",
+      "تحسين محركات البحث الكويت",
+      "Facebook Ads الكويت",
+      "تصميم مواقع الكويت"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - حولي",
+    "country_code": "KW",
+    "country_name": "دولة الكويت",
+    "city": "حولي",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 29.3621,
+    "longitude": 47.9825,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "حولي",
+      "الكويت"
+    ],
+    "keywords": [
+      "تسويق رقمي الكويت",
+      "إعلانات جوجل الكويت",
+      "Google Ads مدينة الكويت",
+      "SEO الكويت",
+      "تحسين محركات البحث الكويت",
+      "Facebook Ads الكويت",
+      "تصميم مواقع الكويت"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - مبارك الكبير",
+    "country_code": "KW",
+    "country_name": "دولة الكويت",
+    "city": "مبارك الكبير",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 29.0269,
+    "longitude": 47.7373,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "مبارك الكبير",
+      "الكويت"
+    ],
+    "keywords": [
+      "تسويق رقمي الكويت",
+      "إعلانات جوجل الكويت",
+      "Google Ads مدينة الكويت",
+      "SEO الكويت",
+      "تحسين محركات البحث الكويت",
+      "Facebook Ads الكويت",
+      "تصميم مواقع الكويت"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - العاصمة",
+    "country_code": "KW",
+    "country_name": "دولة الكويت",
+    "city": "العاصمة",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 29.3759,
+    "longitude": 47.9774,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "العاصمة",
+      "الكويت"
+    ],
+    "keywords": [
+      "تسويق رقمي الكويت",
+      "إعلانات جوجل الكويت",
+      "Google Ads مدينة الكويت",
+      "SEO الكويت",
+      "تحسين محركات البحث الكويت",
+      "Facebook Ads الكويت",
+      "تصميم مواقع الكويت"
     ]
   },
   {
@@ -299,9 +1125,11 @@
     "services": [
       "Google Ads",
       "Facebook Ads",
+      "Instagram Ads",
       "SEO",
       "تصميم المواقع",
-      "التسويق الرقمي"
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
     ],
     "opening_hours": {
       "monday": "08:00-23:00",
@@ -318,8 +1146,217 @@
     ],
     "keywords": [
       "تسويق رقمي قطر",
-      "إعلانات جوجل قطر",
-      "SEO الدوحة"
+      "إعلانات جوجل الدوحة",
+      "Google Ads قطر",
+      "SEO الدوحة",
+      "تحسين محركات البحث قطر",
+      "Facebook Ads الدوحة",
+      "تصميم مواقع قطر"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - الريان",
+    "country_code": "QA",
+    "country_name": "دولة قطر",
+    "city": "الريان",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 25.3548,
+    "longitude": 51.5342,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "الريان",
+      "قطر"
+    ],
+    "keywords": [
+      "تسويق رقمي قطر",
+      "إعلانات جوجل الدوحة",
+      "Google Ads قطر",
+      "SEO الدوحة",
+      "تحسين محركات البحث قطر",
+      "Facebook Ads الدوحة",
+      "تصميم مواقع قطر"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - الوكرة",
+    "country_code": "QA",
+    "country_name": "دولة قطر",
+    "city": "الوكرة",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 25.1673,
+    "longitude": 51.6286,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "الوكرة",
+      "قطر"
+    ],
+    "keywords": [
+      "تسويق رقمي قطر",
+      "إعلانات جوجل الدوحة",
+      "Google Ads قطر",
+      "SEO الدوحة",
+      "تحسين محركات البحث قطر",
+      "Facebook Ads الدوحة",
+      "تصميم مواقع قطر"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - الخور",
+    "country_code": "QA",
+    "country_name": "دولة قطر",
+    "city": "الخور",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 25.6753,
+    "longitude": 51.4805,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "الخور",
+      "قطر"
+    ],
+    "keywords": [
+      "تسويق رقمي قطر",
+      "إعلانات جوجل الدوحة",
+      "Google Ads قطر",
+      "SEO الدوحة",
+      "تحسين محركات البحث قطر",
+      "Facebook Ads الدوحة",
+      "تصميم مواقع قطر"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - أم صلال",
+    "country_code": "QA",
+    "country_name": "دولة قطر",
+    "city": "أم صلال",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 25.4167,
+    "longitude": 51.5,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "أم صلال",
+      "قطر"
+    ],
+    "keywords": [
+      "تسويق رقمي قطر",
+      "إعلانات جوجل الدوحة",
+      "Google Ads قطر",
+      "SEO الدوحة",
+      "تحسين محركات البحث قطر",
+      "Facebook Ads الدوحة",
+      "تصميم مواقع قطر"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - الشمال",
+    "country_code": "QA",
+    "country_name": "دولة قطر",
+    "city": "الشمال",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 25.85,
+    "longitude": 51.25,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "الشمال",
+      "قطر"
+    ],
+    "keywords": [
+      "تسويق رقمي قطر",
+      "إعلانات جوجل الدوحة",
+      "Google Ads قطر",
+      "SEO الدوحة",
+      "تحسين محركات البحث قطر",
+      "Facebook Ads الدوحة",
+      "تصميم مواقع قطر"
     ]
   },
   {
@@ -329,14 +1366,16 @@
     "city": "المنامة",
     "phone": "+201110760081",
     "website": "https://sherow1982.github.io/arabsad-ads/",
-    "latitude": 26.0667,
-    "longitude": 50.5577,
+    "latitude": 26.129,
+    "longitude": 50.5826,
     "services": [
       "Google Ads",
       "Facebook Ads",
+      "Instagram Ads",
       "SEO",
       "تصميم المواقع",
-      "التسويق الرقمي"
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
     ],
     "opening_hours": {
       "monday": "08:00-23:00",
@@ -354,7 +1393,175 @@
     "keywords": [
       "تسويق رقمي البحرين",
       "إعلانات جوجل البحرين",
-      "SEO البحرين"
+      "Google Ads المنامة",
+      "SEO البحرين",
+      "تحسين محركات البحث البحرين",
+      "Facebook Ads البحرين",
+      "تصميم مواقع البحرين"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - المحرق",
+    "country_code": "BH",
+    "country_name": "مملكة البحرين",
+    "city": "المحرق",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 26.1667,
+    "longitude": 50.5833,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "المحرق",
+      "البحرين"
+    ],
+    "keywords": [
+      "تسويق رقمي البحرين",
+      "إعلانات جوجل البحرين",
+      "Google Ads المنامة",
+      "SEO البحرين",
+      "تحسين محركات البحث البحرين",
+      "Facebook Ads البحرين",
+      "تصميم مواقع البحرين"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - الرفاع",
+    "country_code": "BH",
+    "country_name": "مملكة البحرين",
+    "city": "الرفاع",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 26.1333,
+    "longitude": 50.4167,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "الرفاع",
+      "البحرين"
+    ],
+    "keywords": [
+      "تسويق رقمي البحرين",
+      "إعلانات جوجل البحرين",
+      "Google Ads المنامة",
+      "SEO البحرين",
+      "تحسين محركات البحث البحرين",
+      "Facebook Ads البحرين",
+      "تصميم مواقع البحرين"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - الجفير",
+    "country_code": "BH",
+    "country_name": "مملكة البحرين",
+    "city": "الجفير",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 26.1778,
+    "longitude": 50.4389,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "الجفير",
+      "البحرين"
+    ],
+    "keywords": [
+      "تسويق رقمي البحرين",
+      "إعلانات جوجل البحرين",
+      "Google Ads المنامة",
+      "SEO البحرين",
+      "تحسين محركات البحث البحرين",
+      "Facebook Ads البحرين",
+      "تصميم مواقع البحرين"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - سلمان آباد",
+    "country_code": "BH",
+    "country_name": "مملكة البحرين",
+    "city": "سلمان آباد",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 26.0833,
+    "longitude": 50.5,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "سلمان آباد",
+      "البحرين"
+    ],
+    "keywords": [
+      "تسويق رقمي البحرين",
+      "إعلانات جوجل البحرين",
+      "Google Ads المنامة",
+      "SEO البحرين",
+      "تحسين محركات البحث البحرين",
+      "Facebook Ads البحرين",
+      "تصميم مواقع البحرين"
     ]
   },
   {
@@ -369,9 +1576,11 @@
     "services": [
       "Google Ads",
       "Facebook Ads",
+      "Instagram Ads",
       "SEO",
       "تصميم المواقع",
-      "التسويق الرقمي"
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
     ],
     "opening_hours": {
       "monday": "08:00-23:00",
@@ -388,8 +1597,258 @@
     ],
     "keywords": [
       "تسويق رقمي عمان",
-      "إعلانات جوجل عمان",
-      "SEO مسقط"
+      "إعلانات جوجل مسقط",
+      "Google Ads عمان",
+      "SEO مسقط",
+      "تحسين محركات البحث عمان",
+      "Facebook Ads عمان",
+      "تصميم مواقع عمان"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - صلالة",
+    "country_code": "OM",
+    "country_name": "سلطنة عمان",
+    "city": "صلالة",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 17.0151,
+    "longitude": 54.0924,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "صلالة",
+      "عمان"
+    ],
+    "keywords": [
+      "تسويق رقمي عمان",
+      "إعلانات جوجل مسقط",
+      "Google Ads عمان",
+      "SEO مسقط",
+      "تحسين محركات البحث عمان",
+      "Facebook Ads عمان",
+      "تصميم مواقع عمان"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - صحار",
+    "country_code": "OM",
+    "country_name": "سلطنة عمان",
+    "city": "صحار",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 24.2795,
+    "longitude": 56.9366,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "صحار",
+      "عمان"
+    ],
+    "keywords": [
+      "تسويق رقمي عمان",
+      "إعلانات جوجل مسقط",
+      "Google Ads عمان",
+      "SEO مسقط",
+      "تحسين محركات البحث عمان",
+      "Facebook Ads عمان",
+      "تصميم مواقع عمان"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - نزوى",
+    "country_code": "OM",
+    "country_name": "سلطنة عمان",
+    "city": "نزوى",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 22.9342,
+    "longitude": 57.5364,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "نزوى",
+      "عمان"
+    ],
+    "keywords": [
+      "تسويق رقمي عمان",
+      "إعلانات جوجل مسقط",
+      "Google Ads عمان",
+      "SEO مسقط",
+      "تحسين محركات البحث عمان",
+      "Facebook Ads عمان",
+      "تصميم مواقع عمان"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - السويق",
+    "country_code": "OM",
+    "country_name": "سلطنة عمان",
+    "city": "السويق",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 23.8069,
+    "longitude": 57.4074,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "السويق",
+      "عمان"
+    ],
+    "keywords": [
+      "تسويق رقمي عمان",
+      "إعلانات جوجل مسقط",
+      "Google Ads عمان",
+      "SEO مسقط",
+      "تحسين محركات البحث عمان",
+      "Facebook Ads عمان",
+      "تصميم مواقع عمان"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - شناص",
+    "country_code": "OM",
+    "country_name": "سلطنة عمان",
+    "city": "شناص",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 24.7167,
+    "longitude": 56.7833,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "شناص",
+      "عمان"
+    ],
+    "keywords": [
+      "تسويق رقمي عمان",
+      "إعلانات جوجل مسقط",
+      "Google Ads عمان",
+      "SEO مسقط",
+      "تحسين محركات البحث عمان",
+      "Facebook Ads عمان",
+      "تصميم مواقع عمان"
+    ]
+  },
+  {
+    "business_name": "مؤسسة إعلانات العرب - هيماء",
+    "country_code": "OM",
+    "country_name": "سلطنة عمان",
+    "city": "هيماء",
+    "phone": "+201110760081",
+    "website": "https://sherow1982.github.io/arabsad-ads/",
+    "latitude": 24.2,
+    "longitude": 56.6,
+    "services": [
+      "Google Ads",
+      "Facebook Ads",
+      "Instagram Ads",
+      "SEO",
+      "تصميم المواقع",
+      "التسويق الرقمي",
+      "تطوير المتاجر الإلكترونية"
+    ],
+    "opening_hours": {
+      "monday": "08:00-23:00",
+      "tuesday": "08:00-23:00",
+      "wednesday": "08:00-23:00",
+      "thursday": "08:00-23:00",
+      "friday": "08:00-23:00",
+      "saturday": "08:00-23:00",
+      "sunday": "08:00-23:00"
+    },
+    "service_areas": [
+      "هيماء",
+      "عمان"
+    ],
+    "keywords": [
+      "تسويق رقمي عمان",
+      "إعلانات جوجل مسقط",
+      "Google Ads عمان",
+      "SEO مسقط",
+      "تحسين محركات البحث عمان",
+      "Facebook Ads عمان",
+      "تصميم مواقع عمان"
     ]
   }
 ]

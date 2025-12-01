@@ -4,19 +4,12 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /?*
 Disallow: /*?*
-Disallow: /*.js$
-Disallow: /*.css$
 
-# Google Bot
 User-agent: Googlebot
 Allow: /
 
-# Bing Bot
 User-agent: Bingbot
 Allow: /
 
-# Sitemap
 Sitemap: https://sherow1982.github.io/arabsad-ads/sitemap.xml
-
-# Crawl Delay
 Crawl-delay: 1
