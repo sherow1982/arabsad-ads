@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - إعلانات العرب</title>
+    <meta name="description" content="u0627تصل بنا مباشرة لاستفساراتك وطلباتك - هاتف أو إيميل أو واتس">
+    <style>
+        :root {
+            --primary: #2196F3;
+            --primary-dark: #1565C0;
+            --accent: #FF6B6B;
+            --success: #4CAF50;
+            --dark: #0F0F0F;
+            --light-gray: #F5F7FA;
+            --text-dark: #1A1A1A;
+            --text-light: #666666;
+            --border: #E0E0E0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: #FFFFFF;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Header - ثابت */
+        header {
+            background: rgba(255, 255, 255, 0.99);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+        }
+
+        main {
+            margin-top: 80px;
+            min-height: calc(100vh - 200px);
+        }
+
+        .section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            text-align: center;
+            background: linear-gradient(135deg, var(--text-dark), var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info-box {
+            background: linear-gradient(135deg, rgba(33, 150, 243, 0.05), rgba(255, 107, 107, 0.05));
+            border-radius: 15px;
+            padding: 2rem;
+            border: 1px solid var(--border);
+        }
+
+        .contact-info-box h3 {
+            color: var(--text-dark);
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-item {
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .info-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .info-item h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .info-item a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 1.05rem;
+        }
+
+        .info-item a:hover {
+            color: var(--primary);
+        }
+
+        .form-container {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            color: var(--text-dark);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+            background: rgba(33, 150, 243, 0.02);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .quick-contact {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .quick-btn {
+            flex: 1;
+            padding: 1rem;
+            border: 2px solid var(--border);
+            background: white;
+            color: var(--text-dark);
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .quick-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            background: rgba(33, 150, 243, 0.05);
+        }
+
+        .quick-btn.whatsapp {
+            background: #25D366;
+            color: white;
+            border-color: #25D366;
+        }
+
+        .quick-btn.whatsapp:hover {
+            opacity: 0.9;
+            background: #1fa857;
+        }
+
+        footer {
+            background: linear-gradient(135deg, var(--dark) 0%, #1a1a1a 100%);
+            color: white;
+            padding: 3rem 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-column h4 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-column a {
+            color: #AAA;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-column a:hover {
+            color: var(--primary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+            color: #AAA;
+        }
+
+        .legal-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .legal-links a {
+            color: #AAA;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .legal-links a:hover {
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav {
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .section {
+                padding: 2rem 1rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .quick-contact {
+                flex-direction: column;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header ثابت -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">🌐 إعلانات العرب</a>
+            <nav>
+                <a href="index.html">الرئيسية</a>
+                <a href="about.html">من نحن</a>
+                <a href="about.html#why-us">لماذا نحن</a>
+                <a href="contact.html">تواصل معنا</a>
+                <a href="legal.html">القانونية</a>
+            </nav>
+            <a href="https://wa.me/201110760081" target="_blank" class="cta-btn">تواصل الآن</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <h1 class="section-title">📞 تواصل معنا</h1>
+            
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info-box">
+                    <h3>📍 لا تتردد في الاتصال</h3>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h4>الهاتف</h4>
+                            <a href="tel:+201110760081">+20 111 076 0081</a>
+                            <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 0.5rem;">متاح طوال الأسبوع</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">💬</div>
+                        <div>
+                            <h4>واتس آب</h4>
+                            <a href="https://wa.me/201110760081" target="_blank">ابدأ محاثةة مباشرة</a>
+                            <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 0.5rem;">رد سريع 24/7</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div>
+                            <h4>البريد الإلكتروني</h4>
+                            <a href="mailto:info@arabsad.com">info@arabsad.com</a>
+                            <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 0.5rem;">رد خلال 24 ساعة</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📋</div>
+                        <div>
+                            <h4>العنوان</h4>
+                            <p style="color: var(--text-light);"><strong>مصر:</strong> القاهرة والجيزة</p>
+                            <p style="color: var(--text-light); margin-top: 0.5rem;"><strong>الخليج:</strong> العربية السعودية والإمارات</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="form-container">
+                    <form onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">الاسم *</label>
+                            <input type="text" id="name" name="name" required placeholder="الاسم الكامل">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني *</label>
+                            <input type="email" id="email" name="email" required placeholder="example@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+20 1XX XXX XXXX">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">الموضوع *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="u0645ا دو الموضوع؟">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">الرسالة *</label>
+                            <textarea id="message" name="message" required placeholder="ارسل رسالتك..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">💮 ارسل الرسالة</button>
+                    </form>
+
+                    <div class="quick-contact">
+                        <a href="https://wa.me/201110760081?text=مرحبا%20بأنا%20مهتم%20بخدماتكم" target="_blank" class="quick-btn whatsapp">💬 واتس</a>
+                        <a href="tel:+201110760081" class="quick-btn">📞 اتصل مباشرة</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer ثابت -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>🌐 عن الموقع</h4>
+                    <p style="color: #AAA; margin-bottom: 1rem;">مؤسسة إعلانات العرب متخصصة في التسويق الرقمي وإدارة الحملات الإعلانية مع دعم مباشر 24/7</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" title="Facebook">f</a>
+                        <a href="https://instagram.com" target="_blank" title="Instagram">📷</a>
+                        <a href="https://twitter.com" target="_blank" title="Twitter">X</a>
+                        <a href="https://tiktok.com" target="_blank" title="TikTok">🎵</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>📍 الخدمات</h4>
+                    <ul>
+                        <li><a href="index.html#">إعلانات Google</a></li>
+                        <li><a href="index.html#">إدارة السوشيال ميديا</a></li>
+                        <li><a href="index.html#">تحسين محركات البحث</a></li>
+                        <li><a href="index.html#">تصميم المتاجر</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>ℹ️ معلومات مهمة</h4>
+                    <ul>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="about.html#why-us">لماذا نحن</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                        <li><a href="legal.html">الصفحات القانونية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>📞 تواصل معنا</h4>
+                    <ul>
+                        <li><a href="tel:+201110760081">☎️ +201110760081</a></li>
+                        <li><a href="https://wa.me/201110760081" target="_blank">💬 واتس آب</a></li>
+                        <li><a href="mailto:info@arabsad.com">📧 info@arabsad.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 إعلانات العرب - جميع الحقوق محفوظة</p>
+                <div class="legal-links">
+                    <a href="legal.html">سياسة الخصوصية</a>
+                    <a href="legal.html">شروط الاستخدام</a>
+                    <a href="contact.html">الإبلاغ عن مشكلة</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // Redirect to WhatsApp with message
+            const waMessage = `مرحبا%0Aالاسم: ${name}%0Aالبريد: ${email}%0Aالهاتف: ${phone}%0Aالرسالة: ${message}`;
+            window.open(`https://wa.me/201110760081?text=${waMessage}`, '_blank');
+            
+            // Reset form
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
