@@ -144,6 +144,7 @@
             height: 600px;
             background: radial-gradient(circle, rgba(255, 184, 0, 0.1) 0%, transparent 70%);
             pointer-events: none;
+            animation: float 6s ease-in-out infinite;
         }
 
         .hero::after {
@@ -154,6 +155,23 @@
             width: 500px;
             height: 500px;
             background: radial-gradient(circle, rgba(0, 212, 170, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+            animation: float 8s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(20px); }
+        }
+
+        .banner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            opacity: 0.3;
             pointer-events: none;
         }
 
@@ -174,6 +192,18 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
             letter-spacing: -1px;
+            animation: slideInDown 0.8s ease-out;
+        }
+
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .hero p {
@@ -184,6 +214,18 @@
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
+            animation: slideInUp 0.8s ease-out 0.2s both;
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .hero-buttons {
@@ -192,6 +234,7 @@
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 4rem;
+            animation: slideInUp 0.8s ease-out 0.4s both;
         }
 
         .btn {
@@ -235,6 +278,7 @@
             margin-top: 4rem;
             padding-top: 4rem;
             border-top: 1px solid rgba(255, 184, 0, 0.1);
+            animation: slideInUp 0.8s ease-out 0.6s both;
         }
 
         .stat {
@@ -474,9 +518,9 @@
             <a href="/" class="logo">🌐 إعلانات العرب</a>
             <nav>
                 <a href="#home">الرئيسية</a>
+                <a href="about.html">من نحن</a>
                 <a href="#services">الخدمات</a>
-                <a href="#stats">الإحصائيات</a>
-                <a href="#contact">التواصل</a>
+                <a href="contact.html">اتصل بنا</a>
             </nav>
             <a href="https://wa.me/201110760081" target="_blank" class="cta-header">💬 تواصل الآن</a>
         </div>
@@ -485,16 +529,32 @@
     <main>
         <!-- Hero Section -->
         <section class="hero" id="home">
+            <svg class="banner" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,184,0,0.05)" stroke-width="1"/>
+                    </pattern>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#FFB800;stop-opacity:0.1" />
+                        <stop offset="100%" style="stop-color:#00d4aa;stop-opacity:0.05" />
+                    </linearGradient>
+                </defs>
+                <rect width="1200" height="600" fill="url(#grad1)"/>
+                <circle cx="100" cy="100" r="80" fill="rgba(255,184,0,0.1)"/>
+                <circle cx="1100" cy="500" r="120" fill="rgba(0,212,170,0.1)"/>
+                <rect x="200" y="300" width="300" height="200" fill="rgba(255,184,0,0.05)" rx="20"/>
+            </svg>
+
             <div class="hero-content">
                 <h1>نحو نتائج إعلان ملموسة ونجاح أعمالك</h1>
-                <p>خدماتنا تشمل: Google Ads، SEO، تصميم مواقع ومتاجر إلكترونية، إعلانات سوشيال ميديا وإدارة الحملات بدعم مباشر</p>
+                <p>خدماتنا تشمل: Google Ads، SEO، تصميم مواقع ومتاجر إلكترونية، إعلانات سوشيال ميديا وإدارة الحملات بدعم مباشر.</p>
                 
                 <div class="hero-buttons">
                     <a href="https://wa.me/201110760081" target="_blank" class="btn btn-primary">💬 تواصل واتساب</a>
-                    <a href="#services" class="btn btn-secondary">📋 اعرف خدماتنا</a>
+                    <a href="about.html" class="btn btn-secondary">📋 اعرف عنا أكثر</a>
                 </div>
 
-                <div class="stats" id="stats">
+                <div class="stats">
                     <div class="stat">
                         <div class="stat-number">+500</div>
                         <div class="stat-label">حملة ناجحة</div>
@@ -556,7 +616,7 @@
     </main>
 
     <!-- Footer -->
-    <footer id="contact">
+    <footer>
         <div class="footer-content">
             <div class="footer-grid">
                 <div class="footer-column">
@@ -582,10 +642,10 @@
                 <div class="footer-column">
                     <h4>ℹ️ معلومات مهمة</h4>
                     <ul>
-                        <li><a href="#">من نحن</a></li>
-                        <li><a href="#">لماذا نحن</a></li>
-                        <li><a href="#">تواصل معنا</a></li>
-                        <li><a href="#">الصفحات القانونية</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="about.html#why-us">لماذا نحن</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                        <li><a href="legal.html">الصفحات القانونية</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -602,9 +662,9 @@
                 <p>&copy; 2025 مؤسسة إعلانات العرب - جميع الحقوق محفوظة</p>
                 <p style="font-size: 0.85rem; margin-top: 0.5rem;">وكالة تسويق رقمي متخصصة في الخليج ومصر</p>
                 <div class="legal-links">
-                    <a href="#">سياسة الخصوصية</a>
-                    <a href="#">شروط الاستخدام</a>
-                    <a href="#">الإبلاغ عن مشكلة</a>
+                    <a href="legal.html">سياسة الخصوصية</a>
+                    <a href="legal.html">شروط الاستخدام</a>
+                    <a href="contact.html">الإبلاغ عن مشكلة</a>
                 </div>
             </div>
         </div>
